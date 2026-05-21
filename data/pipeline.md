@@ -1,0 +1,103 @@
+# Pipeline — Pending Evaluations
+
+| # | URL | Source | Added | Notes |
+|---|-----|--------|-------|-------|
+
+## Pending
+
+- [ ] https://jobs.ashbyhq.com/n8n/42e72645-d99a-4545-97b7-53ba3a699893 | n8n | AI Product Builder
+- [ ] https://job-boards.greenhouse.io/adyen/jobs/7602168 | Adyen | Financial and ESG Reporting Specialist
+- [ ] https://job-boards.greenhouse.io/adyen/jobs/7752871 | Adyen | Learning Experience Design Program Manager
+- [ ] https://job-boards.greenhouse.io/adyen/jobs/7668248 | Adyen | Team Lead - Learning & Development
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/7683568003?gh_jid=7683568003 | Celonis | Client Engagement Partner - AI-Driven Transformation & Process Intelligence
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/7669258003?gh_jid=7669258003 | Celonis | Client Value Partner (CVP) - AI-Driven Transformation & Process Intelligence
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/7610416003?gh_jid=7610416003 | Celonis | Field CTO - AI & Enterprise Modernization
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/6313858003?gh_jid=6313858003 | Celonis | Head of Industry - Retail & CPG
+- [ ] https://jobs.ashbyhq.com/synthesia/4358c197-7d4a-45eb-8dd6-4a5c96999534 | Synthesia | Delivery Program Manager
+- [ ] https://jobs.ashbyhq.com/cohere/f8e85a7c-1eb0-47f8-8140-1c4e7892f17d | Cohere | Technical Program Manager, AI Delivery for Public Sector & Defence
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4977624008 | Anthropic | Applied AI Architect, Industries
+- [ ] https://jobs.lever.co/mistral/1937a5af-2c9b-4a75-bb91-b06ebe714dbd | Mistral AI | AI Deployment Strategist - Munich, Germany
+- [ ] https://jobs.lever.co/mistral/2aaf4e18-0943-4ebe-914d-cc9e32db8834 | Mistral AI | AI Deployment Strategist - Netherlands
+- [ ] https://job-boards.greenhouse.io/canonical/jobs/6643476 | Canonical | Product Manager - AI
+- [ ] https://job-boards.greenhouse.io/canonical/jobs/5359697 | Canonical | Silicon Alliances Ecosystem Development Manager
+- [ ] https://job-boards.greenhouse.io/canonical/jobs/6397940 | Canonical | Software Alliance Ecosystem Manager
+- [ ] https://jobs.elastic.co/jobs?gh_jid=7635063&gh_jid=7635063 | Elastic | Regional Services Partner Delivery Manager - Public Sector
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8543937002 | Databricks | Sr. Engagement Manager
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8374717002 | Databricks | Retail & Consumer Goods EMEA Leader
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8560401002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer)
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8548105002 | GitLab | AI Transformation Owner, Marketing
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8467462002 | GitLab | Engagement Manager - EMEA
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8506618002 | GitLab | Staff Technical Program Manager
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8481626002 | GitLab | Program Manager - London
+- [ ] https://stripe.com/jobs/search?gh_jid=7569678 | Stripe | Program Manager, Intake & Portfolio Management
+
+## Skipped (pre-triage — wrong archetype / location / level)
+
+- [x] SKIP | https://jobs.ashbyhq.com/n8n/f814f5ce-b615-413d-bbe0-b5786b3872e9 | n8n | AI Engineering Manager — engineering management, not fit
+- [x] SKIP | https://jobs.ashbyhq.com/supabase/14a99b8b-444b-4d28-b4fd-6fa8e71bcb4e | Supabase | AI Tooling Engineer — pure engineering
+- [x] SKIP | https://job-boards.greenhouse.io/adyen/jobs/7807118 | Adyen | Senior AI Engineer - AML — pure engineering
+- [x] SKIP | https://job-boards.greenhouse.io/adyen/jobs/7711481 | Adyen | Senior AI Engineer - Payments — pure engineering
+- [x] SKIP | https://job-boards.greenhouse.io/celonis/jobs/7713599003?gh_jid=7713599003 | Celonis | Working Student Applied AI Brand Solutions — wrong level
+- [x] SKIP | https://jobs.ashbyhq.com/synthesia/8a09fe17-c01c-4e35-9394-abd339bbfdf3 | Synthesia | Senior Research Engineer - Video Foundation Models — ML research
+- [x] SKIP | https://jobs.ashbyhq.com/synthesia/ae716439-4fb5-49f3-b0fb-4038f65c1b6f | Synthesia | Senior Research Engineer - Audio Post-Training — ML research
+- [x] SKIP | https://jobs.ashbyhq.com/synthesia/d08a4685-89f9-49e2-b203-1482a3db2c4a | Synthesia | Staff Research Engineer - Video Post Training — ML research
+- [x] SKIP | https://jobs.ashbyhq.com/glacis-ai/feea2cb6-60db-4afa-8358-ba17d05d1cd5 | Glacis AI | Founding Software Engineer — pure engineering
+- [x] SKIP | https://boards.greenhouse.io/flexport/jobs/7654705?gh_jid=7654705 | Flexport | Air Pricing Associate — logistics pricing ops, not fit
+- [x] SKIP | https://boards.greenhouse.io/flexport/jobs/7311883?gh_jid=7311883 | Flexport | Staff Software Engineer: Applied AI — pure engineering
+- [x] SKIP | https://job-boards.greenhouse.io/anthropic/jobs/5183044008 | Anthropic | Anthropic Fellows Program, AI Safety — fellowship format
+- [x] SKIP | https://job-boards.greenhouse.io/anthropic/jobs/5030244008 | Anthropic | Anthropic Fellows Program, AI Security — fellowship format
+- [x] SKIP | https://job-boards.greenhouse.io/anthropic/jobs/4616971008 | Anthropic | Research Engineer/Research Scientist, Pre-training — ML research
+- [x] SKIP | https://job-boards.greenhouse.io/anthropic/jobs/5139654008 | Anthropic | Research Lead, Training Insights — ML research
+- [x] SKIP | https://jobs.lever.co/mistral/bedfc2aa-f1b6-4136-bd17-b3abe4c06120 | Mistral AI | AI Scientist - Zurich — research scientist
+- [x] SKIP | https://job-boards.greenhouse.io/canonical/jobs/4960407 | Canonical | Golang System Software Engineer — pure engineering
+- [x] SKIP | https://job-boards.greenhouse.io/canonical/jobs/7334725 | Canonical | Kernel Build Automation Engineer — pure engineering
+- [x] SKIP | https://job-boards.greenhouse.io/canonical/jobs/5881447 | Canonical | Software Architect - Containers / Virtualisation — pure engineering
+- [x] SKIP | https://job-boards.greenhouse.io/canonical/jobs/4086684 | Canonical | Software Engineering Manager - Container and Virtualisation — engineering management
+- [x] SKIP | https://job-boards.greenhouse.io/canonical/jobs/6222476 | Canonical | Software Engineer - Python - Container Images — pure engineering
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8501390002 | Databricks | AI Solutions Architect (Pre-sales) — pre-sales SA
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8521090002 | Databricks | Data & AI Platform Architect (PS) — solutions architect
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8554531002 | Databricks | Data and AI Solution Architect (PS) Munich — solutions architect
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8457249002 | Databricks | Delivery Solutions Architect - Communications — SA, US
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8287373002 | Databricks | Director, Enterprise - Retail & CPG — sales director
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8287372002 | Databricks | Director, Enterprise - Retail & CPG m/f/d — sales director
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8506063002 | Databricks | Senior Specialist Solutions Architect — SA
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=6049142002 | Databricks | Solutions Architect, Retail — SA, US
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8501023002 | Databricks | Sr. Alliance Director, AI GTM — alliance/sales, US
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8469076002 | Databricks | Sr. Delivery Solutions Architect - AI Native — SA, US
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8530605002 | Databricks | Sr. Engagement Manager, LATAM — LATAM region
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8541221002 | Databricks | Sr. Solutions Architect - AI Natives Business — SA, US
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8458028002 | Databricks | Sr. Solutions Architect - Strategic AI Native — SA, US
+- [x] SKIP | https://databricks.com/company/careers/open-positions/job?gh_jid=8458710002 | Databricks | Strategic Core Account Executive - Retail — sales, US
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8510488002 | GitLab | Director, Enterprise Architecture & Intelligent Automation — architecture director
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8418604002 | GitLab | Ecosystem Sales Manager, Alps — sales
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8360326002 | GitLab | Ecosystem Sales Manager, MEA — sales
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8455203002 | GitLab | Engagement Manager, META — META region
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8339221002 | GitLab | Engineering Manager, Software Supply Chain Security — engineering management
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8504232002 | GitLab | Intermediate Site Reliability Engineer — SRE
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8550333002 | GitLab | Lead Global Marketing Campaigns Manager — marketing
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8472475002 | GitLab | Lead Product Marketing Manager, AI — marketing
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8373553002 | GitLab | Principal Engineer, Software Supply Chain Security — principal engineer
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8481645002 | GitLab | Program Manager - Dubai — Dubai
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8464072002 | GitLab | Senior AI Engineer — engineering
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8509676002 | GitLab | Senior Director, Technical Program Management — US-only
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8334735002 | GitLab | Senior Professional Services, Technical Architect - AI — technical architect
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8450446002 | GitLab | Staff Backend (Python) Engineer — engineering
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8536109002 | GitLab | Staff Product Manager, AI Agent Orchestration — highly technical PM
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7521020 | Stripe | Business Development Manager — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7584016 | Stripe | Campaign Operations Manager — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7206336 | Stripe | Commercial Solutions Program Manager — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7736943 | Stripe | Engineering Manager, Developer Productivity AI — US, engineering mgmt
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7747178 | Stripe | Engineering Program Manager, Infrastructure — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7739260 | Stripe | Engineering Program Manager, Tech GRC — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7587812 | Stripe | Integrated Campaigns Manager — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7616135 | Stripe | Marketing Operations Program Manager — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7617049 | Stripe | Paid Digital Marketing Manager — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7809139 | Stripe | Product Manager, Growth AI Outreach Motion — Canada only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7656504 | Stripe | Program Manager, GTM Planning — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7089901 | Stripe | Program Manager, People Operations Strategy — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7917252 | Stripe | Program Manager, Security Business Enablement — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7470827 | Stripe | Program Manager, Solutions Architecture — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7778643 | Stripe | Technical Program Manager, Extensibility Programs — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7417090 | Stripe | Technical Program Manager, IAM Programs — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=6932491 | Stripe | Technical Program Manager, Payments Experiences — US only
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7685855 | Stripe | Technical Program Manager, Risk — US only

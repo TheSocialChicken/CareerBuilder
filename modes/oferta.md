@@ -146,13 +146,38 @@ Analyze the job posting for signals that indicate whether this is a real, active
 
 **ALWAYS** after generating blocks A-G:
 
-### 1. Save report .md
+### 1. Create application folder
 
-Save full evaluation in `reports/{###}-{company-slug}-{YYYY-MM-DD}.md`.
+Create the folder: `applications/{###}-{company-slug}/`
 
-- `{###}` = next sequential number (3 digits, zero-padded)
-- `{company-slug}` = company name in lowercase, without spaces (use hyphens)
-- `{YYYY-MM-DD}` = current date
+- `{###}` = next sequential number (3 digits, zero-padded). Count files in `reports/` to get max, add 1.
+- `{company-slug}` = company name lowercase with hyphens, no date
+
+This folder will hold everything for this application: JD, report, cover letter, CV. When you get invited to interview weeks later, everything is in one place even if the posting was removed.
+
+### 2. Save raw JD text
+
+Save verbatim job description text (no evaluation, just the JD) to:
+`applications/{###}-{company-slug}/jd.md`
+
+Header:
+```markdown
+# Job Description — {Company} | {Role}
+*Archived {YYYY-MM-DD} — {URL}*
+
+---
+
+{full JD text verbatim}
+```
+
+### 3. Save evaluation report
+
+Save full evaluation (blocks A-G) to:
+`applications/{###}-{company-slug}/report.md`
+
+Also save a copy to `reports/{###}-{company-slug}-{YYYY-MM-DD}.md` for backward compatibility with the tracker and merge scripts.
+
+- `{###}` = same number as the application folder
 
 **Report format:**
 
@@ -198,17 +223,29 @@ Save full evaluation in `reports/{###}-{company-slug}-{YYYY-MM-DD}.md`.
 (list of 15-20 keywords from the JD for ATS optimization)
 ```
 
-### 2. Record in tracker
+### 4. Generate cover letter (if score >= 3.0)
 
-**ALWAYS** record in `data/applications.md`:
-- Next sequential number
-- Current date
-- Company
-- Role
-- Score: match average (1-5)
-- Status: `Evaluated`
-- PDF: ❌ (or ✅ if auto-pipeline generated PDF)
-- Report: link relative to the report .md (e.g., `[001](reports/001-company-2026-01-01.md)`)
+Run cover-letter mode and save to:
+- `applications/{###}-{company-slug}/cover-letter.md`
+- `applications/{###}-{company-slug}/cover-letter.html`
+- `applications/{###}-{company-slug}/cover-letter.pdf`
+
+PDF command: `node generate-pdf.mjs applications/{###}-{company-slug}/cover-letter.html applications/{###}-{company-slug}/cover-letter.pdf`
+
+### 5. Generate tailored CV PDF (if score >= 3.0)
+
+Generate the tailored CV HTML and save to:
+- `applications/{###}-{company-slug}/cv.html`
+- `applications/{###}-{company-slug}/cv.pdf`
+
+PDF command: `node generate-pdf.mjs applications/{###}-{company-slug}/cv.html applications/{###}-{company-slug}/cv.pdf`
+
+### 6. Record in tracker
+
+Write TSV to `batch/tracker-additions/{###}-{company-slug}.tsv`
+Link in tracker → `applications/{###}-{company-slug}/report.md`
+
+**NEVER** add rows directly to `data/applications.md` — use TSV + `node merge-tracker.mjs`.
 
 **Tracker format:**
 

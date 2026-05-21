@@ -119,6 +119,12 @@ If there is a relevant live URL in the proof points that adds credibility for th
 
 ### Step 7 — Output
 
+**If an application folder exists** (`applications/{###}-{company-slug}/`):
+Write to: `applications/{###}-{company-slug}/cover-letter.md`
+Also generate HTML: `applications/{###}-{company-slug}/cover-letter.html`
+Generate PDF: `node generate-pdf.mjs applications/{###}-{company-slug}/cover-letter.html applications/{###}-{company-slug}/cover-letter.pdf`
+
+**If no application folder exists** (standalone cover letter request):
 Write to: `output/motivatiebrief-{company-slug}-{YYYY-MM-DD}.md`
 
 Format:
