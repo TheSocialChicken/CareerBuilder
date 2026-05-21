@@ -41,6 +41,10 @@ Grew up on the Albert Cuyp market — learned to trade, negotiate, and take resp
 
 **Current active engagement:** Windesheim, 1 day/week — interviewing practitioners on best AI tools to use in process. Low-hours, exploratory. Actively looking for additional engagements to stack alongside it.
 
+**2-year vision (environment, not title):** In a hackerspace. Brainstorming and building new business concepts or innovations with a small group of close colleagues. Not a large org. Not a corporate office. A room where things get made and ideas get tested, with people he trusts. This is the D&D table as a professional setting — small group, shared world-building, high trust, new territory.
+
+**Scoring implication:** Roles physically or culturally in/adjacent to a hackerspace, innovation studio, incubator, or R&D lab environment with a small core team → significant boost. Large corporate roles in formal office settings with no building mandate → significant penalty regardless of title or salary.
+
 **In PDF summaries:** Open with the lab-builder identity. Bridge to: "Now I'm applying that model to [role domain] — building the environments where [org's teams] can prototype and adopt AI at pace."
 
 **In STAR stories:** Reference the €2M funding (Veles Farming), Interactive due diligence (code review + CTO assessment → investor 4x exit — story: "trusted my technical judgment enough to base a real money decision on it"), 8-course merge (Windesheim), W3C recognition (Tonomy), KONGSBERG CEO escalation (data contract breach, oil rig, no internet) as hard proof.
