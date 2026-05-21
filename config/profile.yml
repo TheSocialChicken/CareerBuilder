@@ -1,0 +1,108 @@
+# Career-Ops Profile Configuration
+# Copy this file to config/profile.yml and fill in your details.
+# This is the single source of truth for your personal data across all modes.
+
+candidate:
+  full_name: "Christiaan Verhoef"
+  email: "christiaan_gerardo@hotmail.com"
+  phone: "+31630184743"
+  location: "Baarn, Netherlands"
+  linkedin: "linkedin.com/in/christiaanverhoef"
+  portfolio_url: "https://socialchicken.net"
+  github: ""
+  twitter: ""
+
+target_roles:
+  primary:
+    - "AI Innovation Lab Lead"
+    - "Applied AI Program Manager"
+    - "Learning Innovation Lead"
+    - "AI Education & Research Infrastructure Lead"
+    - "Digital Transformation / AI Adoption Consultant"
+    - "R&D Prototyping Lead"
+  secondary:
+    - "Product Owner (AI-enabled education or research tooling)"
+    - "Community & Ecosystem Builder (AI / sustainability / research)"
+    - "Open Innovation Facilitator"
+    - "Technical Program Lead (applied AI / education / research systems)"
+  archetypes:
+    - name: "AI Transformation"
+      level: "Lead/Senior"
+      fit: "primary"
+    - name: "AI Forward Deployed"
+      level: "Lead/Senior"
+      fit: "primary"
+    - name: "AI Solutions Architect"
+      level: "Mid-Senior"
+      fit: "secondary"
+    - name: "Technical AI PM"
+      level: "Senior"
+      fit: "secondary"
+  avoid:
+    - "Pure backend/frontend developer"
+    - "Enterprise data engineering"
+    - "Traditional Scrum Master"
+    - "Pure academic researcher"
+
+narrative:
+  headline: "I design and run AI-enabled innovation labs that help educators, researchers, and organizations collaboratively prototype real-world solutions."
+  exit_story: "Grew up on the Albert Cuyp market — learned to trade, negotiate, and take responsibility young. Chose to apply that merchant mindset to technology and education instead of the family business. Built labs, incubated startups, and now designs environments where teams learn by building with AI."
+  superpowers:
+    - "Design AI-enabled learning and innovation environments where non-technical stakeholders can build and experiment with complex systems"
+    - "Merge education, facilitation, systems design, and open-source AI tooling into one coherent operating model"
+    - "Take a chaotic multi-stakeholder environment and give it structure, sprints, and forward motion"
+    - "Incubate early-stage ideas into working startups (10 supported, €2M raised, 4x exit)"
+    - "Self-host and operate AI infrastructure (Flowise, OpenWebUI, n8n, Supabase) without vendor lock-in"
+  proof_points:
+    - name: "Value Chain Hackers"
+      url: "https://valuechainhackers.xyz"
+      hero_metric: "Cross-European AI-powered supply chain lab; CSRD/EUDR compliance tooling"
+    - name: "Beer Game Demonstrator"
+      url: "https://demonstrator.valuechainhackers.xyz"
+      hero_metric: "Blockchain vs. non-blockchain supply chain simulation used in university teaching"
+    - name: "Spark! Living Lab"
+      url: "https://spark!livinglab.nl"
+      hero_metric: "Windesheim innovation lab; Jan 2020–present"
+    - name: "Viridis Eco Lab"
+      url: "https://eco.viridis.info/"
+      hero_metric: "Blockchain ecosystem architecture for sustainability traceability"
+    - name: "Veles Farming"
+      url: "https://velesfarming.com"
+      hero_metric: "Student concept turned agri-tech startup; €2M funding"
+    - name: "Magic Frames"
+      url: "https://mgframes.nl"
+      hero_metric: "Student startup incubated from concept to independent launch"
+    - name: "Value Chain Hackers GitHub"
+      url: "https://github.com/Value-Chain-Hackers"
+      hero_metric: "Open-source AI traceability and compliance tooling"
+
+compensation:
+  target_range: "€65,000 – €90,000"
+  stretch_range: "€80,000 – €110,000"  # Well-scoped innovation lead roles
+  consulting_day_rate: "€600 – €1,200"
+  currency: "EUR"
+  minimum: "€55,000"
+  location_flexibility: "Remote preferred; Netherlands and EU on-site possible"
+  avoid: "Roles under €55k unless offering ownership, strong network access, or strategic visibility"
+  preferred_engagement_model: "2-3 concurrent part-time or fractional roles (0.4-0.6 FTE each) — not one full-time employer. Target 3-4 days/week, fractional, project-based, or explicitly part-time postings."
+  working_style: "Starter not finisher. Strongest at stage 0-to-1 and 1-to-2. Excels in launch, build, initial implementation. Maintained best through context-switching across multiple concurrent engagements."
+
+location:
+  country: "Netherlands"
+  city: "Baarn"
+  timezone: "CET"
+  visa_status: "EU citizen, no sponsorship needed"
+  preferred_markets:
+    - "Netherlands (remote or hybrid)"
+    - "EU fully remote"
+    - "DACH region"
+    - "EU-funded research / innovation programs"
+    - "Sustainability, greentech, civic-tech ecosystems"
+    - "Universities and applied research institutes"
+
+cv:
+  output_format: "html" # "html" (default) or "latex"
+  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
+  # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
+  # The ID starts with "D" and is 11 characters long.
+  # canva_resume_design_id: "DAxxxxxxxxx"
