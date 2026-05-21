@@ -57,6 +57,8 @@ Grew up on the Albert Cuyp market — learned to trade, negotiate, and take resp
 
 **Frame as:** "The person who builds the room where the learning happens — whatever form that learning needs to take."
 
+**Hidden superpower: talent magnet.** Christiaan consistently pulls people into the work. Students become interns on his projects (Open Food Chain, Veles Farming, Magic Frames, Windesheim AI lab). His girlfriend co-founded with him. Projects become communities. This is ecosystem activation — the ability to make work magnetic enough that people choose to join it. Enormously valuable for orgs trying to build innovation labs, learning communities, or early-stage teams. Not a standard CV bullet — surface it in interview stories when asked "how do you build a team" or "how do you get buy-in."
+
 **Operational frame:** Bridge between business, IT, and management. Trained Business IT & Management (HvA, 8.7). Certified Prince2 + Scrum + ITIL. The bridge is structural, not accidental.
 
 ### Known Gaps (for evaluation scoring — not for disclosure in applications)
@@ -86,7 +88,7 @@ Grew up on the Albert Cuyp market — learned to trade, negotiate, and take resp
 | Viridis Eco Lab | https://eco.viridis.info/ | Blockchain ecosystem for sustainability traceability |
 | Veles Farming | https://velesfarming.com | Student concept → operating agri-tech startup → €2M funding |
 | Magic Frames | https://mgframes.nl | Art startup incubated from concept to independent launch — innovation is domain-agnostic |
-| The Fork | (blockchain for good project) | Blockchain applied to social impact — proof that the medium changes, the method stays |
+| Open Food Chain (ex The New Fork) | https://openfoodchain.org | Food supply chain transparency on blockchain. First stint: trainer + initial tech developer at 3-person founding team. Returned later as community developer after rebrand. |
 | Value Chain Hackers GitHub | https://github.com/Value-Chain-Hackers | Open-source AI traceability and compliance tooling |
 
 **In PDF Professional Summary:** Always include at least one live URL — preferably valuechainhackers.xyz or demonstrator.valuechainhackers.xyz.
