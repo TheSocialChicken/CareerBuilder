@@ -37,7 +37,9 @@
 
 ## Your Exit Narrative
 
-Grew up on the Albert Cuyp market — learned to trade, negotiate, and take responsibility young. Chose to apply that merchant mindset to technology and education instead of the family business. Built labs, incubated startups, and now designs environments where teams learn by building with AI.
+Grew up on the Albert Cuyp market — learned to trade, negotiate, and take responsibility young. Chose to apply that merchant mindset to innovation and education. Built labs, incubated startups, and designs environments where teams learn by doing — whatever the frontier happens to be.
+
+**Current active engagement:** Windesheim, 1 day/week — interviewing practitioners on best AI tools to use in process. Low-hours, exploratory. Actively looking for additional engagements to stack alongside it.
 
 **In PDF summaries:** Open with the lab-builder identity. Bridge to: "Now I'm applying that model to [role domain] — building the environments where [org's teams] can prototype and adopt AI at pace."
 
@@ -83,6 +85,7 @@ Grew up on the Albert Cuyp market — learned to trade, negotiate, and take resp
 | Project | URL | Hero metric |
 |---------|-----|-------------|
 | Value Chain Hackers | https://valuechainhackers.xyz | Cross-European AI-powered supply chain lab; CSRD/EUDR compliance tooling |
+| Knopenkoning | (Windesheim project) | AI-powered supply chain mapping tool — predecessor/companion to VCH innovation lab |
 | Beer Game Demonstrator | https://demonstrator.valuechainhackers.xyz | Blockchain vs. non-blockchain supply chain simulation in active university use |
 | Spark! Living Lab | https://sparkllivinglab.nl | Windesheim innovation lab; Jan 2020–present |
 | Viridis Eco Lab | https://eco.viridis.info/ | Blockchain ecosystem for sustainability traceability |
