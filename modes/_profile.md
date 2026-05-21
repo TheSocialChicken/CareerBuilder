@@ -37,7 +37,13 @@
 
 ## Your Exit Narrative
 
-Grew up on the Albert Cuyp market — learned to trade, negotiate, and take responsibility young. Chose to apply that merchant mindset to innovation and education. Built labs, incubated startups, and designs environments where teams learn by doing — whatever the frontier happens to be.
+Grew up working his dad's stall on the Albert Cuyp market. Learned to draw crowds deliberately — become a stranger's temporary friend in 30 seconds, keep them engaged, make the stall look alive. Thousands of repetitions before age 18. This is where the room-reading and rapid-rapport skills were trained, not discovered. Also where the loud voice came from.
+
+Musical upbringing runs parallel: church organ (both hands, both feet, multiple stops, formal performance), piano, singing, dancing. He attributes his intelligence here — not to school or tech, but to music. Pattern recognition, multi-threading, composure under performance pressure, timing.
+
+The market performer + musician + DM + lab builder is one coherent person: read the room, hold the attention, adapt in real time, make people want to stay. Applies this to workshops, labs, lectures, onboarding, and D&D campaigns interchangeably.
+
+**Current active engagement:** Windesheim, 1 day/week — interviewing practitioners on best AI tools to use in process. Low-hours, exploratory. Actively looking for additional engagements to stack alongside it.
 
 **Current active engagement:** Windesheim, 1 day/week — interviewing practitioners on best AI tools to use in process. Low-hours, exploratory. Actively looking for additional engagements to stack alongside it.
 
@@ -62,6 +68,8 @@ Grew up on the Albert Cuyp market — learned to trade, negotiate, and take resp
 **Core methodology: games, simulation, experiential learning.** Conscious Competence as the pedagogical spine. People don't change behavior by hearing about it — they change by experiencing it in a safe, designed environment. Beer game demonstrator, SafeScrum rollout, Blockchain Minor, AI lab onboarding — all designed experiences, not presentations.
 
 **Frame as:** "The person who builds the room where the learning happens — whatever form that learning needs to take."
+
+**Where the room skills come from:** Albert Cuyp market + church organ + D&D GM. Crowd-reading and rapid rapport are not personality traits — they are trained skills, practiced at scale since childhood. Can command a room, hold attention, and make a skeptical stranger feel heard within minutes. This is the mechanical explanation for the facilitation effectiveness and the talent magnetism. Use it when asked "how do you get buy-in" or "how do you run workshops" — the honest answer is: grew up drawing crowds on a busy Amsterdam market.
 
 **Hidden superpower: talent magnet.** Christiaan consistently pulls people into the work. Students become interns on his projects (Open Food Chain, Veles Farming, Magic Frames, Windesheim AI lab). His girlfriend co-founded with him. Currently has a thesis graduate working informally under his supervision — outside any official channel, because the student sought him out. Projects become communities. This is ecosystem activation — the ability to make work magnetic enough that people choose to join it. Enormously valuable for orgs trying to build innovation labs, learning communities, or early-stage teams. Not a standard CV bullet — surface it in interview stories when asked "how do you build a team" or "how do you get buy-in."
 
