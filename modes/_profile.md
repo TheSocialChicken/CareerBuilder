@@ -79,6 +79,16 @@ Grew up on the Albert Cuyp market — learned to trade, negotiate, and take resp
 
 - **Board/governance roles during decline** — Being placed in a steering/board capacity when an org is already failing is a hard context. Christiaan sees what needs to change but lacks the patience for slow institutional decline when he could be building. Best in early-stage and growth contexts, not turnarounds at governance distance.
 
+### What people misunderstand in hiring contexts
+
+**The energy spike reads as chaos.** At the start of a project or role, Christiaan generates high excitement — lots of ideas, fast connections, visible momentum. This is genuine and valuable. But in hiring contexts, or early in a working relationship, it can read as overwhelming, unfocused, or unstable to people who don't know him yet. It is ADHD-typical: the brain finding the edges of a new system at speed.
+
+**What it actually is:** Front-loaded energy is how he builds the map. Once the map exists, the work becomes structured. The chaos is the reconnaissance phase, not the operational mode.
+
+**Implication for cover letters and interviews:** Do NOT try to suppress or apologize for the energy. But do frame it: "I come in fast and connect a lot of dots early — that's how I build context. Once I have the picture, I get systematic." Give the interviewer a way to understand the pattern so they don't pathologize it. The KONGSBERG story (read the contract, went to the CEO) shows the systematic execution that follows the fast intake. Use that pairing.
+
+**Implication for role scoring:** Penalize roles that require slow, cautious, consensus-first onboarding with no room for early-stage exploration. Boost roles that explicitly welcome "bring energy and ideas from day one."
+
 ### Sensitive topics in interviews
 
 - **Tonomy Foundation**: There is personal trauma attached to this experience. Do NOT volunteer the failure narrative unprompted. If directly asked about Tonomy, lead with the co-founding vision (digital sovereignty, values-driven crypto) and the W3C recognition — both real. The full arc (sales failure, board decline) is available if the interviewer explicitly asks about failure, but share it as a learning story, not a wound. Never frame as "I failed at sales" — frame as "I learned what conditions I need to do my best work."
