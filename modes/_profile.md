@@ -75,6 +75,14 @@ Grew up on the Albert Cuyp market — learned to trade, negotiate, and take resp
 
 - **Pure finance / investor mechanics** — grant writing, €2M funding facilitation, and investor outreach are confirmed. But deep financial mechanics (cap tables, term sheets, valuation models, LP/GP structures, fundraising rounds) is a development area Christiaan is actively building. **Flag in evaluations** if role requires CFO-adjacent duties, deep financial modeling, or leading fundraising rounds independently. Don't flag for grant writing, budget management, or early-stage investor outreach.
 
+- **Solo sales of an unready product** — Tonomy Foundation experience. Co-founded with Jack Tanner around digital sovereignty / correct crypto. Started as volunteers, became full-time when Windesheim reduced Spark! to 1 day/week. Had to sell a product that wasn't ready yet, alone. Failed sales targets. Was moved to a board position and watched the org slowly decline while trying to redirect it. This is his acknowledged biggest professional failure. **Lesson and flag:** Christiaan needs the product to be ready AND co-pilots in place before sales motions work. He is a builder and educator first; solo sales hunter of an immature product is a role where he has demonstrated difficulty. **Flag in evaluations** any role that is primarily outbound sales, revenue-target-first, without a functioning product and team support structure. **Do NOT flag** for business development, partnerships, community building, or consultative selling where the "product" is his own expertise.
+
+- **Board/governance roles during decline** — Being placed in a steering/board capacity when an org is already failing is a hard context. Christiaan sees what needs to change but lacks the patience for slow institutional decline when he could be building. Best in early-stage and growth contexts, not turnarounds at governance distance.
+
+### Sensitive topics in interviews
+
+- **Tonomy Foundation**: There is personal trauma attached to this experience. Do NOT volunteer the failure narrative unprompted. If directly asked about Tonomy, lead with the co-founding vision (digital sovereignty, values-driven crypto) and the W3C recognition — both real. The full arc (sales failure, board decline) is available if the interviewer explicitly asks about failure, but share it as a learning story, not a wound. Never frame as "I failed at sales" — frame as "I learned what conditions I need to do my best work."
+
 ### Personality context (for framing, not disclosure)
 - ENFP-T: ideas-driven, connector, energizer, thrives on variety and building — struggles with pure maintenance/repetition
 - Slight ADHD: strength in creative environments, rapid context switching, innovation — at risk in heavily process-constrained roles

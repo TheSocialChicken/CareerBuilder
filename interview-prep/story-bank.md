@@ -27,6 +27,24 @@ This file accumulates your best interview stories over time. Each evaluation (Bl
 
 ---
 
+### [Failure / self-knowledge] Tonomy Foundation — When the conditions weren't right
+
+**Source:** Direct — Tonomy Foundation, co-founder and later board member
+**⚠️ Sensitivity note:** Personal trauma attached to this experience. Use as a failure story ONLY if directly asked. Never volunteer. Lead with the vision and W3C recognition in normal conversation.
+**S (Situation):** Co-founded Tonomy Foundation with Jack Tanner around digital sovereignty — the goal was to build a values-driven crypto initiative that actually worked, not another extractive token scheme. Started as volunteers. When Windesheim reduced Spark! Living Lab to 1 day/week, moved into a full-time role at Tonomy.
+**T (Task):** Sell the product and hit revenue targets. Alone. With a product that wasn't ready yet.
+**A (Action):** Tried. Pushed. Couldn't make it work solo with an immature product. Failed the sales targets. Was moved into a board position. Attempted to steer the organization back from there. Watched it continue to decline despite efforts.
+**R (Result):** The organization went into decline. The failure was real.
+**Reflection:** I learned precisely what conditions I need to do my best work — and what happens when those conditions aren't in place. A builder and educator put into solo sales mode with an unready product and no co-pilot will struggle. Not a character flaw; a context mismatch. The lesson: I now know to assess these conditions before accepting a role, not after. I also learned that a board/governance position during decline is a particularly hard place for me — I can see what needs to change but can't move fast enough from that distance.
+**If asked in an interview:** "I learned what I need to be effective — a ready enough product, co-pilots, and the ability to build rather than just sell. Tonomy taught me that more clearly than any success could have."
+**Best for questions about:**
+- "Tell me about your biggest professional failure"
+- "What have you learned about yourself from a setback?"
+- "What conditions do you need to do your best work?"
+- "Have you ever been in a role that wasn't the right fit? What happened?"
+
+---
+
 ### [Stakeholder escalation / data governance] KONGSBERG — The BP Data Contract
 
 **Source:** Direct — KONGSBERG internship / field role, HvA period
