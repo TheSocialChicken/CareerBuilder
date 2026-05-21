@@ -59,7 +59,15 @@ Grew up on the Albert Cuyp market — learned to trade, negotiate, and take resp
 
 **Frame as:** "The person who builds the room where the learning happens — whatever form that learning needs to take."
 
-**Hidden superpower: talent magnet.** Christiaan consistently pulls people into the work. Students become interns on his projects (Open Food Chain, Veles Farming, Magic Frames, Windesheim AI lab). His girlfriend co-founded with him. Projects become communities. This is ecosystem activation — the ability to make work magnetic enough that people choose to join it. Enormously valuable for orgs trying to build innovation labs, learning communities, or early-stage teams. Not a standard CV bullet — surface it in interview stories when asked "how do you build a team" or "how do you get buy-in."
+**Hidden superpower: talent magnet.** Christiaan consistently pulls people into the work. Students become interns on his projects (Open Food Chain, Veles Farming, Magic Frames, Windesheim AI lab). His girlfriend co-founded with him. Currently has a thesis graduate working informally under his supervision — outside any official channel, because the student sought him out. Projects become communities. This is ecosystem activation — the ability to make work magnetic enough that people choose to join it. Enormously valuable for orgs trying to build innovation labs, learning communities, or early-stage teams. Not a standard CV bullet — surface it in interview stories when asked "how do you build a team" or "how do you get buy-in."
+
+**What he does for free (= genuine identity signals):**
+- **Dungeon Master for D&D campaigns** — This is the master key. A DM designs the world, facilitates the session, adapts in real-time, creates psychological safety for participants to take risks, has prepared content but never follows the script. The beer game, SafeScrum rollout, Blockchain Minor, AI lab onboarding — all of these are D&D campaigns with different settings. The facilitation methodology is not performed for work; it is intrinsic. Use this openly in interviews for learning design, facilitation, or innovation lab roles: "I've been running tabletop RPG campaigns for years — it's the same muscle."
+- **3D printing / making** — Tactile, iterative, prototype-driven. Maker identity. Reinforces that the innovation impulse is physical, not just conceptual.
+- **Student counselling (unpaid)** — Does coaching and mentorship without organizational mandate. The coaching identity runs deeper than the job title.
+- **Guest lectures (unpaid)** — Knowledge sharing is intrinsic, not instrumental.
+
+**Implication for role scoring:** Roles that involve facilitation, game-based learning, simulation design, community building, or coaching should receive a significant boost — these are not adjacent skills, they are what Christiaan does when nobody is paying him.
 
 **Operational frame:** Bridge between business, IT, and management. Trained Business IT & Management (HvA, 8.7). Certified Prince2 + Scrum + ITIL. The bridge is structural, not accidental.
 
