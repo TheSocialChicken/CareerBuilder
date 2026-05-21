@@ -1,0 +1,1474 @@
+# Portal Scanner Configuration -- Christiaan Verhoef
+# Target: AI Innovation Lab, Applied AI Program Manager, Learning Innovation,
+#         AI Transformation, AI Adoption, R&D Prototyping Lead
+# Market: Netherlands, EU remote, DACH
+
+location_filter:
+  allow:
+    - "Remote"
+    - "Netherlands"
+    - "Amsterdam"
+    - "Utrecht"
+    - "Rotterdam"
+    - "Zwolle"
+    - "Eindhoven"
+    - "EMEA"
+    - "Europe"
+    - "Germany"
+    - "Berlin"
+    - "Munich"
+    - "Zurich"
+    - "Switzerland"
+  block:
+    - "India"
+    - "Bengaluru"
+    - "Brazil"
+    - "Australia"
+    - "Japan"
+    - "Singapore"
+    - "United States only"
+    - "US only"
+    - "on-site 5 days"
+
+title_filter:
+  positive:
+    # -- Innovation & Lab roles --
+    - "Innovation Lab"
+    - "Innovation Lead"
+    - "Innovation Manager"
+    - "Lab Manager"
+    - "Lab Lead"
+    - "R&D"
+    - "Open Innovation"
+    - "Applied Research"
+    # -- AI transformation & adoption --
+    - "AI Transformation"
+    - "AI Adoption"
+    - "AI Lead"
+    - "AI Program"
+    - "AI Innovation"
+    - "Applied AI"
+    - "AI Enablement"
+    - "AI Education"
+    - "AI Trainer"
+    # -- Learning & education --
+    - "Learning Innovation"
+    - "Learning Design"
+    - "Learning & Development"
+    - "L&D"
+    - "Education Technology"
+    - "EdTech"
+    - "Training Lead"
+    - "Curriculum"
+    # -- Program & project management --
+    - "Program Manager"
+    - "Programme Manager"
+    - "Technical Program"
+    - "Product Owner"
+    - "Innovation Program"
+    # -- Systems & facilitation --
+    - "Transformation Lead"
+    - "Change Manager"
+    - "Digital Transformation"
+    - "Ecosystem"
+    - "Facilitator"
+    # -- Supply chain & sustainability --
+    - "Supply Chain Innovation"
+    - "Sustainability"
+    - "Greentech"
+    - "ESG"
+    - "Circular"
+    # -- General AI/tech --
+    - "AI"
+    - "Automation"
+    - "Innovation Architect"
+    # -- Agile & coaching --
+    - "Scrum Master"
+    - "Agile Coach"
+    - "Scrum Coach"
+    - "Agile Trainer"
+    - "Delivery Manager"
+    - "Engagement Manager"
+    # -- Education & training --
+    - "Docent"
+    - "Lecturer"
+    - "Trainer"
+    - "Guest Lecturer"
+    # -- Consulting & change --
+    - "Innovation Consultant"
+    - "Transformation Consultant"
+    - "Agile Consultant"
+    - "Verandermanager"
+    - "Organisatieontwikkeling"
+    - "Change Agent"
+    # -- Dutch keywords --
+    - "Innovatie"
+    - "Leerlab"
+    - "Kennisoverdracht"
+    - "Programmamanager"
+    - "Projectleider"
+    - "Digitale Transformatie"
+    - "Scrum"
+    - "Agile"
+    - "Coach"
+    - "Adviseur Digitalisering"
+  negative:
+    - "Junior"
+    - "Intern"
+    - "Stagiaire"
+    - ".NET Developer"
+    - "Java Developer"
+    - "iOS"
+    - "Android"
+    - "PHP"
+    - "Ruby"
+    - "Embedded"
+    - "Firmware"
+    - "FPGA"
+    - "ASIC"
+    - "COBOL"
+    - "Mainframe"
+    - "Salesforce Admin"
+    - "SAP Consultant"
+    - "Data Engineer"
+    - "Backend Engineer"
+    - "Frontend Engineer"
+    - "Full Stack Developer"
+    - "DevOps Engineer"
+    - "QA Engineer"
+  seniority_boost:
+    - "Senior"
+    - "Lead"
+    - "Head"
+    - "Director"
+    - "Principal"
+    - "Staff"
+    - "Manager"
+
+search_queries:
+
+  # -- Netherlands job boards --
+
+  - name: LinkedIn NL — AI Innovation Lab
+    query: 'site:linkedin.com/jobs "Innovation Lab" OR "AI Lab" OR "Learning Innovation" Netherlands OR Amsterdam OR remote'
+    enabled: true
+
+  - name: LinkedIn NL — Applied AI Program Manager
+    query: 'site:linkedin.com/jobs "Applied AI" OR "AI Transformation" OR "AI Program Manager" Netherlands OR Amsterdam OR remote EU'
+    enabled: true
+
+  - name: LinkedIn NL — Digital Transformation Lead
+    query: 'site:linkedin.com/jobs "Digital Transformation" OR "AI Adoption" OR "AI Enablement" Lead OR Manager Netherlands remote'
+    enabled: true
+
+  - name: Indeed NL — Innovation Manager
+    query: 'site:indeed.com "Innovation Manager" OR "Innovation Lab" OR "R&D Lead" Netherlands OR Amsterdam OR remote'
+    enabled: true
+
+  - name: Werken.nl — Innovatie
+    query: 'site:werken.nl "Innovatie" OR "AI" OR "Programmamanager" OR "Projectleider AI"'
+    enabled: true
+
+  - name: Nationale Vacaturebank — AI Innovation
+    query: 'site:nationalevacaturebank.nl "AI" OR "Innovatie" OR "Leren" "Lead" OR "Manager" Netherlands'
+    enabled: true
+
+  # -- European boards --
+
+  - name: Remotive — AI Transformation EU
+    query: 'site:remotive.com "AI Transformation" OR "Innovation Lab" OR "Learning Innovation" OR "Applied AI" Europe'
+    enabled: true
+
+  - name: WeWorkRemotely — AI Innovation Lead
+    query: 'site:weworkremotely.com "AI" "Innovation" OR "Learning" OR "Lab" OR "Transformation" Lead OR Manager'
+    enabled: true
+
+  - name: Himalayas — Applied AI EU
+    query: 'site:himalayas.app "Applied AI" OR "AI Innovation" OR "Transformation" OR "Innovation Lab" Europe'
+    enabled: true
+
+  - name: YC Jobs — Applied AI Education
+    query: 'site:workatastartup.com "Applied AI" OR "Innovation Lab" OR "AI Education" OR "Learning" remote Europe'
+    enabled: true
+
+  - name: HN Who's Hiring — EU AI Innovation
+    query: 'site:news.ycombinator.com "AI" "Innovation" OR "Education" OR "Lab" OR "Learning" remote Europe Netherlands'
+    enabled: true
+
+  # -- Sustainability / Greentech --
+
+  - name: Climatejobs — Innovation Lead
+    query: 'site:climatejobs.nl OR site:climatebase.org "Innovation" OR "AI" OR "Program Manager" remote Netherlands'
+    enabled: true
+
+  - name: Green Jobs — AI Sustainability EU
+    query: '"AI" "Sustainability" OR "Greentech" OR "ESG" "Lead" OR "Manager" OR "Innovation" remote Europe'
+    enabled: true
+
+  # -- DACH market --
+
+  - name: DACH — AI Innovation Lab
+    query: '"Innovation Lab" OR "KI Lab" OR "AI Lab" "Lead" OR "Manager" Germany OR Austria OR Switzerland OR remote DACH'
+    enabled: true
+
+  - name: DACH — AI Transformation
+    query: '"KI Transformation" OR "AI Transformation" OR "Digitale Transformation" Lead OR Manager remote Germany'
+    enabled: true
+
+  - name: Greenhouse DACH — Innovation
+    query: 'site:job-boards.greenhouse.io "Innovation Lab" OR "Applied AI" OR "AI Program Manager" remote EU'
+    enabled: true
+
+  - name: Ashby EU — AI Program
+    query: 'site:jobs.ashbyhq.com "AI" OR "Innovation" "Program" OR "Lead" OR "Manager" Germany OR Netherlands OR remote Europe'
+    enabled: true
+
+  # -- Education / EdTech --
+
+  - name: EdTech — Learning Innovation
+    query: '"Learning Innovation" OR "AI Education" OR "EdTech" Lead OR Manager remote Europe Netherlands'
+    enabled: true
+
+  - name: Universities NL — AI Lab
+    query: '"Innovation Lab" OR "Applied Research" OR "Lectoraat" AI Netherlands universiteit OR hogeschool'
+    enabled: true
+
+tracked_companies:
+
+  # -- Netherlands AI & Innovation --
+
+  - name: SURF
+    careers_url: https://www.surf.nl/over-surf/werken-bij-surf
+    scan_method: websearch
+    scan_query: '"SURF" "AI" OR "Innovatie" OR "Lab" careers'
+    notes: "Dutch national IT infrastructure for research and education. Innovation and AI roles."
+    enabled: true
+
+  - name: TNO
+    careers_url: https://www.tno.nl/en/about-tno/jobs
+    scan_method: websearch
+    scan_query: 'site:tno.nl "AI" OR "Innovation" OR "Research" Lead OR Manager careers'
+    notes: "Netherlands applied research org. AI, sustainability, supply chain innovation roles."
+    enabled: true
+
+  - name: Deltares
+    careers_url: https://www.deltares.nl/en/careers
+    scan_method: websearch
+    scan_query: '"Deltares" "AI" OR "Innovation" OR "Digital" careers'
+    notes: "Delft. Water and subsurface knowledge institute. Digital innovation roles."
+    enabled: true
+
+  - name: Adyen
+    careers_url: https://job-boards.greenhouse.io/adyen
+    api: https://boards-api.greenhouse.io/v1/boards/adyen/jobs
+    notes: "Amsterdam. Fintech unicorn. Technical Program Manager and innovation roles."
+    enabled: true
+
+  - name: Booking.com
+    careers_url: https://jobs.booking.com
+    scan_method: websearch
+    scan_query: 'site:jobs.booking.com "AI" OR "Innovation" OR "Transformation" "Lead" OR "Manager" OR "Program"'
+    notes: "Amsterdam. Travel tech. Large AI and transformation org."
+    enabled: true
+
+  - name: bol.com
+    careers_url: https://careers.bol.com
+    scan_method: websearch
+    scan_query: 'site:careers.bol.com "AI" OR "Innovation" OR "Data" Lead OR Manager OR Program'
+    notes: "Utrecht. Netherlands largest e-commerce. AI and innovation program roles."
+    enabled: true
+
+  - name: Miro
+    careers_url: https://job-boards.greenhouse.io/miro
+    api: https://boards-api.greenhouse.io/v1/boards/miro/jobs
+    notes: "Amsterdam. Collaboration platform. Innovation and AI tooling roles."
+    enabled: true
+
+  # -- Sustainability / Greentech EU --
+
+  - name: Viridis Green-Tech AG
+    careers_url: https://viridis.info/careers
+    scan_method: websearch
+    scan_query: '"viridis" careers "AI" OR "Innovation" OR "Blockchain" OR "Sustainability"'
+    notes: "Munich. Sustainability blockchain. Christiaan already engaged as Innovation Architect."
+    enabled: true
+
+  - name: Clarity AI
+    careers_url: https://jobs.lever.co/clarity-ai
+    notes: "Madrid/Remote. Sustainability analytics with AI. ESG focus."
+    enabled: true
+
+  - name: Watershed
+    careers_url: https://jobs.ashbyhq.com/watershed
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/watershed'
+    notes: "SF/Remote EU. Climate software for enterprise. AI + ESG roles."
+    enabled: true
+
+  - name: Persefoni
+    careers_url: https://job-boards.greenhouse.io/persefoni
+    api: https://boards-api.greenhouse.io/v1/boards/persefoni/jobs
+    notes: "Remote. Carbon management SaaS. CSRD/ESG tooling. Relevant to Christiaan's VCH work."
+    enabled: true
+
+  # -- AI Transformation / Enterprise AI --
+
+  - name: Cognigy
+    careers_url: https://careers.cognigy.com
+    scan_method: websearch
+    scan_query: '"cognigy" careers "AI" OR "Solutions" OR "Transformation" OR "Innovation"'
+    notes: "Dusseldorf EMEA. Conversational AI enterprise. Strong DACH + EU presence."
+    enabled: true
+
+  - name: Celonis
+    careers_url: https://job-boards.greenhouse.io/celonis
+    api: https://boards-api.greenhouse.io/v1/boards/celonis/jobs
+    notes: "Munich. Process intelligence and applied AI. Program and architect roles."
+    enabled: true
+
+  - name: DeepL
+    careers_url: https://jobs.ashbyhq.com/DeepL
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/DeepL'
+    notes: "Cologne. Translation and language AI. EU hiring."
+    enabled: true
+
+  - name: Aleph Alpha
+    careers_url: https://jobs.ashbyhq.com/AlephAlpha
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/AlephAlpha'
+    notes: "Heidelberg. Sovereign European LLM. AI adoption and enterprise roles."
+    enabled: true
+
+  - name: Mistral AI
+    careers_url: https://jobs.lever.co/mistral
+    notes: "Paris. European AI lab. Applied AI and technical program roles."
+    enabled: true
+
+  - name: Contentful
+    careers_url: https://job-boards.greenhouse.io/contentful
+    api: https://boards-api.greenhouse.io/v1/boards/contentful/jobs
+    notes: "Berlin. Headless CMS, AI content workflows. Technical PM roles."
+    enabled: true
+
+  # -- Open source AI tools Christiaan runs --
+
+  - name: n8n
+    careers_url: https://jobs.ashbyhq.com/n8n
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/n8n'
+    notes: "Berlin + remote EU. Workflow automation. Christiaan runs n8n in AI stack."
+    enabled: true
+
+  - name: Supabase
+    careers_url: https://jobs.ashbyhq.com/supabase
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/supabase'
+    notes: "Remote-first. Christiaan uses Supabase in AI sandbox."
+    enabled: true
+
+  - name: Langfuse
+    careers_url: https://langfuse.com/careers
+    scan_method: websearch
+    scan_query: '"langfuse" careers "engineer" OR "solutions" OR "education" OR "program"'
+    notes: "Berlin. LLMOps / observability. Small team, EU-friendly."
+    enabled: true
+
+  # -- EdTech & Learning platforms --
+
+  - name: Kahoot
+    careers_url: https://job-boards.greenhouse.io/kahoot
+    api: https://boards-api.greenhouse.io/v1/boards/kahoot/jobs
+    notes: "Oslo/Remote. Game-based learning platform. Directly aligned with Christiaan's simulation work."
+    enabled: true
+
+  - name: Synthesia
+    careers_url: https://jobs.ashbyhq.com/synthesia
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/synthesia'
+    notes: "London/Remote. AI video for enterprise learning and training. L&D innovation roles."
+    enabled: true
+
+  - name: Coursera
+    careers_url: https://job-boards.greenhouse.io/coursera
+    api: https://boards-api.greenhouse.io/v1/boards/coursera/jobs
+    notes: "Remote. Online learning platform. Curriculum, learning design, AI in education."
+    enabled: true
+
+  # -- Supply chain & logistics tech --
+
+  - name: Forto
+    careers_url: https://jobs.lever.co/forto
+    notes: "Berlin. Digital freight forwarder. Supply chain innovation roles."
+    enabled: true
+
+  - name: Flexport
+    careers_url: https://job-boards.greenhouse.io/flexport
+    api: https://boards-api.greenhouse.io/v1/boards/flexport/jobs
+    notes: "SF/Amsterdam. Supply chain platform. AI and program roles."
+    enabled: true
+
+  - name: project44
+    careers_url: https://job-boards.greenhouse.io/project44
+    api: https://boards-api.greenhouse.io/v1/boards/project44/jobs
+    notes: "Remote EU. Supply chain visibility platform."
+    enabled: true
+
+  - name: Glacis AI
+    careers_url: https://jobs.ashbyhq.com/glacis-ai
+    notes: "Remote. AI agents for supply chain and logistics workflows."
+    enabled: true
+
+  # -- AI Labs & platforms --
+
+  - name: Anthropic
+    careers_url: https://job-boards.greenhouse.io/anthropic
+    api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
+    notes: "Remote EU possible. Applied AI, education, program roles."
+    enabled: true
+
+  - name: Hugging Face
+    careers_url: https://apply.workable.com/huggingface/
+    scan_method: websearch
+    scan_query: 'site:apply.workable.com/huggingface'
+    notes: "Paris/Remote. ML hub. Education, developer relations, AI program roles."
+    enabled: true
+
+  - name: Cohere
+    careers_url: https://jobs.ashbyhq.com/cohere
+    notes: "Remote EU. Enterprise LLM. AI solutions and program roles."
+    enabled: true
+
+  - name: Zapier
+    careers_url: https://jobs.ashbyhq.com/zapier
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/zapier'
+    notes: "Remote-first. Automation platform. Program and solutions roles."
+    enabled: true
+
+  # -- NL Agile & IT consultancies --
+
+  - name: Xebia
+    careers_url: https://job-boards.greenhouse.io/xebia
+    api: https://boards-api.greenhouse.io/v1/boards/xebia/jobs
+    notes: "Amsterdam. NL agile and tech consultancy. Scrum Masters, Agile Coaches, technical trainers."
+    enabled: true
+
+  - name: Thoughtworks
+    careers_url: https://job-boards.greenhouse.io/thoughtworks
+    api: https://boards-api.greenhouse.io/v1/boards/thoughtworks/jobs
+    notes: "Remote EU. Global agile consultancy. Strong Scrum/XP culture, delivery leads, coaches."
+    enabled: true
+
+  - name: Prowareness
+    careers_url: https://www.prowareness.nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:prowareness.nl vacatures "Scrum Master" OR "Agile Coach" OR "trainer"'
+    notes: "Den Haag. Agile transformation consultancy. Posts Scrum Masters and Agile Coaches."
+    enabled: true
+
+  - name: Incentro
+    careers_url: https://www.incentro.com/nl-NL/vacatures
+    scan_method: websearch
+    scan_query: 'site:incentro.com vacatures "Scrum Master" OR "Agile" OR "Program" OR "Innovation"'
+    notes: "Utrecht. Agile IT consultancy. Scrum Masters, PMs, innovation roles."
+    enabled: true
+
+  - name: Sogeti Netherlands
+    careers_url: https://www.sogeti.nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:sogeti.nl vacatures "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "AI"'
+    notes: "NL. Capgemini subsidiary. Consistently posts Scrum Masters, Agile Coaches, PMs."
+    enabled: true
+
+  - name: Cegeka
+    careers_url: https://www.cegeka.com/nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:cegeka.com vacatures Netherlands "Scrum Master" OR "Agile" OR "Innovation" OR "AI"'
+    notes: "Belgian/NL IT consultancy. Mid-size, posts Scrum Masters and transformation roles."
+    enabled: true
+
+  - name: Conclusion
+    careers_url: https://www.conclusion.nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:conclusion.nl vacatures "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "AI" OR "Innovatie"'
+    notes: "Amsterdam. NL IT consultancy group. Active hiring across agile and innovation."
+    enabled: true
+
+  - name: Atos Netherlands
+    careers_url: https://atos.net/nl/nederland/werken-bij-atos
+    scan_method: websearch
+    scan_query: '"atos" netherlands vacatures "Scrum Master" OR "Agile" OR "Digital Transformation" OR "Program Manager"'
+    notes: "French IT, strong NL operations. Scrum Masters, transformation, program roles."
+    enabled: true
+
+  # -- NL Hogescholen & Education --
+
+  - name: Fontys Hogeschool
+    careers_url: https://www.fontys.nl/Over-Fontys/Werken-bij-Fontys.htm
+    scan_method: websearch
+    scan_query: 'site:fontys.nl werken-bij "docent" OR "lector" OR "innovatie" OR "AI" OR "onderzoeker"'
+    notes: "Eindhoven. Large NL hogeschool. Docent, lector, innovation lab roles."
+    enabled: true
+
+  - name: HAN Hogeschool
+    careers_url: https://www.han.nl/over-han/werken-bij-han
+    scan_method: websearch
+    scan_query: 'site:han.nl werken-bij "docent" OR "lector" OR "AI" OR "innovatie" OR "onderzoeker"'
+    notes: "Arnhem/Nijmegen. Hogeschool. Docent and research innovation roles."
+    enabled: true
+
+  - name: Avans Hogeschool
+    careers_url: https://www.avans.nl/over-avans/werken-bij-avans
+    scan_method: websearch
+    scan_query: 'site:avans.nl werken-bij "docent" OR "AI" OR "innovatie" OR "lector" OR "onderzoeker"'
+    notes: "Breda/Den Bosch. Hogeschool. Education and innovation roles."
+    enabled: true
+
+  - name: Saxion
+    careers_url: https://www.saxion.nl/over-saxion/werken-bij-saxion
+    scan_method: websearch
+    scan_query: 'site:saxion.nl werken-bij "docent" OR "AI" OR "innovatie" OR "lector"'
+    notes: "Deventer/Enschede. Hogeschool. Docent and lab roles."
+    enabled: true
+
+  - name: NHL Stenden
+    careers_url: https://www.nhlstenden.com/over-nhl-stenden/werken-bij
+    scan_method: websearch
+    scan_query: 'site:nhlstenden.com werken-bij "docent" OR "AI" OR "innovatie" OR "lector"'
+    notes: "Leeuwarden/Emmen/Groningen. Hogeschool. Docent and research roles."
+    enabled: true
+
+  # -- NL Corporate innovation --
+
+  - name: ING
+    careers_url: https://www.ing.jobs/netherlands
+    scan_method: websearch
+    scan_query: 'site:ing.jobs netherlands "AI" OR "Agile Coach" OR "Scrum Master" OR "Innovation" OR "Digital Transformation"'
+    notes: "Amsterdam. NL bank with large tech and AI org. Innovation, Agile, AI roles."
+    enabled: true
+
+  - name: Rabobank
+    careers_url: https://www.werkenbijrabobank.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijrabobank.nl "AI" OR "Agile Coach" OR "Scrum Master" OR "Innovatie" OR "Digital"'
+    notes: "Utrecht. NL cooperative bank. AI and agile transformation roles."
+    enabled: true
+
+  - name: KPN
+    careers_url: https://www.werkenbijkpn.com
+    scan_method: websearch
+    scan_query: 'site:werkenbijkpn.com "AI" OR "Scrum Master" OR "Agile" OR "Innovatie" OR "Program Manager"'
+    notes: "Den Haag. NL telecom. Digital transformation and AI roles."
+    enabled: true
+
+  - name: PostNL
+    careers_url: https://www.werkenbijpostnl.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijpostnl.nl "AI" OR "Agile" OR "Scrum Master" OR "Innovatie" OR "Digital Transformation"'
+    notes: "Den Haag. NL postal/logistics. Digital transformation and AI roles."
+    enabled: true
+
+  - name: NS Nederlandse Spoorwegen
+    careers_url: https://www.ns.nl/over-ns/werken-bij-ns
+    scan_method: websearch
+    scan_query: '"werken bij NS" "AI" OR "Scrum Master" OR "Agile Coach" OR "Innovatie" OR "Program Manager"'
+    notes: "Utrecht. National rail. Digital transformation and innovation lab roles."
+    enabled: true
+
+  - name: Atlassian
+    careers_url: https://job-boards.greenhouse.io/atlassian
+    api: https://boards-api.greenhouse.io/v1/boards/atlassian/jobs
+    notes: "Remote-first. Agile tooling company. Program management, team coaching, product roles."
+    enabled: true
+
+  # -- NL Innovation & Research --
+
+  - name: Netherlands eScience Center
+    careers_url: https://www.esciencecenter.nl/careers
+    scan_method: websearch
+    scan_query: 'site:esciencecenter.nl careers "AI" OR "innovation" OR "program" OR "research engineer"'
+    notes: "Amsterdam. National center for research software and AI. Innovation and program roles."
+    enabled: true
+
+  - name: Gemeente Amsterdam
+    careers_url: https://www.amsterdam.nl/bestuur-organisatie/volg-de-gemeente/werken-bij-amsterdam
+    scan_method: websearch
+    scan_query: '"werken bij amsterdam" "AI" OR "Scrum Master" OR "Agile" OR "Innovatie" OR "Digitalisering" OR "Program Manager"'
+    notes: "Amsterdam city government. Large digital innovation and AI program. Transformation roles."
+    enabled: true
+
+  - name: Rijksdienst voor Ondernemend Nederland (RVO)
+    careers_url: https://www.rvo.nl/over-rvo/werken-bij-rvo
+    scan_method: websearch
+    scan_query: '"werken bij RVO" "AI" OR "Innovatie" OR "Digitalisering" OR "Program Manager" OR "Scrum"'
+    notes: "Den Haag. NL govt innovation agency. Innovation and digitalization roles."
+    enabled: true
+
+  # -- NL IT consultancies & system integrators --
+
+  - name: Ordina
+    careers_url: https://www.ordina.com/vacatures
+    scan_method: websearch
+    scan_query: 'site:ordina.com vacatures "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "AI" OR "Innovatie"'
+    notes: "NL. Large IT consultancy. Active Scrum Master and Agile Coach hiring."
+    enabled: true
+
+  - name: Sopra Steria Nederland
+    careers_url: https://www.soprasteria.nl/carriere/vacatures
+    scan_method: websearch
+    scan_query: 'site:soprasteria.nl vacatures "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "AI" OR "Innovatie"'
+    notes: "NL. IT consulting. Active Scrum/Agile hiring confirmed in search results."
+    enabled: true
+
+  - name: CGI Nederland
+    careers_url: https://www.cgi.com/nl/nl/vacatures
+    scan_method: websearch
+    scan_query: '"CGI" netherlands vacatures "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "AI"'
+    notes: "NL. Large IT consultancy. Regular Scrum Master and Agile posts."
+    enabled: true
+
+  - name: Capgemini Nederland
+    careers_url: https://www.capgemini.com/nl-nl/carriere/kom-bij-ons-werken/vacatures
+    scan_method: websearch
+    scan_query: 'site:capgemini.com nl-nl "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "AI" OR "Innovatie"'
+    notes: "NL. Large IT consultancy. Already applied Engagement Manager — scan for other roles."
+    enabled: true
+
+  - name: Accenture Nederland
+    careers_url: https://www.accenture.com/nl-nl/careers
+    scan_method: websearch
+    scan_query: '"accenture" nederland vacatures "Scrum Master" OR "Agile Coach" OR "AI" OR "Innovation" OR "Program Manager"'
+    notes: "NL. Global consulting. AI transformation and Agile roles."
+    enabled: true
+
+  - name: IBM Nederland
+    careers_url: https://www.ibm.com/nl-nl/employment
+    scan_method: websearch
+    scan_query: '"IBM" nederland vacatures "AI" OR "Agile" OR "Program Manager" OR "Innovation" OR "Transformation"'
+    notes: "NL. IBM consulting and AI. Innovation and transformation roles."
+    enabled: true
+
+  - name: CIMSOLUTIONS
+    careers_url: https://www.cimsolutions.nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:cimsolutions.nl vacatures "Scrum Master" OR "Agile Coach" OR "Agile Consultant"'
+    notes: "NL. Agile/IT consultancy. Confirmed Scrum Master / Agile Coach postings."
+    enabled: true
+
+  - name: Info Support
+    careers_url: https://www.infosupport.com/vacatures
+    scan_method: websearch
+    scan_query: 'site:infosupport.com vacatures "Scrum Master" OR "Agile" OR "AI" OR "Program Manager" OR "Innovatie"'
+    notes: "Veenendaal. NL software and IT. Mid-size, strong agile culture."
+    enabled: true
+
+  - name: Topicus
+    careers_url: https://www.topicus.nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:topicus.nl vacatures "Scrum Master" OR "Agile" OR "AI" OR "Program Manager" OR "Innovatie"'
+    notes: "Deventer. NL software (education, health, finance). Agile-heavy culture."
+    enabled: true
+
+  - name: iO Digital
+    careers_url: https://www.iodigital.com/nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:iodigital.com vacatures "Scrum Master" OR "Agile Coach" OR "AI" OR "Program Manager" OR "Innovatie"'
+    notes: "NL/BE digital agency. Creative-tech, Agile, digital transformation."
+    enabled: true
+
+  - name: Centric
+    careers_url: https://www.centric.eu/nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:centric.eu nl vacatures "Scrum Master" OR "Agile" OR "AI" OR "Program Manager"'
+    notes: "Gouda. NL IT company. Education, healthcare, government software."
+    enabled: true
+
+  - name: AFAS Software
+    careers_url: https://www.afas.nl/over-afas/werken-bij-afas
+    scan_method: websearch
+    scan_query: 'site:afas.nl werken-bij "Scrum Master" OR "Agile" OR "Program Manager" OR "AI" OR "Innovatie"'
+    notes: "Leusden. NL ERP software. Mid-size, strong culture, agile teams."
+    enabled: true
+
+  - name: Mendix
+    careers_url: https://job-boards.greenhouse.io/mendix
+    api: https://boards-api.greenhouse.io/v1/boards/mendix/jobs
+    notes: "Rotterdam/Remote. Low-code platform. Technical PM, innovation, and adoption roles."
+    enabled: true
+
+  - name: Exact
+    careers_url: https://www.exact.com/nl/over-exact/werken-bij-exact
+    scan_method: websearch
+    scan_query: 'site:exact.com nl werken-bij "Scrum Master" OR "Agile" OR "AI" OR "Program Manager" OR "Innovation"'
+    notes: "Delft. NL accounting/ERP SaaS. Agile and product roles."
+    enabled: true
+
+  - name: Visma
+    careers_url: https://www.visma.com/jobs
+    scan_method: websearch
+    scan_query: 'site:visma.com jobs netherlands "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "AI" OR "Innovation"'
+    notes: "Norwegian/EU SaaS group, large NL presence. Active Agile and PM hiring."
+    enabled: true
+
+  - name: Schuberg Philis
+    careers_url: https://www.schubergphilis.com/careers
+    scan_method: websearch
+    scan_query: 'site:schubergphilis.com careers "Scrum Master" OR "Agile" OR "AI" OR "Program Manager" OR "Innovation"'
+    notes: "Amstelveen. Mission-critical IT. Strong engineering culture, Agile."
+    enabled: true
+
+  # -- Open source / tech companies --
+
+  - name: Red Hat
+    careers_url: https://job-boards.greenhouse.io/redhat
+    api: https://boards-api.greenhouse.io/v1/boards/redhat/jobs
+    notes: "Remote EU. Open source leader. Technical PM, training, adoption, consulting roles."
+    enabled: true
+
+  - name: Canonical
+    careers_url: https://job-boards.greenhouse.io/canonical
+    api: https://boards-api.greenhouse.io/v1/boards/canonical/jobs
+    notes: "Remote-first. Ubuntu/Linux. Engineering management, education, program roles."
+    enabled: true
+
+  - name: SUSE
+    careers_url: https://jobs.suse.com
+    scan_method: websearch
+    scan_query: 'site:jobs.suse.com "Program Manager" OR "AI" OR "Innovation" OR "Agile" Europe'
+    notes: "Remote EU. Open source Linux/cloud. Technical PM and partner program roles."
+    enabled: true
+
+  - name: Nextcloud
+    careers_url: https://nextcloud.com/jobs
+    scan_method: websearch
+    scan_query: 'site:nextcloud.com jobs "Program Manager" OR "AI" OR "Agile" OR "Innovation" OR "Education"'
+    notes: "Stuttgart/Remote. Open source file collaboration. Small team, EU-friendly."
+    enabled: true
+
+  # -- NL Energy & infrastructure --
+
+  - name: Alliander
+    careers_url: https://www.werkenbijliander.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijliander.nl "Scrum Master" OR "Agile Coach" OR "AI" OR "Innovatie" OR "Program Manager" OR "Digitalisering"'
+    notes: "Arnhem. NL energy grid operator. Active digital transformation. AI and Agile roles."
+    enabled: true
+
+  - name: Enexis
+    careers_url: https://www.enexis.nl/over-enexis/werken-bij-enexis
+    scan_method: websearch
+    scan_query: 'site:enexis.nl werken-bij "Scrum Master" OR "Agile" OR "AI" OR "Innovatie" OR "Program Manager"'
+    notes: "Den Bosch. NL energy grid operator. Digital and AI transformation roles."
+    enabled: true
+
+  - name: ProRail
+    careers_url: https://www.werkenvoornederland.nl/organisaties/prorail
+    scan_method: websearch
+    scan_query: '"ProRail" vacatures "Scrum Master" OR "Agile Coach" OR "AI" OR "Innovatie" OR "Program Manager"'
+    notes: "Utrecht. NL rail infrastructure. Digital transformation and Agile roles."
+    enabled: true
+
+  - name: Port of Rotterdam Authority
+    careers_url: https://www.portofrotterdam.com/nl/over-ons/werken-bij-het-havenbedrijf
+    scan_method: websearch
+    scan_query: '"Port of Rotterdam" OR "Havenbedrijf Rotterdam" vacatures "AI" OR "Innovatie" OR "Digitalisering" OR "Program Manager"'
+    notes: "Rotterdam. Major innovation employer. AI, supply chain, and digital roles."
+    enabled: true
+
+  - name: AMS-IX
+    careers_url: https://www.ams-ix.net/ams/about-ams-ix/jobs
+    scan_method: websearch
+    scan_query: '"AMS-IX" vacatures "AI" OR "Innovatie" OR "Program Manager" OR "Agile"'
+    notes: "Amsterdam. Internet exchange. Technical and innovation roles."
+    enabled: true
+
+  # -- NL Retail & logistics --
+
+  - name: Picnic
+    careers_url: https://jobs.ashbyhq.com/picnic
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/picnic'
+    notes: "Amsterdam. Grocery delivery tech. AI, product, and operations innovation."
+    enabled: true
+
+  - name: Coolblue
+    careers_url: https://www.coolblue.nl/werken-bij-coolblue
+    scan_method: websearch
+    scan_query: 'site:coolblue.nl werken-bij "Scrum Master" OR "Agile Coach" OR "AI" OR "Program Manager" OR "Innovatie"'
+    notes: "Rotterdam. NL/BE e-commerce. Strong engineering and Agile culture."
+    enabled: true
+
+  - name: TomTom
+    careers_url: https://jobs.tomtom.com
+    scan_method: websearch
+    scan_query: 'site:jobs.tomtom.com "AI" OR "Program Manager" OR "Agile" OR "Innovation" OR "Scrum Master"'
+    notes: "Amsterdam. Navigation/AI. Technical PM and AI adoption roles."
+    enabled: true
+
+  # -- NL Civic tech & research --
+
+  - name: Waag Futurelab
+    careers_url: https://waag.org/nl/jobs
+    scan_method: websearch
+    scan_query: 'site:waag.org jobs "AI" OR "Innovatie" OR "Program" OR "Research" OR "Education"'
+    notes: "Amsterdam. Civic tech and digital rights. Innovation and research roles."
+    enabled: true
+
+  - name: Open State Foundation
+    careers_url: https://openstate.eu/nl/jobs
+    scan_method: websearch
+    scan_query: 'site:openstate.eu jobs "AI" OR "Open Data" OR "Program" OR "Innovatie"'
+    notes: "Amsterdam. Open data / civic tech. Small, mission-driven."
+    enabled: true
+
+  - name: SIDN
+    careers_url: https://www.sidn.nl/over-sidn/werken-bij-sidn
+    scan_method: websearch
+    scan_query: 'site:sidn.nl werken-bij "AI" OR "Innovatie" OR "Program Manager" OR "Digitalisering"'
+    notes: "Arnhem. .nl domain registry and internet innovation. Technology and innovation roles."
+    enabled: true
+
+  - name: NLnet Foundation
+    careers_url: https://nlnet.nl/vacancies
+    scan_method: websearch
+    scan_query: 'site:nlnet.nl "AI" OR "Innovation" OR "Program" OR "Education" OR "Research"'
+    notes: "Amsterdam. Internet R&D foundation. Small but strategic, open source and research focus."
+    enabled: true
+
+  - name: Nedap
+    careers_url: https://www.nedap.com/nl/werken-bij
+    scan_method: websearch
+    scan_query: 'site:nedap.com nl werken-bij "AI" OR "Innovatie" OR "Scrum Master" OR "Program Manager" OR "Agile"'
+    notes: "Groenlo. NL tech company (healthcare, livestock, security). Innovation and agile roles."
+    enabled: true
+
+  # -- NL Cybersecurity --
+
+  - name: Fox-IT
+    careers_url: https://www.fox-it.com/nl/werken-bij
+    scan_method: websearch
+    scan_query: 'site:fox-it.com werken-bij "AI" OR "Innovatie" OR "Program Manager" OR "Scrum" OR "Transformation"'
+    notes: "Delft. NL cybersecurity leader. Innovation and technical program roles."
+    enabled: true
+
+  - name: Northwave
+    careers_url: https://northwave-cybersecurity.com/over-northwave/vacatures
+    scan_method: websearch
+    scan_query: 'site:northwave-cybersecurity.com vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager"'
+    notes: "Utrecht. NL cybersecurity. Program and technical advisory roles."
+    enabled: true
+
+  # -- NL Government & public sector --
+
+  - name: Gemeente Rotterdam
+    careers_url: https://www.rotterdam.nl/werken-bij-gemeente-rotterdam
+    scan_method: websearch
+    scan_query: '"werken bij Gemeente Rotterdam" "AI" OR "Scrum Master" OR "Agile Coach" OR "Innovatie" OR "Digitalisering" OR "Program Manager"'
+    notes: "Rotterdam. City government. Active digital transformation team."
+    enabled: true
+
+  - name: DUO Dienst Uitvoering Onderwijs
+    careers_url: https://www.werkenvoornederland.nl/organisaties/duo
+    scan_method: websearch
+    scan_query: '"DUO" vacatures "Scrum Master" OR "Agile Coach" OR "AI" OR "Innovatie" OR "Program Manager"'
+    notes: "Groningen. Education execution agency. Confirmed Agile Coach openings."
+    enabled: true
+
+  - name: KVK Kamer van Koophandel
+    careers_url: https://www.werkenvoornederland.nl/organisaties/kvk
+    scan_method: websearch
+    scan_query: '"KVK" OR "Kamer van Koophandel" vacatures "Scrum Master" OR "Agile Coach" OR "AI" OR "Program Manager"'
+    notes: "Confirmed Senior Scrum Master opening. PSM I/II required."
+    enabled: true
+
+  # -- NL Telecom & semiconductors --
+
+  - name: VodafoneZiggo
+    careers_url: https://www.werkenbijvodafoneziggo.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijvodafoneziggo.nl "AI" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Innovatie"'
+    notes: "Amsterdam. NL telecom. Digital transformation and AI roles."
+    enabled: true
+
+  - name: NXP Semiconductors
+    careers_url: https://www.nxp.com/company/about-nxp/careers
+    scan_method: websearch
+    scan_query: '"NXP" netherlands vacatures "AI" OR "Program Manager" OR "Innovation" OR "Agile"'
+    notes: "Eindhoven. Semiconductors. Technical PM and innovation roles."
+    enabled: true
+
+  - name: Siemens Nederland
+    careers_url: https://jobs.siemens.com/jobs?location=Netherlands
+    scan_method: websearch
+    scan_query: '"Siemens" netherlands vacatures "AI" OR "Scrum Master" OR "Program Manager" OR "Innovation" OR "Agile"'
+    notes: "Den Haag. Technology and automation. Digital and AI program roles."
+    enabled: true
+
+  - name: Fujitsu Nederland
+    careers_url: https://www.fujitsu.com/nl/about/careers
+    scan_method: websearch
+    scan_query: '"Fujitsu" nederland vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovatie"'
+    notes: "NL. IT services and AI. Transformation and program roles."
+    enabled: true
+
+  # -- NL Search queries for Dutch job boards --
+
+  - name: Werkenbijhogescholen.nl — Docent AI
+    careers_url: https://www.werkenbijhogescholen.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijhogescholen.nl "AI" OR "Innovatie" OR "Agile" OR "docent" OR "lector" 2026'
+    notes: "Aggregator for all NL hogeschool vacancies. Key for education roles."
+    enabled: true
+
+  - name: Werkenvoornederland.nl — Agile / AI / Innovatie
+    careers_url: https://www.werkenvoornederland.nl
+    scan_method: websearch
+    scan_query: 'site:werkenvoornederland.nl "Scrum Master" OR "Agile Coach" OR "AI" OR "Innovatie" OR "Program Manager" 2026'
+    notes: "Aggregator for all NL government/public sector vacancies."
+    enabled: true
+
+  # -- NL Banking & Financial Services --
+
+  - name: ABN AMRO
+    careers_url: https://www.abnamro.com/nl/over-abnamro/werken-bij-abnamro
+    scan_method: websearch
+    scan_query: '"ABN AMRO" vacatures "AI" OR "Scrum Master" OR "Agile Coach" OR "Innovation" OR "Program Manager" OR "Digitalisering"'
+    notes: "Amsterdam. NL bank with large tech org. AI, agile, digital transformation roles."
+    enabled: true
+
+  - name: de Volksbank
+    careers_url: https://www.werkenbijdevolksbank.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijdevolksbank.nl "AI" OR "Scrum Master" OR "Agile" OR "Innovatie" OR "Program Manager"'
+    notes: "Utrecht. NL bank (SNS, ASN, RegioBank). Mid-size, strong purpose-driven culture."
+    enabled: true
+
+  - name: Triodos Bank
+    careers_url: https://www.triodos.nl/over-triodos/werken-bij-triodos
+    scan_method: websearch
+    scan_query: '"Triodos Bank" vacatures "AI" OR "Agile" OR "Innovatie" OR "Program Manager" OR "Scrum"'
+    notes: "Zeist. Ethical bank. Sustainability and digital transformation roles."
+    enabled: true
+
+  - name: Achmea
+    careers_url: https://www.werkenbijachmea.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijachmea.nl "AI" OR "Scrum Master" OR "Agile Coach" OR "Innovatie" OR "Program Manager" OR "Digital"'
+    notes: "Zeist. NL insurer (Centraal Beheer). Large digital transformation programme."
+    enabled: true
+
+  - name: ASR Nederland
+    careers_url: https://www.werkenbijasrnederland.nl
+    scan_method: websearch
+    scan_query: '"ASR Nederland" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Innovatie" OR "Program Manager"'
+    notes: "Utrecht. NL insurer. Digital and AI transformation roles."
+    enabled: true
+
+  - name: NN Group
+    careers_url: https://careers.nn-group.com
+    scan_method: websearch
+    scan_query: 'site:careers.nn-group.com "AI" OR "Scrum Master" OR "Agile" OR "Innovation" OR "Program Manager"'
+    notes: "Den Haag. NL insurer. Digital transformation and AI roles."
+    enabled: true
+
+  - name: Allianz Nederland
+    careers_url: https://www.allianz.nl/over-allianz/werken-bij-allianz.html
+    scan_method: websearch
+    scan_query: '"Allianz Nederland" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovatie"'
+    notes: "Rotterdam. Insurance. Digital transformation roles."
+    enabled: true
+
+  - name: Deloitte Nederland
+    careers_url: https://www2.deloitte.com/nl/nl/pages/careers/topics/werken-bij-deloitte.html
+    scan_method: websearch
+    scan_query: '"Deloitte" nederland vacatures "AI" OR "Scrum Master" OR "Agile Coach" OR "Innovation" OR "Program Manager" OR "Transformation"'
+    notes: "Amsterdam. Big4. AI transformation, innovation advisory, change management roles."
+    enabled: true
+
+  - name: PwC Nederland
+    careers_url: https://www.pwc.nl/nl/careers.html
+    scan_method: websearch
+    scan_query: '"PwC" nederland vacatures "AI" OR "Scrum Master" OR "Agile" OR "Innovation" OR "Digital Transformation" OR "Program Manager"'
+    notes: "Amsterdam. Big4. AI, digital transformation, and advisory roles."
+    enabled: true
+
+  - name: KPMG Nederland
+    careers_url: https://home.kpmg/nl/nl/home/careers.html
+    scan_method: websearch
+    scan_query: '"KPMG" nederland vacatures "AI" OR "Agile" OR "Innovation" OR "Digital Transformation" OR "Program Manager"'
+    notes: "Amstelveen. Big4. Innovation consulting and digital transformation roles."
+    enabled: true
+
+  - name: EY Nederland
+    careers_url: https://www.ey.com/nl_nl/careers
+    scan_method: websearch
+    scan_query: '"EY" nederland vacatures "AI" OR "Scrum Master" OR "Agile" OR "Innovation" OR "Program Manager" OR "Transformation"'
+    notes: "Amsterdam. Big4. AI, innovation, and transformation advisory roles."
+    enabled: true
+
+  # -- NL Industrials, Engineering & Infrastructure --
+
+  - name: Philips
+    careers_url: https://www.careers.philips.com/global/en
+    scan_method: websearch
+    scan_query: '"Philips" netherlands vacatures "AI" OR "Innovation Lab" OR "Agile Coach" OR "Program Manager" OR "Digital Transformation"'
+    notes: "Amsterdam. MedTech/AI. Innovation, program management, AI research roles."
+    enabled: true
+
+  - name: Heineken
+    careers_url: https://careers.heineken.com
+    scan_method: websearch
+    scan_query: '"Heineken" netherlands vacatures "AI" OR "Agile" OR "Innovation" OR "Program Manager" OR "Digital Transformation"'
+    notes: "Amsterdam. FMCG. Digital transformation, supply chain innovation, AI programme roles."
+    enabled: true
+
+  - name: Unilever Netherlands
+    careers_url: https://careers.unilever.com
+    scan_method: websearch
+    scan_query: '"Unilever" netherlands vacatures "AI" OR "Agile" OR "Innovation" OR "Program Manager" OR "Digital Transformation"'
+    notes: "Rotterdam. FMCG. Digital and AI innovation roles."
+    enabled: true
+
+  - name: Shell Nederland
+    careers_url: https://careers.shell.com
+    scan_method: websearch
+    scan_query: '"Shell" netherlands vacatures "AI" OR "Innovation" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Digital"'
+    notes: "Den Haag. Energy major. Large AI and innovation programme."
+    enabled: true
+
+  - name: DSM-Firmenich
+    careers_url: https://www.dsm-firmenich.com/en/careers.html
+    scan_method: websearch
+    scan_query: '"DSM-Firmenich" OR "DSM Firmenich" netherlands vacatures "AI" OR "Innovation" OR "Program Manager" OR "Digital Transformation"'
+    notes: "Heerlen. Nutrition/materials science. Innovation and sustainability AI roles."
+    enabled: true
+
+  - name: Signify
+    careers_url: https://www.signify.com/en-aa/careers
+    scan_method: websearch
+    scan_query: '"Signify" netherlands vacatures "AI" OR "Innovation" OR "Program Manager" OR "Agile" OR "Digital"'
+    notes: "Eindhoven. Philips spin-off, smart lighting. AI and innovation roles."
+    enabled: true
+
+  - name: AkzoNobel
+    careers_url: https://www.akzonobel.com/en/careers
+    scan_method: websearch
+    scan_query: '"AkzoNobel" netherlands vacatures "AI" OR "Innovation" OR "Program Manager" OR "Agile" OR "Digital Transformation"'
+    notes: "Amsterdam. Paints/coatings. Digital transformation and AI innovation roles."
+    enabled: true
+
+  - name: Arcadis
+    careers_url: https://jobs.arcadis.com
+    scan_method: websearch
+    scan_query: 'site:jobs.arcadis.com netherlands "AI" OR "Innovation" OR "Program Manager" OR "Agile" OR "Digital Transformation" OR "Scrum"'
+    notes: "Amsterdam. Global engineering/design consultancy. Digital transformation and program roles."
+    enabled: true
+
+  - name: Royal HaskoningDHV
+    careers_url: https://www.royalhaskoningdhv.com/en-gb/career
+    scan_method: websearch
+    scan_query: '"Royal HaskoningDHV" vacatures "AI" OR "Innovation" OR "Program Manager" OR "Agile" OR "Digital" OR "Scrum"'
+    notes: "Amersfoort. Engineering consultancy. AI, digital, and programme management roles."
+    enabled: true
+
+  - name: Fugro
+    careers_url: https://www.fugro.com/careers
+    scan_method: websearch
+    scan_query: '"Fugro" netherlands vacatures "AI" OR "Innovation" OR "Program Manager" OR "Agile" OR "Digital Transformation"'
+    notes: "Leidschendam. Geo-data services. AI and digital innovation roles."
+    enabled: true
+
+  - name: Schiphol Group
+    careers_url: https://www.werkenbijschiphol.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijschiphol.nl "AI" OR "Scrum Master" OR "Agile" OR "Innovatie" OR "Program Manager" OR "Digitalisering"'
+    notes: "Amsterdam. Airport operator. Digital innovation, agile, and AI programme roles."
+    enabled: true
+
+  - name: BAM Groep
+    careers_url: https://www.werkenbijbam.nl
+    scan_method: websearch
+    scan_query: 'site:werkenbijbam.nl "AI" OR "Scrum Master" OR "Agile" OR "Innovatie" OR "Program Manager" OR "Digitalisering"'
+    notes: "Bunnik. Construction. Digital transformation and BIM/AI innovation roles."
+    enabled: true
+
+  - name: Boskalis
+    careers_url: https://www.boskalis.com/careers.html
+    scan_method: websearch
+    scan_query: '"Boskalis" vacatures "AI" OR "Innovation" OR "Program Manager" OR "Agile" OR "Digital Transformation"'
+    notes: "Papendrecht. Dredging/maritime. Digital innovation and project management roles."
+    enabled: true
+
+  # -- Global Big Tech NL offices --
+
+  - name: Google Netherlands
+    careers_url: https://careers.google.com/locations/amsterdam
+    scan_method: websearch
+    scan_query: '"Google" amsterdam vacatures "AI" OR "Program Manager" OR "Innovation" OR "Agile" OR "Developer Relations"'
+    notes: "Amsterdam. Google NL HQ. Technical PM, AI, developer education, and partner roles."
+    enabled: true
+
+  - name: Microsoft Nederland
+    careers_url: https://careers.microsoft.com/global/en/search-jobs?lc=Netherlands
+    scan_method: websearch
+    scan_query: '"Microsoft" netherlands vacatures "AI" OR "Program Manager" OR "Innovation" OR "Agile" OR "Customer Success" OR "Technical Trainer"'
+    notes: "Amsterdam. Microsoft NL. Technical PM, AI customer success, and partner program roles."
+    enabled: true
+
+  - name: Amazon Web Services Benelux
+    careers_url: https://www.amazon.jobs/en/locations/amsterdam
+    scan_method: websearch
+    scan_query: '"AWS" OR "Amazon Web Services" benelux netherlands vacatures "AI" OR "Program Manager" OR "Innovation" OR "Technical Trainer"'
+    notes: "Amsterdam. AWS Benelux. Technical PM, AI solutions, education, and partner roles."
+    enabled: true
+
+  - name: Salesforce Benelux
+    careers_url: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site
+    scan_method: websearch
+    scan_query: '"Salesforce" benelux netherlands vacatures "AI" OR "Program Manager" OR "Innovation" OR "Agile" OR "Customer Success"'
+    notes: "Amsterdam. Salesforce Benelux. Agile transformation, AI customer success, program roles."
+    enabled: true
+
+  - name: SAP Nederland
+    careers_url: https://job-boards.greenhouse.io/sap
+    api: https://boards-api.greenhouse.io/v1/boards/sap/jobs
+    notes: "Amsterdam. SAP NL. Technical PM, AI adoption, and transformation roles."
+    enabled: true
+
+  - name: Oracle Nederland
+    careers_url: https://www.oracle.com/nl/corporate/careers
+    scan_method: websearch
+    scan_query: '"Oracle" nederland netherlands vacatures "AI" OR "Program Manager" OR "Innovation" OR "Agile" OR "Technical Trainer" OR "Customer Success"'
+    notes: "Amsterdam. Oracle NL. AI cloud, technical PM, and customer success roles."
+    enabled: true
+
+  - name: Elastic
+    careers_url: https://job-boards.greenhouse.io/elastic
+    api: https://boards-api.greenhouse.io/v1/boards/elastic/jobs
+    notes: "Remote EU. Search and observability. Technical PM, training, AI platform roles."
+    enabled: true
+
+  - name: Databricks
+    careers_url: https://job-boards.greenhouse.io/databricks
+    api: https://boards-api.greenhouse.io/v1/boards/databricks/jobs
+    notes: "Remote EU. Data+AI platform. Program management, AI adoption, training roles."
+    enabled: true
+
+  - name: Snowflake
+    careers_url: https://job-boards.greenhouse.io/snowflake
+    api: https://boards-api.greenhouse.io/v1/boards/snowflake/jobs
+    notes: "Remote EU. Cloud data. Technical PM, AI, and program roles."
+    enabled: true
+
+  - name: Palantir Technologies
+    careers_url: https://job-boards.greenhouse.io/palantir
+    api: https://boards-api.greenhouse.io/v1/boards/palantir/jobs
+    notes: "Amsterdam. AI/analytics platform. Deployment, program, and AI transformation roles."
+    enabled: true
+
+  - name: GitLab
+    careers_url: https://job-boards.greenhouse.io/gitlab
+    api: https://boards-api.greenhouse.io/v1/boards/gitlab/jobs
+    notes: "Remote-first. DevOps platform. Technical PM, training, agile, and program roles."
+    enabled: true
+
+  - name: Automattic
+    careers_url: https://job-boards.greenhouse.io/automattic
+    api: https://boards-api.greenhouse.io/v1/boards/automattic/jobs
+    notes: "Remote-first. WordPress parent. Program management and technical roles."
+    enabled: true
+
+  - name: Stripe
+    careers_url: https://job-boards.greenhouse.io/stripe
+    api: https://boards-api.greenhouse.io/v1/boards/stripe/jobs
+    notes: "Remote EU / Amsterdam. Payments platform. Technical PM, AI, and program roles."
+    enabled: true
+
+  # -- NL FinTech & SaaS scaleups --
+
+  - name: Mollie
+    careers_url: https://jobs.ashbyhq.com/mollie
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/mollie'
+    notes: "Amsterdam. NL payments scaleup. Program management, AI, and innovation roles."
+    enabled: true
+
+  - name: CM.com
+    careers_url: https://jobs.ashbyhq.com/cm-com
+    scan_method: websearch
+    scan_query: '"CM.com" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Breda. NL cloud communications platform. AI and program management roles."
+    enabled: true
+
+  - name: Channable
+    careers_url: https://www.channable.com/careers
+    scan_method: websearch
+    scan_query: '"Channable" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Utrecht. Feed management SaaS. Scrum and agile roles."
+    enabled: true
+
+  - name: Trengo
+    careers_url: https://www.trengo.com/careers
+    scan_method: websearch
+    scan_query: '"Trengo" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Utrecht. Customer communications AI platform. Scrum and innovation roles."
+    enabled: true
+
+  - name: FRISS
+    careers_url: https://www.friss.com/about/careers
+    scan_method: websearch
+    scan_query: '"FRISS" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Utrecht. AI fraud detection for insurance. Agile and AI programme roles."
+    enabled: true
+
+  - name: StackState
+    careers_url: https://www.stackstate.com/company/careers
+    scan_method: websearch
+    scan_query: '"StackState" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Amsterdam. AIOps observability platform. Scrum and program roles."
+    enabled: true
+
+  - name: Studytube
+    careers_url: https://www.studytube.nl/vacatures
+    scan_method: websearch
+    scan_query: '"Studytube" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Learning" OR "Innovation"'
+    notes: "Amsterdam. Corporate L&D platform. AI, learning innovation, and agile roles."
+    enabled: true
+
+  - name: Mews
+    careers_url: https://jobs.ashbyhq.com/mews
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/mews'
+    notes: "Amsterdam. Hotel management SaaS. Program management and AI roles."
+    enabled: true
+
+  - name: Shypple
+    careers_url: https://www.shypple.com/careers
+    scan_method: websearch
+    scan_query: '"Shypple" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation" OR "Supply Chain"'
+    notes: "Rotterdam. Digital freight forwarding. Supply chain AI and programme roles."
+    enabled: true
+
+  - name: Sendcloud
+    careers_url: https://www.sendcloud.com/careers
+    scan_method: websearch
+    scan_query: '"Sendcloud" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Eindhoven. Shipping SaaS. Agile and programme management roles."
+    enabled: true
+
+  - name: Klippa
+    careers_url: https://www.klippa.com/nl/vacatures
+    scan_method: websearch
+    scan_query: '"Klippa" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Groningen. AI document processing. Agile and AI programme roles."
+    enabled: true
+
+  - name: Energyworx
+    careers_url: https://www.energyworx.com/jobs
+    scan_method: websearch
+    scan_query: '"Energyworx" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Energy"'
+    notes: "Amsterdam. Energy data AI platform. AI innovation and programme roles."
+    enabled: true
+
+  - name: Satelligence
+    careers_url: https://satelligence.com/careers
+    scan_method: websearch
+    scan_query: '"Satelligence" vacatures "AI" OR "Scrum Master" OR "Program Manager" OR "Innovation" OR "Sustainability"'
+    notes: "Utrecht. Satellite AI for supply chain sustainability/EUDR compliance. Relevant to VCH work."
+    enabled: true
+
+  - name: IG&H
+    careers_url: https://www.igh.com/nl/over-igh/werken-bij-igh
+    scan_method: websearch
+    scan_query: '"IG&H" vacatures "AI" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Transformation" OR "Innovation"'
+    notes: "Utrecht. NL management consultancy. Digital transformation and agile roles."
+    enabled: true
+
+  - name: Valtech Nederland
+    careers_url: https://www.valtech.com/nl-nl/careers
+    scan_method: websearch
+    scan_query: '"Valtech" netherlands vacatures "AI" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Innovation"'
+    notes: "Amsterdam. Digital transformation consultancy. Agile, AI, and programme management."
+    enabled: true
+
+  - name: De Nieuwe Zaak
+    careers_url: https://www.denieuweZaak.nl/vacatures
+    scan_method: websearch
+    scan_query: '"De Nieuwe Zaak" vacatures "AI" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Innovation" OR "Digital"'
+    notes: "Zwolle. Digital strategy and development. Agile and innovation roles."
+    enabled: true
+
+  - name: Furore
+    careers_url: https://www.furore.com/vacatures
+    scan_method: websearch
+    scan_query: '"Furore" vacatures "AI" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Innovatie"'
+    notes: "Amsterdam. IT consultancy. Active Agile and programme roles."
+    enabled: true
+
+  - name: Whispp
+    careers_url: https://whispp.com/careers
+    scan_method: websearch
+    scan_query: '"Whispp" vacatures "AI" OR "Program Manager" OR "Agile" OR "Innovation"'
+    notes: "Leiden. AI-powered voice assistive tech. Innovation and AI programme roles."
+    enabled: true
+
+  - name: Moneybird
+    careers_url: https://www.moneybird.nl/vacatures
+    scan_method: websearch
+    scan_query: '"Moneybird" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Enschede. NL bookkeeping SaaS. Small, agile culture."
+    enabled: true
+
+  # -- NL Logistics & Supply Chain (digital/innovation roles) --
+
+  - name: Kuehne+Nagel Netherlands
+    careers_url: https://jobs.kuehne-nagel.com/global/en/search-results?q=&location=Netherlands
+    scan_method: websearch
+    scan_query: '"Kuehne+Nagel" OR "Kühne+Nagel" netherlands vacatures "AI" OR "Innovation" OR "Digital Transformation" OR "Program Manager" OR "Scrum" OR "Agile"'
+    notes: "Rotterdam. Global logistics. Digital transformation and AI program roles."
+    enabled: true
+
+  - name: DB Schenker Netherlands
+    careers_url: https://www.dbschenker.com/nl-nl/about/careers
+    scan_method: websearch
+    scan_query: '"DB Schenker" netherlands vacatures "AI" OR "Innovation" OR "Digital Transformation" OR "Program Manager" OR "Agile"'
+    notes: "Rotterdam. Global freight. Digital transformation and innovation roles."
+    enabled: true
+
+  - name: DHL Supply Chain Benelux
+    careers_url: https://careers.dhl.com/global/en/search-results?q=&location=Netherlands
+    scan_method: websearch
+    scan_query: '"DHL" benelux netherlands vacatures "AI" OR "Innovation" OR "Digital Transformation" OR "Program Manager" OR "Scrum" OR "Agile"'
+    notes: "NL. DHL supply chain. Digital transformation and AI innovation roles."
+    enabled: true
+
+  - name: DSV Solutions Netherlands
+    careers_url: https://www.dsv.com/en/about-dsv/careers
+    scan_method: websearch
+    scan_query: '"DSV" netherlands vacatures "AI" OR "Innovation" OR "Digital Transformation" OR "Program Manager" OR "Agile"'
+    notes: "NL. Global transport. Digital and AI programme roles."
+    enabled: true
+
+  - name: CEVA Logistics Netherlands
+    careers_url: https://www.cevalogistics.com/careers
+    scan_method: websearch
+    scan_query: '"CEVA Logistics" netherlands vacatures "AI" OR "Innovation" OR "Digital Transformation" OR "Program Manager" OR "Agile"'
+    notes: "Rotterdam. Global logistics. Digital transformation and AI roles."
+    enabled: true
+
+  - name: Maersk Logistics Netherlands
+    careers_url: https://jobs.maersk.com/jobs?q=&location=Netherlands
+    scan_method: websearch
+    scan_query: '"Maersk" netherlands vacatures "AI" OR "Innovation" OR "Digital Transformation" OR "Program Manager" OR "Agile"'
+    notes: "Rotterdam. Global shipping/logistics. Digital transformation and AI programme roles."
+    enabled: true
+
+  - name: Royal FloraHolland
+    careers_url: https://www.royalfloraholland.com/nl/over-ons/vacatures
+    scan_method: websearch
+    scan_query: '"Royal FloraHolland" vacatures "AI" OR "Innovation" OR "Digital Transformation" OR "Program Manager" OR "Agile" OR "Scrum"'
+    notes: "Aalsmeer. Flower auction/supply chain. Supply chain AI and digital transformation."
+    enabled: true
+
+  - name: Transsmart
+    careers_url: https://www.transsmart.com/over-transsmart/vacatures
+    scan_method: websearch
+    scan_query: '"Transsmart" vacatures "AI" OR "Program Manager" OR "Agile" OR "Innovation" OR "Supply Chain"'
+    notes: "Tilburg. Shipping software (PostNL subsidiary). AI and programme roles."
+    enabled: true
+
+  - name: Sendcloud
+    careers_url: https://www.sendcloud.com/careers
+    scan_method: websearch
+    scan_query: '"Sendcloud" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Eindhoven. Shipping SaaS scale-up. Agile and programme management roles."
+    enabled: false
+
+  - name: Mainfreight Netherlands
+    careers_url: https://www.mainfreight.com/global/en/careers
+    scan_method: websearch
+    scan_query: '"Mainfreight" netherlands vacatures "AI" OR "Innovation" OR "Program Manager" OR "Digital Transformation" OR "Agile"'
+    notes: "NL. NZ logistics global player with strong NL presence. Digital programme roles."
+    enabled: true
+
+  # -- NL AI-focused startups & innovators --
+
+  - name: TRUST AI
+    careers_url: https://trustai.nl/vacatures
+    scan_method: websearch
+    scan_query: '"TRUST AI" vacatures OR careers "AI" OR "Program Manager" OR "Agile" OR "Innovation" OR "Consultant"'
+    notes: "NL. Applied AI consultancy. AI implementation and programme roles."
+    enabled: true
+
+  - name: Landscape AI
+    careers_url: https://landscape.ai/careers
+    scan_method: websearch
+    scan_query: '"Landscape" AI netherlands vacatures "AI" OR "Program Manager" OR "Innovation" OR "Consultant"'
+    notes: "NL. AI value consultancy. Applied AI and innovation roles."
+    enabled: true
+
+  - name: Red Kubes
+    careers_url: https://www.redkubes.com/careers
+    scan_method: websearch
+    scan_query: '"Red Kubes" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation" OR "Kubernetes"'
+    notes: "Amsterdam. Kubernetes/platform engineering. Technical PM and DevOps roles."
+    enabled: true
+
+  # -- NL Local & small consultancies (Baarn/Utrecht region) --
+
+  - name: VX Company
+    careers_url: https://www.vxcompany.com/vacatures
+    scan_method: websearch
+    scan_query: '"VX Company" vacatures "AI" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Innovation" OR "Digitalisering"'
+    notes: "Hoofddorp. IT services and digital. Agile and digital transformation roles."
+    enabled: true
+
+  - name: Zooma
+    careers_url: https://www.zooma.nl/vacatures
+    scan_method: websearch
+    scan_query: '"Zooma" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation" OR "Digitalisering"'
+    notes: "NL. Digital strategy and AI consultancy. Innovation and programme management."
+    enabled: true
+
+  - name: FreshMinds
+    careers_url: https://freshminds.nl/vacatures
+    scan_method: websearch
+    scan_query: '"FreshMinds" netherlands vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "NL. Strategy/innovation consultancy. Transformation and programme roles."
+    enabled: true
+
+  - name: De Kleine Consultant
+    careers_url: https://www.dekleineconsultant.nl/vacatures
+    scan_method: websearch
+    scan_query: '"De Kleine Consultant" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Baarn area. Small boutique consultancy. Fractional/part-time programme roles."
+    enabled: true
+
+  - name: Cleantech Holland
+    careers_url: https://cleantechholland.nl/vacatures
+    scan_method: websearch
+    scan_query: '"Cleantech Holland" vacatures "AI" OR "Innovation" OR "Program Manager" OR "Sustainability" OR "Agile"'
+    notes: "NL. Cleantech ecosystem platform. Innovation and sustainability programme roles."
+    enabled: true
+
+  - name: PLNT Leiden
+    careers_url: https://plnt.nl/vacatures
+    scan_method: websearch
+    scan_query: '"PLNT Leiden" vacatures "AI" OR "Innovation" OR "Program Manager" OR "Startup" OR "Ecosystem"'
+    notes: "Leiden. Innovation ecosystem/startup hub. Programme and ecosystem roles."
+    enabled: true
+
+  - name: UniPartners Leiden
+    careers_url: https://unipartners.nl/vacatures
+    scan_method: websearch
+    scan_query: '"UniPartners" leiden vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovation"'
+    notes: "Leiden. Strategy consultancy. Programme and innovation roles."
+    enabled: true
+
+  - name: Speer IT
+    careers_url: https://www.speerit.nl/vacatures
+    scan_method: websearch
+    scan_query: '"Speer IT" vacatures "AI" OR "Scrum Master" OR "Agile" OR "Program Manager" OR "Innovatie"'
+    notes: "NL. IT services. Agile and programme roles."
+    enabled: true
