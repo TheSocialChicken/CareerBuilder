@@ -310,169 +310,195 @@ const P_FARMCREDIBLY = `
 
 const ROLES = [
   {
+    // Block E: "Senior practitioner in discovery-to-delivery cycles..."
+    // Keywords: professional services, SOW, DevSecOps, discovery, pre-sales, trusted advisor
     slug: '008-gitlab-engagement-manager-emea',
-    summary: 'Senior practitioner in discovery-to-delivery cycles -- structured complex programs for universities, labs, and funded initiatives across Europe. Delivered enterprise BI implementations for BP and Statoil at KONGSBERG: scoped, configured, trained, and signed off. 15+ years bridging technical delivery and stakeholder alignment. DevOps-native (Docker, Kubernetes, CI/CD) with direct experience managing €2M in funded project portfolios.',
+    summary: 'Senior practitioner in discovery-to-delivery cycles -- structured complex programs for universities, labs, and funded initiatives. Now applying that operating model to enterprise PS engagements. 15+ years bridging technical delivery and stakeholder alignment; managed EUR 2M in funded project portfolios. DevOps-native: Docker, Kubernetes, CI/CD, GitHub -- fluent in GitLab\'s product domain.',
     competencies: [
-      'Professional Services Delivery', 'Stakeholder Alignment', 'Discovery & Scoping',
-      'Program Orchestration', 'Enterprise Client Delivery', 'Multi-site Implementation',
-      'Agile Program Management', 'DevOps & CI/CD', 'Grant & Contract Management',
-      'Cross-functional Facilitation',
+      'Professional Services Delivery', 'SOW & Staffing Plans', 'Discovery & Pre-Sales',
+      'Trusted Advisor', 'Stakeholder Management', 'Executive Communication',
+      'CI/CD & DevSecOps', 'GitLab Platform', 'EMEA Remote Delivery',
+      'Implementation Roadmap',
     ],
     projects: P_VCH + P_2BSMART + P_INTERACTIVE + P_BEERGAME,
     portfolio_url: 'https://socialchicken.net',
     portfolio_display: 'socialchicken.net',
   },
   {
+    // Block E: "Technical Program Manager with 10+ years running cross-functional initiatives..."
+    // Keywords: Staff TPM, cross-functional, CI/CD, distributed systems, dependency management
     slug: '009-gitlab-staff-tpm',
-    summary: 'Technical program manager with 15+ years running complex, multi-workstream programs under ambiguity. Merged 8 interdependent course systems in under 2 months (COVID-19 mega project): mapped dependencies, ran weekly cross-lead reviews, rebuilt assessment model mid-flight, delivered on schedule. Runs Docker, Kubernetes, CI/CD pipelines, and self-hosted AI infrastructure daily. Understands what engineers are building well enough to surface the program dependencies they miss.',
+    summary: 'Technical Program Manager with 10+ years running cross-functional initiatives in distributed environments -- from 8-course university merges to cross-European AI compliance labs. Deep DevOps fluency; operates comfortably at the intersection of technical architecture and organizational delivery. Dependency mapping, sprint design, and stakeholder alignment across ambiguous, multi-workstream programs.',
     competencies: [
-      'Technical Program Management', 'Multi-workstream Coordination', 'Dependency Mapping',
-      'Cross-functional Alignment', 'DevOps & CI/CD', 'Docker & Kubernetes',
-      'Sprint Planning & Release Mgmt', 'Stakeholder Management', 'Risk Identification',
-      'Delivery Under Ambiguity',
+      'Technical Program Management', 'Cross-functional Coordination', 'Dependency Management',
+      'CI/CD & Cloud Infrastructure', 'Distributed Systems Delivery', 'Program Portfolio',
+      'Engineering Leadership', 'Risk Management', 'Async Remote Collaboration',
+      'Staff TPM Level',
     ],
     projects: P_VCH + P_BEERGAME + P_2BSMART + P_INTERACTIVE,
     portfolio_url: 'https://socialchicken.net',
     portfolio_display: 'socialchicken.net',
   },
   {
+    // Block E: "AI Transformation practitioner -- I design the environments..."
+    // Keywords: AI transformation, champion network, n8n, Flowise, community of practice, agent building
     slug: '010-gitlab-ai-transformation-owner',
-    summary: 'AI Transformation practitioner -- designs the environments where organizations adopt new capabilities. Built 5+ innovation labs from zero. Deployed AI stacks from scratch: n8n, Flowise, OpenWebUI, Supabase, all self-managed on Linux/Docker. Runs champion networks, runs practitioner interviews, turns early adopters into institutional change agents. Applied in education, supply chain compliance, and blockchain ecosystems across Europe.',
+    summary: 'AI Transformation practitioner -- I design the environments where organizations adopt new capabilities. Built 5+ innovation labs. Deployed AI stacks from scratch: n8n, Flowise, OpenWebUI, Supabase. Run champion networks across open-source ecosystems and research institutions. Applied in education, supply chain, and blockchain. Marketing is next.',
     competencies: [
-      'AI Transformation Strategy', 'Change Management', 'Champion Network Building',
-      'n8n Workflow Automation', 'Flowise & OpenWebUI Deployment', 'AI Infrastructure',
-      'Organizational Change', 'Workshop Facilitation', 'Innovation Lab Design',
-      'LLM Stack Operations',
+      'AI Transformation', 'Change Management & Adoption', 'Champion Network Building',
+      'n8n & Flowise Deployment', 'No-Code / Low-Code Agents', 'Community of Practice',
+      'Marketing Operations AI', 'KPI & Performance Tracking', 'Agent Fleet Management',
+      'Enterprise AI Rollout',
     ],
     projects: P_VCH + P_BEERGAME + P_2BSMART + P_MAGICFRAMES,
     portfolio_url: 'https://socialchicken.net',
     portfolio_display: 'socialchicken.net',
   },
   {
+    // Block E: "Designed and delivered simulation-based and game-based learning experiences..."
+    // Keywords: LXD, ADDIE, Articulate 360, eLearning, adult learning theory, LMS/LXP
     slug: '011-adyen-learning-experience-design-pm',
-    summary: 'Learning experience designer and program manager with expertise in simulation-based learning, game-based education, and AI-integrated delivery. Bachelor thesis (grade 8.7) on simulation-based training methodology at Kongsberg. Full-stack LXD from needs assessment through iteration: designed the 2bSMART simulation platform, rebuilt the Beergame for modern audiences, created gamified agile learning environments at ROC and Aeres. Delivered 10+ courses still in active independent use.',
+    summary: 'Designed and delivered simulation-based and game-based learning experiences across university, fintech training, and supply chain contexts. Bachelor thesis (grade 8.7) on simulation-based training methodology. ADDIE-adjacent practitioner: needs assessment, design, build, delivery, and iteration. 10+ courses still in active independent use. Articulate 360 named as gap; fast learner with existing authoring tool experience.',
     competencies: [
-      'Learning Experience Design', 'Simulation-based Learning', 'Game-based Education',
-      'Curriculum Design', 'Instructional Design', 'Needs Assessment',
-      'LXD Program Management', 'Learning Analytics', 'Agile Learning Development',
-      'Train the Trainer',
+      'Learning Experience Design', 'ADDIE Methodology', 'Simulation-based Learning',
+      'Game-based Education', 'LMS / LXP Management', 'Content Development',
+      'Adult Learning Theory', 'AI-driven Content', 'Authoring Tools',
+      'L&D Program Management',
     ],
     projects: P_2BSMART + P_BEERGAME + P_MAGICFRAMES + P_VCH,
     portfolio_url: 'https://socialchicken.net',
     portfolio_display: 'socialchicken.net',
   },
   {
+    // Block E: "Built and led learning organizations across university and tech contexts..."
+    // Keywords: L&D strategy, team lead, North Star vision, learning at scale, communities of practice
     slug: '012-adyen-team-lead-ld',
-    summary: 'Built and led learning organizations at institutional scale -- designed the architecture, led the teams, and owned the outcomes across full delivery cycle. Spark! Living Lab: still running 5 years on across cross-European programs. Implemented school-wide Scrum at Aeres Hogeschool: 8 courses merged into one sprint-based innovation track in under 2 months. 15+ years as agile practitioner and facilitator across education, tech, and research organizations.',
+    summary: 'Built and led learning organizations across university and tech contexts -- from designing the learning architecture to running the teams that deliver it. Spark! Living Lab: still running 5 years on. Implemented school-wide Scrum at Aeres Hogeschool in under 2 months. North Star vision, then the building -- both parts of the job. 15+ years as agile practitioner and programme leader.',
     competencies: [
-      'L&D Team Leadership', 'Learning Strategy', 'Institutional Learning Design',
-      'Agile Education', 'Program Management', 'Stakeholder Alignment',
-      'Innovation Lab Design', 'Facilitation at Scale', 'Multi-course Architecture',
-      'Coaching & Mentorship',
+      'L&D Strategy & Team Leadership', 'Learning Ecosystem Design', 'North Star Vision',
+      'Learning at Scale', 'Stakeholder Influence', 'Modern Learning Technologies',
+      'AI Applications in L&D', 'Communities of Practice', 'Coaching & Mentorship',
+      'Programme Leadership',
     ],
     projects: P_2BSMART + P_BEERGAME + P_MAGICFRAMES + P_VCH,
     portfolio_url: 'https://socialchicken.net',
     portfolio_display: 'socialchicken.net',
   },
   {
+    // Block E: "Innovation builder with supply chain and AI transformation track record..."
+    // Keywords: Retail & CPG, 0-to-1, Value Engineering, process intelligence, go-to-market
     slug: '017-celonis-head-of-industry-retail-cpg',
-    summary: 'Domain-agnostic innovation builder with 0-to-1 execution track record across supply chain AI, sustainability, and CSRD/EUDR compliance. Built the Value Chain Hackers initiative at Windesheim: AI-powered traceability tooling live at valuechainhackers.xyz, built with a cross-European research and student team. The 0-to-1 pattern is documented across every chapter: Spark! Living Lab, Aeres, Tonomy Foundation. Building mandates are the documented strength.',
+    summary: 'Innovation builder with supply chain and AI transformation track record. Built 5 industry labs from zero; now looking to apply that model at enterprise scale in Retail & CPG. Value Chain Hackers: AI-powered CSRD/EUDR compliance and traceability tooling live at valuechainhackers.xyz -- built with cross-European research and student team. Process intelligence for supply chain is the current domain.',
     competencies: [
-      'Supply Chain Innovation', 'CSRD/EUDR Compliance', '0-to-1 Practice Building',
-      'Process Intelligence', 'Value Engineering', 'Cross-functional Team Leadership',
-      'Retail & CPG Supply Chain', 'AI Traceability Tools', 'Partner Ecosystem Development',
-      'Grant Funding & Innovation Programs',
+      'Supply Chain Innovation', 'Retail & CPG Domain', '0-to-1 Practice Building',
+      'Value Engineering', 'Go-to-Market Strategy', 'Process Intelligence',
+      'Partner Enablement', 'Thought Leadership', 'CSRD / EUDR Compliance',
+      'Team Building at Scale',
     ],
     projects: P_VCH + P_BEERGAME + P_2BSMART + P_FARMCREDIBLY,
     portfolio_url: 'https://valuechainhackers.xyz',
     portfolio_display: 'valuechainhackers.xyz',
   },
   {
+    // Block E: "Applied AI architect with a track record of deploying AI tools..."
+    // Keywords: Applied AI Architect, LLM, evaluation frameworks, Claude API, AI adoption, DACH
     slug: '020-anthropic-applied-ai-architect',
-    summary: 'Applied AI practitioner with enterprise field delivery and a track record of making complex systems accessible. Delivered BI implementations for BP and Statoil at KONGSBERG across Jordan, Oman, and Azerbaijan: hardware to training to sign-off. Self-hosted and operates LLM infrastructure (Flowise, OpenWebUI, n8n, Supabase) on self-managed Linux/Docker for live researcher use at Windesheim. Teaches practitioners how to use AI tools; designs the environments where adoption happens.',
+    summary: 'Applied AI architect with a track record of deploying AI tools, teaching LLM adoption, and translating complex systems for enterprise audiences. Deployed enterprise BI systems for BP and Statoil at KONGSBERG: full lifecycle from hardware to training. Designed and operated self-managed LLM environment (OpenWebUI, Flowise, n8n, Supabase on Linux) for 50+ university researchers -- from architecture to adoption.',
     competencies: [
-      'Applied AI Architecture', 'Enterprise AI Delivery', 'LLM Stack Design & Operations',
-      'Flowise & OpenWebUI', 'n8n & Supabase', 'BI System Deployment',
-      'Training & Enablement Design', 'Safety-aware AI Design', 'Technical Communication',
-      'Field Delivery at Executive Level',
+      'Applied AI Architecture', 'LLM Deployment & Advisory', 'Technical Pre-Sales',
+      'Evaluation Frameworks', 'Claude & Claude API', 'Enterprise AI Adoption',
+      'Workshop Facilitation', 'DACH Market', 'Stakeholder Communication',
+      'Cloud Architecture',
     ],
     projects: P_VCH + P_BEERGAME + P_2BSMART + P_INTERACTIVE,
     portfolio_url: 'https://valuechainhackers.xyz',
     portfolio_display: 'valuechainhackers.xyz',
   },
   {
+    // Block E: "product owner of AI infrastructure for student and researcher experimentation"
+    // Keywords: Product Manager, AI, open source, Ubuntu, Linux, product lifecycle, go-to-market
     slug: '021-canonical-pm-ai',
-    summary: 'Product manager by practice: owned AI research platform from discovery through adoption at Windesheim; co-defined product vision for Pangea Vault at Tonomy Foundation; built Spark! Living Lab roadmap across 5 years of cross-European programs. Open source infrastructure and Linux DevOps are the home domain -- runs Ubuntu-based stacks daily. Domain expertise in CSRD/EUDR supply chain compliance positions directly for Canonical\'s open-source enterprise market.',
+    summary: 'Product manager by practice: product owner of AI infrastructure for student and researcher experimentation at Windesheim; co-defined product vision for Pangea Vault at Tonomy Foundation; built Spark! Living Lab roadmap across 5 years. Ubuntu Linux and open-source infrastructure are the home domain -- runs production stacks daily. Go-to-market and market research experience across education, supply chain, and blockchain.',
     competencies: [
-      'Product Management', 'AI Research Platform Ownership', 'Open Source Ecosystem',
-      'Ubuntu & Linux DevOps', 'Product Discovery & Roadmap', 'Stakeholder Alignment',
-      'DevOps Infrastructure', 'CSRD/EUDR Domain', 'Community Product',
-      'Agile Sprint Cycles',
+      'Product Management', 'AI Research Platform Ownership', 'Open Source & Ubuntu',
+      'Product Lifecycle', 'Market Research & GTM', 'Cloud-native Platforms',
+      'Distributed Team Leadership', 'Stakeholder Alignment', 'Canonical Ecosystem',
+      'Linux DevOps',
     ],
     projects: P_VCH + P_BEERGAME + P_2BSMART + P_INTERACTIVE,
     portfolio_url: 'https://valuechainhackers.xyz',
     portfolio_display: 'valuechainhackers.xyz',
   },
   {
+    // Block E: "built software ecosystems and enablement programs adopted independently"
+    // Keywords: software alliance, ISV, partner enablement, Ubuntu adoption, reference architectures
     slug: '023-canonical-software-alliance-ecosystem',
-    summary: 'Software ecosystem builder with 10+ years of DevOps on Ubuntu-based Linux infrastructure. Co-built the Tonomy open-source ecosystem (W3C-recognized); ran Open Food Chain partner and community networks. Built enablement content adopted globally by HTC. Combines the technical credibility of an operator (Docker, Kubernetes, CI/CD, self-hosted AI stacks) with the ecosystem development skills of a builder -- alliance management, partner onboarding, and community activation.',
+    summary: 'Software ecosystem builder who has built enablement programs adopted by partners and institutions independently. Co-built the Tonomy open-source ecosystem (W3C DID working group, whitepaper as GTM anchor); developed Open Food Chain partner network; created HTC tutorial content adopted globally. 10+ years DevOps on Ubuntu-based Linux infrastructure. ISV and alliance management in practice.',
     competencies: [
-      'Software Ecosystem Building', 'Ubuntu Linux Operations', 'DevOps & Infrastructure',
-      'Partner Network Development', 'Open Source Governance', 'Technical Community',
-      'Blockchain Ecosystem (W3C)', 'Tutorial & Enablement Content', 'Alliance Management',
-      'Docker & Kubernetes',
+      'Software Ecosystem Building', 'Ubuntu Linux DevOps', 'Partner Enablement',
+      'ISV Alliance Management', 'Open Source Governance', 'Reference Architectures',
+      'Enablement Content at Scale', 'Ubuntu Adoption Campaigns', 'Business Development',
+      'Technology Strategy',
     ],
     projects: P_VCH + P_2BSMART + P_INTERACTIVE + P_BEERGAME,
     portfolio_url: 'https://valuechainhackers.xyz',
     portfolio_display: 'valuechainhackers.xyz',
   },
   {
+    // Block E: "applied data and AI practitioner, deployed AI infrastructure..."
+    // Keywords: engagement manager, Data & AI, DACH, trusted advisor, services attach, platform adoption
     slug: '025-databricks-sr-engagement-manager-munich',
-    summary: 'Trusted advisor and delivery practitioner with enterprise field experience across Jordan, Oman, and Azerbaijan. Delivered for BP and Statoil at KONGSBERG: full system implementation, user training, and executive sign-off. Currently works with Viridis Green-Tech in Munich -- direct DACH market familiarity and active German working context. Operates at executive level in high-stakes delivery contexts; named what was wrong on an oil rig from 3000km away and held the conversation.',
+    summary: 'Trusted advisor and applied data and AI practitioner -- deployed AI infrastructure across research and educational contexts. Delivered enterprise BI systems for BP and Statoil at KONGSBERG: field delivery, architecture-level discussions, executive sign-off. Designed self-hosted AI delivery environment (Flowise, OpenWebUI, n8n, Supabase) for 50+ researchers. Currently working with Viridis Green-Tech in Munich -- direct DACH market and German working context.',
     competencies: [
-      'Executive Advisory', 'Enterprise Delivery', 'Trusted Advisor Motion',
-      'DACH Market', 'Stakeholder Management', 'Field Delivery (Jordan/Oman/Azerbaijan)',
-      'Engagement Management', 'Business Development', 'Program Orchestration',
-      'Multi-site Implementation',
+      'Professional Services Leadership', 'Trusted Advisor', 'Data & AI Platform',
+      'DACH Market', 'Executive Advisory', 'Program Management',
+      'Services Attach', 'Platform Adoption', 'GSI Partner Collaboration',
+      'Architecture-level Engagement',
     ],
     projects: P_VCH + P_INTERACTIVE + P_2BSMART + P_ESIEA,
     portfolio_url: 'https://socialchicken.net',
     portfolio_display: 'socialchicken.net',
   },
   {
+    // Block E: "I build AI-powered systems for real users and teach teams how to use them."
+    // Keywords: n8n, HITL, workflow automation, open-source, RAG, agent workflows, production AI, 0-to-1
     slug: '028-n8n-ai-product-builder',
-    summary: 'Builder and operator of AI workflows -- runs n8n in production at Windesheim for supply chain compliance checking, research onboarding, and agent routing. Built 5 innovation labs and incubated 10 ventures from concept to working product. 0-to-1 product ownership is the documented pattern across every chapter of the career. Can demo workflows that run in production, not polished prototypes. Full self-hosted stack: n8n, Flowise, OpenWebUI, Supabase on Linux/Docker.',
+    summary: 'I build AI-powered systems for real users and teach teams how to use them. I run n8n in production for university research infrastructure: compliance checking, research onboarding, agent routing. Built 5 innovation labs and incubated 10 ventures from concept to working product. 0-to-1 product ownership is the documented pattern. Demo what runs in production -- not polished prototypes.',
     competencies: [
-      'n8n Workflow Automation (Production)', 'AI Product Building', '0-to-1 Product Ownership',
-      'Flowise & OpenWebUI', 'Supabase', 'Docker & Kubernetes',
-      'Supply Chain AI', 'Production AI Stack Operations', 'Innovation Lab Management',
-      'Builder Mindset',
+      'n8n Production Workflows', 'AI Product Building', 'Human-in-the-Loop Systems',
+      'Workflow Automation', 'Open-source AI Stack', 'RAG & Agent Workflows',
+      '0-to-1 Product Ownership', 'Production AI Observability', 'AI-native Product Management',
+      'Remote-first Europe',
     ],
     projects: P_VCH + P_BEERGAME + P_2BSMART + P_MAGICFRAMES,
     portfolio_url: 'https://valuechainhackers.xyz',
     portfolio_display: 'valuechainhackers.xyz',
   },
   {
+    // Block E: "Certified in Prince2, ITIL, Scrum, and PSPO I -- applied across complex multi-stakeholder programs"
+    // Keywords: program manager, professional services, RACI, OKR, DevSecOps, GitLab, Prince2, ITIL
     slug: '029-gitlab-program-manager-london',
-    summary: 'Program manager with deep methodology stack (Prince2, ITIL, Scrum Master, PSPO I) and 15+ years cross-functional delivery across universities, labs, innovation programs, and enterprise client engagements. Managed enterprise system implementations for BP and Statoil at KONGSBERG -- multi-country, multi-site, scoped deliverables with formal sign-off. DevOps background native to the GitLab domain: Docker, Kubernetes, CI/CD pipelines, GitHub -- operated daily for 10+ years.',
+    summary: 'Program manager certified in Prince2, ITIL, Scrum Master, and PSPO I -- applied across complex multi-stakeholder programs from university transformation to cross-European research initiatives. Delivered enterprise client implementations for BP and Statoil at KONGSBERG across Jordan, Oman, and Azerbaijan. DevOps background native to the GitLab domain: Docker, Kubernetes, CI/CD -- operated daily for 10+ years.',
     competencies: [
       'Program Management', 'Prince2 & ITIL', 'Scrum Master & PSPO I',
-      'Multi-stakeholder Delivery', 'Enterprise Client Management', 'DevOps Native',
-      'CI/CD Pipelines', 'Docker & Kubernetes', 'Process Design',
-      'Agile Program Management',
+      'Multi-workstream Delivery', 'Customer-facing Delivery', 'DevSecOps & GitLab',
+      'RACI & OKR', 'Stakeholder Management', 'Budget Management',
+      'Program Strategy',
     ],
     projects: P_VCH + P_2BSMART + P_INTERACTIVE + P_BEERGAME,
     portfolio_url: 'https://socialchicken.net',
     portfolio_display: 'socialchicken.net',
   },
   {
+    // Block E: "Built AI-powered intake and workflow automation systems on n8n..."
+    // Keywords: intake management, portfolio management, triage, n8n, OKR, capacity planning
     slug: '030-stripe-pm-intake-portfolio',
-    summary: 'Program manager and systems builder with expertise in AI-powered intake and portfolio management. Built n8n workflow automations for research onboarding and supply chain compliance checking at Windesheim. Managed 8-workstream COVID-19 portfolio under pandemic constraints: dependency graph from scratch, weekly cross-lead reviews, mid-flight assessment model rebuild, full on-schedule delivery. Prince2, ITIL, Scrum Master, PSPO I -- methodology depth underpins reliable delivery.',
+    summary: 'Program manager and systems builder. Built AI-powered intake and workflow automation systems on n8n for research programs; designed portfolio management processes for cross-departmental initiatives. Managed 8-workstream COVID-19 portfolio under pandemic constraints: dependency graph from scratch, weekly reviews, mid-flight model rebuild, full on-schedule delivery. Prince2, ITIL, Scrum, PSPO I -- methodology depth makes delivery reliable.',
     competencies: [
-      'Portfolio Management', 'AI-powered Intake (n8n)', 'Program Orchestration',
-      'Multi-workstream Delivery', 'Process Design', 'Stakeholder Alignment',
-      'Research Portfolio Management', 'Agile Methodology', 'Systems Builder',
-      'Prince2 & ITIL',
+      'Portfolio Management', 'AI-powered Intake (n8n)', 'Triage & Prioritization',
+      'Workflow Automation', 'Capacity Planning', 'OKR & Dashboard',
+      'Change Management', 'Stakeholder Management', 'Systems Thinking',
+      'Portfolio Visibility',
     ],
     projects: P_VCH + P_BEERGAME + P_2BSMART + P_INTERACTIVE,
     portfolio_url: 'https://socialchicken.net',
