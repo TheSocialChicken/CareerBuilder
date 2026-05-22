@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christiaan Verhoef — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('./fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .contact-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  /* === PROFESSIONAL SUMMARY === */
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  /* Links must never break across lines */
+  a {
+    white-space: nowrap;
+  }
+
+  /* === CORE COMPETENCIES === */
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  /* === WORK EXPERIENCE === */
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  /* === PROJECTS === */
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  /* === EDUCATION === */
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  /* === CERTIFICATIONS === */
+  .cert-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(90px, max-content) 44px;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+
+  .cert-title {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #333;
+    min-width: 0;
+  }
+
+  .cert-org {
+    color: hsl(270, 70%, 45%);
+    white-space: nowrap;
+  }
+
+  .cert-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  /* === SKILLS === */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+
+  .skill-item {
+    font-size: 10.5px;
+    color: #444;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+    font-size: 10.5px;
+  }
+
+  /* === PRINT === */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      padding: 0;
+    }
+  }
+
+  /* === PAGE BREAK CONTROL === */
+  .avoid-break,
+  .job,
+  .project,
+  .edu-item,
+  .cert-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>{{NAME}}</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>+31 6 30 18 47 43</span>
+      <span class="separator">|</span>
+      <span>christiaan_gerardo@hotmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/christiaanverhoef">linkedin.com/in/christiaanverhoef</a>
+      <span class="separator">|</span>
+      <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a>
+      <span class="separator">|</span>
+      <span>Baarn, Netherlands</span>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">Software ecosystem builder with 10+ years of DevOps on Ubuntu-based Linux infrastructure. Co-built the Tonomy open-source ecosystem (W3C-recognized); ran Open Food Chain partner and community networks. Built enablement content adopted globally by HTC. Combines the technical credibility of an operator (Docker, Kubernetes, CI/CD, self-hosted AI stacks) with the ecosystem development skills of a builder -- alliance management, partner onboarding, and community activation.</div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Software Ecosystem Building</span>
+      <span class="competency-tag">Ubuntu Linux Operations</span>
+      <span class="competency-tag">DevOps & Infrastructure</span>
+      <span class="competency-tag">Partner Network Development</span>
+      <span class="competency-tag">Open Source Governance</span>
+      <span class="competency-tag">Technical Community</span>
+      <span class="competency-tag">Blockchain Ecosystem (W3C)</span>
+      <span class="competency-tag">Tutorial & Enablement Content</span>
+      <span class="competency-tag">Alliance Management</span>
+      <span class="competency-tag">Docker & Kubernetes</span>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+    
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Viridis Green-Tech AG</span>
+      <span class="job-period">2024 – Present</span>
+    </div>
+    <div class="job-role">Innovation Architect <span class="job-location">Munich, Germany (Remote)</span></div>
+    <ul>
+      <li><strong>Blockchain Ecosystem Architecture</strong> -- Defined and prototyped structure for blockchain-powered supply chain traceability and verifiability system in DACH market</li>
+      <li><strong>Business Alignment</strong> -- Aligned lab projects with commercial development and sustainability goals; co-authored early-stage grant proposals for open infrastructure and compliance tooling</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Windesheim University of Applied Sciences</span>
+      <span class="job-period">Jan 2020 – Present</span>
+    </div>
+    <div class="job-role">Project Manager -- Supply Chain Finance Lectoraat <span class="job-location">Zwolle, Netherlands</span></div>
+    <ul>
+      <li><strong>Value Chain Hackers</strong> -- Created AI-driven innovation lab for supply chain traceability, sustainability, and CSRD/EUDR compliance; deployed full AI stack (Flowise, OpenWebUI, n8n, Supabase) on self-managed Linux/Docker infrastructure</li>
+      <li><strong>COVID-19 Mega Project</strong> -- Merged 8 interdisciplinary university courses into single simulation-based program in under 2 months; mapped dependencies, ran cross-lead reviews, rebuilt assessment model mid-flight</li>
+      <li><strong>Spark! Living Lab</strong> -- Founded and ran blockchain-based simulation and agile supply chain education lab; delivered the BlockBeer game; cross-European programs running 5 years on</li>
+      <li><strong>DevOps</strong> -- Full lifecycle (provisioning, containerization, CI/CD, monitoring, incident response) across all lab environments since 2020; 10+ years DevOps practice</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Tonomy Foundation</span>
+      <span class="job-period">2021 – Present</span>
+    </div>
+    <div class="job-role">Co-Founder &amp; Board Member <span class="job-location">Amsterdam &amp; Remote</span></div>
+    <ul>
+      <li><strong>Pangea Vault</strong> -- Co-designed first version of Tonomy's MICA-compliant digital identity vault; W3C-recognized open-source ecosystem</li>
+      <li>Led strategy, technical positioning, partner development, and community operations on 2-week agile sprint cycles; transitioned to board oversight</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">COTIT</span>
+      <span class="job-period">Jan 2024 – Jul 2024</span>
+    </div>
+    <div class="job-role">Business Innovator <span class="job-location">Almere, Netherlands</span></div>
+    <ul>
+      <li>Defined functional SaaS sales cycle, restructured internal roles and workflows using agile methods, provided financial organization guidance for early scale-up phase</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Open Food Chain</span>
+      <span class="job-period">2022 – 2024</span>
+    </div>
+    <div class="job-role">Community Manager <span class="job-location">Amsterdam / Remote</span></div>
+    <ul>
+      <li>Built and moderated technical and stakeholder community (Discord); ran agile sprints for software development; wrote smart contracts; supported investor outreach that led to new investment</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Aeres Hogeschool Dronten</span>
+      <span class="job-period">2021 – 2022</span>
+    </div>
+    <div class="job-role">Lab Manager <span class="job-location">Dronten, Netherlands</span></div>
+    <ul>
+      <li><strong>Agile Course Integration</strong> -- Implemented agile learning model merging 8 separate courses into one sprint cycle using SafeScrum in under 2 months</li>
+      <li><strong>Veles Farming</strong> -- Recognized potential in student project, seed-invested, supported launch; now operating agri-tech startup in Slovakia (EUR 2M funding)</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Social Chicken</span>
+      <span class="job-period">2016 – 2022</span>
+    </div>
+    <div class="job-role">Freelance Senior Project Manager &amp; Educator <span class="job-location">Amsterdam, Netherlands</span></div>
+    <ul>
+      <li>Delivered private cloud setups, database migrations, and BI dashboards for SMEs; full DevOps stack including Linux, Nagios monitoring, CI/CD pipelines</li>
+      <li><strong>Interactive</strong> -- Technical due diligence of pre-seed startup codebase; positive investment recommendation; 4x exit achieved</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Hogeschool InHolland</span>
+      <span class="job-period">2021 – 2022</span>
+    </div>
+    <div class="job-role">Guest Lecturer &amp; Course Designer <span class="job-location">Netherlands</span></div>
+    <ul>
+      <li>Designed and delivered Blockchain Minor ("Build Your Own Crypto") and Dashboarding &amp; Analysis courses; both still in active independent use; identified and sponsored Magic Frames and Veles Farming student ventures</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">The Fork (now Open Food Chain)</span>
+      <span class="job-period">2018 – 2020</span>
+    </div>
+    <div class="job-role">Head Trainer &amp; Innovator <span class="job-location">Amsterdam, Netherlands</span></div>
+    <ul>
+      <li>Led professional training in digital food technology; hired and mentored students to co-develop production software; managed DevOps infrastructure; designed physical blockchain training object making abstract concepts tangible</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">ROC Midden Nederland</span>
+      <span class="job-period">2018 – 2020</span>
+    </div>
+    <div class="job-role">Freelance Educator -- Agile Learning &amp; Digital Projects <span class="job-location">Utrecht, Netherlands</span></div>
+    <ul>
+      <li>Designed agile classroom format mimicking startup environments; gamified role-play modules where students practiced presentation, negotiation, and digital strategy</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">KONGSBERG</span>
+      <span class="job-period">2012 – 2013</span>
+    </div>
+    <div class="job-role">Field Service Engineer / Data Quality Consultant <span class="job-location">Kristiansand, Norway</span></div>
+    <ul>
+      <li><strong>BP Jordan &amp; Oman</strong> -- End-to-end BI implementation: hardware installation, server/MOXA configuration, software rollout, data configuration, dashboard creation, on-site staff training and sign-off</li>
+      <li><strong>Statoil</strong> -- Production analytics deployment, user training, and documentation</li>
+      <li><strong>BP Azerbaijan</strong> -- Data-transfer integrity oversight between partner systems; defined standards, monitored compliance, trained client staff</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Meerschap B.V.</span>
+      <span class="job-period">2010 – 2011</span>
+    </div>
+    <div class="job-role">System Manager &amp; Researcher <span class="job-location">Amsterdam, Netherlands</span></div>
+    <ul>
+      <li>Implemented and customized Nagios monitoring for hospitals, pharmacies, and mortgage firms; hardware installation, system maintenance, and workflow automation</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">WDS Global</span>
+      <span class="job-period">2008 – 2010</span>
+    </div>
+    <div class="job-role">Technical Support Engineer (3rd Line) &amp; Trainer <span class="job-location">Poole, England</span></div>
+    <ul>
+      <li>Cleared 10,000+ email backlog in Dutch support department by redesigning templates and workflows; designed HTC tutorial video series later adopted globally; trained Tesco Scotland retail staff on smartphone sales</li>
+    </ul>
+  </div>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section avoid-break">
+    <div class="section-title">Selected Projects</div>
+    
+  <div class="project">
+    <div><span class="project-title">Value Chain Hackers</span><span class="project-badge">2024 - Present</span></div>
+    <div class="project-desc">Cross-European initiative building AI-powered supply chain traceability and compliance tools for CSRD, CSDDD, and EUDR. Principal investigator for Windesheim Supply Chain Finance lectorate innovation agenda. Deployed full AI stack on self-managed infrastructure.</div>
+    <div class="project-tech">valuechainhackers.xyz</div>
+  </div>
+  <div class="project">
+    <div><span class="project-title">2bSMART</span><span class="project-badge">2020 - 2022</span></div>
+    <div class="project-desc">Delivered blockchain technology training using interactive logistics simulations for supply chain professionals across Benelux. Collaborated on design of Smartys simulation platform. Cross-European consortium project.</div>
+    <div class="project-tech">2bsmart.cz</div>
+  </div>
+  <div class="project">
+    <div><span class="project-title">Interactive -- Technical Due Diligence</span><span class="project-badge">2021 - 2022</span></div>
+    <div class="project-desc">Performed full technical due diligence of pre-seed startup codebase; issued positive investment recommendation; startup achieved 4x exit. Assessed architecture, scalability, and team capability.</div>
+  </div>
+  <div class="project">
+    <div><span class="project-title">The Beergame (Redesign)</span><span class="project-badge">2020</span></div>
+    <div class="project-desc">Rebuilt the classic logistics bullwhip-effect simulation with a modern teaching format and interface; blockchain vs. non-blockchain comparison version for supply chain education across Benelux institutions.</div>
+    <div class="project-tech">demonstrator.valuechainhackers.xyz</div>
+  </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title">Bachelor of Business Administration, Business IT &amp; Management</span>
+      <span class="edu-year">2010 – 2014</span>
+    </div>
+    <div class="edu-desc"><span class="edu-org">Hogeschool van Amsterdam</span> -- Grade 8.7. Thesis: simulation-based learning and training methodology at Kongsberg.</div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title">Technical Informatics</span>
+      <span class="edu-year">2006 – 2007</span>
+    </div>
+    <div class="edu-desc"><span class="edu-org">Hogeschool van Amsterdam</span></div>
+  </div>
+  <div class="edu-item">
+    <div class="edu-header">
+      <span class="edu-title">Senior General Secondary Education (HAVO), Theoretical &amp; Mathematical Physics</span>
+      <span class="edu-year">2002 – 2006</span>
+    </div>
+    <div class="edu-desc"><span class="edu-org">Hermann Wesselink College</span></div>
+  </div>
+
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section avoid-break">
+    <div class="section-title">Certifications</div>
+    
+  <div class="cert-item">
+    <span class="cert-title">Scrum Master</span>
+    <span class="cert-org">Scrum.org</span>
+    <span class="cert-year">2018</span>
+  </div>
+  <div class="cert-item">
+    <span class="cert-title">Professional Scrum Product Owner I (PSPO I)</span>
+    <span class="cert-org">Scrum.org</span>
+    <span class="cert-year">2019</span>
+  </div>
+  <div class="cert-item">
+    <span class="cert-title">PRINCE2</span>
+    <span class="cert-org">Axelos</span>
+    <span class="cert-year">2019</span>
+  </div>
+  <div class="cert-item">
+    <span class="cert-title">ITIL Foundation</span>
+    <span class="cert-org">Axelos</span>
+    <span class="cert-year">2019</span>
+  </div>
+  <div class="cert-item">
+    <span class="cert-title">Train the Trainer (Blockchain)</span>
+    <span class="cert-org">Blockchain Workspace</span>
+    <span class="cert-year">2021</span>
+  </div>
+  <div class="cert-item">
+    <span class="cert-title">ESG &amp; Sustainable Supply Chains</span>
+    <span class="cert-org">Online</span>
+    <span class="cert-year">2023</span>
+  </div>
+  <div class="cert-item">
+    <span class="cert-title">Data Analysis &amp; Visualization (R, Python)</span>
+    <span class="cert-org">Online</span>
+    <span class="cert-year">2020</span>
+  </div>
+  <div class="cert-item">
+    <span class="cert-title">Oracle 11g Essentials &amp; SOA Concepts</span>
+    <span class="cert-org">Oracle</span>
+    <span class="cert-year">2012</span>
+  </div>
+  <div class="cert-item">
+    <span class="cert-title">Offshore Survival Training / HUET</span>
+    <span class="cert-org">Falck</span>
+    <span class="cert-year">2012</span>
+  </div>
+
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Skills</div>
+    
+  <div class="skills-grid">
+    <div class="skill-item"><span class="skill-category">Program Management:</span> Prince2, ITIL, sprint planning, budget management, grant writing (EUR 2M secured), stakeholder reporting</div>
+    <div class="skill-item"><span class="skill-category">Agile &amp; Facilitation:</span> Scrum Master (15+ yr), Kanban, SafeScrum, PSPO I, workshop design, simulation-based learning, retrospectives</div>
+    <div class="skill-item"><span class="skill-category">DevOps &amp; Infrastructure:</span> Docker, Kubernetes, GitHub CI/CD, Jenkins, Linux (Ubuntu/CentOS/Debian), Nagios, Grafana, PostgreSQL, MySQL, Oracle SOA</div>
+    <div class="skill-item"><span class="skill-category">AI Stack:</span> Flowise, OpenWebUI, n8n, Supabase, LLM deployment, self-hosted AI infrastructure, prompt engineering</div>
+    <div class="skill-item"><span class="skill-category">Blockchain &amp; Identity:</span> SSI, MICA compliance, Ethereum, smart contracts, HyperLedger, EOSIO, supply chain traceability</div>
+    <div class="skill-item"><span class="skill-category">Business:</span> business development, process design, stakeholder alignment, partner ecosystems, startup incubation (10 ventures advised or co-founded)</div>
+    <div class="skill-item"><span class="skill-category">Languages:</span> Dutch (native), English (near-native), German (conversational)</div>
+  </div>
+
+  </div>
+
+</div>
+</body>
+</html>
