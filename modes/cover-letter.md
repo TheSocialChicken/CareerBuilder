@@ -1,6 +1,6 @@
 # Mode: cover-letter — Human-Voice Motivation Letter
 
-Generate a motivation letter that sounds like Christiaan wrote it: direct, curious, connects unexpected dots, warm without being soft. Not a formal begeleidende brief. Not a CV rehash. A letter a real person wrote.
+Generate a motivation letter that sounds like {candidate.full_name from config/profile.yml} wrote it: direct, curious, connects unexpected dots, warm without being soft. Not a formal begeleidende brief. Not a CV rehash. A letter a real person wrote. Voice calibrated from modes/_profile.md (writing style section) and career-story.md (if it exists).
 
 ---
 
@@ -22,6 +22,7 @@ Generate a motivation letter that sounds like Christiaan wrote it: direct, curio
 
 Read in order:
 1. `cv.md` — proof points, timelines, project names
+1b. `career-story.md` (if exists) — superpowers, the pitch, best work stories, voice calibration
 2. `modes/_profile.md` — archetypes, exit narrative, writing style, comp targets
 3. `article-digest.md` (if exists) — richer metrics and story beats
 4. `reports/` — grep for the company name. If report exists, read it fully.

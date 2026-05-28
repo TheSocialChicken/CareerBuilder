@@ -10,14 +10,15 @@ Interactive mode for when the candidate is filling out an application form in Ch
 ## Workflow
 
 ```text
-1. DETECT      → Read active Chrome tab (screenshot/URL/title)
-2. IDENTIFY    → Extract company + role from the page
-3. SEARCH      → Match against existing reports in reports/
-4. LOAD        → Read full report + Section G (if it exists)
-5. COMPARE     → Does the role on screen match the one evaluated? If it changed → notify
-6. ANALYZE     → Identify ALL visible form questions
-7. GENERATE    → For each question, generate a personalized response
-8. PRESENT     → Show formatted responses for copy-paste
+1. DETECT         → Read active Chrome tab (screenshot/URL/title)
+2. IDENTIFY       → Extract company + role from the page
+3. SEARCH         → Match against existing reports in reports/
+4. LOAD           → Read full report + Section G (if it exists)
+[4.5] COVER LETTER CHECK → Generate or load cover letter for this job
+5. COMPARE        → Does the role on screen match the one evaluated? If it changed → notify
+6. ANALYZE        → Identify ALL visible form questions
+7. GENERATE       → For each question, generate a personalized response
+8. PRESENT        → Show cover letter + formatted responses as one Application Package
 ```
 
 ## Step 1 — Detect the job
@@ -36,6 +37,30 @@ Interactive mode for when the candidate is filling out an application form in Ch
 3. If there is a match → load the full report
 4. If there is a Section G → load previous draft answers as a base
 5. If there is NO match → notify and offer to run a quick auto-pipeline
+
+## Step 4.5 — Cover Letter Check
+
+Run after context is loaded, before comparing the role.
+
+**Determine application slug and number** from the matched report filename.
+Example: `reports/002-red-panda-works-2026-05-21.md` → num = `002`, slug = `red-panda-works`
+
+**Case A — cover letter already exists** (`applications/{###}-{slug}/cover-letter.md`):
+- Load it
+- Note: "Cover letter found. Will be included in output."
+
+**Case B — no cover letter yet:**
+- Announce: `[1/2] Generating cover letter for {Company} — {Role}...`
+- Invoke `modes/cover-letter.md` fully (including org research via WebSearch)
+- Ensure `applications/{###}-{slug}/` folder exists — create if not
+- Write to **both**:
+  - `applications/{###}-{slug}/cover-letter.md`
+  - `output/motivatiebrief-{slug}-{YYYY-MM-DD}.md`
+- Announce: `[2/2] Cover letter ready. Continuing with form responses...`
+
+**Case C — no report match at all:**
+- Skip cover letter step
+- Note in output: "No report found — cover letter skipped. Run auto-pipeline first or use `/career-ops cover-letter` manually."
 
 ## Step 3 — Detect changes in the role
 
@@ -71,16 +96,25 @@ For each question, generate the response following:
 **Output format:**
 
 ```text
-## Responses for [Company] — [Role]
+## Application Package — [Company] — [Role]
 
 Based on: Report #NNN | Score: X.X/5 | Archetype: [type]
 
 ---
 
-### 1. [Exact form question]
+### Cover Letter
+
+[Full cover letter content — ready to copy or attach as PDF]
+PDF: applications/NNN-{slug}/cover-letter.pdf
+
+---
+
+### Form Responses
+
+#### 1. [Exact form question]
 > [Response ready for copy-paste]
 
-### 2. [Next question]
+#### 2. [Next question]
 > [Response]
 
 ...
