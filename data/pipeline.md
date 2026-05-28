@@ -101,3 +101,59 @@
 - [x] SKIP | https://stripe.com/jobs/search?gh_jid=7417090 | Stripe | Technical Program Manager, IAM Programs — US only
 - [x] SKIP | https://stripe.com/jobs/search?gh_jid=6932491 | Stripe | Technical Program Manager, Payments Experiences — US only
 - [x] SKIP | https://stripe.com/jobs/search?gh_jid=7685855 | Stripe | Technical Program Manager, Risk — US only
+
+## NL Companies — Manually Added
+
+- [ ] https://npuls.nl/vacatures/vacature-trekker-themalijn-ai-en-data/ | Npuls | Trekker themalijn AI en data — national education AI program, 3 positions, leads theme lines on AI vision/learning/responsible use
+- [ ] https://npuls.nl/vacatures/vacature-la-en-ai-specialisten/ | Npuls | LA en AI-specialisten — AI specialist roles within Npuls transformation hub
+- [ ] https://npuls.nl/vacatures/vacature-expert-ai-en-datageletterdheid/ | Npuls | Expert AI- en datageletterdheid — AI/data literacy expert, education sector
+- [ ] https://npuls.nl/vacatures/vacature-ai-expert/ | Npuls | AI Expert — generalist AI expert within national education program
+- [ ] https://pro-act.nl/vacatures/adviseur-verantwoord-gebruik-ai-data/ | Npuls via Pro-Act | Adviseur verantwoord gebruik AI & Data — responsible AI advisor, placed at Npuls
+- [ ] https://www.werkenbijabnamro.nl/en/vacancy/9002/head-of-ai-analytics-model-risk | ABN AMRO | Head of AI & Analytics Model Risk — €9,257–€13,224/month, Amsterdam. Model risk/governance focus — evaluate carefully against profile fit
+- [ ] https://rabobank.jobs/nl/vacature/new-technology-strategist-senior/JR_00135590/ | Rabobank | New Technology Strategist (senior) — Utrecht, €5,876–€8,395/month. NOTE: deadline was April 2 — verify still open before evaluating
+- [ ] https://www.prowareness.com/nl/werken-bij/vacatures/agile-coach | Prowareness | Agile Coach — 32–40h, €4,000–€4,700/month. NOTE: salary below target minimum (€55k). Only evaluate if fractional/part-time angle fits
+
+## NL Government — Scrum Master / Agile
+
+- [ ] https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-DEF-2026-6359 | Ministerie van Defensie | Senior Scrum Master — deadline Oct 2026, 32-40h Den Haag
+- [ ] https://www.werkenvoornederland.nl/vacatures/programmamanager-innovatie-596763-DEF-2026-9184 | Ministerie van Defensie | Programmamanager Innovatie — COMMIT, ground-based weapon systems innovation programs
+- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-NFI-2026-6423 | Nederlands Forensisch Instituut | Scrum Master — Den Haag
+- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-JIO-2026-6969 | Ministerie van Justitie (JIO) | Scrum Master — Gouda, 32-36h
+- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-RO-2026-5511 | IVO Rechtspraak | Scrum Master — deadline May 31 2026, apply urgently
+- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-NCSC-2026-8898 | Nationaal Cyber Security Centrum | Scrum Master — hybrid AI-driven service transition
+- [ ] https://www.werkenvoornederland.nl/vacatures/scrummaster-BD-2026-1225 | Belastingdienst | Scrummaster — Apeldoorn
+- [ ] https://www.werkenvoornederland.nl/vacatures/agile-leader-coach-RVO-2026-4282 | RVO | Agile Leader (Coach) — LACE (Lean Agile Centre of Excellence), SAFe SPC preferred, started Jan 2026
+- [ ] https://www.werkenbijdeoverheid.nl/vacatures/senior-scrum-master-KVK-2026-3692 | KVK | Senior Scrum Master — Utrecht, PSM I&II required, 5+ yrs experience
+- [ ] https://www.cbs.nl/nl-nl/vacature/scrum-master/9a68cc0214394fb4b5d2fc24acf3e525 | CBS | Scrum Master — €4,691–€6,907/month, 36h, Heerlen/Den Haag
+- [ ] https://www.werkenvoornederland.nl/vacatures/product-owner-overheidsbrede-dienstverlening-BZK-2026-2018 | BZK / Rijksorganisatie ODI | Product Owner Overheidsbrede Dienstverlening — Den Haag
+
+## NL Private Sector — Agile / Program Management
+
+- [ ] https://www.werkenbijns.nl/vacatures/scrum-master-utrecht-1290134 | NS | Scrum Master — posted 22-05-2026, Utrecht, expert in Agile philosophy + Scrum, guides multiple teams
+- [ ] https://careers.tennet.eu/en_US/careers/JobDetail/Sr-Scrum-Master-Agile-Coach/63714 | TenneT | Sr. Scrum Master / Agile Coach — €3,879–€7,660/month, 40h, Arnhem
+- [ ] https://www.werkenbijabnamro.nl/en/vacancy/9132/programma-manager | ABN AMRO | Senior Programmamanager — Change Management Office, International Card Services, Amsterdam
+- [ ] https://www.accenture.com/nl-en/careers/jobdetails?id=R00306941_en | Accenture | Transformational Change Consultant – Health & Public Services — NL market, change mgmt + agile
+- [ ] https://www.accenture.com/nl-en/careers/jobdetails?id=R00282591_en | Accenture | Transformational Change Management Consultant — ERP rollouts, operating model redesign, digital transformation
+- [ ] https://careers.vattenfall.com/nl/nl/job/business-change-manager-in-amsterdam-jid-49579 | Vattenfall | Business Change Manager — Amsterdam
+- [ ] https://www.uwv.nl/nl/werken-bij/vacatures/a1WSc000001dSOrMAM | UWV | Scrum Master IV Gegevensdiensten — Amsterdam
+- [ ] https://careers.tudelft.nl/job/Delft-Innovation-Manager-Quantum-Internet-2628-CD/828811702/ | TU Delft | Innovation Manager Quantum Internet — Delft, innovation + ecosystem building
+
+## Pendientes
+
+- [ ] https://job-boards.greenhouse.io/adyen/jobs/7946947 | Adyen | Employer Brand Program Manager, Events & Partnerships EMEA
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/7749202003?gh_jid=7749202003 | Celonis | Principal Client Value Partner - Retail
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5226862008 | Anthropic | Applied AI Architect, Applied AI (Digital Natives Business)
+- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5231717008 | Anthropic | Supply Chain Security & Assurance Lead
+- [ ] https://job-boards.greenhouse.io/canonical/jobs/2614095 | Canonical | Software Engineer - Edge AI
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8462016002 | Databricks | Data & AI Platform Architect (Professional Services)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8285493002 | Databricks | Director, Enterprise - Retail & CPG, m/f/d
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8568151002 | Databricks | Sr. Director, Enterprise - Retail Vertical - Strategic Accounts 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8208109002 | Databricks | Sr. Technical Program Manager, Professional Services - Financial Services
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8441890002 | Databricks | Strategic AI/BI Account Executive
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8564957002 | GitLab | Principal Product Manager, AI Custom Models
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8556658002 | GitLab | Senior AI Engineer
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8157520002 | GitLab | Senior Platform Engineer(Golang), Software Supply Chain Security: Authentication
+- [ ] https://stripe.com/jobs/search?gh_jid=7214197 | Stripe | Program Manager, Risk Ops Enablement
+- [ ] https://stripe.com/jobs/search?gh_jid=7938661 | Stripe | Public Affairs Manager
+- [ ] https://stripe.com/jobs/search?gh_jid=7589234 | Stripe | Technical Program Manager, Infrastructure
+
