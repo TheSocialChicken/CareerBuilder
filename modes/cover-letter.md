@@ -7,6 +7,7 @@ Generate a motivation letter that sounds like {candidate.full_name from config/p
 ## Hard Rules (non-negotiable)
 
 1. **NO em-dashes. Ever.** Use commas, colons, or new sentences instead.
+1a. **NO spaced-hyphen separators.** Do not replace em-dashes with ` - `. That pattern reads as AI-generated. Restructure the sentence: use a colon, a subordinate clause ("waarbij", "waarmee", "zodat", "omdat"), or split into two sentences.
 2. Never open with "I am writing to apply" / "Hierbij solliciteer ik" / "Met grote interesse" / "Naar aanleiding van".
 3. Never close with "Ik zie uit naar uw reactie" / "I look forward to hearing from you" / "Hopend u hiermee voldoende te hebben geïnformeerd."
 4. No clichés: "passionate about", "results-oriented", "proven track record", "leveraged", "spearheaded", "synergies", "seamless", "innovative".
@@ -95,9 +96,11 @@ One or two sentences. Concrete. Not desperate. Not formulaic.
 
 Good examples:
 - "Amersfoort is goed bereikbaar vanuit Baarn. Ik bespreek graag de mogelijkheden."
-- "Ik stuur graag een voorstel toe voor hoe ik de eerste 90 dagen zou inrichten."
+- "Bijgevoegd vind je mijn 90-dagenplan." (only if the plan actually exists as a PDF in the application folder)
 - "Ik ben beschikbaar voor een gesprek op kort termijn."
 - "I'd be happy to walk through the first 90 days in a conversation."
+
+**CRITICAL:** If the close references an attachment, proposal, or plan, that document must already exist and be ready to send. Never promise something that has not been created yet.
 
 Bad examples (never use):
 - "Ik zie uit naar uw reactie."
@@ -176,10 +179,18 @@ Christiaan is ENFP-T. In professional writing this translates to:
 
 **What never changes:**
 - No em-dashes
+- No ` - ` spaced-hyphen separators — these are the most visible AI writing tell. Use real sentence structure.
 - No corporate-speak
 - No sycophancy
 - No "I look forward to"
 - It sounds like a person wrote it, not a template
+
+**AI-detectable patterns to actively avoid:**
+- Parallel list constructions ("I did X. I did Y. I did Z.") — vary rhythm and structure
+- Every sentence starting with "Ik" / "I"
+- Formulaic "X, resulting in Y" or "Leveraged X to achieve Y"
+- Bullet-point energy in prose (short declarative sentences with no connective tissue)
+- Over-specificity for its own sake ("15+ years", "4 delivery teams") without narrative purpose
 
 ---
 
