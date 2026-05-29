@@ -2,6 +2,14 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 32 | 2026-05-29 | Ministerie van Defensie | Programmamanager Innovatie | 3.2/5 | Evaluated | ✅ | [032](reports/032-defensie-programmamanager-innovatie-2026-05-29.md) | Schaal 14 (€84k-€113k); WO-eis = risico; interne voorkeur; deadline 10 jun |
+| 33 | 2026-05-29 | Ministerie van Defensie | Senior Scrum Master (38u) | 3.5/5 | Evaluated | ✅ | [033](reports/033-defensie-senior-scrum-master-2026-05-29.md) | Schaal 12 (€70k-€91k); PSM II gap; deadline 15 okt — ruim tijd voor certificering |
+| 34 | 2026-05-29 | ABN AMRO / ICS | Senior Programma Manager | 3.3/5 | Evaluated | ✅ | [034](reports/034-abn-amro-senior-programmamanager-2026-05-29.md) | €85k-€121k + 11%; FS-sector voorkeur gap; deadline 19 jun — urgentie |
+| 35 | 2026-05-29 | Accenture | Change Consultant H&PS | 2.8/5 | Evaluated | ✅ | [035](reports/035-accenture-change-consultant-hps-2026-05-29.md) | Niet aanbevolen: Master-eis + mid-level positionering + consulting structure |
+| 36 | 2026-05-29 | Accenture | Change Management Consultant | 2.5/5 | Evaluated | ✅ | [036](reports/036-accenture-change-management-consultant-2026-05-29.md) | Niet aanbevolen: ERP-gap + Master-eis + over-senior |
+| 37 | 2026-05-29 | KPMG | Scrum Master | 3.0/5 | Evaluated | ✅ | [037](reports/037-kpmg-scrum-master-2026-05-29.md) | Grenswaarde: corporate marketing voorkeur gap; Big 4 structuur; salaris variabel |
+| 38 | 2026-05-29 | Pro-Act / Npuls | Adviseur Verantwoorde AI & Data | 3.8/5 | Evaluated | ✅ | [038](reports/038-proact-npuls-adviseur-verantwoorde-ai-2026-05-29.md) | DEADLINE VANDAAG — sterke match: onderwijs + AI-governance + fractional-vriendelijk |
+| 39 | 2026-05-29 | Prowareness | Agile Coach | 2.5/5 | Evaluated | ✅ | [039](reports/039-prowareness-agile-coach-2026-05-29.md) | Niet aanbevolen: salaris €48k-€56k ver onder target; over-senior |
 | 6 | 2026-05-21 | Mistral AI | AI Deployment Strategist - Netherlands | 2.8/5 | Evaluated | ❌ | [006](reports/006-mistral-ai-nl-2026-05-21.md) | - |
 | 7 | 2026-05-21 | Mistral AI | AI Deployment Strategist - Munich | 2.6/5 | Evaluated | ❌ | [007](reports/007-mistral-ai-munich-2026-05-21.md) | - |
 | 8 | 2026-05-21 | GitLab | Engagement Manager - EMEA | 3.2/5 | Evaluated | ✅ | [008](reports/008-gitlab-engagement-manager-emea-2026-05-21.md) | - |
