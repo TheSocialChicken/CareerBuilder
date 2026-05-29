@@ -4,6 +4,7 @@
 **URL:** https://pro-act.nl/vacatures/adviseur-verantwoord-gebruik-ai-data/
 **Archetype:** AI Transformation / Responsible AI Advisor
 **Score:** 3.8/5
+**Culture Fit:** Strong
 **Legitimacy:** High Confidence
 **PDF:** ✅
 **CV-taal:** Nederlands (NL educatiesector)
@@ -112,6 +113,78 @@
 Uitstekende fit: onderwijs (Windesheim/Aeres), AI-governance (Tonomy/VCH), verantwoorde AI (EUDR/CSRD/privacy by design), en 24-40u past bij fractional model. Tijdelijk contract is het enige nadeel.
 
 **⚠️ DEADLINE VANDAAG 29 MEI 2026. Solliciteer vandaag nog als Christiaan wil reageren.**
+
+---
+
+## H) Cultuur, Persoonlijkheid & Langetermijnfit
+
+### H1 — Organisatiecultuur
+
+**Type organisatie:** Pro-Act (detachering/consultancy) met opdracht bij Npuls, het nationale digitale transformatieprogramma voor het hoger onderwijs. Op de build-vs-maintain spectrum: het is een opbouwende rol — Npuls bestaat om iets te veranderen in hoe het Nederlandse hoger onderwijs met AI omgaat. Er is iets te bouwen: richtlijnen, governance-tools, kennisnetwerken.
+
+**Cultuursignalen:** Npuls is een relatief nieuw nationaal programma (2022+), agile, missiegedreven, en werkt samen met hogescholen en universiteiten door heel Nederland. De taal is purposegericht: "verantwoord gebruik," "richtlijnen," "begeleiding van instellingen." De werkomgeving is waarschijnlijk hybride Utrecht met een relatief platte structuur voor een nationaal programma. Pro-Act als detacheerder voegt een laag toe (geen directe dienstbetrekking bij Npuls), maar de opdracht is de cultuur.
+
+**Match met 2-jaar-visie:** Goed. Npuls is niet letterlijk een hackerspace, maar de kern overlapt sterk: missiegedreven, kleine kerngroep, nieuwe gebieden (verantwoorde AI in onderwijs), hoge relevantie, opbouwend werk. Het sluit aan bij Christiaans 2-jaar-visie op meerdere punten: frontier-domein (AI), educatiesector, iets bouwen (richtlijnen, governance-tools), kennisdeling.
+
+### H2 — Persoonlijkheidsfit
+
+| Dimensie | Wat de rol vraagt | Christiaans profiel | Match |
+|----------|-------------------|---------------------|-------|
+| Starter vs. finisher | Adviseur die governance-tools en richtlijnen opbouwt voor een nieuw programma — 0 tot 1 fase | ENFP-T, sterkst in 0 tot 1 en 1 tot 2 | Sterk |
+| Variatie vs. herhaling | Wisselende onderwijsinstellingen, diverse governance-vraagstukken, evoluerend AI-landschap | Gedijt op variatie | Sterk |
+| Autonomieniveau | Zelfstandige senior adviseur (JD: "zelfstandig"), eigen aanpak | Heeft eigenaarschap nodig | Sterk |
+| Bouwen vs. beheren | Bouwen van richtlijnen, toolkits, kennisnetwerken — primair bouw | Bouwersidentiteit | Sterk |
+| Fractional fit | 24-40u flexibel — fractional-vriendelijk | Optimaal: 2-3 gelijktijdige 0,4-0,6 FTE; 24u = perfecte stack-ruimte | Uitstekend |
+| Energiepiek-tolerantie | Educatiesector, missiegedreven programma — hoge tolerantie voor energie en ideeën | Front-loaded energie past goed in opbouwfase van nieuw programma | Positief |
+| Teamgrootte | Klein Npuls-kernteam + netwerk van instellingen | Kleine kerngroep, hoge betrokkenheid | Sterk |
+
+**Geen rode vlaggen op persoonlijkheidsdimensies.**
+
+### H3 — Waarden en missie-alignment
+
+Dit is de sterkste missie-match in de gehele batch. Npuls werkt aan verantwoorde AI-implementatie in het Nederlandse hoger onderwijs. Dit raakt direct aan wat Christiaan intrinsiek motiveert: AI-adoptie begrijpbaar maken, leerinfrastructuur bouwen, educatieve instellingen begeleiden in transitie. Hij heeft dit al gedaan bij Windesheim (CoP, AI-tools interviews), Aeres (SafeScrum) en Tonomy (privacy by design). Het verschil: hier is het officieel nationaal geprogrammeerd, met budget en impact. Hij zou hier onbetaald over praten aan tafel. Dit is het type werk dat hij voor minder geld zou doen als de missie klopt.
+
+### H4 — Energieanalyse
+
+**Energiegevers:**
+- Frontier-domein: verantwoorde AI, AI Act, governance-opbouw — actief en evoluerend
+- Educatiesector: Christiaan heeft hier intrinsieke motivatie en diepe ervaring
+- Iets bouwen van (relatieve) grond af: richtlijnen, tools, kennisnetwerken voor een nieuw programma
+- 24-40u fractional: maakt stacking met Windesheim-engagement en andere rollen mogelijk
+- Kennisdeling en communityactivering: intrinsiek motiverend (doet hij al onbetaald)
+- Kleine kerngroep bij Npuls: hoog-vertrouwen, collaborative
+
+**Energievreters:**
+- Tijdelijk contract (Pro-Act detachering): geen langetermijnzekerheid
+- Salaris onbekend ("marktconform"): onderhandelingsrisico
+- Als de rol na de opbouwfase overgaat naar beheer van bestaande richtlijnen: potentieel plateau
+
+### H5 — 18-maanden duurzaamheidstest
+
+In 18 maanden zal Christiaan de governance-toolkit hebben opgebouwd, richtlijnen hebben geïmplementeerd bij meerdere instellingen, en het kennisnetwerk hebben geactiveerd. Dat is de 0 tot 1-fase. De vervolgvraag: gaat Npuls door naar een volgende ronde (AI Act compliance updates, nieuwe governance-uitdagingen) of wordt het onderhoudsbeheer? Het AI-landschap verandert snel genoeg dat de 1 tot 2-fase ook inhoudelijk interessant blijft. **Oordeel: Sustainable voor de duur van het programma (2-3 jaar); daarna heroriëntatie logisch maar niet als mislukking.**
+
+### H6 — Persoonlijkheidsspecifieke rode vlaggen
+
+| Rode vlag | Aanwezig? | Ernst | Context |
+|-----------|-----------|-------|---------|
+| Rol is primair onderhoud/beheer | Nee | n.v.t. | Opbouw van iets nieuws; governance-tools en richtlijnen zijn nog niet er |
+| Solo-sales van onrijp product | Nee | n.v.t. | Adviserende rol, geen sales |
+| Full-time exclusiviteit verwacht | Nee | n.v.t. | 24-40u is expliciet fractional-vriendelijk |
+| Grote corporate, trage besliscyclus | Nee | n.v.t. | Npuls is een programma, niet een corporate; relatief platte structuur |
+| Governance/bestuursrol in dalende organisatie | Nee | n.v.t. | Npuls is groeiend, niet dalend |
+| Ceremony-only Scrum Master | Nee | n.v.t. | Niet van toepassing |
+
+**Geen persoonlijkheidsspecifieke rode vlaggen gedetecteerd.**
+
+### H7 — Fitoordeel
+
+**Het eerlijke argument voor:**
+Dit is de beste cultuur- en persoonlijkheidsfit in de gehele batch. Het werk (verantwoorde AI-advisering in hoger onderwijs) is wat Christiaan al doet bij Windesheim maar dan met nationaal mandaat en budget. De fractional-structuur (24-40u) past perfect bij het multi-engagement model. De opbouwende aard van de rol (richtlijnen, tools, kennisnetwerken) speelt direct in op zijn ENFP-T sterktes. Missie-match is hoog: hij zou dit werk uit eigen beweging uitvoeren. Frontier-domein (AI Act, verantwoorde AI) houdt de inhoud evolutief.
+
+**Het eerlijke argument tegen:**
+Tijdelijk contract via Pro-Act geeft geen langetermijnzekerheid. Salaris is onbekend en moet actief worden onderhandeld. Als het programma wordt afgerond of de governance-opbouw wordt voltooid, bestaat het risico dat de rol overgaat in beheer. Christiaan moet dit bewaken en tijdig de volgende stap plannen.
+
+**Algehele persoonlijkheids- en cultuurfit: Strong**
 
 ---
 

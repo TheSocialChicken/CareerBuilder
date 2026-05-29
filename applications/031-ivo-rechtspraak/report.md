@@ -4,6 +4,7 @@
 **URL:** https://www.werkenvoornederland.nl/vacatures/scrum-master-RO-2026-5511
 **Archetype:** Scrum Master / Agile Coach (geldig bij coaching/innovatiemandaat)
 **Score:** 3.0/5
+**Culture Fit:** Conditional
 **Legitimacy:** High Confidence
 **PDF:** ✅
 **CV-taal:** Nederlands (NL overheidsorganisatie)
@@ -109,6 +110,76 @@ Keuzebudget (16,5%) voegt effectief ~€8k–€12k toe. Met keuzebudget haalt �
 Rol valt in de "vermijd"-categorie (Traditional Scrum Master) maar heeft een coaching + CoP + trainingscomponent die het boven louter ceremonieel tilt. Salaris-ondergrens ligt onder minimum; bovengrens + keuzebudget bereikt doelstelling. Fractional-model beperkt: 32-36 uur is bijna full-time.
 
 **Alleen aanraden als:** Christiaan een stabiele basisrol wil als fundament voor fractional engagementen. Niet als primaire stap.
+
+---
+
+## H) Cultuur, Persoonlijkheid & Langetermijnfit
+
+### H1 — Organisatiecultuur
+
+**Type organisatie:** Grote overheidsinstelling (IVO Rechtspraak, IT-organisatie van de Rechtspraak). Positie op build-vs-maintain spectrum: sterk maintenance-gericht. De IT-organisatie beheert bestaande systemen voor het gerechtelijk apparaat; innovatie is er niet de kern, continuïteit wel.
+
+**Cultuursignalen:** De JD-taal is formeel, procesgedreven en institutioneel. Begrippen als "CoP-facilitatie" en "training" suggereren enige ruimte voor kennisdeling, maar het raamwerk is strak overheids-IT. Besluitvorming verloopt traag, hiërarchisch en met veel verantwoording. Werkomgeving is hybride Utrecht maar de organisatielogica is die van een stabiele overheidsorganisatie, geen experimentele omgeving.
+
+**Match met 2-jaar-visie:** Slecht. De hackerspace-visie (kleine groep, hoge autonomie, nieuwe dingen bouwen, hoog vertrouwen) staat haaks op een gerechtsgebouw-IT-omgeving. Er is geen vrijheid om iets van de grond op te bouwen; de rol faciliteert bestaande teams in een vastgelegd kader.
+
+### H2 — Persoonlijkheitsfit
+
+| Dimensie | Wat de rol vraagt | Christiaans profiel | Match |
+|----------|-------------------|---------------------|-------|
+| Starter vs. finisher | Stabiele teams begeleiden in ritme — finisher-mindset | ENFP-T, sterkst in 0 tot 1 en 1 tot 2 | Matig |
+| Variatie vs. herhaling | Ceremonies, retrospectives, vaste sprintcyclus — structurele herhaling | Gedijt op variatie, raakt leeg door herhaling | Zwak |
+| Autonomieniveau | Uitvoerend SM binnen gedefinieerd kader | Heeft eigenaarschap nodig, geen uitvoering alleen | Matig |
+| Bouwen vs. beheren | Beheren van scrumteams in onderhoudsmodus | Bouwersidentiteit, onderhoud put energie | Zwak |
+| Fractional fit | 32-36 uur, bijna full-time | Optimaal: 2-3 gelijktijdige 0,4-0,6 FTE | Zwak |
+| Energiepiek-tolerantie | Formele omgeving, stabiele cultuur — lage tolerantie voor front-loaded energie | Front-loaded energie in eerste weken leest als chaos in vaste organisaties | Risico |
+| Teamgrootte | 2 scrumteams, beperkt team | Klein team is OK, maar geen bouwmandaat | Neutraal |
+
+**Vlaggen:** Rol is primair maintenance/beheer zonder bouwmandaat. Bijna full-time: fractional conflict. Geen ruimte voor front-loaded energie in een gestructureerde overheidsomgeving.
+
+### H3 — Waarden en missie-alignment
+
+De Rechtspraak als instituut heeft een maatschappelijk belang, maar de IT-organisatie is een interne dienstverlener zonder eigenstandige innovatiemissie. Christiaan is intrinsiek gemotiveerd door bouwen, leersystemen, frontier-domeinen (AI, duurzaamheid, identiteit). Dit werk verbindt daar niet mee. De CoP-component en trainingsrol zijn interessant, maar vormen een klein deel van de functie. Dit is een transactionele rol: goed werk, goede bijdrage aan de samenleving als infrastructuur, maar niet iets wat hij onbetaald zou doen of waar hij enthousiast over zou vertellen aan tafel.
+
+### H4 — Energieanalyse
+
+**Energiegevers:**
+- CoP-facilitatie en trainingscomponent: geeft een licht bouwmandaat
+- Technische achtergrond (DevOps) maakt impediments herkennen makkelijk: beperkte energieboost
+- Utrecht, hybride: locatiefactor neutraal
+
+**Energievreters:**
+- Onderhoud van bestaande scrumteams zonder nieuw te bouwen: groot lek
+- Formele hiërarchische overheidsomgeving met trage besluitvorming
+- 32-36 uur bijna full-time blokkeert stacking van andere engagementen
+- Ceremonieel SM-ritme als kern van de functie
+- Geen ruimte voor experiment, prototype of community-opbouw
+
+### H5 — 18-maanden duurzaamheidstest
+
+Na het initieel opzetten van de CoP en het versterken van de teams zal de rol snel in een stabiel ritme terechtkomen: dezelfde ceremonies, dezelfde teams, dezelfde organisatie. Er is geen organisch groeipad richting iets dat bouwen of innoveren inhoudt binnen IVO. Na 6-12 maanden is het plateau bereikt. **Oordeel: Korte-termijnfit als tijdelijk basisinkomen; plateau-risico na opbouwfase.**
+
+### H6 — Persoonlijkheidsspecifieke rode vlaggen
+
+| Rode vlag | Aanwezig? | Ernst | Context |
+|-----------|-----------|-------|---------|
+| Rol is primair onderhoud/beheer | Ja | Hoog | Bestaande teams begeleiden zonder bouwmandaat |
+| Solo-sales van onrijp product | Nee | n.v.t. | Niet van toepassing |
+| Full-time exclusiviteit verwacht | Ja (32-36u) | Matig | Blokkeert fractional model |
+| Grote corporate, trage besliscyclus | Ja | Matig | Overheids-IT, institutionele pace |
+| Governance/bestuursrol in dalende organisatie | Nee | n.v.t. | Niet van toepassing |
+| Ceremonie-only Scrum Master | Gedeeltelijk | Matig-Hoog | CoP/training mitigeert, maar kern is ceremonieel |
+
+### H7 — Fitoordeel
+
+**Het eerlijke argument voor:**
+De CoP-facilitatie en trainingscomponent geven Christiaan een beperkt bouwmandaat. De technische DevOps-achtergrond is een onderscheidende troef in een IT-omgeving. Als tijdelijk basisinkomen naast andere engagementen is het functioneel: Utrecht hybride, stabiel salaris op topschaal. De rol is niet schadelijk, alleen niet stimulerend.
+
+**Het eerlijke argument tegen:**
+De kern van de rol is ceremony-begeleiding van bestaande teams in een onderhoudsmodus. Overheids-IT met trage besluitvorming en weinig ruimte voor experiment. Bijna full-time blokkeert het multi-engagement model dat Christiaan het best past. Na de initiële opbouw van CoP en training is er weinig nieuws meer te bouwen. Energieverlies is voorspelbaar na 6-12 maanden.
+
+**Algehele persoonlijkheids- en cultuurfit: Conditional**
+Conditie: alleen zinvol als expliciet tijdelijke basisrol terwijl andere engagementen worden opgebouwd, en als de CoP/trainingscomponent actief wordt ingezet als bouwmandaat.
 
 ---
 

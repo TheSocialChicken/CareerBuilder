@@ -1,6 +1,7 @@
 # [Report 025] Databricks — Sr. Engagement Manager (Munich)
 
 **Score:** 3.0/5
+**Culture Fit:** Conditional
 **URL:** https://databricks.com/company/careers/open-positions/job?gh_jid=8543937002
 **PDF:** ❌
 **Legitimacy:** High Confidence
@@ -131,6 +132,90 @@
 | ~20% travel specified | Realistic for a Munich-based role with regional scope | Positive |
 
 **Context Notes:** This is a genuine opening at a high-growth company in an active expansion phase. No concerns about legitimacy. The mismatch is with Christiaan's current platform depth, not with the posting itself.
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Databricks is a late-stage startup / pre-IPO company ($43B+ valuation). The culture is high-growth, high-performance, commercially aggressive. The Professional Services team at Databricks operates in a revenue-attaching motion — PS exists to accelerate platform adoption and drive deal size. The Munich DACH team is a regional build from a growth stage.
+
+**Culture signals:** "Lead the FDE motion," "trusted advisor," "align with Sales, Delivery, and Field Engineering" — these signal a commercial, fast-moving culture with high individual visibility and performance expectations. Pre-IPO energy is real: the company is in aggressive growth mode.
+
+**Physical/work environment:** Munich hybrid, 20% customer travel. The physical environment is enterprise client offices and Databricks' Munich presence, not a lab or co-working maker space. The pre-IPO energy creates more startup-like culture within an otherwise enterprise-facing PS team.
+
+**Hackerspace vision match:** Partial. The pre-IPO energy and "build the FDE motion" mandate have some alignment with the "building new things" drive. But the core job is commercial PS delivery, not innovation building. The Munich base is also geographically distant from Christiaan's preferred environment. Score: 4/10 against the 2-year vision.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Build the FDE motion (0-to-1 in a region), then sustain and grow it | ENFP-T starter, strongest 0 to 1 | Moderate — the build phase aligns; the sustain phase is the risk |
+| Variety vs. repetition | Regional variety (DACH accounts, multiple sectors) but repetitive FDE motion | Thrives on variety | Moderate — account variety helps; FDE motion itself becomes a cycle |
+| Autonomy level | High — regional leader, significant ownership | Needs ownership | Strong match |
+| Build vs. maintain | Building the FDE motion in DACH is genuine 0-to-1 mandate | Builder identity | Good match for the first 12 months |
+| Fractional fit | Full-time; likely high-intensity | Optimal: 2-3 concurrent 0.4-0.6 FTE | Hard conflict — pre-IPO PS roles are typically 100% commitment |
+| Energy spike tolerance | Pre-IPO culture rewards energy and fast action | Front-loaded high energy | Good fit — the energy spike reads as initiative in this culture |
+| Team size | Small regional PS team with mentoring mandate | Small team, high trust | Good potential match — building a small team is Christiaan's strength |
+
+**Flags:** fractional conflict (pre-IPO intensity is hard to do fractionally); Databricks platform knowledge gap creates sustained imposter risk.
+
+### H3 — Values & Mission Alignment
+
+Databricks' mission — democratizing data and AI — is genuinely interesting to Christiaan. He has built AI infrastructure for researchers who had no budget for enterprise tooling. The mission of making data and AI accessible has real resonance.
+
+The commercial PS context (attaching services to platform deals to drive revenue) is less intrinsically motivating. Christiaan builds platforms for people to learn and work with; he is less energized by the commercial services motion that is the core job here.
+
+The trusted advisor and mentoring components are genuine energy sources: operating as a senior advisor to enterprise data teams and mentoring junior EMs both connect to Christiaan's intrinsic motivations (teaching, coaching, community building).
+
+**Verdict:** Moderate alignment. The mission is meaningful; the commercial PS delivery mechanism is less so. The mentoring and advisory components save this from being purely transactional.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Building the FDE motion in DACH from scratch: genuine 0-to-1 mandate
+- Pre-IPO energy and growth culture: rewards initiative and fast execution
+- Trusted advisor role: operating at exec level in high-stakes delivery contexts is energizing
+- Mentoring junior EMs: coaching and talent development are intrinsic motivations
+- Data and AI domain: frontier territory that connects to genuine interest
+- Small regional team: the tight-team dynamic of building a DACH PS practice from scratch
+
+**Drains:**
+- Full-time exclusivity at pre-IPO intensity: blocks the multi-engagement model completely
+- Databricks platform knowledge gap: creates chronic imposter risk in architecture-level discussions for months 1-6
+- Munich hybrid base: requires substantial travel from Baarn; not an occasional visit model
+- Commercial PS motion: attaching services to platform deals is the core job, and quota pressure is real
+- After the initial build phase, the FDE motion becomes a cadence: same process, different accounts
+
+### H5 — 18-Month Durability Test
+
+**Rating: Short-term fit (stepping stone, with real upside if platform gap is closed)**
+
+The first 12 months of building the DACH FDE motion would likely be energizing: new territory, team building, exec advisory, Databricks at peak growth. But the pre-IPO clock means that by 12-18 months, the company will either have IPO'd (with the cultural shift that brings) or will be in a sustained growth plateau. The FDE motion transitions from "build" to "scale and sustain." The platform knowledge gap is the wild card — it either resolves through immersion (Christiaan is a fast learner) or creates permanent ceiling in technical advisory conversations.
+
+The Munich base is not sustainable long-term given Christiaan's preference for NL-based hybrid.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | Partial | Low-Medium | The DACH build mandate is real; the risk is after the build phase |
+| Solo sales of an unready product | Partial | Medium | PS attach motion involves a commercial sales component; Databricks PS is a real product, but "attach" requires selling. Christiaan's solo-sales failure mode is relevant here. |
+| Full-time exclusivity expected | Yes | High | Pre-IPO PS is full-time by default; fractional is not compatible |
+| Large corporate, slow decision cycles | No | N/A | Databricks is pre-IPO and moves fast — this is a positive |
+| Ceremony-only role | No | N/A | Not applicable |
+| Governance in decline | No | N/A | Not applicable |
+
+### H7 — Fit Verdict
+
+**Case FOR:** Of the three Databricks roles evaluated, this is the best personality fit. The "build the FDE motion" mandate in a new region is genuine 0-to-1 work. The pre-IPO culture rewards the ENFP-T energy spike. The small regional team dynamic, mentoring mandate, and trusted advisor component all connect to Christiaan's intrinsic strengths. The KONGSBERG CEO escalation story is directly relevant as proof of exec advisory capability. The Munich/DACH CSRD/sustainability context gives Christiaan a genuine domain edge (VCH, Viridis, EUDR/CSRD tooling).
+
+**Case AGAINST (watch for):** The Databricks platform knowledge gap is a hard constraint in technical advisory conversations — this is the skills problem that the culture fit cannot solve. Full-time exclusivity at pre-IPO intensity is incompatible with the fractional strategy. The Munich base is a sustained travel commitment that conflicts with the Baarn-NL lifestyle preference. The commercial PS attach motion has a solo-sales risk element that should be watched.
+
+**Score cap note:** The 3.0/5 score is appropriate. The personality fit does not significantly change this — the platform gap is the dominant constraint. A strong culture fit on the advisory and mentoring dimensions would support a 3.0-3.5 range, but the structural conflicts (full-time, Munich, platform depth) anchor it at 3.0.
+
+**Overall personality/culture fit: Conditional** (strong on advisory/mentoring dimensions; blocked by full-time exclusivity and platform knowledge gap)
 
 ---
 

@@ -1,6 +1,7 @@
 # [Report 018] Synthesia — Delivery Program Manager
 
 **Score:** 2.8/5
+**Culture Fit:** Poor
 **URL:** https://jobs.ashbyhq.com/synthesia/4358c197-7d4a-45eb-8dd6-4a5c96999534
 **PDF:** ❌
 **Legitimacy:** High Confidence
@@ -110,6 +111,81 @@ Not applicable — recommendation is not to apply at this score.
 | Role market context | Delivery/ops roles fill quickly at growing scale-ups; post-funding hiring surge | Positive |
 
 **Context Notes:** This is a credible, active posting from a well-funded company in active hiring mode. The legitimacy concerns are zero — the only issue is fit, not legitimacy.
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Synthesia is a well-funded AI video scaleup (Series E, $4B valuation, London HQ). The company's culture is product and engineering-led, with a strong commercial growth orientation. The Delivery Program Manager role sits inside the enterprise creative services / design operations function — this is not the innovation core, it is the delivery infrastructure supporting customer-facing creative work.
+
+**Culture signals:** The JD language is execution and rigor-oriented: "production planning," "resource coordination," "workflow consistency," "operational reliability." This is the operational back-office of a creative services function. Synthesia as a company is interesting and on a frontier domain (AI video), but this specific team is infrastructure, not innovation.
+
+**Physical/work environment:** UK Remote. Employment structure for an NL-based EU citizen needs verification (potential contractor arrangement post-Brexit).
+
+**Match against 2-year vision:** Near-zero. The role is explicitly defined as "individual contributor focused on execution, coordination, and operational reliability." No building mandate. No facilitation component. No innovation space. The Synthesia company is interesting; this role is not.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Pure finisher: coordination of ongoing design production cycles | ENFP-T starter | Poor |
+| Variety vs. repetition | Production coordination repeats: same cycle, different projects | Thrives on variety | Poor |
+| Autonomy level | Low: track, coordinate, report, escalate | Needs ownership and design mandate | Poor |
+| Build vs. maintain | Maintain production workflow consistency | Builder identity | Poor |
+| Fractional fit | Full-time UK role | Optimal: fractional | Poor |
+| Energy spike tolerance | Operational reliability culture: precision and consistency valued over energy | Front-loaded high energy in this context = noise | Poor |
+| Team size | Individual contributor, no team | Small team preference (but solo IC is also a drain) | Poor |
+
+**Flags:** All major flags triggered. Engagement risk. Maintenance trap. Fractional conflict. Pure operations, no build mandate. Solo IC with no community forming around the work.
+
+### H3 — Values and Mission Alignment
+
+Synthesia's AI video mission (making video communication scalable and human) is adjacent to Christiaan's learning design work — video is a medium for the kind of learning experiences he designs. However, this role has no connection to that mission at the work level. Tracking design project timelines and managing resource allocation is not learning design, not AI application, not facilitation. The company is interesting; the role is not.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Synthesia as a company (AI video, Series E momentum) provides background motivation
+- The n8n and workflow automation component has some genuine interest
+- Enterprise stakeholder communication touches rapport-building skills
+
+**Likely drains:**
+- Production scheduling and resource tracking: the maximum expression of pure coordination work
+- No building, no facilitation, no teaching, no community formation
+- Individual contributor with no team: solo work drains the talent-magnet social energy
+- UK remote employment complications add friction
+- Creative design operations context is far from any domain Christiaan cares about
+
+### H5 — 18-Month Durability Test
+
+**Verdict: Short-term fit — not sustainable beyond 6-9 months**
+
+The role offers no growth path stated in the JD. There is no innovation mandate, no progression toward learning design, facilitation, or product roles. The production coordination cycle would become depleting within weeks and intolerable within months for the ENFP-T profile. The IC format also prevents the community and talent magnet energy that makes work sustainable for Christiaan.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | Yes — pure operational coordination | High | Explicit in JD: "execution, coordination, and operational reliability" |
+| Solo sales of an unready product | No | N/A | Not applicable |
+| Full-time exclusivity expected | Yes | Medium | Full-time UK role |
+| Large corporate, slow decision cycles | Moderate (4,000+ customer enterprise context implied) | Low | Synthesia is a scaleup, relatively fast |
+| Governance/board role in declining org | No | N/A | Not applicable |
+| Ceremony-only Scrum Master | No | N/A | Not directly, but coordination-only IC role is analogous |
+
+### H7 — Fit Verdict
+
+**The honest case for this match:**
+There is no meaningful case. The project management skills exist. The automation tooling background (n8n) is partially relevant. That is the extent of the alignment.
+
+**The honest case against:**
+This is the most direct personality mismatch in the entire batch of 10 reports. The JD explicitly says "individual contributor focused on execution, coordination, and operational reliability" — which is a precise description of the work profile that depletes Christiaan fastest. No building, no facilitation, no community, no innovation, no teaching, no autonomy over design decisions. The ADHD-at-risk signal is at maximum for this role type. Even if all other factors were ideal, this is a 3-6 month engagement at best before visible disengagement.
+
+Note: Score of 2.8/5 may slightly overstate the fit given the personality analysis. The skill match score is generous; the culture/personality fit independently caps this recommendation at "do not apply."
+
+**Overall personality/culture fit: Poor**
 
 ---
 

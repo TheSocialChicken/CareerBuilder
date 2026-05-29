@@ -1,6 +1,7 @@
 # [Report 016] Celonis — Field CTO - AI & Enterprise Modernization
 
 **Score:** 2.4/5
+**Culture Fit:** Conditional
 **URL:** https://job-boards.greenhouse.io/celonis/jobs/7610416003
 **PDF:** ❌
 **Legitimacy:** Proceed with Caution
@@ -111,6 +112,82 @@ Not applicable — recommendation is not to apply. Score below 3.0.
 | Role market context | Field CTO roles legitimately stay open 3-6 months | Positive |
 
 **Context Notes:** The role is a niche senior hire. Long open timelines are expected and normal. The "Proceed with Caution" rating is purely because posting age cannot be confirmed — not because of legitimacy concerns about the company or role.
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Celonis is a well-funded enterprise SaaS scaleup. The Field CTO role sits in Value Engineering, combining technical advisory with pre-sales support and revenue linkage. This is a high-visibility, high-performance role that blends consulting, thought leadership, and enterprise relationship management.
+
+**Culture signals:** The JD language is vision-forward: "visionary Field CTO," "learn-it-all mindset," "first-of-a-kind solutions," "thought leadership." There is genuine build and advisory energy in the role. However, the revenue linkage ("drive revenue through customer acquisition and strategic upselling," "partner with Sales") introduces the commercial pressure that sits badly with Christiaan's known failure mode.
+
+**Physical/work environment:** Munich or London hybrid. EU-accessible (unlike the Zurich roles), but still a corporate enterprise SaaS environment.
+
+**Match against 2-year vision:** Partial. The thought leadership and architecture advisory components partially match the "building new things, high trust" vision. But the enterprise SaaS context, the C-suite account management, and the revenue-linked mandate pull toward corporate maintenance rather than hackerspace energy. The org size (global enterprise SaaS company, large accounts) is not the small-group high-trust environment of the 2-year vision.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Mixed: architectural advisory has starter energy; account management component is finisher-heavy | ENFP-T starter | Moderate |
+| Variety vs. repetition | Variety across accounts and domains; but repeated pre-sales motion is a cycle | Thrives on variety | Moderate |
+| Autonomy level | High advisory autonomy within account parameters | Needs ownership | Moderate |
+| Build vs. maintain | Build technical visions for clients; architectural design work | Builder identity | Good for advisory component |
+| Fractional fit | Full-time senior role | Optimal: fractional | Poor |
+| Energy spike tolerance | C-suite advisory; needs composure and gravitas | Front-loaded energy manageable with seniority | Moderate |
+| Team size | Senior individual contributor inside large org; reports to Value Engineering | Large org penalty | Moderate |
+
+**Flags:** Revenue-linked advisory triggers partial Tonomy flag. Full-time exclusivity. Large corporate with slow enterprise decision cycles. MSc and prior Field CTO title requirements are hard credential blockers.
+
+### H3 — Values and Mission Alignment
+
+Process intelligence and agentic AI are frontier domains that resonate with Christiaan's interests. The "thought leadership" and "first-of-a-kind solutions" language is genuinely motivating. The Celonis mission (unlock productivity through AI process intelligence) is more interesting than payment support training or financial reporting. However, the revenue linkage and enterprise account management reduce this to a partially transactional engagement. Not purely instrumental, but not deeply values-aligned either.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Agentic AI architecture advisory: genuinely frontier, connects to what Christiaan builds independently
+- Thought leadership and position paper development: connects to his communication and educator identity
+- Cross-account variety across industries: keeps the work feeling new
+- The "learn-it-all mindset" culture signal matches his curiosity-driven profile
+
+**Likely drains:**
+- Revenue linkage: customer acquisition and upselling as a core accountability triggers the known gap
+- C-suite enterprise account management: slow, political, measured in months not weeks
+- MSc and Field CTO credential requirements: structural mismatch creates imposter risk
+- Full-time senior role in a large org: conflicts with the fractional multi-engagement model
+- Enterprise SaaS motion (discovery, demo, proposal, negotiation cycle) depletes faster than building
+
+### H5 — 18-Month Durability Test
+
+**Verdict: Short-term fit — partially energizing but structurally incompatible**
+
+The advisory and architecture components would energize the first 6-12 months. After that, the pre-sales cycle becomes repetitive and the revenue accountability becomes a source of friction. The credential mismatches (MSc, prior Field CTO title) would also create ongoing positioning difficulty in the role. Not a sustainable long-term environment given the fractional model conflict and the commercial accountability.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | Partial (pre-sales cycle becomes repetitive) | Medium | Not maintenance, but the sales motion is cyclical |
+| Solo sales of an unready product | Partial (revenue accountability without full product control) | Medium | Revenue growth accountability triggers partial Tonomy flag |
+| Full-time exclusivity expected | Yes | Medium | Senior full-time Munich/London role |
+| Large corporate, slow decision cycles | Yes | Medium | Enterprise SaaS client base; slow buying cycles |
+| Governance/board role in declining org | No | N/A | Not applicable |
+| Ceremony-only Scrum Master | No | N/A | Not applicable |
+
+### H7 — Fit Verdict
+
+**The honest case for this match:**
+Of the Celonis roles, this has the highest personality resonance. The agentic AI architecture work, thought leadership mandate, and advisory-first positioning are genuinely aligned with Christiaan's strongest capabilities. The facilitation and communication skills from a lifetime of making complex things understandable are directly relevant. If the credential requirements were met, this would be a better fit than the pure account management roles (014/015).
+
+**The honest case against:**
+The credential blockers (Field CTO title, MSc, 15-20 years enterprise SaaS CTO track record) are structural and cannot be bridged by framing. The revenue linkage creates the conditions where the Tonomy failure mode could recur. The full-time, large corporate, enterprise SaaS structure conflicts with the fractional model and the hackerspace vision. This is a correct "do not apply" recommendation from both a skills and a personality fit perspective.
+
+Note: Score of 2.4/5 reflects the skill gap accurately. The personality/culture analysis does not change the recommendation but does clarify why even a hypothetical skills match would be conditional.
+
+**Overall personality/culture fit: Conditional (conditional on credential match which does not exist; hypothetically moderate if credentials were present)**
 
 ---
 

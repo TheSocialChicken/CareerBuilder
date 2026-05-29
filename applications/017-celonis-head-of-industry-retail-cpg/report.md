@@ -1,6 +1,7 @@
 # [Report 017] Celonis — Head of Industry - Retail & CPG
 
 **Score:** 3.1/5
+**Culture Fit:** Conditional
 **URL:** https://job-boards.greenhouse.io/celonis/jobs/6313858003
 **PDF:** ✅
 **Legitimacy:** Proceed with Caution
@@ -136,6 +137,82 @@ Note: The comp overshoot is not a problem if the role delivers ownership, brand,
 | Role market context | Head of Industry / Practice Lead roles legitimately stay open 3-6 months | Neutral |
 
 **Context Notes:** The job ID for this role (6313858003) is numerically lower than report 016 (7610416003), which typically indicates an older posting on Greenhouse. This warrants checking directly whether the role is still actively being filled. The role itself is credible and makes strategic sense for Celonis's vertical expansion.
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Celonis is a well-funded enterprise SaaS scaleup with a genuine growth culture. The Retail and CPG Industry Practice is described as a 100+ person team spanning go-to-market, product, AI, and engineering. This is a leadership role that combines practice-building with customer and product partnership. The "entrepreneurial background with 0-to-1 building experience" requirement in the JD is a direct signal that Celonis wants someone with a builder identity, not just a corporate manager.
+
+**Culture signals:** The JD emphasizes entrepreneurship, vision, 0-to-1 building, scalable use case design, and cross-functional team leadership. This is unusually well-matched language for Christiaan's profile within the Celonis portfolio. The culture appears to be high-energy, delivery-focused, and commercially ambitious. The Munich base implies a European tech hub environment, not a conservative corporate culture.
+
+**Physical/work environment:** Munich hybrid. EU-accessible. Not office-first by Adyen's standard — Celonis is more flexible in hybrid practice.
+
+**Match against 2-year vision:** Moderate. The practice-building mandate and the 0-to-1 language are aligned with the hackerspace energy. However, the scale (100+ person practice, enterprise SaaS, P&L-adjacent accountability) is significantly larger than the "small group, high trust" vision. The role is also Munich-based, not Netherlands. The closest real alignment is the building mandate — this is genuinely building something from its current state, which energizes Christiaan. The org size and commercial pressure are the cultural mismatches.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Strong 0-to-1 starter mandate explicitly in JD | ENFP-T starter, strongest 0 to 1 | Strong |
+| Variety vs. repetition | Diverse: product, AI, go-to-market, customers, partners | Thrives on variety | Good |
+| Autonomy level | High: owns practice vision, strategy, and execution | Needs ownership | Strong |
+| Build vs. maintain | Build and lead a practice; identify and package scalable use cases | Builder identity | Strong |
+| Fractional fit | Full-time Director/VP equivalent at Munich | Optimal: fractional | Poor — fractional conflict |
+| Energy spike tolerance | Entrepreneurial culture: energy and ambition are valued, not penalized | Front-loaded high energy | Good |
+| Team size | 100+ person practice (large team, but with autonomy at the top) | Small team preference | Moderate |
+
+**Flags:** Fractional conflict. Full-time, Munich base conflicts with Baarn location. P&L-adjacent commercial accountability is a growth area. Scale (100+ practice) is above demonstrated level.
+
+### H3 — Values and Mission Alignment
+
+Supply chain and process intelligence in the CPG sector connect to Christiaan's genuine work on CSRD/EUDR compliance tooling and VCH. The 0-to-1 practice building mandate is deeply aligned with his identity. The Celonis mission of unlocking productivity through AI is in the frontier domain that motivates him. This is closer to values alignment than any other role in this batch. He would talk about building an AI-powered Retail and CPG practice at a dinner party. It is not purely transactional.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Building a practice from its current state: explicit 0-to-1 mandate in JD
+- Cross-functional leadership across product, AI, engineering, go-to-market
+- Supply chain and CPG domain connects to genuine VCH/CSRD work
+- Entrepreneurial culture signals: energy and ambition are assets
+- Public speaking and thought leadership mandate plays to trained market-stall and organ-performance communication skills
+- Talent magnetism is directly relevant: building a 100+ person practice requires attracting people
+
+**Likely drains:**
+- Full-time Munich relocation conflicts with Baarn base and fractional model
+- Commercial/P&L accountability for a 100+ person practice: above demonstrated level
+- Enterprise SaaS political complexity: product, sales, engineering, customer success all pulling in different directions
+- Post-build phase: once the practice architecture is established, the role becomes management-heavy
+- Celonis platform expertise gap: significant catch-up required before leading CPG industry practice credibly
+
+### H5 — 18-Month Durability Test
+
+**Verdict: Plateau risk after build phase**
+
+The first 12-18 months have real build energy: practice vision, team formation, customer partnerships, scalable use case design. This maps directly to Christiaan's strongest operating phase. After the build, the role becomes practice management: keeping the 100+ person team aligned, managing P&L, sustaining customer relationships. That is the ENFP plateau point. The role is genuinely well-matched for phase 1 and would produce strong results. The question is whether Christiaan would stay engaged in phase 2, or whether the commercial management weight would become depleting. Worth pursuing with conscious awareness of this pattern.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | No (build mandate explicit) | Low — initially | Risk after build phase |
+| Solo sales of an unready product | Partial (go-to-market ownership in the practice) | Medium | Not solo sales, but commercial visibility is high |
+| Full-time exclusivity expected | Yes | Medium | Full-time Director/VP Munich role |
+| Large corporate, slow decision cycles | Medium (enterprise SaaS with some corporate pace) | Medium | Mitigated by entrepreneurial culture signals |
+| Governance/board role in declining org | No | N/A | Not applicable |
+| Ceremony-only Scrum Master | No | N/A | Not applicable |
+
+### H7 — Fit Verdict
+
+**The honest case for this match:**
+This is the strongest culture-personality match in the entire Celonis portfolio. The 0-to-1 explicit mandate, the entrepreneurial culture signal, the supply chain and CPG domain connection, the cross-functional team building, and the thought leadership component all play to Christiaan's proven strengths. If he wanted to make a full-time Director-level move into an enterprise SaaS company, this is the role archetype that would bring out the best work. The talent magnetism, the room-reading, the rapid-rapport and market-stall communication skills are all directly relevant to building a 100+ person practice around a compelling vision.
+
+**The honest case against:**
+The scale (100+ person practice, P&L-adjacent accountability) is above demonstrated level. Munich relocation conflicts with Baarn base and the fractional model. The Celonis platform knowledge gap requires significant catch-up. The post-build maintenance phase will deplete energy as the role shifts from building to managing. The commercial accountability (revenue, adoption) creates conditions where the known failure mode could surface if the practice underperforms. And the overall score of 3.1/5 reflects real uncertainty about the Retail and CPG domain expertise gap.
+
+**Overall personality/culture fit: Conditional (conditional on full-time Munich relocation and comfort with P&L-adjacent accountability at scale)**
 
 ---
 

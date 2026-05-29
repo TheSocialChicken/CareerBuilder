@@ -1,6 +1,7 @@
 # [Report 011] Adyen — Learning Experience Design Program Manager
 
 **Score:** 3.4/5
+**Culture Fit:** Poor
 **URL:** https://job-boards.greenhouse.io/adyen/jobs/7752871
 **PDF:** ❌
 **Legitimacy:** High Confidence
@@ -137,6 +138,81 @@ Score: **3.4/5** — Below the "apply confidently" threshold. The role has genui
 3. **Office-first Amsterdam, full-time**: No remote option. Commute from Baarn is manageable (~40 min) but this is not part-time/fractional.
 
 **Recommendation:** Apply only if Christiaan is specifically targeting Adyen as a company and is willing to invest time in Articulate 360 pre-interview. Otherwise, deprioritise in favour of roles with a build/design mandate (report 012 same company may be better fit).
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Large-scale public company (listed fintech, 4,000+ employees globally). The Support L&D team is a functional unit inside a global operations org. This is a corporate department, not a startup or innovation environment. Adyen has a genuine "engineered for ambition" culture, but that culture is primarily expressed through engineering and product teams. The Support L&D function is an enabling department — closer to the operational core than the innovation edge.
+
+**Culture signals:** The JD language is execution-focused: "70% development phase," "quality standards," "operational workflow," "version control." The Adyen brand is strong and modern, but this specific role is positioned inside Support, not inside innovation or strategy. The hiring language emphasizes rigor and execution over vision and experimentation.
+
+**Physical/work environment:** Office-first, Amsterdam. No remote option. Structured corporate office environment, not a lab or co-working space.
+
+**Match against 2-year vision:** Christiaan's 2-year vision is a hackerspace: small group, building new things, high trust, new territory. This role places him inside a large corporate L&D department, executing ADDIE development cycles in an established methodology framework. The alignment with the hackerspace vision is minimal. This is the structural inverse of what he is optimizing toward.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Finisher-heavy: 70% is "development phase" execution within an established framework | ENFP-T starter, strongest 0 to 1 | Poor |
+| Variety vs. repetition | Iterative content production cycles, version control, operational consistency | Thrives on variety, depletes on repetition | Poor |
+| Autonomy level | Execution within existing ADDIE framework and Adyen standards | Needs design and ownership mandate | Poor |
+| Build vs. maintain | Build content assets within a defined system | Builder identity, maintenance depletes energy | Moderate (building assets, but not building the system) |
+| Fractional fit | Full-time, office-first, Amsterdam. No fractional option indicated | Optimal: 2-3 concurrent 0.4-0.6 FTE | Poor — fractional conflict |
+| Energy spike tolerance | Corporate L&D team; front-loaded energy may read as disruptive in a QA-focused environment | Front-loaded high energy in first weeks | Risky |
+| Team size | Part of Support L&D team (size unknown, but inside a 4,000-person org) | Small team, high trust | Poor |
+
+**Flags:** Fractional conflict. Engagement risk (finisher-heavy role with no build-from-scratch mandate). Heavily process-constrained with no creative space outside content production.
+
+### H3 — Values and Mission Alignment
+
+Adyen's mission (financial technology at scale, payments infrastructure) is commercially sound but not intrinsically motivating for Christiaan. The work he does for free — D&D campaigns, student counselling, guest lectures, 3D printing — shares no thematic connection with fintech payment operations support training. This role does not connect to the frontiers he gravitates toward (AI, sustainability, identity, education systems, community building). It is a transactional engagement: a well-paid execution role at a reputable company. He would not talk about this work unprompted at a dinner party. The L&D domain is genuine, but the domain-within-a-domain (support operations training at a payments company) is purely instrumental.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Designing learning content has some creative component, particularly the multimedia and AI tooling mandate
+- Adyen's reputation as a high-quality employer provides baseline motivation
+- The 30% program management component touches stakeholder synthesis, which is energizing
+
+**Likely drains:**
+- 70% of the role is execution within Articulate 360 inside an established ADDIE framework: direct maintenance and repetition pattern
+- Full-time Amsterdam office, single employer: direct conflict with the multi-engagement model that keeps Christiaan energized
+- No innovation mandate, no building from scratch, no community activation
+- Large corporate environment with no visible path to lab leadership or systems design
+- Fintech support org context is far from the frontier domains (AI, sustainability, education innovation) that generate intrinsic energy
+
+### H5 — 18-Month Durability Test
+
+**Verdict: Plateau risk after initial tool mastery**
+
+Once Articulate 360 is learned and the Adyen content standards are internalized (likely 3-6 months), the role becomes a production cycle with no meaningful growth horizon. The 30% program management component offers some stability but is capped at operational governance, not strategic design. The role does not connect to the 2-year hackerspace vision and has no natural evolution toward lab leadership, innovation architecture, or fractional engagement. At 18 months Christiaan would either be seeking an exit or becoming visibly disengaged. This is a short-term engagement at best, not a sustainable track.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | Yes (70% execution in established framework) | High | Core of the role is content production, not system building |
+| Solo sales of an unready product | No | N/A | Not applicable |
+| Full-time exclusivity expected | Yes | Medium | Office-first, Amsterdam, no fractional option |
+| Large corporate, slow decision cycles | Yes | Medium | 4,000+ person org; Support L&D sits far from strategic decision-making |
+| Governance/board role in declining org | No | N/A | Adyen is growing |
+| Ceremony-only Scrum Master | No | N/A | Not an agile role |
+
+### H7 — Fit Verdict
+
+**The honest case for this match:**
+The L&D domain is genuine and Christiaan has real instructional design credentials (KONGSBERG thesis, beer game, Blockchain Minor). Adyen is a quality employer. The 30% program management component would be energizing. If Christiaan wanted to deepen the Articulate 360 toolset and build a formal corporate L&D credential, this role could serve as a stepping stone to a more senior L&D strategy role elsewhere.
+
+**The honest case against:**
+This role is 70% execution inside a tool Christiaan does not yet know, at a company in a domain (fintech payment support) that generates no intrinsic motivation, on a full-time office-first basis that directly conflicts with the fractional multi-engagement model. The starter profile hits a hard ceiling here within months. The content production cycle will deplete rather than energize. The corporate scale and Support-team positioning ensure slow decision cycles and low individual visibility. The cultural environment is the structural opposite of the hackerspace 2-year vision.
+
+Note: Skill match was assessed at 3.4/5, but the personality/culture fit is genuinely poor. The overall score already reflects this accurately.
+
+**Overall personality/culture fit: Poor**
 
 ---
 

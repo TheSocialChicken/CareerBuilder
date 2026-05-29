@@ -289,6 +289,7 @@ Then generate a PDF of the report:
 **URL:**
 **Archetype:** {detected}
 **Score:** {X/5}
+**Culture Fit:** {Strong | Moderate | Conditional | Poor}
 **Legitimacy:** {High Confidence | Proceed with Caution | Suspicious}
 **PDF:** {path or pending}
 

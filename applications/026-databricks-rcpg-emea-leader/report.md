@@ -1,6 +1,7 @@
 # [Report 026] Databricks — Retail & Consumer Goods EMEA Leader
 
 **Score:** 2.2/5
+**Culture Fit:** Poor
 **URL:** https://databricks.com/company/careers/open-positions/job?gh_jid=8374717002
 **PDF:** ❌
 **Legitimacy:** High Confidence
@@ -130,6 +131,82 @@ Not recommended for this role. Provided in abbreviated form for completeness if 
 | Role-company fit | Makes complete sense — Databricks is building industry verticals across EMEA | Positive |
 
 **Context notes:** This is a real opening. The posting is legitimate. The mismatch is about fit, not legitimacy.
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Databricks is pre-IPO, high-growth, commercially aggressive. The GTM / vertical sales function is where the company's revenue pressure is most acute. The Retail & CPG EMEA Leader is a Senior Director level role within the Go To Market organization — this is not a builder or advisor function, it is a sales leadership function with EMEA revenue responsibility.
+
+**Culture signals:** "Accelerate revenue growth," "convert into systematic, scalable revenue programs," "operate with the mindset of a founder of a hyper-growth enterprise" — the language is explicitly sales-leader language. The culture expectation is a senior GTM leader who has built and carried vertical revenue programs at major enterprise tech companies.
+
+**Physical/work environment:** Remote across UK, Germany, Netherlands, France. The primary environment is enterprise client meetings, industry events, and executive relationship building.
+
+**Hackerspace vision match:** Very poor. The role requires a VP-level enterprise sales culture: C-suite relationship cultivation, revenue ownership, formal thought leadership. The "small group, high trust, new territory" dynamic is completely absent from this function. Score: 0/10 against the 2-year vision.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Build the Retail/CPG vertical from scratch THEN scale revenue consistently | ENFP-T starter | Partial match on the build phase; the scale-and-sustain-revenue phase is a hard drain |
+| Variety vs. repetition | High variety (multiple accounts, multiple geographies) | Thrives on variety | This is a partial positive — the account variety is real |
+| Autonomy level | Very high — EMEA owner | Needs ownership | Strong match on autonomy |
+| Build vs. maintain | Build the vertical GTM from first principles | Builder identity | Partial match on the founding energy language ("founder mindset") |
+| Fractional fit | Full-time, travel-heavy, VP-level commitment | Optimal: 2-3 concurrent 0.4-0.6 FTE | Completely incompatible |
+| Energy spike tolerance | The C-suite enterprise sales world expects sustained executive gravitas, not front-loaded energy spikes | Front-loaded high energy | Poor — the cultural expectation is methodical executive presence |
+| Team size | Builds a team; EMEA-wide scope | Small team preference | Neutral |
+
+**Flags:** fractional conflict (hard incompatibility); solo sales risk (EMEA revenue ownership without established enterprise sales track record); role type mismatch (sales leadership vs. innovation building).
+
+### H3 — Values & Mission Alignment
+
+No meaningful mission alignment. This is a revenue-generation role for a commercial platform company. The supply chain and EUDR/CSRD angle provides a thin intellectual connection, but the work is fundamentally enterprise sales enablement and C-suite relationship cultivation for revenue. Christiaan does not care about driving Databricks' Retail & CPG revenue in EMEA.
+
+**Verdict:** No alignment. Purely transactional in the worst sense — the transaction is someone else's revenue, not a mission Christiaan shares.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Building from first principles: the "founder of a hyper-growth enterprise" framing taps the builder energy
+- Thought leadership component: white papers, industry events — content creation is genuine energy
+- EUDR/CSRD and sustainability regulatory expertise: genuine domain advantage and intellectual interest
+- Pre-IPO culture energy
+
+**Drains:**
+- Revenue ownership without an enterprise sales background: this is the Tonomy failure mode at much higher stakes. Solo revenue responsibility for an EMEA vertical without the track record to back it up is the worst possible use of Christiaan's profile.
+- C-suite enterprise sales culture: requires sustained, formal executive gravitas — the ENFP-T energy spike reads as inconsistent and unfocused in this context
+- No building mandate after the GTM architecture is established: once the plays are defined, the job becomes execution — which is finisher mode
+- Full-time exclusivity: completely incompatible
+- Comp at VP-level (€150k-250k OTE) is above target and signals a seniority level Christiaan has not operated at in enterprise tech sales
+
+### H5 — 18-Month Durability Test
+
+**Rating: This role would be acutely distressing within 6 months.**
+
+The combination of enterprise sales revenue pressure, C-suite relationship expectations in retail/CPG (a domain Christiaan does not know), and no established track record is the recipe for the Tonomy failure repeated at a much larger scale. The initial "build the vertical" mandate would energize briefly. Within 3-6 months, the revenue pressure and domain credibility gap would compound into a performance concern. This is not a stepping stone; it is a poor match that would harm Christiaan's confidence and reputation.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | No | N/A | It is a build role, which is why it superficially appeals |
+| Solo sales of an unready product | Yes — amplified | Critical | EMEA revenue ownership for a vertical Christiaan does not know, without an enterprise sales track record, is the Tonomy failure mode at 10x scale |
+| Full-time exclusivity expected | Yes | High | VP-level GTM role; fractional is not possible |
+| Large corporate, slow decision cycles | Partial | Low | Databricks moves fast; the enterprise client side moves slowly |
+| Ceremony-only role | No | N/A | Not applicable |
+| Governance in decline | No | N/A | Not applicable |
+
+### H7 — Fit Verdict
+
+**Case FOR:** The "founder mindset" and build-from-scratch mandate taps genuine energy. The supply chain and EUDR/CSRD regulatory expertise provides a real, if niche, edge in the CPG vertical. Databricks' pre-IPO culture rewards initiative.
+
+**Case AGAINST:** This role triggers the solo-sales-of-unready-product failure mode at maximum severity. EMEA revenue ownership in a vertical where Christiaan has no enterprise client relationships, no quota track record, and no Databricks platform expertise is a path to a high-profile failure. The comp premium (2-3x above target) signals a seniority level that does not match the profile. The personality fit is independently poor: the enterprise GTM sales culture is antithetical to the ENFP-T builder identity.
+
+**Score cap note:** The 2.2/5 score is correct. Culture fit analysis confirms this is the right call and provides additional reason to avoid: the personality-role mismatch is severe and independent of the skill gaps.
+
+**Overall personality/culture fit: Poor**
 
 ---
 

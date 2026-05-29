@@ -1,6 +1,7 @@
 # [Report 014] Celonis — Client Engagement Partner, AI-Driven Transformation & Process Intelligence
 
 **Score:** 2.1/5
+**Culture Fit:** Poor
 **URL:** https://job-boards.greenhouse.io/celonis/jobs/7683568003
 **PDF:** ❌
 **Legitimacy:** High Confidence
@@ -113,6 +114,79 @@ Score: **2.1/5** — Two hard blockers independently disqualify this role:
 The additional flag from _profile.md: roles with primary revenue/adoption quota accountability are explicitly flagged as risk areas given the Tonomy Foundation experience. This role has adoption targets ownership as a core accountability.
 
 **Do not apply.**
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Celonis is a well-funded enterprise SaaS scaleup (Munich HQ, global operations, $1B+ valuation). The Value Engineering team has a consulting culture: client-facing, performance-driven, quota-linked. This is a high-performance account management environment. The culture rewards long-term relationship management, enterprise political navigation, and steady trust-building over time with C-suite stakeholders.
+
+**Culture signals:** The JD language emphasizes sustained relationship management ("develop and maintain," "long-term vision," "end-to-end customer value journey") and commercial accountability ("drive adoption targets"). This is an enterprise customer success culture: structured, account-plan-driven, and commercially measured.
+
+**Physical/work environment:** Hybrid Zurich. The role is also disqualified by location (Switzerland-only).
+
+**Match against 2-year vision:** Very low. The role requires deep long-term account maintenance and political relationship management inside large enterprise client organizations. This is the opposite of the hackerspace build-and-launch energy. Additionally, the primary hard blocker (Switzerland residency) makes the cultural analysis somewhat academic.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Finisher-heavy: maintain and develop long-term enterprise relationships | ENFP-T starter | Poor |
+| Variety vs. repetition | Account management involves repetitive relationship cycles with the same clients | Thrives on variety | Poor |
+| Autonomy level | High nominal autonomy within accounts, but measured by adoption targets | Needs creative ownership | Moderate |
+| Build vs. maintain | Maintain and deepen existing account relationships | Builder identity | Poor |
+| Fractional fit | Full-time, Zurich-based | Optimal: fractional | Poor |
+| Energy spike tolerance | Enterprise C-suite culture: slow, cautious, politically sensitive | Front-loaded high energy may destabilize trust-building | Risky |
+| Team size | Cross-functional Celonis teams (orchestration role) | Small team preference | Moderate |
+
+**Flags:** Engagement risk. Maintenance trap (ongoing account management). Fractional conflict. Adoption quota accountability triggers the Tonomy failure mode flag.
+
+### H3 — Values and Mission Alignment
+
+Process intelligence and process mining are commercially interesting but not intrinsically motivating for Christiaan. The role is about helping large enterprises get more value from their Celonis subscription — this is product adoption work, not frontier innovation. The AI-driven transformation label is present but the actual work is customer success for an enterprise SaaS platform. Purely transactional.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Change management components (helping organizations transform processes) have some alignment with his methodology expertise
+- C-suite relationship building involves rapid rapport skills he has trained since childhood
+- Cross-functional orchestration has some variety
+
+**Likely drains:**
+- Long-term enterprise account management: maintaining relationships with the same clients over years depletes fast
+- Adoption quota accountability: mirrors the Tonomy failure mode directly
+- Zurich base requirement (hard blocker also creates practical drain)
+- Enterprise SaaS consulting culture: slow decision cycles, political navigation, incremental progress
+- No building, no facilitation, no teaching component
+
+### H5 — 18-Month Durability Test
+
+**Verdict: Not applicable (hard location blocker). If hypothetically placed in this role: Short-term fit at best**
+
+The account management cycle would become repetitive within 6-12 months. The quota-linked adoption pressure would replicate the Tonomy dynamic. The 18-month path in enterprise CS is deeper client entrenchment — the opposite of the variety and new-territory energy that Christiaan needs.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | Yes (ongoing account management) | High | Enterprise CS is fundamentally relationship maintenance |
+| Solo sales of an unready product | Partial (adoption quota accountability without full product control) | High | Triggers Tonomy failure mode flag |
+| Full-time exclusivity expected | Yes | Medium | Full-time Zurich role |
+| Large corporate, slow decision cycles | Yes | Medium | Enterprise client orgs have slow buying/change cycles |
+| Governance/board role in declining org | No | N/A | Not applicable |
+| Ceremony-only Scrum Master | No | N/A | Not applicable |
+
+### H7 — Fit Verdict
+
+**The honest case for this match:**
+Celonis as a company is interesting — process intelligence and AI-driven transformation are genuinely relevant domains. Christiaan's change management methodology and facilitation skills have real relevance. If this were a learning/enablement or innovation lab role at Celonis, the company fit would be better.
+
+**The honest case against:**
+Wrong role archetype for Christiaan's personality. Enterprise customer success with adoption quotas triggers the known failure mode. Switzerland location is a hard blocker. The cultural environment (long-term account maintenance, C-suite political navigation, quota pressure) is misaligned with the ENFP-T starter who thrives on new builds and new relationships, not sustained account development.
+
+**Overall personality/culture fit: Poor**
 
 ---
 

@@ -1,6 +1,7 @@
 # [Report 028] n8n — AI Product Builder
 
 **Score:** 3.7/5
+**Culture Fit:** Strong
 **URL:** https://jobs.ashbyhq.com/n8n/42e72645-d99a-4545-97b7-53ba3a699893
 **PDF:** ✅
 **Legitimacy:** High Confidence
@@ -144,6 +145,93 @@ n8n is a high-growth open-source company (Series B, strong ARR growth, product-l
 | Unique application requirement | "Try n8n before applying and share your first workflow screenshot" — this is a live engagement filter, not a ghost posting | Very positive |
 | Company hiring signals | n8n raised Series B; actively growing engineering and product teams; eNPS 94 in 2024 | Positive |
 | Role-company fit | Core product expansion — building on the AI capabilities of their own platform | Positive |
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** n8n is a Series B, open-source, product-led, remote-first startup headquartered in Berlin. The culture signals are: high autonomy (work on one focused AI workstream), builder identity ("try n8n before applying"), curiosity ("fuel for the latest GenAI trends"), community orientation (open-source, DevRel, $100/month OSS support), high eNPS (94 in 2024). This is a startup that genuinely likes its people.
+
+**Culture signals:** The JD is written with exceptional specificity and intellectual care. The "try n8n before applying" requirement filters for practitioners, not talkers. The dual-track structure (AI Trust and AI Building/Super Agent) shows product maturity. The "non-traditional PM mindset flexibility" signal is rare and genuine — n8n is explicitly looking for people who have shipped things, not people who have PM titles.
+
+**Physical/work environment:** Remote-first, Netherlands eligible. Periodic team offsites. The work environment is digital, async, and builder-oriented. No commute, no corporate office.
+
+**Hackerspace vision match:** Very high. n8n is the closest thing to a "hackerspace as a company" in this batch of 10. Small-ish team, building new things at the frontier of AI automation, open-source orientation, community that forms around the work, builder culture where the tool gets better because the people using it also build with it. Score: 8/10 against the 2-year vision. The main gap is the full-time exclusivity expectation.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Own one focused AI workstream from discovery through launch and iteration | ENFP-T starter, strongest 0 to 1 | Strong match — the workstream ownership is exactly the 0-to-1 mandate |
+| Variety vs. repetition | Deep focus on one workstream — but within a fast-moving AI domain with new techniques constantly | Thrives on variety | Moderate — depth on one track is less variety than Christiaan's typical multi-thread, but the AI domain moves fast enough to prevent repetition |
+| Autonomy level | High ownership of a product workstream | Needs ownership | Strong match |
+| Build vs. maintain | Ship products, prototypes, agent workflows — build mandate is explicit | Builder identity | Strong match |
+| Fractional fit | Full-time expected | Optimal: 2-3 concurrent 0.4-0.6 FTE | Structural conflict — this is the main concern |
+| Energy spike tolerance | Builder culture explicitly welcomes energy and tinkering | Front-loaded high energy | Strong match — this culture would not pathologize the energy spike |
+| Team size | Small cross-functional team (Engineering, Design, Data, DevRel, Community, Support, CS) | Small team, high trust | Strong match — n8n has ~100 employees; team feel is small |
+
+**Flags:** fractional conflict (full-time expected). No engagement risk or ceremony-only flags.
+
+### H3 — Values & Mission Alignment
+
+n8n's mission — making workflow automation and AI orchestration accessible, especially for technical users who want to build their own systems — is deeply aligned with what Christiaan does intrinsically. He has built workflow automation systems for researchers and students who had no budget for enterprise tooling. He uses n8n in production. The "build the tool better so more builders can use it" mission is exactly the kind of work Christiaan does when nobody is paying him.
+
+The open-source orientation, community activation component (DevRel, $100/month OSS support), and "the tool grows because practitioners build with it" flywheel are all directly connected to Christiaan's identity as a talent magnet and ecosystem activator.
+
+This is a role Christiaan would talk about at dinner. The question is whether the full-time requirement is negotiable — because this is the one role in this batch where the mission and culture fit is strong enough to consider trading off the fractional model.
+
+**Verdict:** Strong alignment. Possibly the only role in this batch where Christiaan would do the work for less money if the mission was right.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Building from scratch: owning a focused AI product workstream is a pure 0-to-1 mandate
+- n8n as a tool he already uses: the domain expertise is intrinsic, not performed
+- Open-source culture and community: the work generates a community around it
+- AI-native frontier: GenAI trust and agent architecture are genuinely new territory
+- Small, high-trust team: the n8n team feel is close to the "small group of trusted colleagues building together"
+- Thought leadership opportunities: conferences, writing, public demos — all intrinsic motivators
+- The "non-traditional PM" explicit invitation: Christiaan does not have to pretend to be a traditional PM
+- Unlimited AI tools budget: the tool freak inside Christiaan finds this genuinely motivating
+
+**Drains:**
+- Full-time exclusivity: this is the primary structural problem. N8n would want full commitment; Christiaan's optimal model requires parallel engagements.
+- Deep focus on one workstream: the ADHD profile does well with variety; one sustained deep track can feel constraining over 12+ months
+- Metrics and SQL fluency gap: the senior track expects growth analytics fluency; this is a real gap that shows up in the day-to-day of product management at a product-led company
+- Berlin-centric culture despite remote eligibility: the offsites and team rhythm will feel Berlin-rooted; Christiaan is Netherlands-based
+
+### H5 — 18-Month Durability Test
+
+**Rating: Sustainable — with the fractional caveat**
+
+If n8n accepts a 4-day/week arrangement (or if this is structured alongside one lightweight parallel engagement), this is a genuinely durable role for Christiaan. The frontier AI domain moves fast enough to keep the ENFP-T profile energized. The workstream ownership rewards the 0-to-1 identity. The community and open-source culture generates the talent magnetism and ecosystem activation that are intrinsic motivators.
+
+The plateau risk comes from single-workstream depth without external variety. But n8n's product roadmap evolves fast enough that the "one focused workstream" cycles through phases (AI Trust architecture changes; agent capabilities evolve). In practice, this is more varied than it looks.
+
+If forced to choose between full-time at n8n and a fractional arrangement elsewhere: n8n is worth the trade-off if the arrangement can be negotiated. This is the best match in the batch.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | No | N/A | Build mandate is explicit and core |
+| Solo sales of an unready product | No | N/A | Product building, not sales |
+| Full-time exclusivity expected | Yes | Medium | Main structural concern — n8n wants full commitment |
+| Large corporate, slow decision cycles | No | N/A | Series B startup, fast-moving |
+| Ceremony-only role | No | N/A | Not applicable |
+| Governance in decline | No | N/A | Not applicable |
+
+### H7 — Fit Verdict
+
+**Case FOR:** n8n is the strongest culture and personality match in this batch. The mission, company stage, team culture, product domain, and explicit builder orientation are all aligned with Christiaan's identity. He already uses the product in production — this is not a fit manufactured by framing, it is a genuine match. The "non-traditional PM" invitation is written for his profile. The community activation, open-source values, and thought leadership mandate are all things he does for free. The eNPS of 94 suggests the culture is as described.
+
+**Case AGAINST (watch for):** Full-time exclusivity is the one genuine structural conflict. If n8n requires 100% commitment with no concurrent work, Christiaan must decide whether to prioritize this single engagement over the fractional model. The honest advice is: negotiate the arrangement before accepting. If n8n is open to 4 days/week or a structured part-time engagement, this is the closest thing to an ideal match in this batch. If they require 100% exclusivity and full-time hours indefinitely, the burnout risk from single-engagement concentration is real by month 18.
+
+**Score cap note:** The 3.7/5 score is appropriate and the culture fit supports it. If the fractional arrangement were resolved, this would score 4.3-4.5. The full-time exclusivity is the only structural anchor on the score.
+
+**Overall personality/culture fit: Strong**
 
 ---
 

@@ -1,6 +1,7 @@
 # [Report 027] Databricks — AI Engineer - FDE (Forward Deployed Engineer) - Amsterdam
 
 **Score:** 2.5/5
+**Culture Fit:** Conditional
 **URL:** https://databricks.com/company/careers/open-positions/job?gh_jid=8560401002
 **PDF:** ❌
 **Legitimacy:** High Confidence
@@ -127,6 +128,87 @@ Abbreviated — role not recommended.
 | Requirements realism | Consistent and realistic for a professional services engineering role at this level | Positive |
 | Company hiring signals | Databricks consistently growing professional services capacity in EMEA | Positive |
 | Role-company fit | Core business model — PS teams deliver against the platform | Positive |
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Databricks is pre-IPO, high-growth. The AI FDE (Forward Deployed Engineer) team is a technical customer-facing PS function — part ML engineer, part consultant, part thought leader. The culture of this specific team tends to be high-energy, technically driven, and fast-moving. FDE roles at companies like Databricks attract people who want to be at the intersection of cutting-edge AI research and enterprise delivery.
+
+**Culture signals:** The JD mentions "present at conferences and serve as thought leader," "fueling curiosity for the latest trends in GenAI," "collaborate with product and engineering on roadmap priorities." This is a technically ambitious, community-visible, curiosity-driven culture within the commercial PS wrapper.
+
+**Physical/work environment:** Remote Netherlands (preferred Amsterdam). Quarterly customer travel. The base environment is remote, with periodic client sites and Databricks events.
+
+**Hackerspace vision match:** Moderate. The technical curiosity culture, thought leadership mandate, and frontier AI focus (GenAI, LLMOps, multi-agent) align with the hackerspace energy. The "new territory" element is genuinely present — this is a fast-moving frontier. But the enterprise client delivery context (Fortune 500 customers, production ML) requires sustained technical depth that is currently missing. Score: 6/10 against the 2-year vision if the skill gap were resolved.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Each new customer engagement has a 0-to-1 element (new problem, new architecture) | ENFP-T starter | Good match — the per-engagement cycle rewards the starter energy |
+| Variety vs. repetition | High variety: new customers, new use cases, new GenAI techniques | Thrives on variety | Strong match — FDE is one of the highest-variety PS roles |
+| Autonomy level | High autonomy within each engagement | Needs ownership | Good match |
+| Build vs. maintain | Building GenAI applications for each customer — build mandate per engagement | Builder identity | Strong match — each deployment is a build |
+| Fractional fit | Full-time implied; but quarterly travel model is lighter than 50% | Optimal: 2-3 concurrent 0.4-0.6 FTE | Structural conflict but lighter than Elastic/Munich |
+| Energy spike tolerance | Technical curiosity culture; conference thought leadership rewards visible energy | Front-loaded high energy | Good fit — the culture rewards the energy spike |
+| Team size | EMEA FDE team — likely a small, niche technical team | Small team, high trust | Good fit |
+
+**Flags:** fractional conflict; ML engineering skill gap creates critical imposter risk in this specific team culture.
+
+### H3 — Values & Mission Alignment
+
+The AI FDE culture — building at the frontier, sharing knowledge publicly, solving real enterprise problems with cutting-edge techniques — is genuinely aligned with Christiaan's identity as a builder and educator. The thought leadership and conference presence component is an intrinsic motivator (guest lectures unpaid, knowledge sharing is part of his identity). The "fueling curiosity" framing is exactly the kind of culture he would thrive in.
+
+The problem is the ML engineering gap creates a values mismatch of a different kind: being in a room where colleagues are discussing PyTorch fine-tuning and custom RAG pipelines from scratch, without the depth to contribute at that level, would generate chronic imposter syndrome and undermine the energy and authenticity that are Christiaan's strengths.
+
+**Verdict:** Mission alignment is high. Skills alignment is low. The culture would be right; the current technical level does not match it.
+
+### H4 — Energy Analysis
+
+**Energizers:**
+- Per-engagement variety: each new customer is a new problem
+- Frontier AI domain: GenAI, LLMOps, multi-agent — genuinely exciting territory
+- Thought leadership and conference presence: public knowledge sharing is intrinsic
+- Small EMEA team with high technical curiosity culture
+- Build mandate per engagement: every FDE project has something to create
+- Customer communication component: explaining complex AI to diverse audiences is a genuine strength
+
+**Drains:**
+- ML engineering depth gap: the gap between "runs AI tools" and "builds ML systems from scratch" creates sustained anxiety in a team of ML engineers
+- Production ML accountability: being responsible for production GenAI systems you did not build from scratch creates a specific kind of stress
+- Full-time exclusivity: blocks the multi-engagement model
+- The ramp time to close the ML engineering gap is 6-12 months minimum — that is a long period of imposter experience in a technically scrutinizing team
+
+### H5 — 18-Month Durability Test
+
+**Rating: Short-term fit IF the skill gap is closed first. Not viable at current skill level.**
+
+If Christiaan spent 6-12 months deliberately building ML engineering depth (LangChain, PyTorch basics, RAG from scratch, LLMOps tooling), this role would become a strong fit: the culture is right, the variety is right, the domain is right, the thought leadership mandate is right. But applying now and ramping on the skills on the job would be a very difficult experience in a technically exacting peer environment.
+
+If hired at a junior level with an explicit learning mandate, the 18-month trajectory could be positive — but that requires the company to accept a practitioner-level hire on the engineering track.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | No | N/A | Each engagement has a build mandate |
+| Solo sales of an unready product | No | N/A | Not a sales role |
+| Full-time exclusivity expected | Yes | Medium | Full-time implied; lighter travel model than some |
+| Large corporate, slow decision cycles | No | N/A | Databricks moves fast; FDE team is agile |
+| Ceremony-only role | No | N/A | Not applicable |
+| Governance in decline | No | N/A | Not applicable |
+
+### H7 — Fit Verdict
+
+**Case FOR:** The FDE culture at Databricks is arguably the best cultural environment of all ten roles evaluated in this batch: frontier AI, small technical team, high variety, thought leadership, build mandate per engagement, customer communication. The personality fit on every dimension except the skill gap is genuinely strong. If Christiaan closes the ML engineering gap, this becomes a 4.0+ role.
+
+**Case AGAINST (watch for):** The ML engineering gap is not a framing problem — it is a technical depth problem that a technically sophisticated peer group will surface quickly. Joining this team at current skill level would place Christiaan in a chronically uncomfortable position. The culture match being high makes the skill gap more painful, not less, because the culture is exactly what would motivate Christiaan to perform — and the performance ceiling is set by a skill he does not yet have.
+
+**Score cap note:** The 2.5/5 score reflects the skill gaps. The culture fit assessment confirms the score is appropriate: strong culture potential, low current viability. The right recommendation is "build toward this archetype, not apply now."
+
+**Overall personality/culture fit: Conditional** (strong culture match; conditional on ML engineering skill development)
 
 ---
 

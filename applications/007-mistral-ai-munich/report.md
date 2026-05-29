@@ -1,6 +1,7 @@
 # [Report 007] Mistral AI — AI Deployment Strategist (Munich)
 
 **Score:** 2.6/5
+**Culture Fit:** Poor
 **URL:** https://jobs.lever.co/mistral/1937a5af-2c9b-4a75-bb91-b06ebe714dbd
 **PDF:** ❌
 **Legitimacy:** Proceed with Caution
@@ -102,6 +103,82 @@ Same STAR stories as Report 006 apply. Munich-specific angle:
 | Reposting pattern | No prior history in scan-history.tsv | Neutral |
 
 **Context notes:** The dual posting (Amsterdam + Munich) for the same role title suggests Mistral is scaling this function across EU locations simultaneously. Both are real. The Munich posting is less suitable for Christiaan's geography and language profile than the Amsterdam one.
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Same as Report 006 — high-growth AI startup. The Munich posting is structurally identical to Amsterdam but adds a harder geographic and language constraint. The DACH market context means the culture includes German enterprise client expectations: formal, risk-averse, structured engagement norms.
+
+**Culture signals:** Identical to 006 (see that report). The additional Munich-specific cultural layer is DACH enterprise: conservative German client culture, formal business etiquette, German-language workshop expectations. This is a harder cultural fit for a Dutch/ENFP practitioner who reads rooms through energy and rapid rapport.
+
+**Physical/work environment:** On-site Munich — requires relocation from Baarn or sustained weekly commuting. Neither is compatible with the multi-engagement model. Munich is not in Christiaan's commute range. This is a structural lifestyle conflict, not just a preference.
+
+**Match against 2-year vision:** Even lower than the Amsterdam posting. The 2-year vision requires proximity to a small, high-trust group in a builder context. Munich on-site means physical relocation to a city where Christiaan has no network (beyond the Viridis Green-Tech contact), working in a corporate solutions capacity, likely using German in client-facing situations he is not fluent in. Alignment: poor.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Same as 006 — deployment then account management | ENFP-T starter | Same assessment as 006 |
+| Variety vs. repetition | High variety across DACH enterprise clients | Thrives on variety | Good in principle |
+| Autonomy level | Individual contributor ownership | Needs ownership | Good in principle |
+| Build vs. maintain | Deployment then maintenance | Builder identity | Risk in account phase |
+| Fractional fit | Full-time on-site Munich | Optimal: 2 to 3 concurrent 0.4 to 0.6 FTE | Hard blocker — relocation required |
+| Energy spike tolerance | German enterprise culture — formal, measured onboarding norms | Front-loaded high energy | Risk: Dutch energy spike may read as unprofessional in DACH corporate contexts |
+| Team size | Small Munich team | Small team preference | Good in principle |
+
+**Flag:** Relocation required. Full-time on-site with travel. Language gap for DACH enterprise workshops. All three are active constraints simultaneously.
+
+### H3 — Values and Mission Alignment
+
+Same as 006 — Mistral's mission is genuinely aligned with Christiaan's frontier interest in European AI. The disconnect is the mechanism, not the mission. Munich adds no mission alignment that Amsterdam lacks. It only adds location friction, language friction, and cultural friction on top of the structural gaps already identified in 006.
+
+### H4 — Energy Analysis
+
+**Energizers for this role:**
+- Same frontier AI mission as 006
+- Equity component (Munich posting includes equity, Amsterdam does not) is a financial motivator
+
+**Likely drains:**
+- Relocation or weekly long-distance commuting — major lifestyle drain
+- DACH enterprise culture — formal, structured, less room for the energy spike working style
+- German-language workshops at C-suite level — a real competency gap, not just a preference
+- 30 to 60% travel on top of Munich base
+- All the same drains as 006, plus the location friction
+
+### H5 — 18-Month Durability Test
+
+**Rating: Poor fit. Not sustainable.**
+
+The Munich posting is not a realistic option for Christiaan given the relocation requirement and the language gap. Even if the first months were energizing from a frontier AI perspective, the structural incompatibilities (relocation, travel, language at C-suite level, full-time exclusivity) would create ongoing friction. This is not a stepping stone role — it would require a lifestyle restructuring that conflicts with the 2-year vision at every level.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | Partial | Low to Medium | Same as 006 |
+| Solo sales of an unready product | Partial | Medium | Same MEDDPICC sales dynamic as 006 |
+| Full-time exclusivity expected | Yes | High | On-site Munich — harder than Amsterdam |
+| Large corporate, slow decision cycles | No | n/a | Startup culture |
+| Governance/board role in declining org | No | n/a | Growing company |
+| Ceremony-only Scrum Master | No | n/a | Not a Scrum role |
+
+**Additional flag not in standard list:** German-language C-suite facilitation gap — this is a specific personality risk in that the energy-spike, rapid-rapport facilitation style depends on native-level social calibration. In a second language at formal German enterprise workshops, this skill does not transfer fully.
+
+### H7 — Fit Verdict
+
+**The honest case for this match:**
+The equity component (Munich only) is financially attractive. Mistral's frontier AI mission is genuinely aligned. If Christiaan were already based in Munich or Germany, the cultural and language concerns would be less acute.
+
+**The honest case against:**
+This is the least suitable role in the batch for Christiaan's personal circumstances. Relocation from Baarn to Munich is required. The multi-engagement model is impossible. The DACH enterprise client culture is a harder environment for his facilitation style than Dutch or international contexts. The language gap is a real risk in C-suite workshop facilitation. The Python technical gap is the same as 006. The score of 2.6 is appropriate. Do not apply.
+
+**Overall personality/culture fit: Poor**
+
+Note: If Mistral is a target company, pursue the Amsterdam posting (006) exclusively. The Munich variant adds constraints without compensating advantages for Christiaan's situation.
 
 ---
 

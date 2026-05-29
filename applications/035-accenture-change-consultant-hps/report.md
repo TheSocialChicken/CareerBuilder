@@ -4,6 +4,7 @@
 **URL:** https://www.accenture.com/nl-en/careers/jobdetails?id=R00306941_en
 **Archetype:** Change Management / Agile Coach
 **Score:** 2.8/5
+**Culture Fit:** Poor
 **Legitimacy:** High Confidence
 **PDF:** ✅
 **CV-taal:** Nederlands (NL/Amsterdam-gebaseerd)
@@ -93,6 +94,75 @@ Niet prioritair bij score 2.8/5.
 **Score 2.8/5 — onder sollicitatiedrempel. Niet aanbevolen.**
 
 Domein-relevantie is aanwezig (publieke sector, AI-changemanagement), maar: Master-eis is een blokkade, mid-level positionering conflicteert met senioriteitsprofiel, Accenture's consulting-structuur past niet bij Christiaans ideale werkomgeving (autonomie, vroege fase, fractional). Salaris vermoedelijk onder doelstelling.
+
+---
+
+## H) Cultuur, Persoonlijkheid & Langetermijnfit
+
+### H1 — Organisatiecultuur
+
+**Type organisatie:** Accenture, globale managementconsultancy (Big 4-equivalent). Op de build-vs-maintain spectrum: consultancy heeft een projectgedreven karakter (wisselende opdrachten), maar de interne Accenture-structuur is sterk hiërarchisch en target-gedreven. Locatie: Amsterdam.
+
+**Cultuursignalen:** Accenture-JD's zijn opgebouwd rond "strategisch advies," "client engagement" en "delivery excellence." De cultuur is professioneel en formeel, met duidelijke senioriteitshiërarchie (Consultant niveau hier = mid-level), langdurige clientsite-opdrachten en prestatiedruk op billable hours. Weinig ruimte voor autonome experimenten of organische communityopbouw.
+
+**Match met 2-jaar-visie:** Slecht. Accenture is een uitvoerende consultancymachine, geen hackerspace. Wisselende clientprojecten bieden enige variatie, maar de structuur (formele onboarding, hiërarchisch doorgroeien, billable hours) staat ver van de hackerspace-visie. Over-senior positionering maakt het nog moeilijker om eigenaarschap te krijgen.
+
+### H2 — Persoonlijkheidsfit
+
+| Dimensie | Wat de rol vraagt | Christiaans profiel | Match |
+|----------|-------------------|---------------------|-------|
+| Starter vs. finisher | Projecten opzetten en uitvoeren voor clients — mix; maar mid-level positie vraagt uitvoering | ENFP-T, sterkst in 0 tot 1 en 1 tot 2 | Matig |
+| Variatie vs. herhaling | Wisselende clientprojecten bieden variatie | Gedijt op variatie: positief signal | Sterk |
+| Autonomieniveau | Mid-level positie = beperkte autonomie; werkt onder senior managers | Heeft eigenaarschap nodig | Zwak |
+| Bouwen vs. beheren | Change-strategie ontwerpen heeft bouwkarakter; uitvoering domineert | Bouwersidentiteit aanwezig; uitvoering in clientcontext | Matig |
+| Fractional fit | Full-time consulting, client-site aanwezigheid verwacht | Optimaal: 2-3 gelijktijdige 0,4-0,6 FTE | Zwak |
+| Energiepiek-tolerantie | Professionele consulting-cultuur; clients waarderen kalmte en structuur | Front-loaded energie kan worden gelezen als onrust bij formele publieke-sector clients | Risico |
+| Teamgrootte | Projectteams variabel; onderdeel van grote Accenture-organisatie | Voorkeur voor klein, hoog-vertrouwen team | Matig |
+
+**Vlaggen:** Full-time, client-site. Over-senior positie leidt tot onderwaardering. Billable-hours-model conflicteert met autonomie-ideaal.
+
+### H3 — Waarden en missie-alignment
+
+De Health & Public Services focus (ministeries, gemeenten, zorgorganisaties) raakt wel aan domeinen die Christiaan relevant vindt: publieke dienstverlening, AI-adoptie in overheid. Maar het uitvoeren hiervan via Accenture's consultancymodel is de verkeerde context. Christiaan bouwt liever zelf dan als consultant te adviseren hoe anderen moeten bouwen. De missie (Accenture als bedrijf) is primair commercieel. Gedeeltelijk transactioneel.
+
+### H4 — Energieanalyse
+
+**Energiegevers:**
+- AI/data changemanagement in publieke sector: inhoudelijk relevant
+- Wisselende clients en projecten: variatie-boost
+- Amsterdam locatie: pragmatisch OK
+
+**Energievreters:**
+- Mid-level positie bij Accenture met 15+ jaar ervaring: structureel onderwaardering, frustrerend
+- Billable hours en client-site aanwezigheid: weinig autonomie
+- Strakke Accenture-hiërarchie: beperkt experiment en eigen initiatief
+- Full-time blokkeert multi-engagement model
+- Master-eis is een harde blokkade die energie kost in een selectieproces dat hij waarschijnlijk niet haalt
+
+### H5 — 18-maanden duurzaamheidstest
+
+Wisselende clientprojecten bieden op korte termijn variatie. Maar de positie (mid-level bij Accenture met over-senior profiel) leidt structureel tot frustratie: te veel ervaring voor de geboden autonomie, salaris dat achterblijft bij marktwaarde. Doorgroeien naar hogere Accenture-niveaus duurt jaren en vereist intern politiek spel. **Oordeel: Korte-termijn variatie; structureel plateau op autonomie en beloning.**
+
+### H6 — Persoonlijkheidsspecifieke rode vlaggen
+
+| Rode vlag | Aanwezig? | Ernst | Context |
+|-----------|-----------|-------|---------|
+| Rol is primair onderhoud/beheer | Nee | n.v.t. | Change-focus aanwezig |
+| Solo-sales van onrijp product | Nee | n.v.t. | Niet van toepassing |
+| Full-time exclusiviteit verwacht | Ja | Matig | Client-site model blokkeert stacking |
+| Grote corporate, trage besliscyclus | Ja | Matig | Accenture intern + publieke sector clients = dubbele traagheid |
+| Governance/bestuursrol in dalende organisatie | Nee | n.v.t. | Niet van toepassing |
+| Ceremony-only Scrum Master | Nee | n.v.t. | Niet van toepassing |
+
+### H7 — Fitoordeel
+
+**Het eerlijke argument voor:**
+De inhoudelijke focus (AI changemanagement, publieke sector transformatie) sluit aan bij Christiaans competentieprofiel. Wisselende clients bieden variatie. Accenture is een sterk merk voor netwerk en loopbaan-exposure.
+
+**Het eerlijke argument tegen:**
+Dit is een mid-level positie met een Master-eis die Christiaan blokkeert in de selectie. Zelfs als hij doorkomt: de Accenture-structuur biedt een 15+ jaar ervaren kandidaat te weinig autonomie en te laag salaris. De consulting-cultuur (billable hours, client-site, hiërarchisch doorgroeien) staat haaks op het fractional/autonomy-model. De score van 2.8 is terecht: zowel skill-match als cultuurfit zijn onvoldoende voor een aanbeveling.
+
+**Algehele persoonlijkheids- en cultuurfit: Poor**
 
 ---
 

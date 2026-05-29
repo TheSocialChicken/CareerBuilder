@@ -1,6 +1,7 @@
 # [Report 015] Celonis — Client Value Partner (CVP), AI-Driven Transformation & Process Intelligence
 
 **Score:** 2.1/5
+**Culture Fit:** Poor
 **URL:** https://job-boards.greenhouse.io/celonis/jobs/7669258003
 **PDF:** ❌
 **Legitimacy:** High Confidence
@@ -116,6 +117,69 @@ Score: **2.1/5** — Identical conclusion to 014. Two independent hard blockers:
 **Do not apply.**
 
 Note for future reference: Celonis does operate in the Netherlands and DACH. If Celonis posts roles in Amsterdam or remote-EU that focus on process mining enablement, learning, or internal transformation — those would be worth evaluating. The company's focus on AI-driven process intelligence aligns well with VCH and supply chain compliance work. Wrong role, right company to watch.
+
+---
+
+## H) Culture, Personality & Long-term Fit
+
+### H1 — Org Culture Assessment
+
+**Stage and type:** Identical to report 014 — same company, same location, same role type. Celonis is a well-funded enterprise SaaS scaleup with a performance-driven customer success culture in its Value Engineering org.
+
+**Culture signals:** Identical to 014 analysis. The CVP title implies slightly more ownership than "Engagement Partner" but the cultural environment, performance measurement model, and day-to-day work are functionally the same.
+
+**Physical/work environment:** Hybrid Zurich. Switzerland-only residency requirement (hard blocker, same as 014).
+
+**Match against 2-year vision:** Same as 014 — very low. Enterprise account ownership is a long-cycle, maintenance-intensive, quota-linked role. The hackerspace vision requires new builds, small teams, and new territory.
+
+### H2 — Personality Fit Table
+
+| Dimension | What the role requires | Christiaan's profile | Match |
+|-----------|----------------------|---------------------|-------|
+| Starter vs. finisher | Finisher-heavy: own the complete customer value journey over time | ENFP-T starter | Poor |
+| Variety vs. repetition | Account ownership: repetitive cycle with same clients | Thrives on variety | Poor |
+| Autonomy level | High ownership within account parameters | Needs creative ownership | Moderate |
+| Build vs. maintain | Own and maintain the end-to-end relationship | Builder identity | Poor |
+| Fractional fit | Full-time, Zurich | Optimal: fractional | Poor |
+| Energy spike tolerance | Long-term C-suite trust-building: caution and patience required | Front-loaded energy | Risky |
+| Team size | Cross-functional orchestration inside large org | Small team preference | Poor |
+
+**Flags:** Same as 014. Engagement risk. Maintenance trap. Fractional conflict. Adoption quota triggers Tonomy failure mode flag.
+
+### H3 — Values and Mission Alignment
+
+Identical to 014. Commercially interesting but not intrinsically motivating. Purely transactional engagement.
+
+### H4 — Energy Analysis
+
+**Energizers:** Same partial list as 014 — change management components, C-suite rapport building, cross-functional work.
+
+**Likely drains:** Identical to 014 — long-cycle account maintenance, adoption quota pressure, full-time Switzerland requirement, enterprise slow cycles, no building or teaching mandate.
+
+### H5 — 18-Month Durability Test
+
+**Verdict: Not applicable (location hard blocker). Hypothetically: Short-term fit at best** — same reasoning as 014.
+
+### H6 — Personality-Specific Red Flags
+
+| Red flag | Present? | Severity | Context |
+|----------|----------|----------|---------|
+| Role is primarily maintenance/ops | Yes | High | Account ownership is sustained relationship management |
+| Solo sales of an unready product | Partial (adoption quota) | High | Triggers Tonomy failure mode flag |
+| Full-time exclusivity expected | Yes | Medium | Full-time Zurich |
+| Large corporate, slow decision cycles | Yes | Medium | Enterprise client decision cycles |
+| Governance/board role in declining org | No | N/A | Not applicable |
+| Ceremony-only Scrum Master | No | N/A | Not applicable |
+
+### H7 — Fit Verdict
+
+**The honest case for this match:** Identical to 014 — Celonis as a company has domain relevance, but this role archetype is wrong.
+
+**The honest case against:** Identical to 014 — enterprise account ownership with adoption quota accountability, Switzerland location, full-time exclusivity, long-cycle maintenance. Multiple personality-specific red flags triggered simultaneously.
+
+Note: Reports 014 and 015 are near-duplicate postings. The culture/personality analysis is the same for both. Both are correctly rated Poor.
+
+**Overall personality/culture fit: Poor**
 
 ---
 
