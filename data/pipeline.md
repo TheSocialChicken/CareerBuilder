@@ -149,6 +149,24 @@
 - [ ] https://www.werkenbijcoolblue.nl/vacatures/scrum-master/ | Coolblue | Scrum Master / Agile Coach — Rotterdam, guide development teams, min 2 yrs dedicated SM experience
 - [ ] https://www.consultant.nl/vacatures/vacature/9497/programmamanager-service-design | ProRail | Programmamanager Service Design — Utrecht, initiating/realizing multidisciplinary innovation programs
 
+## Level 3 WebSearch — 2026-06-01
+
+- [ ] https://www.werkenvoornederland.nl/vacatures/agile-coach-ILT-2026-2432 | ILT | Agile Coach — catalyst for change in ICT dept, coaches Scrum/Kanban/DevOps, facilitates PI planning
+- [ ] https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-KVK-2026-4590 | KVK | Senior Scrum Master — guides multiple teams, complex contexts, value streams
+- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-RO-2026-5218 | IVO Rechtspraak | Scrum Master — manages two Scrum teams
+- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-JIO-2026-8155 | Ministerie van Justitie (JIO) | Scrum Master — Proof of Concept Agile Work, agile professionalisering
+- [ ] https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-OM-2026-5808 | Openbaar Ministerie | Senior Scrum Master — mentors Scrum teams to High Performance
+- [ ] https://www.werkenvoornederland.nl/vacatures/teamleider-vakgroep-agile-werken-DEF-2026-8357 | Ministerie van Defensie | Teamleider Vakgroep Agile Werken — leads ~20 FTE agile roles (SM/AC/RTE/PO)
+- [ ] https://www.werkenbijhogescholen.nl/vacatures/hogeschooldocent-applied-data-science-ai-2/ | Hogeschool | Hogeschooldocent Applied Data Science AI — research + teaching, AI expert team
+- [ ] https://www.werkenbijhogescholen.nl/vacatures/associate-lector-responsible-ai | HvA | Associate Lector Responsible AI — ethics, society, human values in AI design
+- [ ] https://www.werkenbijhogescholen.nl/vacatures/hogeschooldocent-en-onderwijsontwikkelaar-master-human-centered-artificial-intelligence-hcai | Hogeschool | Hogeschooldocent & onderwijsontwikkelaar master HCAI — EU HCAIM consortium
+- [ ] https://www.academictransfer.com/nl/337903/lector-ai-data-supported-healthcare-kcz-kenniscentrum-zorginnovatie/ | KCZ Kenniscentrum Zorginnovatie | Lector AI & Data Supported Healthcare — PhD required, Hogeschool Rotterdam
+- [ ] https://www.monsterboard.nl/banen/scrum-master-agile-coach-saas-scale-up-in-sustainability-amsterdam-07--34854011-8e2c-4083-bca5-b3be350abfde | Ecochain Technologies | Scrum Master - Agile Coach — sustainability SaaS, Amsterdam
+- [ ] https://www.monsterboard.nl/banen/scrum-master-rotterdam-11--69a71926-26fb-4f8b-843e-758b6d446be5 | Greenchoice | Scrum Master — Rotterdam, 5+ yrs experience
+- [ ] https://nl.linkedin.com/jobs/view/netherlands-amsterdam-freelance-corporate-ai-lab-host-facilitator-at-goodera-4418133505 | Goodera | AI Lab Host Facilitator — Freelance, Amsterdam. Direct archetype 1 match: facilitate AI labs for corporates
+- [ ] https://www.werkenbijns.nl/vacatures/scrum-master-cluster-rijdend-personeel-utrecht-1223076 | NS | Scrum Master (cluster Rijdend Personeel) — Utrecht
+- [ ] https://www.werkenbijns.nl/vacatures/medior-scrum-master-planningsapplicatie-utrecht-1224287 | NS | Medior Scrum Master planningsapplicatie — Utrecht, coaches two Scrum teams
+
 ## Pendientes
 
 - [ ] https://job-boards.greenhouse.io/adyen/jobs/7946947 | Adyen | Employer Brand Program Manager, Events & Partnerships EMEA
@@ -168,3 +186,14 @@
 - [ ] https://stripe.com/jobs/search?gh_jid=7938661 | Stripe | Public Affairs Manager
 - [ ] https://stripe.com/jobs/search?gh_jid=7589234 | Stripe | Technical Program Manager, Infrastructure
 
+
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/7749204003?gh_jid=7749204003 | Celonis | Principal Client Value Partner - Retail
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/7743041003?gh_jid=7743041003 | Celonis | Working Student Online Training Localization 
+- [ ] https://jobs.ashbyhq.com/supabase/f6027734-f9f6-4711-ac21-88844a6d9d3f | Supabase | Senior Manager - Technical Program Management
+- [ ] https://jobs.ashbyhq.com/n8n/d195a389-6af5-4b95-82e5-2258953c7297 | n8n | Sr AI Engineer | Remote - Europe | TS/Vue/NodeJS
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8563183002 | Databricks | Sr. Solutions Engineer - AI Natives Business
+- [ ] https://stripe.com/jobs/search?gh_jid=7966641 | Stripe | Program Manager, Security Business Enablement
+- [ ] https://jobs.ashbyhq.com/mollie/d72de539-6941-4c1b-a848-09b2815746d3 | Mollie | Product Delivery Manager - Mollie Capital
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8565469002 | GitLab | AI Engineer
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8548545002 | GitLab | Senior AI Engineer
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8517571002 | GitLab | Staff Program Manager, Enterprise Technology & AI
