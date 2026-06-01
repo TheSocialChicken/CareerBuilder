@@ -8,7 +8,7 @@
 | 35 | 2026-05-29 | Accenture | Change Consultant H&PS | 2.8/5 | Evaluated | ✅ | [035](reports/035-accenture-change-consultant-hps-2026-05-29.md) | Niet aanbevolen: Master-eis + mid-level positionering + consulting structure |
 | 36 | 2026-05-29 | Accenture | Change Management Consultant | 2.5/5 | Evaluated | ✅ | [036](reports/036-accenture-change-management-consultant-2026-05-29.md) | Niet aanbevolen: ERP-gap + Master-eis + over-senior |
 | 37 | 2026-05-29 | KPMG | Scrum Master | 3.0/5 | Evaluated | ✅ | [037](reports/037-kpmg-scrum-master-2026-05-29.md) | Grenswaarde: corporate marketing voorkeur gap; Big 4 structuur; salaris variabel |
-| 38 | 2026-05-29 | Pro-Act / Npuls | Adviseur Verantwoorde AI & Data | 3.8/5 | Evaluated | ✅ | [038](reports/038-proact-npuls-adviseur-verantwoorde-ai-2026-05-29.md) | DEADLINE VANDAAG — sterke match: onderwijs + AI-governance + fractional-vriendelijk |
+| 38 | 2026-05-29 | Pro-Act / Npuls | Adviseur Verantwoorde AI & Data | 3.8/5 | Discarded | ✅ | [038](reports/038-proact-npuls-adviseur-verantwoorde-ai-2026-05-29.md) | Vacature gesloten — deadline 29 mei verstreken |
 | 39 | 2026-05-29 | Prowareness | Agile Coach | 2.5/5 | Evaluated | ✅ | [039](reports/039-prowareness-agile-coach-2026-05-29.md) | Niet aanbevolen: salaris €48k-€56k ver onder target; over-senior |
 | 6 | 2026-05-21 | Mistral AI | AI Deployment Strategist - Netherlands | 2.8/5 | Evaluated | ❌ | [006](reports/006-mistral-ai-nl-2026-05-21.md) | - |
 | 7 | 2026-05-21 | Mistral AI | AI Deployment Strategist - Munich | 2.6/5 | Evaluated | ❌ | [007](reports/007-mistral-ai-munich-2026-05-21.md) | - |
@@ -34,9 +34,9 @@
 | 27 | 2026-05-21 | Databricks | AI Engineer - FDE (Forward Deployed Engineer) | 2.5/5 | Evaluated | ❌ | [027](reports/027-databricks-fde-amsterdam-2026-05-21.md) | - |
 | 29 | 2026-05-21 | GitLab | Program Manager - London | 3.1/5 | Evaluated | ✅ | [029](reports/029-gitlab-program-manager-london-2026-05-21.md) | - |
 | 30 | 2026-05-21 | Stripe | Program Manager, Intake & Portfolio Management | 3.3/5 | Evaluated | ✅ | [030](reports/030-stripe-pm-intake-portfolio-2026-05-21.md) | - |
-| 31 | 2026-05-21 | n8n | AI Product Builder | 3.7/5 | Evaluated | ✅ | [028](reports/028-n8n-ai-product-builder-2026-05-21.md) | - |
+| 31 | 2026-05-21 | n8n | AI Product Builder | 3.7/5 | Rejected | ✅ | [028](reports/028-n8n-ai-product-builder-2026-05-21.md) | Rejected |
 | 1 | 2026-05-21 | Capgemini | Engagement Manager | 2.5/5 | Evaluated | ✅ | [001](reports/001-capgemini-2026-05-21.md) | Proceed with caution — 5mo old posting, URL/title mismatch, no AI component, traditional enterprise PM |
-| 2 | 2026-05-21 | Red Panda Works | Head of AI Systems & Delivery | 3.8/5 | Evaluated | ✅ | [002](reports/002-red-panda-works-2026-05-21.md) | Best match of batch — Claude-first AI transformation, Amsterdam hybrid, €66k–€84k |
-| 3 | 2026-05-21 | Vektis | Scrum Master | 3.5/5 | Evaluated | ✅ | [003](reports/003-vektis-2026-05-21.md) | 15+ yrs agile practitioner, school-wide Scrum implementation at Aeres. Negotiate toward €6k/month. |
-| 4 | 2026-05-21 | Roxit | Agile Coach | 3.6/5 | Evaluated | ✅ | [004](reports/004-roxit-2026-05-21.md) | Strong agile coaching match, org change dimension, Zwolle backyard. Negotiate €5,500+. |
-| 5 | 2026-05-21 | EDSN | Scrum Master medior | 3.4/5 | Evaluated | ✅ | [005](reports/005-edsn-2026-05-21.md) | 15+ yrs agile depth, 10+ yrs DevOps. Book PSM II (1 week prep). SAFe learnable. €50–77k Amersfoort. |
+| 2 | 2026-05-21 | Red Panda Works | Head of AI Systems & Delivery | 3.8/5 | Discarded | ✅ | [002](reports/002-red-panda-works-2026-05-21.md) | Not proceeding |
+| 3 | 2026-05-21 | Vektis | Scrum Master | 3.5/5 | Interview | ✅ | [003](reports/003-vektis-2026-05-21.md) | Interview 2026-06-01 — went well |
+| 4 | 2026-05-21 | Roxit | Agile Coach | 3.6/5 | Rejected | ✅ | [004](reports/004-roxit-2026-05-21.md) | Rejected |
+| 5 | 2026-05-21 | EDSN | Scrum Master medior | 3.4/5 | Interview | ✅ | [005](reports/005-edsn-2026-05-21.md) | Interview 2026-06-02 |

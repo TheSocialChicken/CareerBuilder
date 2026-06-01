@@ -114,6 +114,22 @@ title_filter:
     - "CSRD"
     - "EUDR"
     - "Chain Compliance"
+    # -- Serious games, simulation, facilitation --
+    - "Serious Games"
+    - "Serious Game"
+    - "Game-based Learning"
+    - "Gamification"
+    - "Simulation Designer"
+    - "Simulation Facilitator"
+    - "Learning Experience Designer"
+    - "Learning Experience"
+    - "Workshop Designer"
+    - "Workshop Facilitator"
+    - "Design Thinking Facilitator"
+    - "Facilitation"
+    - "Spelend Leren"
+    - "Ervaringsleren"
+    - "Gamificatie"
     # -- Primary education / programming teacher --
     - "Docent Informatica"
     - "Docent Programmeren"
@@ -194,6 +210,38 @@ search_queries:
     query: 'site:nationalevacaturebank.nl "AI" OR "Innovatie" OR "Leren" "Lead" OR "Manager" Netherlands'
     enabled: true
 
+  - name: Intermediair — AI Innovation & Program Management
+    query: 'site:intermediair.nl "AI" OR "Innovatie" OR "Program Manager" OR "Scrum Master" OR "Agile Coach" OR "Transformation" Lead OR Manager'
+    enabled: true
+
+  - name: Intermediair — Docent / Lector HBO
+    query: 'site:intermediair.nl "docent" OR "lector" OR "onderwijs innovatie" OR "AI" OR "Informatica" HBO OR hogeschool'
+    enabled: true
+
+  - name: Monsterboard NL — AI Innovation Lead
+    query: 'site:monsterboard.nl "AI" OR "Innovatie" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" OR "Digital Transformation" Netherlands'
+    enabled: true
+
+  - name: Vacature.com — AI & Innovation
+    query: 'site:vacature.com "AI" OR "Innovatie" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Transformation" Netherlands'
+    enabled: true
+
+  - name: Academictransfer — Docent / Lector AI
+    query: 'site:academictransfer.com "AI" OR "Innovatie" OR "docent" OR "lector" OR "onderzoeker" Netherlands'
+    enabled: true
+
+  - name: FWD.nl — AI & Digital Transformation
+    query: 'site:fwd.nl "AI" OR "Innovatie" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Digital Transformation"'
+    enabled: true
+
+  - name: Techleap.nl — NL Tech Startup Jobs
+    query: 'site:techleap.nl "AI" OR "Innovation" OR "Program Manager" OR "Agile" OR "Transformation" Lead OR Manager OR Coach'
+    enabled: true
+
+  - name: Jobbird NL — AI Innovation
+    query: 'site:jobbird.com "AI" OR "Innovatie" OR "Scrum Master" OR "Agile Coach" OR "Program Manager" OR "Transformation" Netherlands'
+    enabled: true
+
   # -- European boards --
 
   - name: Remotive — AI Transformation EU
@@ -244,6 +292,52 @@ search_queries:
     query: 'site:jobs.ashbyhq.com "AI" OR "Innovation" "Program" OR "Lead" OR "Manager" Germany OR Netherlands OR remote Europe'
     enabled: true
 
+  - name: StepStone DE — AI Innovation Lead
+    query: 'site:stepstone.de "AI" OR "KI" OR "Innovation Lab" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" OR "Transformation" Germany remote'
+    enabled: true
+
+  - name: XING Jobs — AI Innovation DACH
+    query: 'site:xing.com/jobs "AI" OR "KI" OR "Innovationsmanager" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" Germany Austria Switzerland remote'
+    enabled: true
+
+  - name: Heise Jobs — IT & AI Germany
+    query: 'site:heise.de/jobs "AI" OR "KI" OR "Innovation" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" Germany remote'
+    enabled: true
+
+  - name: t3n Jobs — Digital & AI Germany
+    query: 'site:t3n.de/jobs "AI" OR "Innovation" OR "Agile" OR "Program Manager" OR "Digital Transformation" Germany remote'
+    enabled: true
+
+  - name: Indeed DE — AI Innovation Lead
+    query: 'site:de.indeed.com "AI" OR "KI" OR "Innovation Lab" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" Germany remote'
+    enabled: true
+
+  - name: Jobs.ch — AI Innovation Switzerland
+    query: 'site:jobs.ch "AI" OR "Innovation" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" OR "Transformation" Switzerland remote'
+    enabled: true
+
+  - name: Karriere.at — AI Innovation Austria
+    query: 'site:karriere.at "AI" OR "KI" OR "Innovation" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" Austria remote'
+    enabled: true
+
+  # -- Spain / Iberian market --
+
+  - name: InfoJobs ES — AI Innovation Lead
+    query: 'site:infojobs.net "AI" OR "Inteligencia Artificial" OR "Innovation" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" OR "Transformacion Digital" Spain remote'
+    enabled: true
+
+  - name: Tecnoempleo ES — AI & Tech Roles
+    query: 'site:tecnoempleo.com "AI" OR "Inteligencia Artificial" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" OR "Innovation" Spain remote'
+    enabled: true
+
+  - name: Indeed ES — AI Innovation
+    query: 'site:es.indeed.com "AI" OR "Inteligencia Artificial" OR "Innovation" OR "Agile Coach" OR "Scrum Master" OR "Program Manager" Spain remote Europe'
+    enabled: true
+
+  - name: LinkedIn ES — AI Innovation Lead
+    query: 'site:linkedin.com/jobs "AI" OR "Innovation Lab" OR "Applied AI" OR "Agile Coach" OR "Program Manager" Spain OR Madrid OR Barcelona OR remote Europe'
+    enabled: true
+
   # -- Education / EdTech --
 
   - name: EdTech — Learning Innovation
@@ -252,6 +346,28 @@ search_queries:
 
   - name: Universities NL — AI Lab
     query: '"Innovation Lab" OR "Applied Research" OR "Lectoraat" AI Netherlands universiteit OR hogeschool'
+    enabled: true
+
+  # -- Serious games, simulation, facilitation --
+
+  - name: NL — Serious Games & Simulation Designer
+    query: '"Serious Games" OR "Game-based Learning" OR "Gamification" OR "Simulation Designer" OR "Spelend Leren" Netherlands OR remote'
+    enabled: true
+
+  - name: NL — Learning Experience Designer
+    query: '"Learning Experience Designer" OR "LXD" OR "Instructional Designer" OR "Workshop Facilitator" OR "Facilitation" Netherlands OR remote'
+    enabled: true
+
+  - name: NL — Design Thinking Facilitator
+    query: '"Design Thinking" OR "Design Sprint" OR "Workshop Design" OR "Facilitation" Lead OR Facilitator Netherlands OR remote'
+    enabled: true
+
+  - name: LinkedIn NL — Simulation & Facilitation
+    query: 'site:linkedin.com/jobs "Serious Games" OR "Simulation" OR "Game-based Learning" OR "Learning Experience Designer" Netherlands OR remote'
+    enabled: true
+
+  - name: Indeed NL — Serious Games & Facilitation
+    query: 'site:indeed.com "Serious Games" OR "Gamification" OR "Simulation" OR "Learning Experience" OR "Facilitation" Netherlands'
     enabled: true
 
 tracked_companies:
@@ -465,6 +581,50 @@ tracked_companies:
     scan_method: websearch
     scan_query: 'site:jobs.ashbyhq.com/zapier'
     notes: "Remote-first. Automation platform. Program and solutions roles."
+    enabled: true
+
+  # -- Serious games, simulation & facilitation companies --
+
+  - name: Ranj Serious Games
+    careers_url: https://www.ranj.com/nl/over-ranj/vacatures
+    scan_method: websearch
+    scan_query: '"Ranj" vacatures "game designer" OR "serious games" OR "learning" OR "simulation" OR "facilitation"'
+    notes: "Rotterdam. NL's biggest serious games studio. Game designer, learning experience, project lead roles. Beer Game track record is direct proof."
+    enabled: true
+
+  - name: Kessels & Smit
+    careers_url: https://www.kesselssmit.com/vacatures
+    scan_method: websearch
+    scan_query: '"Kessels & Smit" vacatures "facilitator" OR "learning" OR "coach" OR "organisatieontwikkeling"'
+    notes: "NL. L&D and facilitation consultancy. Workshop design and facilitation roles."
+    enabled: true
+
+  - name: Learnbeat
+    careers_url: https://www.learnbeat.nl/vacatures
+    scan_method: websearch
+    scan_query: '"Learnbeat" vacatures "learning" OR "gamification" OR "game-based" OR "instructional design"'
+    notes: "NL EdTech. Digital learning platform with gamification. L&D design roles."
+    enabled: true
+
+  - name: Enspiral (NL)
+    careers_url: https://www.enspiral.com/jobs
+    scan_method: websearch
+    scan_query: '"Enspiral" jobs "facilitation" OR "learning" OR "collaboration" OR "innovation" Netherlands remote'
+    notes: "Network of self-managing workers. Facilitation, learning design, innovation roles. Remote-friendly."
+    enabled: true
+
+  - name: Ynno
+    careers_url: https://www.ynno.nl/vacatures
+    scan_method: websearch
+    scan_query: '"Ynno" vacatures "facilitation" OR "serious games" OR "workshop" OR "innovation" OR "leren"'
+    notes: "NL. Innovation and facilitation consultancy. Workshop design and serious games adjacent."
+    enabled: true
+
+  - name: Winklevoss (Games for Change NL)
+    careers_url: https://www.gamesforchange.org/jobs
+    scan_method: websearch
+    scan_query: '"Games for Change" OR "serious game" jobs netherlands OR europe "designer" OR "facilitator" OR "learning"'
+    notes: "Impact games / serious games ecosystem. Niche but direct match for D&D + simulation profile."
     enabled: true
 
   # -- NL Agile & IT consultancies --
