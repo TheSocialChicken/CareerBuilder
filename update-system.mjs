@@ -104,6 +104,7 @@ const USER_PATHS = [
   'output/',
   'jds/',
   'writing-samples/',
+  'setup.mjs',
 ];
 
 function parseVersionFile(raw) {
