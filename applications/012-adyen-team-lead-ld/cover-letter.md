@@ -1,4 +1,4 @@
-# Cover Letter — Adyen
+# Cover Letter: Adyen
 **Role:** Team Lead, Learning & Development
 **Date:** 21 May 2026
 

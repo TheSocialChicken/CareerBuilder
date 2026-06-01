@@ -137,6 +137,17 @@
 - [ ] https://careers.vattenfall.com/nl/nl/job/business-change-manager-in-amsterdam-jid-49579 | Vattenfall | Business Change Manager — Amsterdam
 - [ ] https://www.uwv.nl/nl/werken-bij/vacatures/a1WSc000001dSOrMAM | UWV | Scrum Master IV Gegevensdiensten — Amsterdam
 - [ ] https://careers.tudelft.nl/job/Delft-Innovation-Manager-Quantum-Internet-2628-CD/828811702/ | TU Delft | Innovation Manager Quantum Internet — Delft, innovation + ecosystem building
+- [ ] https://www.nn-careers.com/vacature/744/programmamanager-it-verandertrajecten | Nationale Nederlanden | Programmamanager IT-verandertrajecten — Den Haag, digital services, legacy replacement, cloud transformation for NN Bank
+- [ ] https://www.werkenbijkpmg.nl/vacature/senior-consultant-manager-digital-transformation | KPMG | Senior Consultant / Manager Digital Transformation — Amstelveen, digital transformation programs
+- [ ] https://www.postnl.nl/werkenbij/vacatures-voor-hbo-en-wo/agile-next-transformation-manager-45997/ | PostNL | Agile Next Transformation Manager — Den Haag, shape and implement PostNL Agile transformation roadmap
+- [ ] https://www.postnl.nl/werkenbij/vacatures-voor-hbo-en-wo/programma-manager-cbits-54324/ | PostNL | Programma Manager CB&ITS — Den Haag, central IT landscape program execution
+- [ ] https://social-enterprise.nl/nieuws/vacature-programmamanager-leden/ | Social Enterprise NL | Programmamanager leden — network of 450+ social enterprises, events/masterclasses/growth programs
+- [ ] https://www.tno.nl/nl/werken-bij-tno/vacatures/2026/04/consultant-verantwoorde-ai/ | TNO | Consultant Verantwoorde AI — Soesterberg, responsible AI consulting for companies and govt
+- [ ] https://kombijde.politie.nl/vacature/senior-programmamanager_1195019.html | Nationale Politie | Senior Programmamanager — transformation goals of corps leadership, harmonization, innovation
+- [ ] https://www.8baan.nl/vacature/programmamanager-innovatie-partners | Gemeente Amsterdam | Programmamanager Innovatie Partners — Amsterdam, urban innovation program
+- [ ] https://www.werkenbijkpmg.nl/vacature/scrum-master | KPMG | Scrum Master — Amsterdam/Amstelveen
+- [ ] https://www.werkenbijcoolblue.nl/vacatures/scrum-master/ | Coolblue | Scrum Master / Agile Coach — Rotterdam, guide development teams, min 2 yrs dedicated SM experience
+- [ ] https://www.consultant.nl/vacatures/vacature/9497/programmamanager-service-design | ProRail | Programmamanager Service Design — Utrecht, initiating/realizing multidisciplinary innovation programs
 
 ## Pendientes
 

@@ -1,4 +1,4 @@
-# Cover Letter — Celonis
+# Cover Letter: Celonis
 **Role:** Head of Industry - Retail & CPG
 **Date:** 21 May 2026
 
@@ -10,7 +10,7 @@ CSRD, CSDDD, and EUDR are forcing Retail and CPG companies to see their supply c
 
 The 0-to-1 pattern is documented across the career: Spark! Living Lab (built from nothing in 2020, running cross-European programs in 2025), Aeres innovation hub (blank slate to school-wide agile system in under 2 months), Tonomy Foundation (co-founded open-source protocol from three people to W3C recognition). "Build and lead a cross-functional team solving enterprise challenges from scratch" is the description that matches every chapter of the career.
 
-I want to be honest about the scale: leading a 100-person practice is a step up from the labs and programs I have run. My teams have been small and cross-functional — faculty, students, partners, investors. The commercial scale is the honest gap. The building mandate is exactly matched.
+I want to be honest about the scale: leading a 100-person practice is a step up from the labs and programs I have run. My teams have been small and cross-functional (faculty, students, partners, investors). The commercial scale is the honest gap. The building mandate is exactly matched.
 
 If the right entry point is a Principal or Value Engineering role with a path to practice leadership, I am open to that conversation.
 

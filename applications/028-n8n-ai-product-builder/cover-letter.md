@@ -1,4 +1,4 @@
-# Cover Letter — n8n
+# Cover Letter: n8n
 **Role:** AI Product Builder
 **Date:** 21 May 2026
 

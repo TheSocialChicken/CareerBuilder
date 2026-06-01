@@ -1,8 +1,8 @@
 Geachte ABN AMRO / ICS-team,
 
-Complexe transformatieprogramma's met veel stakeholders, strakke tijdlijnen en continue verandering — dat is waar ik het sterkst ben. Bij Windesheim leidde ik het COVID-megaproject: acht interdisciplinaire vakken in één simulatieprogramma samengebracht in minder dan twee maanden, terwijl scope, kwaliteit, planning en financiering gelijktijdig werden beheerd. Geen draaiboek, geen precedent — gewoon het werk doen.
+Complexe transformatieprogramma's met veel stakeholders, strakke tijdlijnen en continue verandering, dat is waar ik het sterkst ben. Bij Windesheim leidde ik het COVID-megaproject: acht interdisciplinaire vakken in één simulatieprogramma samengebracht in minder dan twee maanden, terwijl scope, kwaliteit, planning en financiering gelijktijdig werden beheerd. Geen draaiboek, geen precedent. Gewoon het werk doen.
 
-Mijn lectoraat bij Windesheim heet niet voor niets Supply Chain Finance. Ik werk structureel op het snijvlak van financiële stromen, ketenverantwoording en digitale transformatie: CSRD-compliance, EUDR-traceerbaarheid, financieringsrapportages aan overheidsfondsen. ICS zit in payments — een domein waar mijn traceerbaarheidsprogramma's direct op aansluiten.
+Mijn lectoraat bij Windesheim heet niet voor niets Supply Chain Finance. Ik werk structureel op het snijvlak van financiële stromen, ketenverantwoording en digitale transformatie: CSRD-compliance, EUDR-traceerbaarheid, financieringsrapportages aan overheidsfondsen. ICS zit in payments, een domein waar mijn traceerbaarheidsprogramma's direct op aansluiten.
 
 Wat ik meeneem naar het Change Management Office van ICS:
 - 15+ jaar programmamanagement van complexe, multidisciplinaire programma's

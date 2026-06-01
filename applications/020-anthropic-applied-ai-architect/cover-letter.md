@@ -1,4 +1,4 @@
-# Cover Letter — Anthropic
+# Cover Letter: Anthropic
 **Role:** Applied AI Architect, Industries
 **Date:** 21 May 2026
 

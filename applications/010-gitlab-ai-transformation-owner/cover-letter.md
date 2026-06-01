@@ -1,4 +1,4 @@
-# Cover Letter — GitLab
+# Cover Letter: GitLab
 **Role:** AI Transformation Owner, Marketing
 **Date:** 21 May 2026
 

@@ -153,6 +153,66 @@ Then suggest automation:
 
 If the user accepts, use the `/loop` or `/schedule` skill (if available) to set up a recurring `/career-ops scan` (or `/career-ops-scan` if using OpenCode). If those aren't available, suggest adding a cron job or remind them to run `/career-ops scan` (or `/career-ops-scan` if using OpenCode) periodically.
 
+### Reset — Fresh Start
+
+Triggered when the user says: "reset", "start over", "reset for new user", "wipe my data", or similar.
+
+**Step 1: Confirm**
+
+Show this warning and stop — do NOT proceed until the user explicitly confirms:
+
+> **⚠ This will permanently delete all personal data in this career-ops installation:**
+>
+> - `cv.md` — your CV
+> - `config/profile.yml` — your profile and preferences
+> - `modes/_profile.md` — your customizations
+> - `portals.yml` — your portal config
+> - `data/applications.md` — your application tracker
+> - `data/pipeline.md` — your pending URLs
+> - `reports/` — all evaluation reports
+> - `applications/` — all cover letters and application files
+> - `output/` — all generated PDFs and letters
+> - `interview-prep/` — all interview prep files
+> - `article-digest.md` — your proof points (if present)
+> - `career-story.md` — your career story (if present)
+>
+> System files (modes, scripts, templates) are NOT touched. This only clears user data.
+>
+> **Type "yes, reset" to confirm. This cannot be undone.**
+
+**Step 2: Execute (only after explicit confirmation)**
+
+Delete each of the following if it exists:
+- `cv.md`
+- `config/profile.yml`
+- `modes/_profile.md`
+- `portals.yml`
+- `article-digest.md`
+- `career-story.md`
+- All files in `data/` except `.gitkeep` (recreate `data/pipeline.md` as empty file with just `# Pipeline\n`)
+- All `.md` files in `reports/` except `.gitkeep`
+- All contents of `applications/` (the whole directory if present, or all subdirs)
+- All files in `output/` except `.gitkeep`
+- All files in `interview-prep/` except `.gitkeep` and `story-bank.md` template
+
+Use `Bash` to delete. Example:
+```bash
+rm -f cv.md config/profile.yml modes/_profile.md portals.yml article-digest.md career-story.md
+rm -f data/applications.md data/pipeline.md data/scan-history.tsv data/follow-ups.md
+find reports/ -name "*.md" -not -name ".gitkeep" -delete 2>/dev/null || true
+rm -rf applications/
+find output/ -not -name ".gitkeep" -not -path "output/" -delete 2>/dev/null || true
+find interview-prep/ -not -name ".gitkeep" -not -name "story-bank.md" -not -path "interview-prep/" -delete 2>/dev/null || true
+```
+
+**Step 3: Confirm and onboard**
+
+> "Done. All personal data cleared. Starting fresh onboarding now."
+
+Then immediately enter onboarding mode (Step 1: CV).
+
+---
+
 ### Personalization
 
 This system is designed to be customized by YOU (AI Agent). When the user asks you to change archetypes, translate modes, adjust scoring, add companies, or modify negotiation scripts -- do it directly. You read the same files you use, so you know exactly what to edit.
@@ -218,6 +278,7 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 | Batch processes offers | `batch` |
 | Asks about rejection patterns or wants to improve targeting | `patterns` |
 | Asks about follow-ups or application cadence | `followup` |
+| Wants to reset system for a new user / start fresh | `reset` |
 
 ### CV Source of Truth
 

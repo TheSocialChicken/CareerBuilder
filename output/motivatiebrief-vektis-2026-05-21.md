@@ -1,9 +1,3 @@
-# Motivatiebrief — Vektis
-**Functie:** Scrum Master (32/38 uur)
-**Datum:** 21 mei 2026
-
----
-
 Geachte Maurice en het Vektis-team,
 
 Ik ben al meer dan 15 jaar Scrum Master, niet als titel maar als werkwijze. En ik breng iets mee wat de meeste Scrum Masters niet hebben: 10+ jaar DevOps-ervaring.

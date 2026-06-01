@@ -1,4 +1,4 @@
-# Motivatiebrief — EDSN
+# Motivatiebrief: EDSN
 **Functie:** Scrum Master (medior)
 **Datum:** 21 mei 2026
 

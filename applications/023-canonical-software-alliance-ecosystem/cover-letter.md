@@ -1,4 +1,4 @@
-# Cover Letter — Canonical
+# Cover Letter: Canonical
 **Role:** Software Alliance Ecosystem Manager
 **Date:** 21 May 2026
 
@@ -10,7 +10,7 @@ I combine what most ecosystem managers do not have: 10+ years of DevOps on Ubunt
 
 The enablement track record goes further. At WDS Global in 2009, I designed a tutorial video series for HTC customers that management adopted globally as their standard customer education format. At InHolland, I designed a blockchain course from scratch that is still running four years later, independently of me. Content that outlasts the person who built it is not an accident. It is a design discipline: build for reuse, design the handover from the start.
 
-Canonical's approach — open source as the foundation, ISV adoption as the growth motion — is a model I understand from the inside. I run Ubuntu-based infrastructure. I have built open-source protocols with partner ecosystems. I know what enables an ISV to commit to a platform: reference architectures, honest documentation, and a person who understands both the technical constraints and the commercial case.
+Canonical's approach fits the model I understand from the inside: open source as the foundation, ISV adoption as the growth motion. I run Ubuntu-based infrastructure. I have built open-source protocols with partner ecosystems. I know what enables an ISV to commit to a platform: reference architectures, honest documentation, and a person who understands both the technical constraints and the commercial case.
 
 Available for up to 25% travel. Based in Baarn, Netherlands. EU citizen, no sponsorship needed.
 
