@@ -163,7 +163,7 @@
 - [ ] https://www.academictransfer.com/nl/337903/lector-ai-data-supported-healthcare-kcz-kenniscentrum-zorginnovatie/ | KCZ Kenniscentrum Zorginnovatie | Lector AI & Data Supported Healthcare — PhD required, Hogeschool Rotterdam
 - [ ] https://www.monsterboard.nl/banen/scrum-master-agile-coach-saas-scale-up-in-sustainability-amsterdam-07--34854011-8e2c-4083-bca5-b3be350abfde | Ecochain Technologies | Scrum Master - Agile Coach — sustainability SaaS, Amsterdam
 - [ ] https://www.monsterboard.nl/banen/scrum-master-rotterdam-11--69a71926-26fb-4f8b-843e-758b6d446be5 | Greenchoice | Scrum Master — Rotterdam, 5+ yrs experience
-- [ ] https://nl.linkedin.com/jobs/view/netherlands-amsterdam-freelance-corporate-ai-lab-host-facilitator-at-goodera-4418133505 | Goodera | AI Lab Host Facilitator — Freelance, Amsterdam. Direct archetype 1 match: facilitate AI labs for corporates
+- [x] https://nl.linkedin.com/jobs/view/netherlands-amsterdam-freelance-corporate-ai-lab-host-facilitator-at-goodera-4418133505 | Goodera | AI Lab Host Facilitator — Freelance, Amsterdam. Direct archetype 1 match: facilitate AI labs for corporates
 - [ ] https://www.werkenbijns.nl/vacatures/scrum-master-cluster-rijdend-personeel-utrecht-1223076 | NS | Scrum Master (cluster Rijdend Personeel) — Utrecht
 - [ ] https://www.werkenbijns.nl/vacatures/medior-scrum-master-planningsapplicatie-utrecht-1224287 | NS | Medior Scrum Master planningsapplicatie — Utrecht, coaches two Scrum teams
 

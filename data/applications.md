@@ -2,6 +2,7 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 40 | 2026-06-01 | Goodera | AI Lab Host Facilitator | 4.3/5 | Evaluated | ✅ | [040](reports/040-goodera-ai-lab-facilitator-2026-06-01.md) | Freelance Amsterdam — direct lab facilitation match, $500-750/workshop |
 | 32 | 2026-05-29 | Ministerie van Defensie | Programmamanager Innovatie | 3.2/5 | Evaluated | ✅ | [032](reports/032-defensie-programmamanager-innovatie-2026-05-29.md) | Schaal 14 (€84k-€113k); WO-eis = risico; interne voorkeur; deadline 10 jun |
 | 33 | 2026-05-29 | Ministerie van Defensie | Senior Scrum Master (38u) | 3.5/5 | Evaluated | ✅ | [033](reports/033-defensie-senior-scrum-master-2026-05-29.md) | Schaal 12 (€70k-€91k); PSM II gap; deadline 15 okt — ruim tijd voor certificering |
 | 34 | 2026-05-29 | ABN AMRO / ICS | Senior Programma Manager | 3.3/5 | Evaluated | ✅ | [034](reports/034-abn-amro-senior-programmamanager-2026-05-29.md) | €85k-€121k + 11%; FS-sector voorkeur gap; deadline 19 jun — urgentie |
