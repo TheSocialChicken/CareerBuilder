@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christiaan Verhoef — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .contact-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  /* === PROFESSIONAL SUMMARY === */
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+
+  /* === CORE COMPETENCIES === */
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  /* === WORK EXPERIENCE === */
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  /* === PROJECTS === */
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  /* === EDUCATION === */
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  /* === CERTIFICATIONS === */
+  .cert-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(90px, max-content) 44px;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+
+  .cert-title {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #333;
+    min-width: 0;
+  }
+
+  .cert-org {
+    color: hsl(270, 70%, 45%);
+    white-space: nowrap;
+  }
+
+  .cert-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  /* === SKILLS === */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+
+  .skill-item {
+    font-size: 10.5px;
+    color: #444;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+    font-size: 10.5px;
+  }
+
+  /* === PRINT === */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      padding: 0;
+    }
+  }
+
+  /* === PAGE BREAK CONTROL === */
+  .avoid-break,
+  .job,
+  .project,
+  .edu-item,
+  .cert-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>Christiaan Verhoef</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>+31 6 30 18 47 43</span>
+      <span class="separator">|</span>
+      <span>christiaan_gerardo@hotmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/christiaanverhoef">linkedin.com/in/christiaanverhoef</a>
+      <span class="separator">|</span>
+      <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a>
+      <span class="separator">|</span>
+      <span>Baarn, Nederland</span>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">Professionele Samenvatting</div>
+    <div class="summary-text">
+      Agile coach en veranderbegeleider met 15+ jaar ervaring in agile transformaties bij hogescholen, innovatielabs en technologiebedrijven. Coach teams, product owners en management in Scrum, Kanban en DevOps. Leidde school-brede agile transformatie bij Aeres Hogeschool via SafeScrum: 8 cursussen samengevoegd in één sprint-gebaseerde innovatietrack. Faciliteert multi-team afstemming, strategische planningsevents en portfolio-niveau stakeholderdialoog. Combineert diepgaand begrip van de technische kant (DevOps, CI/CD, 10+ jaar) met het vermogen om directieleden, POs en teams in hetzelfde ritme te krijgen. Bouw omgevingen waar wendbaarheid geen doel op zich is, maar zorgt voor betere uitkomsten. Zie ook: <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a>.
+    </div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">Kerncompetenties</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Agile Coaching</span>
+      <span class="competency-tag">Scrum / Kanban / SafeScrum</span>
+      <span class="competency-tag">Agile Transformatie</span>
+      <span class="competency-tag">PI Planning Facilitatie</span>
+      <span class="competency-tag">Product Owner Coaching</span>
+      <span class="competency-tag">DevOps Coaching</span>
+      <span class="competency-tag">Verandermanagement</span>
+      <span class="competency-tag">Stakeholder Alignment</span>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Werkervaring</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Windesheim Hogeschool</span>
+        <span class="job-period">jan 2020 – heden</span>
+      </div>
+      <div class="job-role">Projectmanager / Agile Coach, Supply Chain Finance Lectoraat <span class="job-location">| Zwolle</span></div>
+      <ul>
+        <li><strong>Agile coaching van teams en stakeholders</strong>: Begeleidt onderzoekers, studenten en POs in agile werkwijzen; faciliteert sprint planning, retrospectives en multi-team afstemming over meerdere lectoraatsprojecten tegelijk.</li>
+        <li><strong>Spark! Living Lab</strong>: Oprichter en begeleider van een innovatielab voor blockchain-simulaties en agile supply chain onderwijs; teams werken in 2-weekse sprints met echte gebruikers als stakeholders. <a href="https://sparkllivinglab.nl">sparkllivinglab.nl</a></li>
+        <li><strong>COVID-19 Mega Project</strong>: Faciliteerde multi-team alignment voor 8 separate cursussen die samenwerken aan één interdisciplinair eindproduct. Vergelijkbaar met PI Planning: gezamenlijke kick-off, afhankelijkheden in kaart, gedeeld sprint-ritme.</li>
+        <li><strong>Value Chain Hackers</strong>: Bouwde en runs een AI-gedreven innovatielab voor studenten en onderzoekers; zelfgehoste AI-infrastructuur (Flowise, OpenWebUI, n8n, Supabase) op Docker/Kubernetes. <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a></li>
+        <li><strong>DevOps over alle labprojecten</strong>: Beheert volledige DevOps lifecycle (provisionering, containerisatie, CI/CD-pipelines, monitoring, incidentrespons) voor alle labomgevingen bij Windesheim.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Aeres Hogeschool Dronten</span>
+        <span class="job-period">2021 – 2022</span>
+      </div>
+      <div class="job-role">Lab Manager / Agile Transformatiecoach <span class="job-location">| Dronten</span></div>
+      <ul>
+        <li><strong>School-brede agile transformatie via SafeScrum</strong>: Implementeerde agile werkwijze voor de hele school: 8 losse cursussen samengevoegd in één sprint-gebaseerde innovatietrack. Van 0 naar rolling sprints in 6 weken, met docenten als product owners en studenten als zelfsturende teams.</li>
+        <li><strong>Coaching van docenten als product owners</strong>: Trainde en begeleidde docenten in backlog management, sprint planning en het loslaten van hun traditionele lesgeefrol ten gunste van coaching en begeleiding.</li>
+        <li><strong>Veles Farming</strong>: Begeleidde studentproject van eerste concept naar operationele agri-tech startup in Slowakije (€2M funding). <a href="https://velesfarming.com">velesfarming.com</a></li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Viridis Green-Tech AG</span>
+        <span class="job-period">2024 – heden</span>
+      </div>
+      <div class="job-role">Innovation Architect <span class="job-location">| München (remote)</span></div>
+      <ul>
+        <li>Begeleidt de strategische richting van het Viridis innovatielab; combineert blockchain-ecosysteemarchitectuur, business alignment en grantstrategie in 2-weekse agile sprintcycli.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">COTIT</span>
+        <span class="job-period">jan 2024 – jul 2024</span>
+      </div>
+      <div class="job-role">Business Innovator <span class="job-location">| Almere</span></div>
+      <ul>
+        <li>Bracht operationele structuur en agile werkwijzen in een scale-up fase logistiek bedrijf. Definieerde sprint-cycli, herstructureerde interne rollen, coachte directie in agile sturing.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Tonomy Foundation</span>
+        <span class="job-period">2021 – heden</span>
+      </div>
+      <div class="job-role">Medeoprichter en Bestuurslid <span class="job-location">| Amsterdam</span></div>
+      <ul>
+        <li>Medeoprichter van open-source, MICA-compliant digitale identiteitsinfrastructuur. Leidde strategie, technische positionering en community operations via 2-weekse agile sprintcycli.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Open Food Chain</span>
+        <span class="job-period">2022 – 2024</span>
+      </div>
+      <div class="job-role">Community Manager <span class="job-location">| Amsterdam / Remote</span></div>
+      <ul>
+        <li>Bouwde technische community via Discord, runde agile sprints voor softwaredevelopment, vertaalde complexe blockchain-ideeën naar toegankelijke formats voor diverse stakeholders.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Social Chicken</span>
+        <span class="job-period">2016 – 2022</span>
+      </div>
+      <div class="job-role">Senior Projectmanager en Educator (freelance) <span class="job-location">| Amsterdam</span></div>
+      <ul>
+        <li>Leverde IT-projecten en agile coaching voor diverse organisaties. Begeleidde teams in scrum en kanban. DevOps: private cloud setups, database migraties, CI/CD, Linux-serverbeheer, Nagios monitoring.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">ROC Midden Nederland</span>
+        <span class="job-period">2018 – 2020</span>
+      </div>
+      <div class="job-role">Freelance Educator, Agile Leren en Digitale Projecten <span class="job-location">| Utrecht</span></div>
+      <ul>
+        <li>Moderniseerde beroepsonderwijs via agile leerformaten: studenten werkten als developers, CEOs en klanten in sprints. Combineerde vakken tot gezamenlijke projecten met echte opdrachtgevers.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section avoid-break">
+    <div class="section-title">Projecten</div>
+
+    <div class="project">
+      <span class="project-title">Value Chain Hackers</span>
+      <span class="project-badge">Actief</span>
+      <div class="project-desc">Cross-Europees initiatief voor AI-gestuurde supply chain compliance (CSRD, CSDDD, EUDR). Zelfgehoste AI-infrastructuur, open-source tooling, agile team in 2-weekse sprints.</div>
+      <div class="project-tech"><a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a></div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Beer Game Demonstrator</span>
+      <div class="project-desc">Herontwerp van de klassieke logistieke simulatie (bullwhip effect) met een vergelijking blockchain versus niet-blockchain supply chain. Actief in gebruik bij universitair onderwijs.</div>
+      <div class="project-tech"><a href="https://demonstrator.valuechainhackers.xyz">demonstrator.valuechainhackers.xyz</a></div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Spark! Living Lab (Windesheim)</span>
+      <div class="project-desc">Innovatielab voor blockchain-simulaties en agile supply chain onderwijs. Studenten en onderzoekers werken in sprints aan echte vraagstukken.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Veles Farming</span>
+      <div class="project-desc">Studentconcept begeleid van eerste idee naar operationele agri-tech startup in Slowakije. €2M funding opgehaald.</div>
+      <div class="project-tech"><a href="https://velesfarming.com">velesfarming.com</a></div>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Opleiding</div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Bachelor Bedrijfseconomie, Business IT &amp; Management <span class="edu-org">| Hogeschool van Amsterdam</span></span>
+        <span class="edu-year">2010 – 2014</span>
+      </div>
+      <div class="edu-desc">Cijfer 8,7. Thesis: simulatiegebaseerd leren en trainingsmethodologie bij Kongsberg.</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Technische Informatica <span class="edu-org">| Hogeschool van Amsterdam</span></span>
+        <span class="edu-year">2006 – 2007</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section avoid-break">
+    <div class="section-title">Certificeringen</div>
+
+    <div class="cert-item">
+      <span class="cert-title">Scrum Master</span>
+      <span class="cert-org">Scrum.org</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Professional Scrum Product Owner I (PSPO I)</span>
+      <span class="cert-org">Scrum.org</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Prince2</span>
+      <span class="cert-org">AXELOS</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">ITIL</span>
+      <span class="cert-org">AXELOS</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Train the Trainer (Blockchain)</span>
+      <span class="cert-org">Blockchain Workspace</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Data Analysis &amp; Visualisatie (R, Python)</span>
+      <span class="cert-org"></span>
+      <span class="cert-year"></span>
+    </div>
+
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Vaardigheden</div>
+    <div class="skills-grid">
+      <span class="skill-item"><span class="skill-category">Agile methoden:</span> Scrum, SafeScrum, Kanban, PSPO, sprint planning, retrospectives, release management</span>
+      <span class="skill-item"><span class="skill-category">Verandermanagement:</span> agile transformatie, stakeholder coaching, organisatieontwikkeling</span>
+      <span class="skill-item"><span class="skill-category">Facilitatie:</span> workshop ontwerp, co-creatie, simulatie, spelgebaseerd leren, PI Planning-achtige events</span>
+      <span class="skill-item"><span class="skill-category">DevOps:</span> Docker, Kubernetes, GitHub CI/CD, Jenkins, Linux, Nagios, Grafana, MySQL, PostgreSQL</span>
+      <span class="skill-item"><span class="skill-category">AI-infrastructuur:</span> Flowise, OpenWebUI, n8n, Supabase, open-source stack deployment</span>
+      <span class="skill-item"><span class="skill-category">Talen:</span> Nederlands (moedertaal), Engels (vloeiend), Duits (conversationeel)</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

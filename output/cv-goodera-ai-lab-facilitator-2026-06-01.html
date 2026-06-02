@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christiaan Verhoef — CV</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../templates/fonts/space-grotesk-latin-ext.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../templates/fonts/dm-sans-latin-ext.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+    line-height: 1.1;
+  }
+
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin-bottom: 10px;
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: #555;
+  }
+
+  .contact-row a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .contact-row .separator {
+    color: #ccc;
+  }
+
+  .section {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1.5px solid #e2e2e2;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .summary-text {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #2f2f2f;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+
+  .competencies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .competency-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(187, 74%, 28%);
+    background: hsl(187, 40%, 95%);
+    padding: 4px 10px;
+    border-radius: 3px;
+    border: 1px solid hsl(187, 40%, 88%);
+  }
+
+  .job {
+    margin-bottom: 14px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .job-company {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .job-period {
+    font-size: 10.5px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 11px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .job-location {
+    font-size: 10px;
+    color: #888;
+  }
+
+  .job ul {
+    padding-left: 18px;
+    margin-top: 6px;
+  }
+
+  .job li {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .job li strong {
+    font-weight: 600;
+  }
+
+  .project {
+    margin-bottom: 12px;
+  }
+
+  .project-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: hsl(270, 70%, 45%);
+  }
+
+  .project-badge {
+    font-size: 9px;
+    font-weight: 500;
+    color: hsl(187, 74%, 32%);
+    background: hsl(187, 40%, 95%);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: 6px;
+  }
+
+  .project-desc {
+    font-size: 10.5px;
+    color: #444;
+    margin-top: 3px;
+    line-height: 1.55;
+  }
+
+  .project-tech {
+    font-size: 9.5px;
+    color: #888;
+    margin-top: 3px;
+  }
+
+  .edu-item {
+    margin-bottom: 8px;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .edu-title {
+    font-weight: 600;
+    font-size: 11px;
+    color: #333;
+  }
+
+  .edu-org {
+    color: hsl(270, 70%, 45%);
+    font-weight: 500;
+  }
+
+  .edu-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+  }
+
+  .edu-desc {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+    line-height: 1.5;
+  }
+
+  .cert-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(90px, max-content) 44px;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+
+  .cert-title {
+    font-size: 10.5px;
+    font-weight: 500;
+    color: #333;
+    min-width: 0;
+  }
+
+  .cert-org {
+    color: hsl(270, 70%, 45%);
+    white-space: nowrap;
+  }
+
+  .cert-year {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+
+  .skill-item {
+    font-size: 10.5px;
+    color: #444;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: #333;
+    font-size: 10.5px;
+  }
+
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page {
+      padding: 0;
+    }
+  }
+
+  .avoid-break,
+  .job,
+  .project,
+  .edu-item,
+  .cert-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header avoid-break">
+    <h1>Christiaan Verhoef</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>+31 6 30 18 47 43</span>
+      <span class="separator">|</span>
+      <span>christiaan_gerardo@hotmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/christiaanverhoef">linkedin.com/in/christiaanverhoef</a>
+      <span class="separator">|</span>
+      <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a>
+      <span class="separator">|</span>
+      <span>Baarn, Netherlands</span>
+    </div>
+  </div>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      I build the rooms where learning happens. Five innovation labs built across universities and research institutions. Simulations designed that make complex systems tangible. Workshops run where participants who never touched AI left having built something real. I hold rooms with the same muscle I developed growing up behind a market stall on the Albert Cuyp: crowd-reading, rapid rapport, keeping energy alive through four hours of hands-on work.<br><br>
+      For Goodera's AI Labs: I bring proven AI facilitation experience (Flowise, OpenWebUI, n8n, Claude, prompt engineering), a self-hosted AI sandbox used by Windesheim students and researchers, and a track record of normalising confusion for first-time builders. My Beer Game demonstrator teaches supply chain dynamics through doing, not watching. Same design philosophy, different content. I am based in Baarn, 45 minutes from Amsterdam, available freelance.<br><br>
+      Live proof: <a href="https://demonstrator.valuechainhackers.xyz">demonstrator.valuechainhackers.xyz</a> | <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a>
+    </div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">AI Facilitation</span>
+      <span class="competency-tag">Workshop Design and Delivery</span>
+      <span class="competency-tag">Prompt Engineering (Claude)</span>
+      <span class="competency-tag">Hands-on AI Learning</span>
+      <span class="competency-tag">Simulation Design</span>
+      <span class="competency-tag">Experiential Learning</span>
+      <span class="competency-tag">Audience Dynamics and Pacing</span>
+      <span class="competency-tag">Conscious Competence Method</span>
+      <span class="competency-tag">Nonprofit Technology</span>
+      <span class="competency-tag">Workflow Automation (n8n)</span>
+      <span class="competency-tag">Innovation Lab Building</span>
+      <span class="competency-tag">Participant Engagement</span>
+      <span class="competency-tag">Real-time Adaptation</span>
+      <span class="competency-tag">One-on-one Technical Coaching</span>
+      <span class="competency-tag">Agile Facilitation (15+ years)</span>
+    </div>
+  </div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Windesheim University of Applied Sciences</span>
+        <span class="job-period">Jan 2020 – Present</span>
+      </div>
+      <div class="job-role">Project Manager, Supply Chain Finance Lectoraat <span class="job-location">— Zwolle, Netherlands</span></div>
+      <ul>
+        <li><strong>Beer Game Demonstrator:</strong> Rebuilt the classic logistics simulation with a modern interface and live facilitation format. Runs with groups of 20-30 students; designed to make the bullwhip effect tangible through direct experience, not explanation. Used as a teaching tool in active university courses. <a href="https://demonstrator.valuechainhackers.xyz">demonstrator.valuechainhackers.xyz</a></li>
+        <li><strong>AI Lab Deployment (self-funded):</strong> Set up and maintained a hands-on AI sandbox using Flowise, OpenWebUI, n8n, and Supabase on self-managed Linux infrastructure. Students and researchers experiment with live AI tools, prompt engineering, and workflow automation. Used Claude and open-source LLMs for applied research.</li>
+        <li><strong>Spark! Living Lab:</strong> Founded and ran an innovation lab focused on blockchain simulations and agile supply chain education. Designed the learning environment from scratch, ran student-led experiments, and delivered the BlockBeer simulation game. <a href="https://spark!livinglab.nl">spark!livinglab.nl</a></li>
+        <li><strong>COVID-19 Mega Project:</strong> Merged eight university courses into one interdisciplinary simulation exploring pandemic supply chain disruption. Facilitated cross-department collaboration across 200+ students.</li>
+        <li><strong>KnopenKoning:</strong> Designed and prototyped a decision-making simulation tool for complex trade-off analysis. Combines game design with systems thinking for non-technical audiences.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Aeres Hogeschool Dronten</span>
+        <span class="job-period">2021 – 2022</span>
+      </div>
+      <div class="job-role">Lab Manager <span class="job-location">— Dronten, Netherlands</span></div>
+      <ul>
+        <li>Designed and ran an innovation lab combining agile educational design with project-based learning. Introduced simulation-based curriculum and supported student-led projects that evolved into independent startups.</li>
+        <li><strong>Agile Course Integration:</strong> Merged eight separate courses into one sprint-based innovation track using SafeScrum. Introduced this change across the school in under two months.</li>
+        <li><strong>Veles Farming:</strong> Recognised a student concept with potential, moved it to the lab for prototyping, and became seed investor. Now an operating agri-tech startup in Slovakia with €2M in funding. <a href="https://velesfarming.com">velesfarming.com</a></li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">ROC Midden Nederland</span>
+        <span class="job-period">2018 – 2020</span>
+      </div>
+      <div class="job-role">Freelance Educator, Agile Learning and Digital Projects <span class="job-location">— Utrecht, Netherlands</span></div>
+      <ul>
+        <li><strong>Gamified Roleplaying Modules:</strong> Created immersive role-playing environments where students acted as developers, CEOs, or clients. Built through simulation; normalised confusion as part of the learning design. Used Conscious Competence as the pedagogical backbone.</li>
+        <li><strong>Agile Learning System:</strong> Designed a classroom format mimicking real startup environments with collaborative sprints and classroom economy.</li>
+        <li>Facilitated participant engagement across 4-hour sessions, adapting pacing and providing one-on-one coaching to participants who got stuck.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Social Chicken (Freelance)</span>
+        <span class="job-period">2016 – 2022</span>
+      </div>
+      <div class="job-role">Senior Project Manager and Educator <span class="job-location">— Amsterdam, Netherlands</span></div>
+      <ul>
+        <li><strong>Inblock.io:</strong> Delivered blockchain training and proof-of-concept workshops for business audiences. Translated technical complexity into accessible, hands-on learning experiences.</li>
+        <li><strong>2bSMART:</strong> Delivered blockchain technology training using interactive logistics simulations for supply chain professionals across Benelux. Collaborated on design of the Smartys simulation platform. <a href="https://www.2bsmart.cz/">2bsmart.cz</a></li>
+        <li>Built and delivered creative coding workshops and digital literacy programs for youth and community groups.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Hogeschool Inholland</span>
+        <span class="job-period">2021 – 2022</span>
+      </div>
+      <div class="job-role">Guest Lecturer and Course Designer <span class="job-location">— Netherlands</span></div>
+      <ul>
+        <li><strong>Blockchain Minor: Build Your Own Crypto:</strong> Designed and delivered a full course on building a cryptocurrency from scratch with a specialisation in tokenomics. Curriculum still in active use.</li>
+        <li><strong>Dashboarding and Analysis:</strong> Designed and delivered an applied course in data dashboarding and business analysis. Still running independently.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">The Fork (now Open Food Chain)</span>
+        <span class="job-period">2018 – 2020</span>
+      </div>
+      <div class="job-role">Head Trainer and Innovator <span class="job-location">— Amsterdam, Netherlands</span></div>
+      <ul>
+        <li>Led professional training programs in digital food technology and innovation. Designed a physical learning object for blockchain training that made abstract concepts tangible and teachable.</li>
+        <li>Hired and mentored students to co-develop production software and prototypes.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">WDS Global</span>
+        <span class="job-period">2008 – 2010</span>
+      </div>
+      <div class="job-role">Technical Support Engineer (3rd Line) and Trainer <span class="job-location">— Poole, England</span></div>
+      <ul>
+        <li>Cleared a backlog of 10,000+ customer emails by redesigning templates and workflows. Proposed and led the creation of tutorial videos later adopted globally by HTC as an innovation in customer education.</li>
+        <li>Trained retail staff at Tesco Scotland on smartphone use and sales. Direct audience facilitation at scale.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">V.O.F. Verhoef, Albert Cuyp Market</span>
+        <span class="job-period">2004 – 2018</span>
+      </div>
+      <div class="job-role">General Manager <span class="job-location">— Amsterdam, Netherlands</span></div>
+      <ul>
+        <li>Grew up working the family stall from age 15. Served hundreds of customers daily. Trained crowd-reading, rapid rapport, and high-energy delivery through thousands of repetitions before entering professional life. This is where the room-holding skill was built.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section avoid-break">
+    <div class="section-title">Selected Projects</div>
+
+    <div class="project">
+      <span class="project-title">Beer Game Demonstrator</span>
+      <span class="project-badge">Live simulation</span>
+      <div class="project-desc">Rebuilt classic logistics simulation with modern interface. Participants learn the bullwhip effect by playing through it, not reading about it. Used in active university teaching. Blockchain vs. non-blockchain comparison built in.</div>
+      <div class="project-tech"><a href="https://demonstrator.valuechainhackers.xyz">demonstrator.valuechainhackers.xyz</a></div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Value Chain Hackers</span>
+      <span class="project-badge">AI lab</span>
+      <div class="project-desc">Cross-European initiative using AI-powered traceability and compliance tools for supply chains. Built AI-based mapping tools for CSRD, CSDDD, and EUDR compliance. Self-funded early tooling and deployment stack.</div>
+      <div class="project-tech"><a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a></div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Spark! Living Lab</span>
+      <span class="project-badge">Innovation lab</span>
+      <div class="project-desc">Windesheim innovation lab for blockchain simulations and agile supply chain education. Founded and ran from scratch. Delivered BlockBeer game and hosted student-led experiments.</div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">2bSMART Simulation Platform</span>
+      <span class="project-badge">Training delivery</span>
+      <div class="project-desc">Delivered blockchain training using interactive logistics simulations for supply chain professionals across Benelux. Collaborated on design of the Smartys simulation platform.</div>
+      <div class="project-tech"><a href="https://www.2bsmart.cz/">2bsmart.cz</a></div>
+    </div>
+
+    <div class="project">
+      <span class="project-title">Veles Farming</span>
+      <span class="project-badge">Impact startup</span>
+      <div class="project-desc">Student concept turned operating agri-tech startup in Slovakia. Recognised early, moved to lab for prototyping, became seed investor. Now running with €2M in funding.</div>
+      <div class="project-tech"><a href="https://velesfarming.com">velesfarming.com</a></div>
+    </div>
+
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section avoid-break">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Bachelor of Business Administration, Business IT &amp; Management <span class="edu-org">— Hogeschool van Amsterdam</span></span>
+        <span class="edu-year">2010 – 2014</span>
+      </div>
+      <div class="edu-desc">Grade 8.7. Thesis: simulation-based learning and training methodology at Kongsberg Defence.</div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section avoid-break">
+    <div class="section-title">Certifications</div>
+    <div class="cert-item">
+      <span class="cert-title">Scrum Master</span>
+      <span class="cert-org"></span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Professional Scrum Product Owner I (PSPO I)</span>
+      <span class="cert-org"></span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Train the Trainer (Blockchain)</span>
+      <span class="cert-org cert-org">blockchainworkspace</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Data Analysis and Visualization (R, Python)</span>
+      <span class="cert-org"></span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">ESG and Sustainable Supply Chains</span>
+      <span class="cert-org"></span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Prince2, ITIL</span>
+      <span class="cert-org"></span>
+      <span class="cert-year"></span>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section avoid-break">
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+      <span class="skill-item"><span class="skill-category">AI Tools:</span> Claude (prompt engineering), Flowise, OpenWebUI, n8n (workflow automation), Supabase, self-hosted LLM stacks</span>
+      <span class="skill-item"><span class="skill-category">Facilitation:</span> Workshop design, simulation-based learning, experiential learning, game-based learning, Conscious Competence method, audience dynamics, real-time pacing</span>
+      <span class="skill-item"><span class="skill-category">Agile:</span> Scrum, SafeScrum, Kanban, sprint facilitation (15+ years)</span>
+      <span class="skill-item"><span class="skill-category">Languages:</span> Dutch (native), English (near-native), German (conversational)</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
