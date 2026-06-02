@@ -2,6 +2,7 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 54 | 2026-06-02 | Hogeschool Rotterdam | Master AI Translator — Docent/Onderzoeker (open sollicitatie) | -/5 | Evaluated | ✅ | - | Open sollicitatie via inside contact; letter ready, [naam contactpersoon] nog in te vullen |
 | 53 | 2026-06-02 | Gemeente Amsterdam | Programmamanager Innovatie Partners | 3.6/5 | Discarded | ✅ | [053](reports/053-gemeente-amsterdam-programmamanager-innovatie-partners-2026-06-02.md) | Posting gesloten |
 | 49 | 2026-06-02 | Social Enterprise NL | Programmamanager leden | 3.4/5 | Discarded | ✅ | [049](reports/049-social-enterprise-nl-programmamanager-leden-2026-06-02.md) | Posting no longer available |
 | 48 | 2026-06-02 | TNO | Consultant Verantwoorde AI | 3.6/5 | Discarded | ✅ | [048](reports/048-tno-consultant-verantwoorde-ai-2026-06-02.md) | Posting no longer available |
@@ -39,7 +40,7 @@
 | 15 | 2026-05-21 | Celonis | Client Value Partner (CVP) - AI-Driven Transformation | 2.1/5 | Discarded | ❌ | [015](reports/015-celonis-client-value-partner-2026-05-21.md) | Posting no longer available |
 | 14 | 2026-05-21 | Celonis | Client Engagement Partner - AI-Driven Transformation | 2.1/5 | Discarded | ❌ | [014](reports/014-celonis-client-engagement-partner-2026-05-21.md) | Posting no longer available |
 | 13 | 2026-05-21 | Adyen | Financial and ESG Reporting Specialist | 1.8/5 | Discarded | ❌ | [013](reports/013-adyen-financial-esg-reporting-2026-05-21.md) | Posting no longer available |
-| 12 | 2026-05-21 | Adyen | Team Lead - Learning & Development | 3.7/5 | Evaluated | ✅ | [012](reports/012-adyen-team-lead-ld-2026-05-21.md) | Live — CV + letter ready |
+| 12 | 2026-05-21 | Adyen | Team Lead - Learning & Development | 3.7/5 | Applied | ✅ | [012](reports/012-adyen-team-lead-ld-2026-05-21.md) | Applied 2026-06-02 via Greenhouse |
 | 11 | 2026-05-21 | Adyen | Learning Experience Design Program Manager | 3.4/5 | Evaluated | ✅ | [011](reports/011-adyen-learning-experience-design-pm-2026-05-21.md) | Live — CV + letter ready |
 | 10 | 2026-05-21 | GitLab | AI Transformation Owner, Marketing | 3.7/5 | Evaluated | ✅ | [010](reports/010-gitlab-ai-transformation-owner-2026-05-21.md) | Live — CV + letter ready |
 | 9 | 2026-05-21 | GitLab | Staff Technical Program Manager | 3.0/5 | Discarded | ✅ | [009](reports/009-gitlab-staff-tpm-2026-05-21.md) | Posting no longer available |

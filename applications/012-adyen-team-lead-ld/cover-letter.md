@@ -1,22 +1,29 @@
-# Cover Letter: Adyen
-**Role:** Team Lead, Learning & Development
-**Date:** 21 May 2026
+# Cover Letter — Team Lead, Learning & Development
+**Adyen**
+**Date:** 2 June 2026
 
 ---
 
-Dear Adyen team,
+Dear Adyen Hiring Team,
 
-At Windesheim, I built what Adyen describes as its L&D North Star: a learning environment where business problems drive the design, not the other way around. The Spark! Living Lab is not a curriculum. It is a living system: researchers bring problems, students build solutions, and the learning happens in the work. It has been running for five years and I am not involved in its day-to-day anymore. That is what good L&D infrastructure looks like.
+The learning systems I have built were not designed inside L&D departments. They were built where the business problems actually lived: inside a supply chain innovation lab, in the middle of a pandemic that made eight courses un-runnable, in a university lab where nobody had a playbook. That is probably a different background than most candidates for this role. I think it makes me a more interesting one.
 
-The proof of method: in 2021, I merged eight separate university courses into one sprint-based program in under two months. Faculty with conflicting priorities, separate student cohorts, and no shared budget. I designed the integration using SafeScrum, ran daily standups to align eight course leads, and rebuilt the assessment model around shared sprint outputs. All eight courses delivered on time. Two have since referenced the model in their own redesigns.
+Let me explain what I mean.
 
-Adyen's L&D Core team sits at the intersection of strategy and delivery: define a North Star, then build the ecosystem that makes it real. I have done this three times from zero: Spark! Living Lab (2020, still running), the Value Chain Hackers AI compliance lab (cross-European, active), and the AI research sandbox at Windesheim (self-funded, deployed on my own infrastructure). The pattern is the same: set the learning architecture, bring in the right people, design for outcomes not attendance.
+At Windesheim, I founded the Spark! Living Lab from scratch. Not a curriculum update. A full learning architecture, built around a principle I still believe: learning systems should be driven by business problems, not by what is easy to deliver. The lab ran on that principle for five years and still does. It spawned Value Chain Hackers, an AI-powered research initiative that now runs at European scale, and a set of active student startups including one agri-tech company in Slovakia with €2M in funding. A learning system that produces results that outlive the classroom by years is, to me, what you mean by positioning L&D as a core business enablement driver.
 
-The Amsterdam commute from Baarn is 40 minutes. I have done it regularly before and it works.
+The most direct proof of strategic L&D under pressure is the COVID-19 Mega Project. The pandemic hit mid-semester. Eight separate courses became impossible to run independently. In under two months, I designed a new interdisciplinary structure, aligned eight course leads with competing priorities, and rebuilt the assessment and delivery model around one coherent sprint-based program. It ran. It became a model for other departments. The lesson I took from it: a clear North Star makes fast execution possible, because the prioritisation decisions are already made.
 
-Kind regards,
+On modern learning technology: I maintain a self-hosted AI research stack (Flowise, OpenWebUI, n8n, Supabase) used by students and researchers at Windesheim today. I am one of the few L&D practitioners who has actually run an LLM experimentation environment in production, onboarded non-technical users to it, and watched where they get stuck. The gap between what an AI vendor demos and what works with real learners is significant. I know it from direct observation, not from reading about it.
+
+On team leadership: I have led lab teams, coached student startups to independence, and managed networks of external partners and collaborators. My people management experience is distributed across organisations rather than concentrated in one department org chart. I will be direct about that if asked. What I can show is a consistent pattern: the people I work with grow, produce something real, and often carry the work forward independently.
+
+Adyen to Baarn is roughly forty minutes. I have made that commute regularly and it is workable.
+
+I would be glad to discuss the fit in more detail.
+
 Christiaan Verhoef
-+31 6 30 18 47 43
 christiaan_gerardo@hotmail.com
++31 6 30 18 47 43
 linkedin.com/in/christiaanverhoef
-sparkllivinglab.nl
+valuechainhackers.xyz
