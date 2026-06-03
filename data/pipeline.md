@@ -281,3 +281,11 @@
 ## Fractional / Startup — 2026-06-03b
 
 - [ ] https://useshiny.com/job/fractional-cto-for-startups-amsterdam-remote-4/ | Shiny (via clients) | Fractional CTO for Startups Amsterdam (remote) — tech strategy, startup clients, 7+ yrs experience required. Fractional angle fits target model.
+
+## Ecosystem / Startup / Innovation Programs — 2026-06-03c
+
+- [ ] https://jobs.techleap.nl/ecosystem-interventions-manager | Techleap.nl | Ecosystem Interventions Manager — Amsterdam, creates programs + interventions for NL tech startup ecosystem, data-driven, 6+ yrs program/change management. Near-perfect archetype fit.
+- [ ] https://jobs.techleap.nl/head-of-community | Techleap.nl | Head of Community (BOLD) — Amsterdam, €7,000–€8,500/mo + 8% holiday + 15% pension, leads community team 7 FTE, 8+ yrs required. High-level community leadership.
+- [ ] https://jobs.techleap.nl/program-manager-future-of-deeptech-2035 | Techleap.nl | Program Manager Future of Deeptech 2035 — Amsterdam, portfolio of ecosystem + innovation programs, 5+ yrs strategy/consulting required.
+- [ ] https://starthubs.co/nl/vacature-programma-manager | Starthubs | Programmamanager Innovation Challenges — leads innovation challenge programs for large corporates and governments, ecosystem facilitation.
+- [ ] https://mipublic.nl/vacature/innovation-manager-head-of-tech-hub-netherlands/ | Airbus Group R&T (via MiPublic) | Innovation Manager / Head of Tech Hub Netherlands — leads NL tech hub within Airbus R&T global innovation network. NOTE: may be ZZP/interim posting — verify contract type.
