@@ -264,3 +264,20 @@
 ## Cultural / Nonprofit — 2026-06-03
 
 - [ ] https://www.culturele-vacatures.nl/2026/05/stichting-tamino-directeur-bestuurder/ | Stichting Tamino | Directeur-Bestuurder — Amsterdam, 28-36h, deadline June 16 URGENT. Arts education for vulnerable youth. Entrepreneurial leadership + social mission. Stretch role — evaluate fit carefully.
+
+## NL Government — AI Policy / Data — 2026-06-03b
+
+- [ ] https://www.werkenvoornederland.nl/vacatures/senior-adviseur-data-ai-OCW-2026-6001 | Ministerie van OCW | Senior adviseur data & AI — CDO team + AI program team, develop data/AI policy across departments. Interviews were May 18-19 — verify still open.
+- [ ] https://www.werkenvoornederland.nl/vacatures/projectleider-senior-beleidsmedewerker-ai-strategie-en-communitymanagement-JUS-2026-3516 | Ministerie van Justitie en Veiligheid | Projectleider AI-Strategie en Communitymanagement — AI strategy + community management, extensive experience required. Deadline was April 21 — verify liveness.
+
+## Sustainability / Circular — 2026-06-03b
+
+- [ ] https://www.duurzaam-ondernemen.nl/vacature/strategisch-kwartiermaker-circulaire-economie/ | Bouwcluster Heerenveen | Strategisch Kwartiermaker Circulaire Economie — ecosystem/network building for circular construction cluster (companies + education + government). Strong match to ecosystem orchestration skills.
+
+## Research / Applied Innovation — 2026-06-03b
+
+- [ ] https://www.datajobs.nl/vacatures/projectleider-digitalisering-en-innovatie-mkb-bij-de-tu-delft/ | TU Delft | Projectleider Digitalisering en Innovatie MKB — MKB digitalization + innovation, research context, verify liveness.
+
+## Fractional / Startup — 2026-06-03b
+
+- [ ] https://useshiny.com/job/fractional-cto-for-startups-amsterdam-remote-4/ | Shiny (via clients) | Fractional CTO for Startups Amsterdam (remote) — tech strategy, startup clients, 7+ yrs experience required. Fractional angle fits target model.
