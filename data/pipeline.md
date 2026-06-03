@@ -175,6 +175,17 @@
 - [ ] https://www.werkenbijns.nl/vacatures/scrum-master-cluster-rijdend-personeel-utrecht-1223076 | NS | Scrum Master (cluster Rijdend Personeel) — Utrecht
 - [ ] https://www.werkenbijns.nl/vacatures/medior-scrum-master-planningsapplicatie-utrecht-1224287 | NS | Medior Scrum Master planningsapplicatie — Utrecht, coaches two Scrum teams
 
+## NL Broad Scan — 2026-06-03
+
+- [ ] https://werkenbij.enexis.nl/vacatures/scrum-master-14748 | Enexis | Scrum Master — Den Bosch, €4,141–€5,915/mo, 32-40h, posted March 2026, PSM II required, coaches 1-2 teams
+- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-DEF2679-2030-9690 | Ministerie van Defensie (JIVC) | Scrum Master — Amersfoort, Scale 11 €4,867–€6,679/mo, 38h, deadline Oct 15 2026, CONFIRMED LIVE. PSM I required, min 2 yrs SM exp, DevOps/IT domain
+- [ ] https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-KVK-2026-9210 | KVK | Senior Scrum Master — Utrecht, Scale 10-11 €3,404–€6,110/mo, 32-40h, deadline June 9 2026 (URGENT), Agile Centre of Expertise, multiple teams in complex context
+- [ ] https://www.werkenvoornederland.nl/vacatures/programmamanager-informatievoorziening-IM-2026-3600 | Ministerie van Infrastructuur en Waterstaat | Programmamanager Informatievoorziening — Den Haag, Scale 14 €5,864–€8,550/mo, 36h, deadline June 15 2026, CONFIRMED LIVE. Complex IV/digitalisering programs
+- [ ] https://www.werkenvoornederland.nl/vacatures/programmamanager-leiderschap-DEF-2026-2044 | Ministerie van Defensie (NLDA/ECLD) | Programmamanager Leiderschap — NLDA/Breda, 38h, leadership + team effectiveness programs across Defence. Verify liveness before evaluating
+- [ ] https://www.werkenvoornederland.nl/vacatures/project-programmamanager-SSCI-2026-1206 | SSC-ICT (Ministerie van BZK) | Project-/Programmamanager — government ICT services for 57k+ civil servants, modernising workplace services. Verify liveness before evaluating
+- [ ] https://careers.soprasteria.com/job/scrum-master-agile-consultant-groningen-in-groningen-netherlands-jid-4054 | Sopra Steria | Scrum Master (Agile Consultant) — Groningen, permanent contract, posted April 2026, Dutch required, remote-hybrid. Note: consulting firm structure
+- [ ] https://jobs.ashbyhq.com/elevenlabs/030ff848-f30b-496a-95c4-5e23ab2e5842 | ElevenLabs | Deployment Strategist Lead — Netherlands/remote, posted May 2026, voice AI market expansion, requires Python basic + executive stakeholder management. Note: requires frequent NL travel
+
 ## Pendientes
 
 - [ ] https://job-boards.greenhouse.io/adyen/jobs/7946947 | Adyen | Employer Brand Program Manager, Events & Partnerships EMEA
@@ -205,3 +216,51 @@
 - [ ] https://job-boards.greenhouse.io/gitlab/jobs/8565469002 | GitLab | AI Engineer
 - [ ] https://job-boards.greenhouse.io/gitlab/jobs/8548545002 | GitLab | Senior AI Engineer
 - [ ] https://job-boards.greenhouse.io/gitlab/jobs/8517571002 | GitLab | Staff Program Manager, Enterprise Technology & AI
+
+## Innovation / Lab / Education — 2026-06-03
+
+- [ ] https://amsterdameconomicboard.com/vacatures/manager-innovatielab/ | Amsterdam Economic Board | Manager Innovatielab — Amsterdam, coordinates innovation lab, connects ecosystem partners, facilitates deepdives + demos. Near-perfect archetype fit.
+- [ ] https://www.consultancy.nl/vacatures/25547/kplusv-organisatieadvies/programmamanager-onderwijs-en-bedrijfsleven | KplusV | Programmamanager Onderwijs en Bedrijfsleven — MBO/HBO + private sector intersection, program development, WO level thinking + 5 yrs project leadership required
+- [ ] https://www.werkenbijhogescholen.nl/vacatures/projectcoordinator-verantwoorde-ai/ | HvA (CoE AAI / RAAIT) | Projectcoördinator Verantwoorde AI — Amsterdam, SPRONG consortium (HvA/HU/HR), scale 10 €3,609–€5,377/mo, AI + education + project coordination
+- [ ] https://saxion.nl/over-saxion/werken-bij/vacatures/docent-ai-en-digitale-geletterdheid | Saxion | Docent AI en Digitale Geletterdheid — teaching + research, AI education, Enschede
+
+## NL Government — Change / Digital / Agile — 2026-06-03
+
+- [ ] https://www.werkenvoornederland.nl/vacatures/agile-coach-DUO-2026-3170 | DUO (Ministerie OCW) | Agile Coach — The Hague/Groningen, education execution org + agile, inspect and adapt
+- [ ] https://werkenbij.vu.nl/vacatures/agile-coach-amsterdam-1138063 | Vrije Universiteit Amsterdam | Agile Coach — Amsterdam, coach IT agile teams, help teams scale agile practices
+- [ ] https://www.werkenvoornederland.nl/vacatures/senior-adviseur-digitalisering-IM-2026-2037 | Ministerie van IenW | Senior adviseur digitalisering — Den Haag, advises on data/AI strategy, represents ministry in inter-departmental discussions
+- [ ] https://www.werkenvoornederland.nl/vacatures/strategisch-adviseur-digitalisering-en-privacy-IM-2026-8663 | Ministerie van IenW | Strategisch adviseur digitalisering en privacy — innovative + responsible use of data/tech, balancing innovation with privacy
+- [ ] https://www.werkenvoornederland.nl/vacatures/agile-transformatiemanager-KL-2026-4691 | Ministerie van Defensie (Materieellogistiek) | Agile Transformatiemanager — SAM method + OKRs, results-driven transformation. Strong Kongsberg angle.
+- [ ] https://www.werkenvoornederland.nl/vacatures/verandermanager-KMAR-2026-9763 | Ministerie van Defensie (KMAR) | Verandermanager — change in structured/regulated environment, BOSS/ATP
+- [ ] https://www.werkenvoornederland.nl/vacatures/verandermanager-toekomstbestendig-beheer-VWSI-2026-1786 | IGJ (VWSI) | Verandermanager — 32-36h, until Dec 2027, healthcare inspection, future-proof management
+- [ ] https://www.werkenvoornederland.nl/vacatures/verandermanager-BD-2026-4847 | Belastingdienst | Verandermanager — GRC program, governance/risk/compliance app rollout, Utrecht
+- [ ] https://www.werkenvoornederland.nl/vacatures/implementatiemanager-BD-2026-9345 | Belastingdienst | Implementatiemanager — GRC program, Finance/Control/Procurement, (semi-)public sector exp preferred
+- [ ] https://www.werkenvoornederland.nl/vacatures/projectleider-mkb-actieagenda-RVO-2026-9240 | RVO | Projectleider MKB-actieagenda — digitalization of regulations, strategic trajectories
+- [ ] https://www.werkenvoornederland.nl/vacatures/programmamanager-data-en-ai-RWS-2026-7859 | Rijkswaterstaat | Programmamanager Data en AI — Scale 14 €5,864–€8,550/mo, deadline June 15 URGENT. Complex digitalisering programs
+- [ ] https://www.werkenvoornederland.nl/vacatures/adviseur-internationale-innovatie-digitalisering-en-eu-RVO-2026-9098 | RVO | Adviseur Internationale Innovatie (Digitalisering & EU) — international innovation policy, EU programs, tech + supply chain angle
+- [ ] https://www.ncod.nl/vacatures/medior-adviseur-digitale-overheid/ | NCOD | Medior Adviseur Digitale Overheid — deadline June 23 URGENT, municipalities/provinces/water boards, DMS/Woo/GDPR/AI
+- [ ] https://werkenbij.kbenp.nl/vacatures/adviseur-digitale-overheid | KBenP | Adviseur Digitale Overheid — digital government advisory
+
+## NL Private / Consulting — 2026-06-03
+
+- [ ] https://www.capgemini.com/nl-nl/jobs/mTE_Co8BEOJFghkD3t2_/managementconsultant-agile-transformation/ | Capgemini | Managementconsultant Agile Transformation — agile marketing/org transformation, consulting context
+- [ ] https://www.consultancy.nl/vacatures/127054/pwc/adviseur-digitale-overheid-publieke-sector-rijksoverheid | PwC | Adviseur Digitale Overheid — public sector digital, technology M&A, IT operating model design
+- [ ] https://www.tno.nl/nl/werken-bij/vacatures/projectmanager-digitalisering-in-de-bouw-en-infrastructuur/vacid-a0s6700001qx9w7ead/ | TNO | Projectmanager Digitalisering bouw en infrastructuur — Delft, requires 8 yrs exp (4+ in research PM). May be a stretch but verify.
+- [ ] https://stedin.net/werken-bij/vacatures/scrum-master-jr4147 | Stedin | Scrum Master — Rotterdam, €6,648/mo max, energy utility, confirmed live
+- [ ] https://youngprofessionalvacatures.nl/vacatures/postnl/agile-coach-postnl-pakketten | PostNL | Agile Coach Pakketten — Den Haag, €3,758–€5,323/mo, agile transition, essential role
+- [ ] https://www.duurzaam-ondernemen.nl/vacature/projectleider-esg/ | (via duurzaam-ondernemen) | Projectleider ESG supply chain — R-ladder/CSRD/CSDDD/EU Taxonomy, strong CSRD expertise angle
+- [ ] https://www.duurzaam-ondernemen.nl/vacature/projectmanager-duurzaamheid-csrd/ | (via duurzaam-ondernemen) | Projectmanager Duurzaamheid & CSRD — project mgmt + CSRD compliance, 2026 reporting deadline driver
+
+## Web3 / Blockchain — 2026-06-03
+
+- [ ] https://web3.career/community-manager-netherlands-avalabs/53177 | Ava Labs | Community Manager Netherlands — $36k–$90k, NL-based, Telegram/social, localization, events. Web3 community building fit.
+
+## Spain / Málaga Area — 2026-06-03
+
+- [ ] https://jobs.smartrecruiters.com/Talan/743999919152554-it-project-manager-in-malaga-madrid | Talan | IT Project Manager — Málaga/Madrid, agile + AI/blockchain/RPA CoE in Málaga, insurance client. NOTE: requires Spanish legal docs.
+- [ ] https://www.remoterocketship.com/company/plain-concepts/jobs/product-owner-spain-remote/ | Plain Concepts | Product Owner — Spain remote, AI/cloud/IoT/cybersecurity company, agile/Scrum ceremonies
+- [ ] https://es.linkedin.com/jobs/view/digital-transformation-project-manager-at-planasa-4139855972 | Planasa | Digital Transformation Project Manager — Spain, agri/food sector, EUDR relevant, supply chain angle
+
+## Cultural / Nonprofit — 2026-06-03
+
+- [ ] https://www.culturele-vacatures.nl/2026/05/stichting-tamino-directeur-bestuurder/ | Stichting Tamino | Directeur-Bestuurder — Amsterdam, 28-36h, deadline June 16 URGENT. Arts education for vulnerable youth. Entrepreneurial leadership + social mission. Stretch role — evaluate fit carefully.
