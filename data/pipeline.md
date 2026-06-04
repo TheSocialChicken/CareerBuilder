@@ -217,6 +217,19 @@
 - [ ] https://job-boards.greenhouse.io/gitlab/jobs/8548545002 | GitLab | Senior AI Engineer
 - [ ] https://job-boards.greenhouse.io/gitlab/jobs/8517571002 | GitLab | Staff Program Manager, Enterprise Technology & AI
 
+- [ ] https://job-boards.greenhouse.io/adyen/jobs/7908806 | Adyen | Senior AI Research Engineer
+- [ ] https://jobs.ashbyhq.com/supabase/202e9ca8-3c98-4dea-add5-0f7e2e98800c | Supabase | Product Manager - AI 
+- [ ] https://jobs.ashbyhq.com/synthesia/4721d2c3-3d94-45d3-b9f7-ea5e1f549ce2 | Synthesia | Product Designer, AI-Native Products (Senior/Staff-Level)
+- [ ] https://job-boards.greenhouse.io/celonis/jobs/7762257003?gh_jid=7762257003 | Celonis | Client Value Partner - Retail 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8574912002 | Databricks | Sr. Manager, AI Forward Deployed Engineering (FDE) – EMEA
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8568868002 | GitLab | Senior Product Manager, AI Platform Management
+- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8468159002 | GitLab | Senior Solutions Architect, AI / Core DevOps - EMEA
+- [ ] https://stripe.com/jobs/search?gh_jid=7977981 | Stripe | User Risk Strategist, Ecosystem Risk Strategy
+- [ ] https://jobs.ashbyhq.com/mollie/02e958b0-1420-4eb4-a49f-e1b6c465be8d | Mollie | Senior Product Delivery Manager
+- [ ] https://jobs.lever.co/mistral/b2498ec4-51e7-46b7-b258-d9bc40b6e39e | Mistral AI | Applied AI,  Senior/Staff Forward Deployed Machine Learning Engineer - Munich
+- [ ] https://jobs.lever.co/mistral/aff9f13c-e79f-4d66-98b1-f62dd1c552cd | Mistral AI | Applied AI, Forward Deployed Machine Learning Engineer - Munich
+- [ ] https://jobs.lever.co/mistral/45b0fae3-61ea-4cb0-8cd1-c1bc2a43a84a | Mistral AI | Applied AI, Technical Lead, Forward Deployed AI Engineer - Munich
+
 ## Innovation / Lab / Education — 2026-06-03
 
 - [ ] https://amsterdameconomicboard.com/vacatures/manager-innovatielab/ | Amsterdam Economic Board | Manager Innovatielab — Amsterdam, coordinates innovation lab, connects ecosystem partners, facilitates deepdives + demos. Near-perfect archetype fit.
@@ -289,3 +302,13 @@
 - [ ] https://jobs.techleap.nl/program-manager-future-of-deeptech-2035 | Techleap.nl | Program Manager Future of Deeptech 2035 — Amsterdam, portfolio of ecosystem + innovation programs, 5+ yrs strategy/consulting required.
 - [ ] https://starthubs.co/nl/vacature-programma-manager | Starthubs | Programmamanager Innovation Challenges — leads innovation challenge programs for large corporates and governments, ecosystem facilitation.
 - [ ] https://mipublic.nl/vacature/innovation-manager-head-of-tech-hub-netherlands/ | Airbus Group R&T (via MiPublic) | Innovation Manager / Head of Tech Hub Netherlands — leads NL tech hub within Airbus R&T global innovation network. NOTE: may be ZZP/interim posting — verify contract type.
+
+## NL Consultancies — Agile — 2026-06-04
+
+- [ ] https://www.sogeti.nl/vacatures/senior-scrum-master | Sogeti | Senior Scrum Master — Netherlands (multiple locations), €3,450–€5,500/mo, PSM + 5+ yrs exp, coaches teams in consulting context
+- [ ] https://www.sogeti.nl/vacatures/scrum-master | Sogeti | Scrum Master — Netherlands, €3,450–€5,500/mo, PSM + min 2 yrs exp, consultancy/detachering model
+
+## NL Banking — Agile — 2026-06-04
+
+- [ ] https://rabobank.jobs/en/job/scrum-master/JR_00101802/ | Rabobank | Scrum Master — Utrecht, PSM II required, 3-5 yrs exp, squad-based agile (S@S framework), €5,876–€8,395/mo salary band (senior scale). Verify liveness.
+- [ ] https://rabobank.jobs/en/job/scrum-master/JR_00109695/ | Rabobank | Scrum Master — Utrecht, squad-based agile. Verify liveness.
