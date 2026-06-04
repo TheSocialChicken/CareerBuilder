@@ -74,6 +74,8 @@ And then, in the same paragraph: *"I am happy that I touched upon being a 'busin
 
 **Character note:** High performer who underestimates his own output when uncertain. The thesis was rigorous, professionally formatted, and earned an 8.7. He was convinced it wasn't good enough. This pattern — confidence in execution, doubt about the product — has appeared multiple times since.
 
+**The BIM realization, confirmed:** The Afterword closes with: *"For me, it's the realization as to why I started my education (business, Information technology and Management) in the first place, as many of its classes had to be integrated in order to make it."* He built the thesis from BIM classes — change management, ICT strategy, learning methodology, process design, risk management, stakeholder analysis. This was not coincidence. He chose BIM specifically because he needed exactly these tools. The thesis was the proof.
+
 **Also note:** 100% of KONGSBERG interview participants said that training cannot be accomplished by electronic means alone. This finding — that digital tools support but cannot replace human presence in technical learning — echoes in every learning design decision Christiaan has made since.
 
 ### What Kongsberg Actually Taught
@@ -128,11 +130,25 @@ Most people look at the CV and see a straight line: HAVO → HvA Business IT →
 
 ---
 
+## Chris Kip — Growing Up in the Family Business (1997–2007)
+
+The first job was not a job. It was family. Christiaan's father, Christiaan Willem Verhoef, ran a market stall called **Chris Kip** on the Albert Cuyp market in Amsterdam — a poultry and wild game stand. From age 8 to 18, periodically, Christiaan worked there. Selling chicken and wild stock to street customers. Managing staff when the stall was busy. Helping his father think through new solutions for the operation.
+
+He was "the third person in the business, son of the boss." His own description: *"Als derde in het bedrijf, zoon van de baas, was ik de persoon die het personeel motiveerde en controleerde. Als verkoper op de Albert Cuyp heb geleerd te onderhandelen en snelle persoonlijke contacten te maken met klanten. Daarnaast hielp ik mijn vader met het bedenken van nieuwe oplossingen voor zijn bedrijfsvoering."* — motivating and controlling staff, negotiating with customers, helping his father design better operations.
+
+Ten years on a market street. By age 18 you know how to read people quickly, handle difficult customers, keep a team moving when it's loud and crowded, and make decisions with incomplete information. These are not skills from a course.
+
+**Later:** The business continued. In 2013 CVs, Christiaan lists V.O.F Verhoef (same business, legal entity name) as still active, with reference Marijke Broekmeijer. His role: Assistent Algemeen Manager. Tasks: staff motivation, strategy, process implementation, incident handling.
+
+---
+
 ## WDS Global — The First Blocked Innovation (May 2008 – June 2009, UK)
 
 ### Context
 
-WDS Global was a UK-based outsourced technical support company handling European customer support for multiple telecom operators and phone brands simultaneously — KPN, Orange, Mobistar, HTC, Tesco Mobile, and others. Not a single-client shop; a multi-brand, multi-operator support hub. Christiaan was stationed in Poole, UK, handling Dutch-language support. Within a short time was running the entire Dutch team.
+WDS Global was a UK-based outsourced technical support company handling European customer support for multiple telecom operators and phone brands simultaneously — KPN, Orange, Mobistar, HTC, Tesco Mobile, and others. Not a single-client shop; a multi-brand, multi-operator support hub. Christiaan was stationed in Poole, UK, handling Dutch-language support, and was later sent to Irvine, Scotland, for retail training.
+
+**The 3-month trajectory:** Originally hired as 1st line support for HTC phones. Within three months — through initiative, not promotion — was handling 2nd and then 3rd line support across the whole Dutch operation. All difficult escalations (including legal complaints) landed with him. Became the de-facto unofficial group leader of the Dutch helpdesk: divided the work, taught colleagues communication methods and email templates that significantly reduced case volume. Never received a formal management title because he lacked the business credentials to justify one. This distinction — doing the work without the framework to be recognized for it — was the direct trigger for choosing Business IT & Management.
 
 The HTC tutorial video proposal came from working across this multi-brand environment — he could see the same customer education problem repeating across every brand. HTC was the one with the most pressing need: expensive, feature-rich Android devices that customers didn't understand.
 
@@ -171,6 +187,22 @@ After more than a year with WDS Global — running the Dutch team, proposing ide
 He recognized the pattern: one metric, always just wrong, regardless of performance. He left.
 
 **Character note:** Early recognition of exploitation. Did not stay hoping the situation would change. Also: the first time he saw a company use bureaucratic process (scorecard management) to avoid honoring what a person had actually contributed.
+
+**Direct cause of BIM:** His own CV, written in 2014, makes this explicit: *"Dit bedrijf heeft mij het inzicht gegeven dat ik BIM wilde gaan studeren zodat toekomstige projecten correct beredeneerd worden en deze genoeg middelen krijgen om te slagen."* — Translation: "This company gave me the insight that I wanted to study Business IT & Management, so that future projects would be correctly reasoned and receive sufficient resources to succeed." Not a vague aspiration. A specific cause from a specific failure.
+
+---
+
+## Meerschap B.V. — Initiative Drives Business (Jul 2010 – Jan 2011)
+
+First formal ICT internship. Role: Junior System Administrator and R&D. Tasks: implement Nagios monitoring, 2nd/3rd line servicedesk, MS Word macro and template coding. Standard internship work.
+
+Except for the UZI project. Near the end of the placement, Christiaan initiated a sales project: installing UZI card readers at hospitals across the Netherlands. He drove around the entire country visiting hospitals, installed the hardware, and while there also fixed doctors' computers — which frequently had various issues unrelated to the actual assignment. His own initiative. Not asked. These side repairs generated new clients for Meerschap B.V.
+
+His own CV note: *"Door mijn initiatief heeft Meerschap B.V. hiermee veel klanten verworven."* — "Through my initiative, Meerschap B.V. acquired many new clients."
+
+Linux introduced by **Ed van der Salm** during this period. Reference: **Peter Jan Teuns**.
+
+**Pattern:** Christiaan does not separate "my task" from "what I see needs doing." The UZI hospital project, the Azerbaijan contract confrontation, the Houston → Azerbaijan pivot — same pattern at different scales.
 
 ---
 
@@ -292,11 +324,13 @@ Translation: *"I find it disappointing that I was punished for looking further t
 
 | Story | Use for |
 |-------|---------|
+| Chris Kip market stall (1997-2007) | 10 years customer-facing sales, staff management, operational problem-solving — from age 8. No CV needed |
 | WDS video proposal | Early innovation instinct, user education gap identification, ideas that Tokyo applauded |
-| WDS 2nd/3rd line in 2 months | Fast learner, self-directed progression, took over Dutch team |
+| WDS 3rd line in 3 months | Fast learner, self-directed progression, unofficial group leader — without a title |
 | WDS innovation team failure | One person with the right idea vs. six people with no real intent — execution over headcount |
 | WDS Scotland training | On-the-ground user education, field facilitation, sales enablement through understanding |
 | WDS leaving on principle | Recognizing exploitation, self-respect, not waiting for an organization to change |
+| Meerschap UZI hospitals | Proactive initiative outside task scope; drove around NL hospitals, generated new clients for Meerschap |
 | Azerbaijan emergency deployment | Sent because of problem-heavy environment track record; stabilized a failed live production system |
 | Jordan dead-switch | Technical problem-solving without support, regulated environments, debugging under pressure |
 | Azerbaijan contract | Commercial relationship building, holding position without seniority, reading and applying contract terms |
