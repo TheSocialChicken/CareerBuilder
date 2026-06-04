@@ -2,6 +2,28 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 68 | 2026-06-04 | KVK | Senior Scrum Master | 3.8/5 | Evaluated | ❌ | [066](reports/066-kvk-senior-scrum-master-2026-06-04.md) | Coaching + change mandate aanwezig; PSM II gap minor; Utrecht; deadline 9 juni URGENT |
+| 69 | 2026-06-04 | Rijkswaterstaat | Programmamanager Data en AI | 4.1/5 | Evaluated | ❌ | [067](reports/067-rws-programmamanager-data-ai-2026-06-04.md) | Schaal 13 (€74k-€110k incl IKB); AI lab build-from-scratch match; WO-eis matig risico; 32-36h vs fractional voorkeur; deadline 15 juni |
+| 70 | 2026-06-04 | Techleap.nl | Ecosystem Interventions Manager | 4.4/5 | Evaluated | ❌ | [068](reports/068-techleap-ecosystem-interventions-manager-2026-06-04.md) | Near-perfect ecosystem builder archetype match; €4.5k-5.8k/month (low end tight); verify URL live before applying |
+| 71 | 2026-06-04 | Techleap.nl | Head of Community (BOLD) | — | Discarded | ❌ | — | URL dead — jobs.techleap.nl/head-of-community returns 404; posting taken down |
+| 73 | 2026-06-04 | NCOD | Medior Adviseur Digitale Overheid | 3.9/5 | Evaluated | ❌ | [071](reports/071-ncod-medior-adviseur-digitale-overheid-2026-06-04.md) | AI-beleid + AI-landschappen bij gemeenten; comp raakt min bij 36u; vaste aanstelling = nevenactiviteiten bespreekpunt; bel eerst |
+| 74 | 2026-06-04 | Airbus R&T | Innovation Manager / Head of Tech Hub NL | 4.3/5 | Evaluated | ❌ | [072](reports/072-airbus-innovation-manager-tech-hub-nl-2026-06-04.md) | ZZP interim, 8.5mo, Leiden — primary archetype match; verify timeline (start date Sep 2025 may be past) |
+| 76 | 2026-06-04 | Starthubs | Programmamanager Innovation Challenges | 3.8/5 | Evaluated | ❌ | [074](reports/074-starthubs-programmamanager-innovation-challenges-2026-06-04.md) | Sterke inhoudelijke match (challenge-design, ecosysteem); maar sluitingsdatum nov 2024 — liveness bevestigen vóór sollicitatie |
+| 77 | 2026-06-04 | ElevenLabs | Deployment Strategist Lead | 3.6/5 | Evaluated | ❌ | [073](reports/073-elevenlabs-deployment-strategist-lead-2026-06-04.md) | Strong forward-deployed fit (KONGSBERG); blocked by full-time travel vs. fractional model — conditional apply |
+| 78 | 2026-06-04 | Techleap.nl | Program Manager Future of Deeptech 2035 | — | Discarded | ❌ | — | URL dead — 302 → 404, posting no longer exists |
+| 67 | 2026-06-04 | Alliander | Senior Scrum Master Netdigitalisering | 3.5/5 | Evaluated | ❌ | [065](reports/065-alliander-senior-scrum-master-netdigitalisering-2026-06-04.md) | Schaal 9 (€65k-€93k incl IKB); SAFe gap; ZZP-uitsluiting = structurele mismatch fractional model |
+| 55 | 2026-06-02 | Npuls | Trekker themalijn AI en data | 4.2/5 | Evaluated | ✅ | [50](reports/050-npuls-trekker-themalijn-ai-data-2026-06-02.md) | Nationale onderwijstransformatie AI; 4 posities; archetype 1 match; 4.2/5 |
+| 56 | 2026-06-02 | NS | Scrum Master Utrecht | 3.4/5 | Evaluated | ✅ | [51](reports/051-ns-scrum-master-utrecht-2026-06-02.md) | Posted 22-05-2026; PSM II preferred gap; meerdere teams |
+| 57 | 2026-06-02 | Openbaar Ministerie | Senior Scrum Master | 3.4/5 | Evaluated | ✅ | [55](reports/055-openbaar-ministerie-senior-scrum-master-2026-06-02.md) | Den Haag overheid; teams naar High Performance; PSM gap |
+| 58 | 2026-06-04 | Npuls | LA en AI-specialisten | — | Discarded | ❌ | — | Vacature gesloten (sluitingsdatum 14 februari 2026); URL retourneert HTTP 500 |
+| 59 | 2026-06-04 | Npuls | Expert AI- en datageletterdheid | — | Discarded | ❌ | — | Vacature gesloten (sluitingsdatum aug 2025); URL retourneert HTTP 500 |
+| 60 | 2026-06-04 | Npuls | AI Expert | — | Discarded | ❌ | — | Vacature gesloten (sluitingsdatum voorbij); URL retourneert HTTP 500 |
+| 61 | 2026-06-04 | Defensie (COMMIT) | Programmamanager Innovatie | 3.6/5 | Evaluated | ❌ | [059](reports/059-defensie-programmamanager-innovatie-commit-2026-06-04.md) | Schaal 14 (€7k-€9.4k/mnd), sterk comp; WO-eis is risico; deadline 10 juni |
+| 62 | 2026-06-04 | Nederlands Forensisch Instituut | Scrum Master | — | Discarded | ❌ | — | URL retourneert 404 — vacature verwijderd |
+| 63 | 2026-06-04 | Nationaal Cyber Security Centrum | Scrum Master | — | Discarded | ❌ | — | URL retourneert 404 — vacature verwijderd |
+| 64 | 2026-06-04 | Belastingdienst | Scrummaster | — | Discarded | ❌ | — | URL retourneert 404 — vacature verwijderd |
+| 65 | 2026-06-04 | CBS | Scrum Master | — | SKIP | ❌ | — | URL redirect (vacature niet meer direct beschikbaar); Heerlen locatie + ceremonieel SM profiel; geen innovatiemandaat |
+| 66 | 2026-06-04 | BZK | Product Owner Overheidsbrede Dienstverlening | — | Discarded | ❌ | — | URL retourneert 404 — vacature verwijderd |
 | 54 | 2026-06-02 | Hogeschool Rotterdam | Master AI Translator — Docent/Onderzoeker (open sollicitatie) | -/5 | Evaluated | ✅ | - | Open sollicitatie via inside contact; letter ready, [naam contactpersoon] nog in te vullen |
 | 53 | 2026-06-02 | Gemeente Amsterdam | Programmamanager Innovatie Partners | 3.6/5 | Discarded | ✅ | [053](reports/053-gemeente-amsterdam-programmamanager-innovatie-partners-2026-06-02.md) | Posting gesloten |
 | 49 | 2026-06-02 | Social Enterprise NL | Programmamanager leden | 3.4/5 | Discarded | ✅ | [049](reports/049-social-enterprise-nl-programmamanager-leden-2026-06-02.md) | Posting no longer available |
@@ -19,9 +41,9 @@
 | 37 | 2026-05-29 | KPMG | Scrum Master | 3.0/5 | SKIP | ✅ | [037](reports/037-kpmg-scrum-master-2026-05-29.md) | Grenswaarde: corporate marketing voorkeur gap; Big 4 structuur; salaris variabel |
 | 36 | 2026-05-29 | Accenture | Change Management Consultant | 2.5/5 | SKIP | ✅ | [036](reports/036-accenture-change-management-consultant-2026-05-29.md) | Niet aanbevolen: ERP-gap + Master-eis + over-senior |
 | 35 | 2026-05-29 | Accenture | Change Consultant H&PS | 2.8/5 | SKIP | ✅ | [035](reports/035-accenture-change-consultant-hps-2026-05-29.md) | Niet aanbevolen: Master-eis + mid-level positionering + consulting structure |
-| 34 | 2026-05-29 | ABN AMRO / ICS | Senior Programma Manager | 3.3/5 | Evaluated | ✅ | [034](reports/034-abn-amro-senior-programmamanager-2026-05-29.md) | €85k-€121k + 11%; FS-sector voorkeur gap; deadline 19 jun — urgentie |
-| 33 | 2026-05-29 | Ministerie van Defensie | Senior Scrum Master (38u) | 3.5/5 | Evaluated | ✅ | [033](reports/033-defensie-senior-scrum-master-2026-05-29.md) | Schaal 12 (€70k-€91k); PSM II gap; deadline 15 okt — ruim tijd voor certificering |
-| 32 | 2026-05-29 | Ministerie van Defensie | Programmamanager Innovatie | 3.2/5 | Evaluated | ✅ | [032](reports/032-defensie-programmamanager-innovatie-2026-05-29.md) | Schaal 14 (€84k-€113k); WO-eis = risico; interne voorkeur; deadline 10 jun |
+| 34 | 2026-05-29 | ABN AMRO / ICS | Senior Programma Manager | 3.3/5 | Applied | ✅ | [034](reports/034-abn-amro-senior-programmamanager-2026-05-29.md) | Applied 2026-06-03; €85k-€121k + 11%; FS-sector voorkeur gap |
+| 33 | 2026-05-29 | Ministerie van Defensie | Senior Scrum Master (38u) | 3.5/5 | Applied | ✅ | [033](reports/033-defensie-senior-scrum-master-2026-05-29.md) | Applied 2026-06-03; Schaal 12 (€70k-€91k); PSM II gap; deadline 15 okt |
+| 32 | 2026-05-29 | Ministerie van Defensie | Programmamanager Innovatie | 3.2/5 | Applied | ✅ | [032](reports/032-defensie-programmamanager-innovatie-2026-05-29.md) | Applied 2026-06-03; Schaal 14 (€84k-€113k); WO-eis = risico; interne voorkeur |
 | 31 | 2026-05-21 | n8n | AI Product Builder | 3.7/5 | Rejected | ✅ | [028](reports/028-n8n-ai-product-builder-2026-05-21.md) | Rejected |
 | 30 | 2026-05-21 | Stripe | Program Manager, Intake & Portfolio Management | 3.3/5 | Discarded | ✅ | [030](reports/030-stripe-pm-intake-portfolio-2026-05-21.md) | Posting no longer available |
 | 29 | 2026-05-21 | GitLab | Program Manager - London | 3.1/5 | Discarded | ✅ | [029](reports/029-gitlab-program-manager-london-2026-05-21.md) | Posting no longer available |
@@ -41,7 +63,7 @@
 | 14 | 2026-05-21 | Celonis | Client Engagement Partner - AI-Driven Transformation | 2.1/5 | Discarded | ❌ | [014](reports/014-celonis-client-engagement-partner-2026-05-21.md) | Posting no longer available |
 | 13 | 2026-05-21 | Adyen | Financial and ESG Reporting Specialist | 1.8/5 | Discarded | ❌ | [013](reports/013-adyen-financial-esg-reporting-2026-05-21.md) | Posting no longer available |
 | 12 | 2026-05-21 | Adyen | Team Lead - Learning & Development | 3.7/5 | Applied | ✅ | [012](reports/012-adyen-team-lead-ld-2026-05-21.md) | Applied 2026-06-02 via Greenhouse |
-| 11 | 2026-05-21 | Adyen | Learning Experience Design Program Manager | 3.4/5 | Evaluated | ✅ | [011](reports/011-adyen-learning-experience-design-pm-2026-05-21.md) | Live — CV + letter ready |
+| 11 | 2026-05-21 | Adyen | Learning Experience Design Program Manager | 3.4/5 | Applied | ✅ | [011](reports/011-adyen-learning-experience-design-pm-2026-05-21.md) | Applied 2026-06-03 |
 | 10 | 2026-05-21 | GitLab | AI Transformation Owner, Marketing | 3.7/5 | Evaluated | ✅ | [010](reports/010-gitlab-ai-transformation-owner-2026-05-21.md) | Live — CV + letter ready |
 | 9 | 2026-05-21 | GitLab | Staff Technical Program Manager | 3.0/5 | Discarded | ✅ | [009](reports/009-gitlab-staff-tpm-2026-05-21.md) | Posting no longer available |
 | 8 | 2026-05-21 | GitLab | Engagement Manager - EMEA | 3.2/5 | Discarded | ✅ | [008](reports/008-gitlab-engagement-manager-emea-2026-05-21.md) | Posting no longer available |

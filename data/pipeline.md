@@ -5,31 +5,31 @@
 
 ## Pending
 
-- [ ] https://jobs.ashbyhq.com/n8n/42e72645-d99a-4545-97b7-53ba3a699893 | n8n | AI Product Builder
-- [ ] https://job-boards.greenhouse.io/adyen/jobs/7602168 | Adyen | Financial and ESG Reporting Specialist
-- [ ] https://job-boards.greenhouse.io/adyen/jobs/7752871 | Adyen | Learning Experience Design Program Manager
-- [ ] https://job-boards.greenhouse.io/adyen/jobs/7668248 | Adyen | Team Lead - Learning & Development
-- [ ] https://job-boards.greenhouse.io/celonis/jobs/7683568003?gh_jid=7683568003 | Celonis | Client Engagement Partner - AI-Driven Transformation & Process Intelligence
-- [ ] https://job-boards.greenhouse.io/celonis/jobs/7669258003?gh_jid=7669258003 | Celonis | Client Value Partner (CVP) - AI-Driven Transformation & Process Intelligence
-- [ ] https://job-boards.greenhouse.io/celonis/jobs/7610416003?gh_jid=7610416003 | Celonis | Field CTO - AI & Enterprise Modernization
-- [ ] https://job-boards.greenhouse.io/celonis/jobs/6313858003?gh_jid=6313858003 | Celonis | Head of Industry - Retail & CPG
-- [ ] https://jobs.ashbyhq.com/synthesia/4358c197-7d4a-45eb-8dd6-4a5c96999534 | Synthesia | Delivery Program Manager
-- [ ] https://jobs.ashbyhq.com/cohere/f8e85a7c-1eb0-47f8-8140-1c4e7892f17d | Cohere | Technical Program Manager, AI Delivery for Public Sector & Defence
-- [ ] https://job-boards.greenhouse.io/anthropic/jobs/4977624008 | Anthropic | Applied AI Architect, Industries
-- [ ] https://jobs.lever.co/mistral/1937a5af-2c9b-4a75-bb91-b06ebe714dbd | Mistral AI | AI Deployment Strategist - Munich, Germany
-- [ ] https://jobs.lever.co/mistral/2aaf4e18-0943-4ebe-914d-cc9e32db8834 | Mistral AI | AI Deployment Strategist - Netherlands
-- [ ] https://job-boards.greenhouse.io/canonical/jobs/6643476 | Canonical | Product Manager - AI
-- [ ] https://job-boards.greenhouse.io/canonical/jobs/5359697 | Canonical | Silicon Alliances Ecosystem Development Manager
-- [ ] https://job-boards.greenhouse.io/canonical/jobs/6397940 | Canonical | Software Alliance Ecosystem Manager
-- [ ] https://jobs.elastic.co/jobs?gh_jid=7635063&gh_jid=7635063 | Elastic | Regional Services Partner Delivery Manager - Public Sector
-- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8543937002 | Databricks | Sr. Engagement Manager
-- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8374717002 | Databricks | Retail & Consumer Goods EMEA Leader
-- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8560401002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer)
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8548105002 | GitLab | AI Transformation Owner, Marketing
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8467462002 | GitLab | Engagement Manager - EMEA
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8506618002 | GitLab | Staff Technical Program Manager
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8481626002 | GitLab | Program Manager - London
-- [ ] https://stripe.com/jobs/search?gh_jid=7569678 | Stripe | Program Manager, Intake & Portfolio Management
+- [x] #31 | https://jobs.ashbyhq.com/n8n/42e72645-d99a-4545-97b7-53ba3a699893 | n8n | AI Product Builder | already evaluated
+- [x] #13 | https://job-boards.greenhouse.io/adyen/jobs/7602168 | Adyen | Financial and ESG Reporting Specialist | already evaluated
+- [x] #11 | https://job-boards.greenhouse.io/adyen/jobs/7752871 | Adyen | Learning Experience Design Program Manager | already evaluated
+- [x] #12 | https://job-boards.greenhouse.io/adyen/jobs/7668248 | Adyen | Team Lead - Learning & Development | already evaluated
+- [x] #14 | https://job-boards.greenhouse.io/celonis/jobs/7683568003?gh_jid=7683568003 | Celonis | Client Engagement Partner - AI-Driven Transformation & Process Intelligence | already evaluated
+- [x] #15 | https://job-boards.greenhouse.io/celonis/jobs/7669258003?gh_jid=7669258003 | Celonis | Client Value Partner (CVP) - AI-Driven Transformation & Process Intelligence | already evaluated
+- [x] #16 | https://job-boards.greenhouse.io/celonis/jobs/7610416003?gh_jid=7610416003 | Celonis | Field CTO - AI & Enterprise Modernization | already evaluated
+- [x] #17 | https://job-boards.greenhouse.io/celonis/jobs/6313858003?gh_jid=6313858003 | Celonis | Head of Industry - Retail & CPG | already evaluated
+- [x] #18 | https://jobs.ashbyhq.com/synthesia/4358c197-7d4a-45eb-8dd6-4a5c96999534 | Synthesia | Delivery Program Manager | already evaluated
+- [x] #19 | https://jobs.ashbyhq.com/cohere/f8e85a7c-1eb0-47f8-8140-1c4e7892f17d | Cohere | Technical Program Manager, AI Delivery for Public Sector & Defence | already evaluated
+- [x] #20 | https://job-boards.greenhouse.io/anthropic/jobs/4977624008 | Anthropic | Applied AI Architect, Industries | already evaluated
+- [x] #07 | https://jobs.lever.co/mistral/1937a5af-2c9b-4a75-bb91-b06ebe714dbd | Mistral AI | AI Deployment Strategist - Munich, Germany | already evaluated
+- [x] #06 | https://jobs.lever.co/mistral/2aaf4e18-0943-4ebe-914d-cc9e32db8834 | Mistral AI | AI Deployment Strategist - Netherlands | already evaluated
+- [x] #21 | https://job-boards.greenhouse.io/canonical/jobs/6643476 | Canonical | Product Manager - AI | already evaluated
+- [x] #22 | https://job-boards.greenhouse.io/canonical/jobs/5359697 | Canonical | Silicon Alliances Ecosystem Development Manager | already evaluated
+- [x] #23 | https://job-boards.greenhouse.io/canonical/jobs/6397940 | Canonical | Software Alliance Ecosystem Manager | already evaluated
+- [x] #24 | https://jobs.elastic.co/jobs?gh_jid=7635063&gh_jid=7635063 | Elastic | Regional Services Partner Delivery Manager - Public Sector | already evaluated
+- [x] #25 | https://databricks.com/company/careers/open-positions/job?gh_jid=8543937002 | Databricks | Sr. Engagement Manager | already evaluated
+- [x] #26 | https://databricks.com/company/careers/open-positions/job?gh_jid=8374717002 | Databricks | Retail & Consumer Goods EMEA Leader | already evaluated
+- [x] #27 | https://databricks.com/company/careers/open-positions/job?gh_jid=8560401002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer) | already evaluated
+- [x] #10 | https://job-boards.greenhouse.io/gitlab/jobs/8548105002 | GitLab | AI Transformation Owner, Marketing | already evaluated
+- [x] #08 | https://job-boards.greenhouse.io/gitlab/jobs/8467462002 | GitLab | Engagement Manager - EMEA | already evaluated
+- [x] #09 | https://job-boards.greenhouse.io/gitlab/jobs/8506618002 | GitLab | Staff Technical Program Manager | already evaluated
+- [x] #29 | https://job-boards.greenhouse.io/gitlab/jobs/8481626002 | GitLab | Program Manager - London | already evaluated
+- [x] #30 | https://stripe.com/jobs/search?gh_jid=7569678 | Stripe | Program Manager, Intake & Portfolio Management | already evaluated
 
 ## Skipped (pre-triage — wrong archetype / location / level)
 
@@ -104,32 +104,32 @@
 
 ## NL Companies — Manually Added
 
-- [ ] https://npuls.nl/vacatures/vacature-trekker-themalijn-ai-en-data/ | Npuls | Trekker themalijn AI en data — national education AI program, 3 positions, leads theme lines on AI vision/learning/responsible use
-- [ ] https://npuls.nl/vacatures/vacature-la-en-ai-specialisten/ | Npuls | LA en AI-specialisten — AI specialist roles within Npuls transformation hub
-- [ ] https://npuls.nl/vacatures/vacature-expert-ai-en-datageletterdheid/ | Npuls | Expert AI- en datageletterdheid — AI/data literacy expert, education sector
-- [ ] https://npuls.nl/vacatures/vacature-ai-expert/ | Npuls | AI Expert — generalist AI expert within national education program
-- [ ] https://pro-act.nl/vacatures/adviseur-verantwoord-gebruik-ai-data/ | Npuls via Pro-Act | Adviseur verantwoord gebruik AI & Data — responsible AI advisor, placed at Npuls
-- [ ] https://www.werkenbijabnamro.nl/en/vacancy/9002/head-of-ai-analytics-model-risk | ABN AMRO | Head of AI & Analytics Model Risk — €9,257–€13,224/month, Amsterdam. Model risk/governance focus — evaluate carefully against profile fit
-- [ ] https://rabobank.jobs/nl/vacature/new-technology-strategist-senior/JR_00135590/ | Rabobank | New Technology Strategist (senior) — Utrecht, €5,876–€8,395/month. NOTE: deadline was April 2 — verify still open before evaluating
-- [ ] https://www.prowareness.com/nl/werken-bij/vacatures/agile-coach | Prowareness | Agile Coach — 32–40h, €4,000–€4,700/month. NOTE: salary below target minimum (€55k). Only evaluate if fractional/part-time angle fits
+- [x] #55 | https://npuls.nl/vacatures/vacature-trekker-themalijn-ai-en-data/ | Npuls | Trekker themalijn AI en data | 4.2/5 | PDF ✅
+- [x] #58 | https://npuls.nl/vacatures/vacature-la-en-ai-specialisten/ | Npuls | LA en AI-specialisten | — | Discarded — URL 500
+- [x] #59 | https://npuls.nl/vacatures/vacature-expert-ai-en-datageletterdheid/ | Npuls | Expert AI- en datageletterdheid | — | Discarded — URL 500
+- [x] #60 | https://npuls.nl/vacatures/vacature-ai-expert/ | Npuls | AI Expert | — | Discarded — URL 500
+- [x] #38 | https://pro-act.nl/vacatures/adviseur-verantwoord-gebruik-ai-data/ | Npuls via Pro-Act | Adviseur verantwoord gebruik AI & Data — responsible AI advisor, placed at Npuls | already evaluated
+- [x] SKIP | https://www.werkenbijabnamro.nl/en/vacancy/9002/head-of-ai-analytics-model-risk | ABN AMRO | Head of AI & Analytics Model Risk — €9,257–€13,224/month, Amsterdam. Model risk/governance focus — evaluate carefully against profile fit — model risk/quant, not fit
+- [x] SKIP | https://rabobank.jobs/nl/vacature/new-technology-strategist-senior/JR_00135590/ | Rabobank | New Technology Strategist (senior) — Utrecht, €5,876–€8,395/month. NOTE: deadline was April 2 — verify still open before evaluating — april 2 deadline - likely expired
+- [x] #39 | https://www.prowareness.com/nl/werken-bij/vacatures/agile-coach | Prowareness | Agile Coach — 32–40h, €4,000–€4,700/month. NOTE: salary below target minimum (€55k). Only evaluate if fractional/part-time angle fits | already evaluated
 
 ## NL Government — Scrum Master / Agile
 
-- [ ] https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-DEF-2026-6359 | Ministerie van Defensie | Senior Scrum Master — deadline Oct 2026, 32-40h Den Haag
-- [ ] https://www.werkenvoornederland.nl/vacatures/programmamanager-innovatie-596763-DEF-2026-9184 | Ministerie van Defensie | Programmamanager Innovatie — COMMIT, ground-based weapon systems innovation programs
-- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-NFI-2026-6423 | Nederlands Forensisch Instituut | Scrum Master — Den Haag
-- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-JIO-2026-6969 | Ministerie van Justitie (JIO) | Scrum Master — Gouda, 32-36h
-- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-RO-2026-5511 | IVO Rechtspraak | Scrum Master — deadline May 31 2026, apply urgently
-- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-NCSC-2026-8898 | Nationaal Cyber Security Centrum | Scrum Master — hybrid AI-driven service transition
-- [ ] https://www.werkenvoornederland.nl/vacatures/scrummaster-BD-2026-1225 | Belastingdienst | Scrummaster — Apeldoorn
-- [ ] https://www.werkenvoornederland.nl/vacatures/agile-leader-coach-RVO-2026-4282 | RVO | Agile Leader (Coach) — LACE (Lean Agile Centre of Excellence), SAFe SPC preferred, started Jan 2026
-- [ ] https://www.werkenbijdeoverheid.nl/vacatures/senior-scrum-master-KVK-2026-3692 | KVK | Senior Scrum Master — Utrecht, PSM I&II required, 5+ yrs experience
-- [ ] https://www.cbs.nl/nl-nl/vacature/scrum-master/9a68cc0214394fb4b5d2fc24acf3e525 | CBS | Scrum Master — €4,691–€6,907/month, 36h, Heerlen/Den Haag
-- [ ] https://www.werkenvoornederland.nl/vacatures/product-owner-overheidsbrede-dienstverlening-BZK-2026-2018 | BZK / Rijksorganisatie ODI | Product Owner Overheidsbrede Dienstverlening — Den Haag
+- [x] #33 | https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-DEF-2026-6359 | Ministerie van Defensie | Senior Scrum Master — deadline Oct 2026, 32-40h Den Haag | already evaluated
+- [x] #61 | https://www.werkenvoornederland.nl/vacatures/programmamanager-innovatie-596763-DEF-2026-9184 | Defensie (COMMIT) | Programmamanager Innovatie | 3.6/5 | PDF ❌
+- [x] #62 | https://www.werkenvoornederland.nl/vacatures/scrum-master-NFI-2026-6423 | Nederlands Forensisch Instituut | Scrum Master | — | Discarded — 404
+- [x] #33 | https://www.werkenvoornederland.nl/vacatures/scrum-master-JIO-2026-6969 | Ministerie van Justitie (JIO) | Scrum Master — Gouda, 32-36h | already evaluated
+- [x] SKIP | https://www.werkenvoornederland.nl/vacatures/scrum-master-RO-2026-5511 | IVO Rechtspraak | Scrum Master — deadline May 31 2026, apply urgently — EXPIRED
+- [x] #63 | https://www.werkenvoornederland.nl/vacatures/scrum-master-NCSC-2026-8898 | Nationaal Cyber Security Centrum | Scrum Master | — | Discarded — 404
+- [x] #64 | https://www.werkenvoornederland.nl/vacatures/scrummaster-BD-2026-1225 | Belastingdienst | Scrummaster | — | Discarded — 404
+- [x] #46 | https://www.werkenvoornederland.nl/vacatures/agile-leader-coach-RVO-2026-4282 | RVO | Agile Leader (Coach) — LACE (Lean Agile Centre of Excellence), SAFe SPC preferred, started Jan 2026 | already evaluated
+- [x] KVK-old | https://www.werkenbijdeoverheid.nl/vacatures/senior-scrum-master-KVK-2026-3692 | KVK | Senior Scrum Master — Utrecht, PSM I&II required, 5+ yrs experience | already evaluated
+- [x] #65 | https://www.cbs.nl/nl-nl/vacature/scrum-master/9a68cc0214394fb4b5d2fc24acf3e525 | CBS | Scrum Master | — | SKIP — Heerlen locatie + ceremonieel SM
+- [x] #66 | https://www.werkenvoornederland.nl/vacatures/product-owner-overheidsbrede-dienstverlening-BZK-2026-2018 | BZK | Product Owner Overheidsbrede Dienstverlening | — | Discarded — 404
 
 ## NL Energy Sector — NEW 2026-06-03
 
-- [ ] https://werkenbij.alliander.com/vacature/senior-scrum-master-netdigitalisering/JR18370/ | Alliander | Senior Scrum Master Netdigitalisering — CONFIRMED LIVE deadline June 12, Arnhem, €4,581–€6,544/mo, 32-40h, SAFe/Scrum, coaches ART teams in OT/energy infra domain. URGENT.
+- [x] #67 | https://werkenbij.alliander.com/vacature/senior-scrum-master-netdigitalisering/JR18370/ | Alliander | Senior Scrum Master Netdigitalisering | 3.5/5 | PDF ❌
 - [ ] https://www.werkenbijanwb.nl/vacature/942/scrum-master-hulpverlening | ANWB | Scrum Master Hulpverlening — Den Haag, €3,939–€6,403/mo + 5.58% bonus, hybrid, PSM I+II required (gap), roadside assistance domain
 - [ ] https://www.werkenbijanwb.nl/vacature/672/scrum-master-group-it-data-1 | ANWB | Scrum Master Group IT & Data — Den Haag, €3,613–€5,982/mo + 5.58% bonus, PSM I+II required (gap)
 - [ ] https://www.werkenbijanwb.nl/vacature/567/scrum-master-platform-1 | ANWB | Scrum Master Platform — Den Haag, €3,613–€5,982/mo, PSM I+II required (gap)
@@ -137,39 +137,39 @@
 
 ## NL Private Sector — Agile / Program Management
 
-- [ ] https://www.werkenbijns.nl/vacatures/scrum-master-utrecht-1290134 | NS | Scrum Master — posted 22-05-2026, Utrecht, expert in Agile philosophy + Scrum, guides multiple teams
+- [x] #56 | https://www.werkenbijns.nl/vacatures/scrum-master-utrecht-1290134 | NS | Scrum Master Utrecht | 3.4/5 | PDF ✅
 - [ ] https://careers.tennet.eu/en_US/careers/JobDetail/Sr-Scrum-Master-Agile-Coach/63714 | TenneT | Sr. Scrum Master / Agile Coach — €3,879–€7,660/month, 40h, Arnhem
-- [ ] https://www.werkenbijabnamro.nl/en/vacancy/9132/programma-manager | ABN AMRO | Senior Programmamanager — Change Management Office, International Card Services, Amsterdam
-- [ ] https://www.accenture.com/nl-en/careers/jobdetails?id=R00306941_en | Accenture | Transformational Change Consultant – Health & Public Services — NL market, change mgmt + agile
-- [ ] https://www.accenture.com/nl-en/careers/jobdetails?id=R00282591_en | Accenture | Transformational Change Management Consultant — ERP rollouts, operating model redesign, digital transformation
+- [x] #34 | https://www.werkenbijabnamro.nl/en/vacancy/9132/programma-manager | ABN AMRO | Senior Programmamanager — Change Management Office, International Card Services, Amsterdam | already evaluated
+- [x] #36 | https://www.accenture.com/nl-en/careers/jobdetails?id=R00306941_en | Accenture | Transformational Change Consultant – Health & Public Services — NL market, change mgmt + agile | already evaluated
+- [x] #35 | https://www.accenture.com/nl-en/careers/jobdetails?id=R00282591_en | Accenture | Transformational Change Management Consultant — ERP rollouts, operating model redesign, digital transformation | already evaluated
 - [ ] https://careers.vattenfall.com/nl/nl/job/business-change-manager-in-amsterdam-jid-49579 | Vattenfall | Business Change Manager — Amsterdam
 - [ ] https://www.uwv.nl/nl/werken-bij/vacatures/a1WSc000001dSOrMAM | UWV | Scrum Master IV Gegevensdiensten — Amsterdam
-- [ ] https://careers.tudelft.nl/job/Delft-Innovation-Manager-Quantum-Internet-2628-CD/828811702/ | TU Delft | Innovation Manager Quantum Internet — Delft, innovation + ecosystem building
+- [x] #47 | https://careers.tudelft.nl/job/Delft-Innovation-Manager-Quantum-Internet-2628-CD/828811702/ | TU Delft | Innovation Manager Quantum Internet — Delft, innovation + ecosystem building | already evaluated
 - [ ] https://www.nn-careers.com/vacature/744/programmamanager-it-verandertrajecten | Nationale Nederlanden | Programmamanager IT-verandertrajecten — Den Haag, digital services, legacy replacement, cloud transformation for NN Bank
 - [ ] https://www.werkenbijkpmg.nl/vacature/senior-consultant-manager-digital-transformation | KPMG | Senior Consultant / Manager Digital Transformation — Amstelveen, digital transformation programs
-- [ ] https://www.postnl.nl/werkenbij/vacatures-voor-hbo-en-wo/agile-next-transformation-manager-45997/ | PostNL | Agile Next Transformation Manager — Den Haag, shape and implement PostNL Agile transformation roadmap
+- [x] #45 | https://www.postnl.nl/werkenbij/vacatures-voor-hbo-en-wo/agile-next-transformation-manager-45997/ | PostNL | Agile Next Transformation Manager — Den Haag, shape and implement PostNL Agile transformation roadmap | already evaluated
 - [ ] https://www.postnl.nl/werkenbij/vacatures-voor-hbo-en-wo/programma-manager-cbits-54324/ | PostNL | Programma Manager CB&ITS — Den Haag, central IT landscape program execution
-- [ ] https://social-enterprise.nl/nieuws/vacature-programmamanager-leden/ | Social Enterprise NL | Programmamanager leden — network of 450+ social enterprises, events/masterclasses/growth programs
-- [ ] https://www.tno.nl/nl/werken-bij-tno/vacatures/2026/04/consultant-verantwoorde-ai/ | TNO | Consultant Verantwoorde AI — Soesterberg, responsible AI consulting for companies and govt
+- [x] #49 | https://social-enterprise.nl/nieuws/vacature-programmamanager-leden/ | Social Enterprise NL | Programmamanager leden — network of 450+ social enterprises, events/masterclasses/growth programs | already evaluated
+- [x] #48 | https://www.tno.nl/nl/werken-bij-tno/vacatures/2026/04/consultant-verantwoorde-ai/ | TNO | Consultant Verantwoorde AI — Soesterberg, responsible AI consulting for companies and govt | already evaluated
 - [ ] https://kombijde.politie.nl/vacature/senior-programmamanager_1195019.html | Nationale Politie | Senior Programmamanager — transformation goals of corps leadership, harmonization, innovation
-- [ ] https://www.8baan.nl/vacature/programmamanager-innovatie-partners | Gemeente Amsterdam | Programmamanager Innovatie Partners — Amsterdam, urban innovation program
-- [ ] https://www.werkenbijkpmg.nl/vacature/scrum-master | KPMG | Scrum Master — Amsterdam/Amstelveen
+- [x] #53 | https://www.8baan.nl/vacature/programmamanager-innovatie-partners | Gemeente Amsterdam | Programmamanager Innovatie Partners — Amsterdam, urban innovation program | already evaluated
+- [x] #37 | https://www.werkenbijkpmg.nl/vacature/scrum-master | KPMG | Scrum Master — Amsterdam/Amstelveen | already evaluated
 - [ ] https://www.werkenbijcoolblue.nl/vacatures/scrum-master/ | Coolblue | Scrum Master / Agile Coach — Rotterdam, guide development teams, min 2 yrs dedicated SM experience
-- [ ] https://www.consultant.nl/vacatures/vacature/9497/programmamanager-service-design | ProRail | Programmamanager Service Design — Utrecht, initiating/realizing multidisciplinary innovation programs
+- [x] #54 | https://www.consultant.nl/vacatures/vacature/9497/programmamanager-service-design | ProRail | Programmamanager Service Design — Utrecht, initiating/realizing multidisciplinary innovation programs | already evaluated
 
 ## Level 3 WebSearch — 2026-06-01
 
-- [ ] https://www.werkenvoornederland.nl/vacatures/agile-coach-ILT-2026-2432 | ILT | Agile Coach — catalyst for change in ICT dept, coaches Scrum/Kanban/DevOps, facilitates PI planning
-- [ ] https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-KVK-2026-4590 | KVK | Senior Scrum Master — guides multiple teams, complex contexts, value streams
-- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-RO-2026-5218 | IVO Rechtspraak | Scrum Master — manages two Scrum teams
-- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-JIO-2026-8155 | Ministerie van Justitie (JIO) | Scrum Master — Proof of Concept Agile Work, agile professionalisering
-- [ ] https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-OM-2026-5808 | Openbaar Ministerie | Senior Scrum Master — mentors Scrum teams to High Performance
-- [ ] https://www.werkenvoornederland.nl/vacatures/teamleider-vakgroep-agile-werken-DEF-2026-8357 | Ministerie van Defensie | Teamleider Vakgroep Agile Werken — leads ~20 FTE agile roles (SM/AC/RTE/PO)
+- [x] #41 | https://www.werkenvoornederland.nl/vacatures/agile-coach-ILT-2026-2432 | ILT | Agile Coach — catalyst for change in ICT dept, coaches Scrum/Kanban/DevOps, facilitates PI planning | already evaluated
+- [x] SKIP | https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-KVK-2026-4590 | KVK | Senior Scrum Master — guides multiple teams, complex contexts, value streams — DUP
+- [x] SKIP | https://www.werkenvoornederland.nl/vacatures/scrum-master-RO-2026-5218 | IVO Rechtspraak | Scrum Master — manages two Scrum teams — DUP
+- [x] #33 | https://www.werkenvoornederland.nl/vacatures/scrum-master-JIO-2026-8155 | Ministerie van Justitie (JIO) | Scrum Master — Proof of Concept Agile Work, agile professionalisering | already evaluated
+- [x] #33 | https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-OM-2026-5808 | Openbaar Ministerie | Senior Scrum Master — mentors Scrum teams to High Performance | already evaluated
+- [x] #44 | https://www.werkenvoornederland.nl/vacatures/teamleider-vakgroep-agile-werken-DEF-2026-8357 | Ministerie van Defensie | Teamleider Vakgroep Agile Werken — leads ~20 FTE agile roles (SM/AC/RTE/PO) | already evaluated
 - [ ] https://www.werkenbijhogescholen.nl/vacatures/hogeschooldocent-applied-data-science-ai-2/ | Hogeschool | Hogeschooldocent Applied Data Science AI — research + teaching, AI expert team
-- [ ] https://www.werkenbijhogescholen.nl/vacatures/associate-lector-responsible-ai | HvA | Associate Lector Responsible AI — ethics, society, human values in AI design
-- [ ] https://www.werkenbijhogescholen.nl/vacatures/hogeschooldocent-en-onderwijsontwikkelaar-master-human-centered-artificial-intelligence-hcai | Hogeschool | Hogeschooldocent & onderwijsontwikkelaar master HCAI — EU HCAIM consortium
-- [ ] https://www.academictransfer.com/nl/337903/lector-ai-data-supported-healthcare-kcz-kenniscentrum-zorginnovatie/ | KCZ Kenniscentrum Zorginnovatie | Lector AI & Data Supported Healthcare — PhD required, Hogeschool Rotterdam
-- [ ] https://www.monsterboard.nl/banen/scrum-master-agile-coach-saas-scale-up-in-sustainability-amsterdam-07--34854011-8e2c-4083-bca5-b3be350abfde | Ecochain Technologies | Scrum Master - Agile Coach — sustainability SaaS, Amsterdam
+- [x] #42 | https://www.werkenbijhogescholen.nl/vacatures/associate-lector-responsible-ai | HvA | Associate Lector Responsible AI — ethics, society, human values in AI design | already evaluated
+- [x] #54 | https://www.werkenbijhogescholen.nl/vacatures/hogeschooldocent-en-onderwijsontwikkelaar-master-human-centered-artificial-intelligence-hcai | Hogeschool | Hogeschooldocent & onderwijsontwikkelaar master HCAI — EU HCAIM consortium | already evaluated
+- [x] SKIP | https://www.academictransfer.com/nl/337903/lector-ai-data-supported-healthcare-kcz-kenniscentrum-zorginnovatie/ | KCZ Kenniscentrum Zorginnovatie | Lector AI & Data Supported Healthcare — PhD required, Hogeschool Rotterdam — PhD required
+- [x] #43 | https://www.monsterboard.nl/banen/scrum-master-agile-coach-saas-scale-up-in-sustainability-amsterdam-07--34854011-8e2c-4083-bca5-b3be350abfde | Ecochain Technologies | Scrum Master - Agile Coach — sustainability SaaS, Amsterdam | already evaluated
 - [ ] https://www.monsterboard.nl/banen/scrum-master-rotterdam-11--69a71926-26fb-4f8b-843e-758b6d446be5 | Greenchoice | Scrum Master — Rotterdam, 5+ yrs experience
 - [x] https://nl.linkedin.com/jobs/view/netherlands-amsterdam-freelance-corporate-ai-lab-host-facilitator-at-goodera-4418133505 | Goodera | AI Lab Host Facilitator — Freelance, Amsterdam. Direct archetype 1 match: facilitate AI labs for corporates
 - [ ] https://www.werkenbijns.nl/vacatures/scrum-master-cluster-rijdend-personeel-utrecht-1223076 | NS | Scrum Master (cluster Rijdend Personeel) — Utrecht
@@ -178,80 +178,80 @@
 ## NL Broad Scan — 2026-06-03
 
 - [ ] https://werkenbij.enexis.nl/vacatures/scrum-master-14748 | Enexis | Scrum Master — Den Bosch, €4,141–€5,915/mo, 32-40h, posted March 2026, PSM II required, coaches 1-2 teams
-- [ ] https://www.werkenvoornederland.nl/vacatures/scrum-master-DEF2679-2030-9690 | Ministerie van Defensie (JIVC) | Scrum Master — Amersfoort, Scale 11 €4,867–€6,679/mo, 38h, deadline Oct 15 2026, CONFIRMED LIVE. PSM I required, min 2 yrs SM exp, DevOps/IT domain
-- [ ] https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-KVK-2026-9210 | KVK | Senior Scrum Master — Utrecht, Scale 10-11 €3,404–€6,110/mo, 32-40h, deadline June 9 2026 (URGENT), Agile Centre of Expertise, multiple teams in complex context
-- [ ] https://www.werkenvoornederland.nl/vacatures/programmamanager-informatievoorziening-IM-2026-3600 | Ministerie van Infrastructuur en Waterstaat | Programmamanager Informatievoorziening — Den Haag, Scale 14 €5,864–€8,550/mo, 36h, deadline June 15 2026, CONFIRMED LIVE. Complex IV/digitalisering programs
-- [ ] https://www.werkenvoornederland.nl/vacatures/programmamanager-leiderschap-DEF-2026-2044 | Ministerie van Defensie (NLDA/ECLD) | Programmamanager Leiderschap — NLDA/Breda, 38h, leadership + team effectiveness programs across Defence. Verify liveness before evaluating
-- [ ] https://www.werkenvoornederland.nl/vacatures/project-programmamanager-SSCI-2026-1206 | SSC-ICT (Ministerie van BZK) | Project-/Programmamanager — government ICT services for 57k+ civil servants, modernising workplace services. Verify liveness before evaluating
+- [x] #33 | https://www.werkenvoornederland.nl/vacatures/scrum-master-DEF2679-2030-9690 | Ministerie van Defensie (JIVC) | Scrum Master — Amersfoort, Scale 11 €4,867–€6,679/mo, 38h, deadline Oct 15 2026, CONFIRMED LIVE. PSM I required, min 2 yrs SM exp, DevOps/IT domain | already evaluated
+- [x] #68 | https://www.werkenvoornederland.nl/vacatures/senior-scrum-master-KVK-2026-9210 | KVK | Senior Scrum Master | 3.8/5 | PDF ❌
+- [x] #32 | https://www.werkenvoornederland.nl/vacatures/programmamanager-informatievoorziening-IM-2026-3600 | Ministerie van Infrastructuur en Waterstaat | Programmamanager Informatievoorziening — Den Haag, Scale 14 €5,864–€8,550/mo, 36h, deadline June 15 2026, CONFIRMED LIVE. Complex IV/digitalisering programs | already evaluated
+- [x] #32 | https://www.werkenvoornederland.nl/vacatures/programmamanager-leiderschap-DEF-2026-2044 | Ministerie van Defensie (NLDA/ECLD) | Programmamanager Leiderschap — NLDA/Breda, 38h, leadership + team effectiveness programs across Defence. Verify liveness before evaluating | already evaluated
+- [x] #32 | https://www.werkenvoornederland.nl/vacatures/project-programmamanager-SSCI-2026-1206 | SSC-ICT (Ministerie van BZK) | Project-/Programmamanager — government ICT services for 57k+ civil servants, modernising workplace services. Verify liveness before evaluating | already evaluated
 - [ ] https://careers.soprasteria.com/job/scrum-master-agile-consultant-groningen-in-groningen-netherlands-jid-4054 | Sopra Steria | Scrum Master (Agile Consultant) — Groningen, permanent contract, posted April 2026, Dutch required, remote-hybrid. Note: consulting firm structure
-- [ ] https://jobs.ashbyhq.com/elevenlabs/030ff848-f30b-496a-95c4-5e23ab2e5842 | ElevenLabs | Deployment Strategist Lead — Netherlands/remote, posted May 2026, voice AI market expansion, requires Python basic + executive stakeholder management. Note: requires frequent NL travel
+- [x] #77 | https://jobs.ashbyhq.com/elevenlabs/030ff848-f30b-496a-95c4-5e23ab2e5842 | ElevenLabs | Deployment Strategist Lead | 3.6/5 | PDF ❌
 
 ## Pendientes
 
-- [ ] https://job-boards.greenhouse.io/adyen/jobs/7946947 | Adyen | Employer Brand Program Manager, Events & Partnerships EMEA
-- [ ] https://job-boards.greenhouse.io/celonis/jobs/7749202003?gh_jid=7749202003 | Celonis | Principal Client Value Partner - Retail
-- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5226862008 | Anthropic | Applied AI Architect, Applied AI (Digital Natives Business)
-- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5231717008 | Anthropic | Supply Chain Security & Assurance Lead
-- [ ] https://job-boards.greenhouse.io/canonical/jobs/2614095 | Canonical | Software Engineer - Edge AI
-- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8462016002 | Databricks | Data & AI Platform Architect (Professional Services)
-- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8285493002 | Databricks | Director, Enterprise - Retail & CPG, m/f/d
-- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8568151002 | Databricks | Sr. Director, Enterprise - Retail Vertical - Strategic Accounts 
+- [x] #11 | https://job-boards.greenhouse.io/adyen/jobs/7946947 | Adyen | Employer Brand Program Manager, Events & Partnerships EMEA | already evaluated
+- [x] #15 | https://job-boards.greenhouse.io/celonis/jobs/7749202003?gh_jid=7749202003 | Celonis | Principal Client Value Partner - Retail | already evaluated
+- [x] #20 | https://job-boards.greenhouse.io/anthropic/jobs/5226862008 | Anthropic | Applied AI Architect, Applied AI (Digital Natives Business) | already evaluated
+- [x] SKIP | https://job-boards.greenhouse.io/anthropic/jobs/5231717008 | Anthropic | Supply Chain Security & Assurance Lead — security ops, not fit
+- [x] #23 | https://job-boards.greenhouse.io/canonical/jobs/2614095 | Canonical | Software Engineer - Edge AI | already evaluated
+- [x] #25 | https://databricks.com/company/careers/open-positions/job?gh_jid=8462016002 | Databricks | Data & AI Platform Architect (Professional Services) | already evaluated
+- [x] #26 | https://databricks.com/company/careers/open-positions/job?gh_jid=8285493002 | Databricks | Director, Enterprise - Retail & CPG, m/f/d | already evaluated
+- [x] #26 | https://databricks.com/company/careers/open-positions/job?gh_jid=8568151002 | Databricks | Sr. Director, Enterprise - Retail Vertical - Strategic Accounts | already evaluated
 - [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8208109002 | Databricks | Sr. Technical Program Manager, Professional Services - Financial Services
-- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8441890002 | Databricks | Strategic AI/BI Account Executive
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8564957002 | GitLab | Principal Product Manager, AI Custom Models
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8556658002 | GitLab | Senior AI Engineer
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8157520002 | GitLab | Senior Platform Engineer(Golang), Software Supply Chain Security: Authentication
-- [ ] https://stripe.com/jobs/search?gh_jid=7214197 | Stripe | Program Manager, Risk Ops Enablement
-- [ ] https://stripe.com/jobs/search?gh_jid=7938661 | Stripe | Public Affairs Manager
-- [ ] https://stripe.com/jobs/search?gh_jid=7589234 | Stripe | Technical Program Manager, Infrastructure
+- [x] #26 | https://databricks.com/company/careers/open-positions/job?gh_jid=8441890002 | Databricks | Strategic AI/BI Account Executive | already evaluated
+- [x] #09 | https://job-boards.greenhouse.io/gitlab/jobs/8564957002 | GitLab | Principal Product Manager, AI Custom Models | already evaluated
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8556658002 | GitLab | Senior AI Engineer — pure engineering
+- [x] SKIP | https://job-boards.greenhouse.io/gitlab/jobs/8157520002 | GitLab | Senior Platform Engineer(Golang), Software Supply Chain Security: Authentication — pure engineering
+- [x] #30 | https://stripe.com/jobs/search?gh_jid=7214197 | Stripe | Program Manager, Risk Ops Enablement | already evaluated
+- [x] #30 | https://stripe.com/jobs/search?gh_jid=7938661 | Stripe | Public Affairs Manager | already evaluated
+- [x] #30 | https://stripe.com/jobs/search?gh_jid=7589234 | Stripe | Technical Program Manager, Infrastructure | already evaluated
 
 
-- [ ] https://job-boards.greenhouse.io/celonis/jobs/7749204003?gh_jid=7749204003 | Celonis | Principal Client Value Partner - Retail
-- [ ] https://job-boards.greenhouse.io/celonis/jobs/7743041003?gh_jid=7743041003 | Celonis | Working Student Online Training Localization 
+- [x] #15 | https://job-boards.greenhouse.io/celonis/jobs/7749204003?gh_jid=7749204003 | Celonis | Principal Client Value Partner - Retail | already evaluated
+- [x] SKIP | https://job-boards.greenhouse.io/celonis/jobs/7743041003?gh_jid=7743041003 | Celonis | Working Student Online Training Localization — student role
 - [ ] https://jobs.ashbyhq.com/supabase/f6027734-f9f6-4711-ac21-88844a6d9d3f | Supabase | Senior Manager - Technical Program Management
-- [ ] https://jobs.ashbyhq.com/n8n/d195a389-6af5-4b95-82e5-2258953c7297 | n8n | Sr AI Engineer | Remote - Europe | TS/Vue/NodeJS
-- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8563183002 | Databricks | Sr. Solutions Engineer - AI Natives Business
-- [ ] https://stripe.com/jobs/search?gh_jid=7966641 | Stripe | Program Manager, Security Business Enablement
+- [x] SKIP | https://jobs.ashbyhq.com/n8n/d195a389-6af5-4b95-82e5-2258953c7297 | n8n | Sr AI Engineer | Remote - Europe | TS/Vue/NodeJS — pure engineering
+- [x] #25 | https://databricks.com/company/careers/open-positions/job?gh_jid=8563183002 | Databricks | Sr. Solutions Engineer - AI Natives Business | already evaluated
+- [x] #30 | https://stripe.com/jobs/search?gh_jid=7966641 | Stripe | Program Manager, Security Business Enablement | already evaluated
 - [ ] https://jobs.ashbyhq.com/mollie/d72de539-6941-4c1b-a848-09b2815746d3 | Mollie | Product Delivery Manager - Mollie Capital
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8565469002 | GitLab | AI Engineer
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8548545002 | GitLab | Senior AI Engineer
-- [ ] https://job-boards.greenhouse.io/gitlab/jobs/8517571002 | GitLab | Staff Program Manager, Enterprise Technology & AI
+- [x] #08 | https://job-boards.greenhouse.io/gitlab/jobs/8565469002 | GitLab | AI Engineer | already evaluated
+- [x] #08 | https://job-boards.greenhouse.io/gitlab/jobs/8548545002 | GitLab | Senior AI Engineer | already evaluated
+- [x] #09 | https://job-boards.greenhouse.io/gitlab/jobs/8517571002 | GitLab | Staff Program Manager, Enterprise Technology & AI | already evaluated
 
-- [ ] https://job-boards.greenhouse.io/adyen/jobs/7908806 | Adyen | Senior AI Research Engineer
+- [x] SKIP | https://job-boards.greenhouse.io/adyen/jobs/7908806 | Adyen | Senior AI Research Engineer — research engineering
 - [ ] https://jobs.ashbyhq.com/supabase/202e9ca8-3c98-4dea-add5-0f7e2e98800c | Supabase | Product Manager - AI 
-- [ ] https://jobs.ashbyhq.com/synthesia/4721d2c3-3d94-45d3-b9f7-ea5e1f549ce2 | Synthesia | Product Designer, AI-Native Products (Senior/Staff-Level)
+- [x] SKIP | https://jobs.ashbyhq.com/synthesia/4721d2c3-3d94-45d3-b9f7-ea5e1f549ce2 | Synthesia | Product Designer, AI-Native Products (Senior/Staff-Level) — design, not PM
 - [ ] https://job-boards.greenhouse.io/celonis/jobs/7762257003?gh_jid=7762257003 | Celonis | Client Value Partner - Retail 
 - [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8574912002 | Databricks | Sr. Manager, AI Forward Deployed Engineering (FDE) – EMEA
 - [ ] https://job-boards.greenhouse.io/gitlab/jobs/8568868002 | GitLab | Senior Product Manager, AI Platform Management
 - [ ] https://job-boards.greenhouse.io/gitlab/jobs/8468159002 | GitLab | Senior Solutions Architect, AI / Core DevOps - EMEA
-- [ ] https://stripe.com/jobs/search?gh_jid=7977981 | Stripe | User Risk Strategist, Ecosystem Risk Strategy
+- [x] SKIP | https://stripe.com/jobs/search?gh_jid=7977981 | Stripe | User Risk Strategist, Ecosystem Risk Strategy — US-only
 - [ ] https://jobs.ashbyhq.com/mollie/02e958b0-1420-4eb4-a49f-e1b6c465be8d | Mollie | Senior Product Delivery Manager
-- [ ] https://jobs.lever.co/mistral/b2498ec4-51e7-46b7-b258-d9bc40b6e39e | Mistral AI | Applied AI,  Senior/Staff Forward Deployed Machine Learning Engineer - Munich
-- [ ] https://jobs.lever.co/mistral/aff9f13c-e79f-4d66-98b1-f62dd1c552cd | Mistral AI | Applied AI, Forward Deployed Machine Learning Engineer - Munich
-- [ ] https://jobs.lever.co/mistral/45b0fae3-61ea-4cb0-8cd1-c1bc2a43a84a | Mistral AI | Applied AI, Technical Lead, Forward Deployed AI Engineer - Munich
+- [x] SKIP | https://jobs.lever.co/mistral/b2498ec4-51e7-46b7-b258-d9bc40b6e39e | Mistral AI | Applied AI,  Senior/Staff Forward Deployed Machine Learning Engineer - Munich — ML engineering
+- [x] SKIP | https://jobs.lever.co/mistral/aff9f13c-e79f-4d66-98b1-f62dd1c552cd | Mistral AI | Applied AI, Forward Deployed Machine Learning Engineer - Munich — ML engineering
+- [x] SKIP | https://jobs.lever.co/mistral/45b0fae3-61ea-4cb0-8cd1-c1bc2a43a84a | Mistral AI | Applied AI, Technical Lead, Forward Deployed AI Engineer - Munich — pure engineering
 
 ## Innovation / Lab / Education — 2026-06-03
 
-- [ ] https://amsterdameconomicboard.com/vacatures/manager-innovatielab/ | Amsterdam Economic Board | Manager Innovatielab — Amsterdam, coordinates innovation lab, connects ecosystem partners, facilitates deepdives + demos. Near-perfect archetype fit.
+- [x] #53 | https://amsterdameconomicboard.com/vacatures/manager-innovatielab/ | Amsterdam Economic Board | Manager Innovatielab — Amsterdam, coordinates innovation lab, connects ecosystem partners, facilitates deepdives + demos. Near-perfect archetype fit. | already evaluated
 - [ ] https://www.consultancy.nl/vacatures/25547/kplusv-organisatieadvies/programmamanager-onderwijs-en-bedrijfsleven | KplusV | Programmamanager Onderwijs en Bedrijfsleven — MBO/HBO + private sector intersection, program development, WO level thinking + 5 yrs project leadership required
 - [ ] https://www.werkenbijhogescholen.nl/vacatures/projectcoordinator-verantwoorde-ai/ | HvA (CoE AAI / RAAIT) | Projectcoördinator Verantwoorde AI — Amsterdam, SPRONG consortium (HvA/HU/HR), scale 10 €3,609–€5,377/mo, AI + education + project coordination
 - [ ] https://saxion.nl/over-saxion/werken-bij/vacatures/docent-ai-en-digitale-geletterdheid | Saxion | Docent AI en Digitale Geletterdheid — teaching + research, AI education, Enschede
 
 ## NL Government — Change / Digital / Agile — 2026-06-03
 
-- [ ] https://www.werkenvoornederland.nl/vacatures/agile-coach-DUO-2026-3170 | DUO (Ministerie OCW) | Agile Coach — The Hague/Groningen, education execution org + agile, inspect and adapt
+- [x] #44 | https://www.werkenvoornederland.nl/vacatures/agile-coach-DUO-2026-3170 | DUO (Ministerie OCW) | Agile Coach — The Hague/Groningen, education execution org + agile, inspect and adapt | already evaluated
 - [ ] https://werkenbij.vu.nl/vacatures/agile-coach-amsterdam-1138063 | Vrije Universiteit Amsterdam | Agile Coach — Amsterdam, coach IT agile teams, help teams scale agile practices
-- [ ] https://www.werkenvoornederland.nl/vacatures/senior-adviseur-digitalisering-IM-2026-2037 | Ministerie van IenW | Senior adviseur digitalisering — Den Haag, advises on data/AI strategy, represents ministry in inter-departmental discussions
+- [x] #33 | https://www.werkenvoornederland.nl/vacatures/senior-adviseur-digitalisering-IM-2026-2037 | Ministerie van IenW | Senior adviseur digitalisering — Den Haag, advises on data/AI strategy, represents ministry in inter-departmental discussions | already evaluated
 - [ ] https://www.werkenvoornederland.nl/vacatures/strategisch-adviseur-digitalisering-en-privacy-IM-2026-8663 | Ministerie van IenW | Strategisch adviseur digitalisering en privacy — innovative + responsible use of data/tech, balancing innovation with privacy
-- [ ] https://www.werkenvoornederland.nl/vacatures/agile-transformatiemanager-KL-2026-4691 | Ministerie van Defensie (Materieellogistiek) | Agile Transformatiemanager — SAM method + OKRs, results-driven transformation. Strong Kongsberg angle.
+- [x] #44 | https://www.werkenvoornederland.nl/vacatures/agile-transformatiemanager-KL-2026-4691 | Ministerie van Defensie (Materieellogistiek) | Agile Transformatiemanager — SAM method + OKRs, results-driven transformation. Strong Kongsberg angle. | already evaluated
 - [ ] https://www.werkenvoornederland.nl/vacatures/verandermanager-KMAR-2026-9763 | Ministerie van Defensie (KMAR) | Verandermanager — change in structured/regulated environment, BOSS/ATP
 - [ ] https://www.werkenvoornederland.nl/vacatures/verandermanager-toekomstbestendig-beheer-VWSI-2026-1786 | IGJ (VWSI) | Verandermanager — 32-36h, until Dec 2027, healthcare inspection, future-proof management
 - [ ] https://www.werkenvoornederland.nl/vacatures/verandermanager-BD-2026-4847 | Belastingdienst | Verandermanager — GRC program, governance/risk/compliance app rollout, Utrecht
 - [ ] https://www.werkenvoornederland.nl/vacatures/implementatiemanager-BD-2026-9345 | Belastingdienst | Implementatiemanager — GRC program, Finance/Control/Procurement, (semi-)public sector exp preferred
 - [ ] https://www.werkenvoornederland.nl/vacatures/projectleider-mkb-actieagenda-RVO-2026-9240 | RVO | Projectleider MKB-actieagenda — digitalization of regulations, strategic trajectories
-- [ ] https://www.werkenvoornederland.nl/vacatures/programmamanager-data-en-ai-RWS-2026-7859 | Rijkswaterstaat | Programmamanager Data en AI — Scale 14 €5,864–€8,550/mo, deadline June 15 URGENT. Complex digitalisering programs
+- [x] #69 | https://www.werkenvoornederland.nl/vacatures/programmamanager-data-en-ai-RWS-2026-7859 | Rijkswaterstaat | Programmamanager Data en AI | 4.1/5 | PDF ❌
 - [ ] https://www.werkenvoornederland.nl/vacatures/adviseur-internationale-innovatie-digitalisering-en-eu-RVO-2026-9098 | RVO | Adviseur Internationale Innovatie (Digitalisering & EU) — international innovation policy, EU programs, tech + supply chain angle
-- [ ] https://www.ncod.nl/vacatures/medior-adviseur-digitale-overheid/ | NCOD | Medior Adviseur Digitale Overheid — deadline June 23 URGENT, municipalities/provinces/water boards, DMS/Woo/GDPR/AI
+- [x] #73 | https://www.ncod.nl/vacatures/medior-adviseur-digitale-overheid/ | NCOD | Medior Adviseur Digitale Overheid | 3.9/5 | PDF ❌
 - [ ] https://werkenbij.kbenp.nl/vacatures/adviseur-digitale-overheid | KBenP | Adviseur Digitale Overheid — digital government advisory
 
 ## NL Private / Consulting — 2026-06-03
@@ -260,8 +260,8 @@
 - [ ] https://www.consultancy.nl/vacatures/127054/pwc/adviseur-digitale-overheid-publieke-sector-rijksoverheid | PwC | Adviseur Digitale Overheid — public sector digital, technology M&A, IT operating model design
 - [ ] https://www.tno.nl/nl/werken-bij/vacatures/projectmanager-digitalisering-in-de-bouw-en-infrastructuur/vacid-a0s6700001qx9w7ead/ | TNO | Projectmanager Digitalisering bouw en infrastructuur — Delft, requires 8 yrs exp (4+ in research PM). May be a stretch but verify.
 - [ ] https://stedin.net/werken-bij/vacatures/scrum-master-jr4147 | Stedin | Scrum Master — Rotterdam, €6,648/mo max, energy utility, confirmed live
-- [ ] https://youngprofessionalvacatures.nl/vacatures/postnl/agile-coach-postnl-pakketten | PostNL | Agile Coach Pakketten — Den Haag, €3,758–€5,323/mo, agile transition, essential role
-- [ ] https://www.duurzaam-ondernemen.nl/vacature/projectleider-esg/ | (via duurzaam-ondernemen) | Projectleider ESG supply chain — R-ladder/CSRD/CSDDD/EU Taxonomy, strong CSRD expertise angle
+- [x] #45 | https://youngprofessionalvacatures.nl/vacatures/postnl/agile-coach-postnl-pakketten | PostNL | Agile Coach Pakketten — Den Haag, €3,758–€5,323/mo, agile transition, essential role | already evaluated
+- [x] SKIP | https://www.duurzaam-ondernemen.nl/vacature/projectleider-esg/ | (via duurzaam-ondernemen) | Projectleider ESG supply chain — R-ladder/CSRD/CSDDD/EU Taxonomy, strong CSRD expertise angle — ESG supply chain — evaluate separately
 - [ ] https://www.duurzaam-ondernemen.nl/vacature/projectmanager-duurzaamheid-csrd/ | (via duurzaam-ondernemen) | Projectmanager Duurzaamheid & CSRD — project mgmt + CSRD compliance, 2026 reporting deadline driver
 
 ## Web3 / Blockchain — 2026-06-03
@@ -276,12 +276,12 @@
 
 ## Cultural / Nonprofit — 2026-06-03
 
-- [ ] https://www.culturele-vacatures.nl/2026/05/stichting-tamino-directeur-bestuurder/ | Stichting Tamino | Directeur-Bestuurder — Amsterdam, 28-36h, deadline June 16 URGENT. Arts education for vulnerable youth. Entrepreneurial leadership + social mission. Stretch role — evaluate fit carefully.
+- [x] SKIP | https://www.culturele-vacatures.nl/2026/05/stichting-tamino-directeur-bestuurder/ | Stichting Tamino | Directeur-Bestuurder — Amsterdam, 28-36h, deadline June 16 URGENT. Arts education for vulnerable youth. Entrepreneurial leadership + social mission. Stretch role — evaluate fit carefully. — executive nonprofit, stretch
 
 ## NL Government — AI Policy / Data — 2026-06-03b
 
-- [ ] https://www.werkenvoornederland.nl/vacatures/senior-adviseur-data-ai-OCW-2026-6001 | Ministerie van OCW | Senior adviseur data & AI — CDO team + AI program team, develop data/AI policy across departments. Interviews were May 18-19 — verify still open.
-- [ ] https://www.werkenvoornederland.nl/vacatures/projectleider-senior-beleidsmedewerker-ai-strategie-en-communitymanagement-JUS-2026-3516 | Ministerie van Justitie en Veiligheid | Projectleider AI-Strategie en Communitymanagement — AI strategy + community management, extensive experience required. Deadline was April 21 — verify liveness.
+- [x] #33 | https://www.werkenvoornederland.nl/vacatures/senior-adviseur-data-ai-OCW-2026-6001 | Ministerie van OCW | Senior adviseur data & AI — CDO team + AI program team, develop data/AI policy across departments. Interviews were May 18-19 — verify still open. | already evaluated
+- [x] SKIP | https://www.werkenvoornederland.nl/vacatures/projectleider-senior-beleidsmedewerker-ai-strategie-en-communitymanagement-JUS-2026-3516 | Ministerie van Justitie en Veiligheid | Projectleider AI-Strategie en Communitymanagement — AI strategy + community management, extensive experience required. Deadline was April 21 — verify liveness. — verify April deadline
 
 ## Sustainability / Circular — 2026-06-03b
 
@@ -289,7 +289,7 @@
 
 ## Research / Applied Innovation — 2026-06-03b
 
-- [ ] https://www.datajobs.nl/vacatures/projectleider-digitalisering-en-innovatie-mkb-bij-de-tu-delft/ | TU Delft | Projectleider Digitalisering en Innovatie MKB — MKB digitalization + innovation, research context, verify liveness.
+- [x] #47 | https://www.datajobs.nl/vacatures/projectleider-digitalisering-en-innovatie-mkb-bij-de-tu-delft/ | TU Delft | Projectleider Digitalisering en Innovatie MKB — MKB digitalization + innovation, research context, verify liveness. | already evaluated
 
 ## Fractional / Startup — 2026-06-03b
 
@@ -297,11 +297,11 @@
 
 ## Ecosystem / Startup / Innovation Programs — 2026-06-03c
 
-- [ ] https://jobs.techleap.nl/ecosystem-interventions-manager | Techleap.nl | Ecosystem Interventions Manager — Amsterdam, creates programs + interventions for NL tech startup ecosystem, data-driven, 6+ yrs program/change management. Near-perfect archetype fit.
-- [ ] https://jobs.techleap.nl/head-of-community | Techleap.nl | Head of Community (BOLD) — Amsterdam, €7,000–€8,500/mo + 8% holiday + 15% pension, leads community team 7 FTE, 8+ yrs required. High-level community leadership.
-- [ ] https://jobs.techleap.nl/program-manager-future-of-deeptech-2035 | Techleap.nl | Program Manager Future of Deeptech 2035 — Amsterdam, portfolio of ecosystem + innovation programs, 5+ yrs strategy/consulting required.
-- [ ] https://starthubs.co/nl/vacature-programma-manager | Starthubs | Programmamanager Innovation Challenges — leads innovation challenge programs for large corporates and governments, ecosystem facilitation.
-- [ ] https://mipublic.nl/vacature/innovation-manager-head-of-tech-hub-netherlands/ | Airbus Group R&T (via MiPublic) | Innovation Manager / Head of Tech Hub Netherlands — leads NL tech hub within Airbus R&T global innovation network. NOTE: may be ZZP/interim posting — verify contract type.
+- [x] #70 | https://jobs.techleap.nl/ecosystem-interventions-manager | Techleap.nl | Ecosystem Interventions Manager | 4.4/5 | PDF ❌
+- [x] #71 | https://jobs.techleap.nl/head-of-community | Techleap.nl | Head of Community (BOLD) | — | Discarded — URL dead
+- [x] #78 | https://jobs.techleap.nl/program-manager-future-of-deeptech-2035 | Techleap.nl | Program Manager Future of Deeptech 2035 | — | Discarded — URL dead
+- [x] #76 | https://starthubs.co/nl/vacature-programma-manager | Starthubs | Programmamanager Innovation Challenges | 3.8/5 | PDF ❌
+- [x] #74 | https://mipublic.nl/vacature/innovation-manager-head-of-tech-hub-netherlands/ | Airbus R&T | Innovation Manager / Head of Tech Hub NL | 4.3/5 | PDF ❌
 
 ## NL Consultancies — Agile — 2026-06-04
 

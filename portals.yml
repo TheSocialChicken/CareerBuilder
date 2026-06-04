@@ -370,6 +370,48 @@ search_queries:
     query: 'site:indeed.com "Serious Games" OR "Gamification" OR "Simulation" OR "Learning Experience" OR "Facilitation" Netherlands'
     enabled: true
 
+  # -- Blockchain / Web3 / Digital Identity --
+
+  - name: LinkedIn NL — Blockchain Web3
+    query: 'site:linkedin.com/jobs "Blockchain" OR "Web3" OR "DeFi" OR "Digital Identity" OR "SSI" "Lead" OR "Manager" OR "Consultant" OR "Advisor" Netherlands OR remote'
+    enabled: true
+
+  - name: NL — Ketenmanager Supply Chain Manager
+    query: '"Ketenmanager" OR "Supply Chain Manager" OR "Supply Chain Consultant" OR "Supply Chain Advisor" OR "Value Chain" Netherlands OR remote'
+    enabled: true
+
+  - name: NL — Interim Programmamanager Innovatie
+    query: '"Interim Programmamanager" OR "Interim Innovatiemanager" OR "Interim Scrum Master" OR "Interim Agile Coach" OR "Freelance Programmamanager" Netherlands'
+    enabled: true
+
+  - name: NL — Community Manager Developer Relations
+    query: '"Community Manager" OR "Developer Relations" OR "DevRel" OR "Community Lead" OR "Ecosystem Manager" Netherlands OR remote EU'
+    enabled: true
+
+  - name: NL — Lectoraat Onderzoeker AI
+    query: '"Lectoraat" OR "Lector" OR "Onderzoeker" OR "Research Lead" OR "Applied Researcher" "AI" OR "Innovatie" OR "Digitalisering" hogeschool OR university Netherlands'
+    enabled: true
+
+  - name: NL — EUDR CSRD Food Agri Tech
+    query: '"EUDR" OR "CSRD" OR "supply chain compliance" OR "voedselveiligheid" OR "agri-tech" OR "FoodTech" "Lead" OR "Manager" OR "Advisor" Netherlands OR remote'
+    enabled: true
+
+  - name: NL — Business Developer Ecosysteem
+    query: '"Business Developer" OR "Business Development Manager" OR "Ecosysteemmanager" OR "Partnerships" OR "Alliance Manager" "AI" OR "Innovatie" OR "Tech" Netherlands'
+    enabled: true
+
+  - name: Indeed NL — Supply Chain Innovation Research
+    query: 'site:indeed.nl "Ketenmanager" OR "Supply Chain Innovation" OR "CSRD" OR "EUDR" OR "onderzoeker" OR "research" OR "lectoraat" Netherlands 2026'
+    enabled: true
+
+  - name: Werkenvoornederland — Supply Chain Research
+    query: 'site:werkenvoornederland.nl "Supply Chain" OR "Keten" OR "Innovatie" OR "Onderzoeker" OR "Adviseur" Netherlands 2026'
+    enabled: true
+
+  - name: NL — Fractional Part-time AI Roles
+    query: '"deeltijd" OR "parttime" OR "0.6 fte" OR "0.4 fte" OR "fractional" "AI" OR "Innovatie" OR "Programmamanager" OR "Scrum Master" Netherlands OR remote'
+    enabled: true
+
 tracked_companies:
 
   # -- Netherlands AI & Innovation --
