@@ -136,35 +136,40 @@ Grew up working in the family business at the Albert Cuyp Market from age 15. Ov
 **Training & Simulation Design (Bachelor Thesis)**
 2013
 
-Conducted bachelor thesis research on training methodology and simulation-based learning. Developed a prototype simulation lab to explore how experiential methods could improve technical training for engineers and operators. Combined field observation with educational theory to analyze how people learn through direct interaction with complex systems.
+During the field deployments, observed that engineers trained through classical instruction (three weeks of presentations) followed by unstructured experimentation consistently failed to handle non-procedural problems in the field. Proposed a thesis to KONGSBERG on simulation-based learning: placing engineers inside realistic failure scenarios before deployment rather than after, so they encounter the unknown in a controlled environment first.
+
+Developed a prototype simulation lab and conducted research on how experiential, problem-driven training builds the pattern recognition that procedure-only training cannot. This became the conceptual foundation for every learning design decision that followed: the Beer Game, the Spark! Living Lab, the Aeres course integration, and the Conscious Competence framing used across teaching, coaching, and transformation work.
 
 ### KONGSBERG -- Kristiansand, Norway
 **Field Service Engineer**
 2012
 
-Delivered full business-intelligence implementations for BP and Statoil across multiple sites. Combined hands-on technical setup with user training and process standardization.
+Applied for and secured a full field service engineer position while still technically enrolled as an intern. Operated as an all-in-one deployment team: consulting, architecture, hardware installation, software rollout, data configuration, documentation, and strict procedure compliance in highly regulated oil and gas environments — often on remote sites with no internet access and no ability to call in support.
 
-- **BP Jordan** -- Complete BI deployment: hardware installation, server and MOXA configuration, software rollout, data configuration, dashboard creation, and on-site staff training
-- **BP Oman** -- End-to-end implementation of monitoring and reporting systems; installed cabling and hardware, configured databases and dashboards
-- **Statoil** -- System deployment and troubleshooting for production analytics; user training and documentation
+Deployed across four countries (Jordan, Oman, Houston TX, Azerbaijan). Was the only person on the team who could execute every part of the deployment end to end: software, hardware, data negotiation, and procedure adherence under pressure.
+
+- **BP Jordan** -- Full BI deployment at office and rig. When the database failed to deploy despite correct procedure (created and responded but crashed on data injection), isolated the cause by deploying a dead-switch in the infrastructure room — proving a client-side networking fault the local administrator had refused to acknowledge. Resolved on day three, on schedule.
+- **BP Oman** -- End-to-end monitoring and reporting system implementation; hardware installation, database and dashboard configuration.
+- **Statoil** -- System deployment and troubleshooting for production analytics; user training and documentation.
+- **Houston (BP)** -- Recognized the assignment was underutilizing available skills; trained a local engineer to take over remaining responsibilities and voluntarily re-deployed to an urgent Azerbaijan assignment.
 
 ### KONGSBERG -- Kristiansand, Norway
 **Data Quality Consultant**
 2012
 
-- **BP Azerbaijan** -- Oversaw data-transfer integrity between partner systems; defined standards, monitored compliance, trained client staff
+- **BP Azerbaijan** -- GeoServices (a subcontractor) was withholding data from KONGSBERG despite BP's contractual right to that data. After direct conversations with GeoServices engineers and an in-person visit to their office produced no result, took the BP contract to the GeoServices division manager, cited the specific clauses, and held the position. The data was shared within one day. Maintained ongoing data-transfer integrity between partner systems for the duration of the deployment.
 
 ### Meerschap B.V -- Amsterdam, Netherlands
 **System Manager & Researcher**
 2010 – 2011
 
-Implemented and customized monitoring systems (Nagios) to improve service-desk visibility and uptime across client networks. Supported hospitals, pharmacies, and mortgage firms with hardware installation, system maintenance, and workflow automation.
+Joined as intern to implement Nagios monitoring across all client environments, giving the service desk real-time visibility into machine health and uptime. Completed the full implementation within two months. Independently identified a new revenue opportunity with the sales department: installing professional identification card readers for a new healthcare access system being rolled out across the Netherlands. During each site visit at hospitals, pharmacies, and clinics, proactively assessed and optimized on-site computers — running defragmentation and registry cleaning — turning a 10-minute job into a thorough 90-minute service visit that clients valued and management could bill for. This role was also where Linux became a serious tool, introduced by founder Ed van der Salm — the foundation for all subsequent infrastructure and DevOps work.
 
 ### WDS Global -- Poole, England
 **Technical Support Engineer (3rd Line) & Trainer**
 2008 – 2010
 
-Took over the Dutch support department and cleared a backlog of over 10,000 customer emails by redesigning templates and workflows. Proposed and led the creation of tutorial videos for YouTube, later adopted globally by HTC as an innovation in customer education. Trained retail staff at Tesco Scotland on smartphone use and sales.
+Multi-brand outsourced technical support hub for the European market — handled Dutch-language support across all major telecom operators and device manufacturers including KPN, Orange, T-Mobile, HTC, LG, and Nokia. Quickly took over management of the entire Dutch support team. Cleared a backlog of over 10,000 customer emails by redesigning templates and workflows. Proposed embedding tutorial videos in devices and publishing them on YouTube to reduce inbound support volume and improve customer understanding — the proposal reached HTC's head office in Japan and was well received. HTC later adopted the concept independently. Trained retail staff at Tesco Scotland on smartphone features and sales techniques.
 
 ## Projects
 
