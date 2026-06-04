@@ -218,6 +218,74 @@ In the same COP, he mentions wanting to work at **Nucletron** in Washington DC �
 
 This never happened, but it's telling: even at 21, he was aiming for international, cutting-edge tech in a mission-driven sector. Not just "get a job." Find the interesting problem in a field that matters.
 
+### The Raw Honesty (COP Jaar 2, February 2011)
+
+The COP document's chosen title: **"knowledge is power, hide it well"** — his own ironic motto at 21, displayed above a dagger-and-globe emblem.
+
+Section "Wat ga ik nog doen?" opens with plans to catch up on exams and pursue Washington DC — and then contains this:
+
+> "Wel merk ik dat ik mijn huidige werksfeer moet opkrikken als ik de beste wil zijn. Ik ben een beetje laks geworden door alle vrije uren en genots middelen. Daarom neem ik ook het voornemen om een maand: 1. Geen genots middelen meer te nemen. 2. Een nieuw tijdschema aanhouden van 10 uur naar bed en 7 uur opstaan."
+
+Translation: *"I notice I need to sharpen my work ethic if I want to be the best. I've become a bit lazy through free time and recreational substances. So I'm committing to, for one month: 1. No more recreational substances. 2. New schedule: bed at 10pm, up at 7am."*
+
+This is a 21-year-old writing with complete honesty in a portfolio document — not optimizing self-image, diagnosing a problem, naming it clearly, writing a correction plan. This pattern appears in multiple documents across years.
+
+**The SWOT strengths in his own words:**
+
+> "Ik vind mijzelf sterk in ondernemen. Ik pak altijd alles heel snel op met veel motivatie. 'Dat doe ik wel!' Ik hoor ook van meerderen mensen dat dit, met name mijn motivatie mijn sterkste punt is."
+
+Translation: *"I find myself strong in entrepreneurship. I always pick everything up very quickly with a lot of motivation. 'I'll do it!' Multiple people confirm that motivation is my strongest point."*
+
+**The SWOT weakness in his own words:**
+
+> "Al ben ik wel gemotiveerd, ben ik niet realistisch en wil ik teveel, te snel... Niet snel 'ja' zeggen. Omdat ik teveel aanpak, kom ik in de problemen met de secuurheid van mijn werk. Dit is negatief, omdat ik dan ga verzuipen."
+
+Translation: *"Although motivated, I'm not realistic and want too much, too fast... Difficulty saying no quickly. Because I take on too much, quality suffers. This is negative — I start drowning."*
+
+**Character note:** The "Dat doe ik wel!" energy is both his greatest asset and his most documented risk. He spots opportunity, commits immediately, then has to find a way to deliver. He knows this. He has known it since 21. The career pattern — multiple simultaneous fractional roles, high initiative, variety as a structural choice rather than a fix — is partly a system designed around this trait.
+
+---
+
+## The Learning Philosophy — Written Before He Had a Teaching Role
+
+### KBA Opdracht 3 — "Tips en Tops" feedback (March 2013)
+
+Before Windesheim, before the Beer Game, before the Spark! lab — Christiaan wrote this critique of his own education. He was still a student.
+
+On practical learning vs. theory:
+
+> "Bij het IP E-Discovery in frankrijk, heb ik meer in 2 weken geleerd, door de samenwerking met tools om informatie en complexe zaken op te lossen, dan in 1,5 jaar tijd op de HVA."
+
+Translation: *"At the IP E-Discovery in France, I learned more in 2 weeks — using tools to solve real information and complex cases — than in 1.5 years at HVA."*
+
+On summaries as homework:
+
+> "Het maken van een samenvatting, is iets wat een kind van 8 tegenwoordig ook kan; je hoeft niks te leren je kiest gewoon mooie zinnen uit."
+
+Translation: *"Making a summary is something an 8-year-old can do today; you don't need to learn anything — you just pick nice sentences."*
+
+His alternative:
+
+> "Meer praktijk voorbeelden gebruiken: leid de studenten zelf hun eigen casus te bedenken. En laat ze dan zien waarom dit nuttig is, in plaats van het voor te kauwen."
+
+Translation: *"Use more practical examples: guide students to create their own cases. Show them why it matters — instead of pre-chewing it."*
+
+On the institution itself:
+
+> "De hogeschool moet in mijn mening ook veder afstappen van het verkondigen van de waarde, wat uiteindelijk toch alleen maar out-of date is zodra het verteld word. Daarentegen zou de organisatie zich moeten richten op het sturen van zelf-ontdekken met het gebruik van het internet."
+
+Translation: *"The university should move away from broadcasting knowledge — already out of date the moment it's spoken. Instead it should steer self-discovery using the internet."*
+
+He was also **penalized** in this exact assignment for going beyond the book and using primary sources:
+
+> "Ik vind het teleurstellend dat ik bestraft ben door veder te kijken dan het boek en de lessen zelf."
+
+Translation: *"I find it disappointing that I was punished for looking further than the book and the lessons themselves."*
+
+**What this means:** The learning design philosophy he built across Windesheim, Aeres, and every educational role was not discovered through professional experience. He arrived at it as a student, through frustration with the system he was inside. The France/E-Discovery experience was empirical evidence. Kongsberg was the second data point. By the time he started teaching, the thesis was already written — literally and figuratively.
+
+**Use this for:** Any role in education, learning design, or organizational learning. The philosophy is not borrowed from pedagogy textbooks. It comes from being on the wrong side of bad pedagogy, and knowing exactly what was missing.
+
 ---
 
 ## Key Proof Points for Applications
@@ -236,3 +304,6 @@ This never happened, but it's telling: even at 21, he was aiming for internation
 | Houston → Azerbaijan switch | Recognizing underutilization, self-directed initiative, training others to create mobility |
 | Thesis not delivered | Honest character context — high performer with self-doubt on output quality |
 | Declined permanent contract | Still in school, confused, chose studies — not a failure of ambition but a moment of uncertainty |
+| "Dat doe ik wel!" starter energy | ENFP commitment pattern — high motivation, takes on too much, has to deliver anyway. Self-diagnosed since age 21 |
+| KBA Tips en Tops (2013) | Learning philosophy written as a student, before any teaching role. France/EDRM as proof point. Punished for going beyond the book |
+| COP raw honesty (2011) | Self-corrected recreational substance use in a portfolio document. Pattern of naming problems, not hiding them |
