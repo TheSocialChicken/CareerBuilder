@@ -1774,3 +1774,17 @@ tracked_companies:
     scan_query: '"Valkre" careers "AI" OR "Supply Chain" OR "Value Chain" OR "Program Manager" OR "Innovation"'
     notes: "Remote EU. Value chain analytics. Relevant to VCH work."
     enabled: true
+
+  - name: Adapta
+    careers_url: https://adapta.homerun.co/
+    scan_method: websearch
+    scan_query: '"Adapta" site:homerun.co "AI" OR "Innovation" OR "Program Manager" OR "Consultant"'
+    notes: "NL. Added 2026-06-05."
+    enabled: true
+
+  - name: Natuurmonumenten
+    careers_url: https://www.natuurmonumenten.nl/vacatures
+    scan_method: websearch
+    scan_query: 'site:natuurmonumenten.nl vacatures "AI" OR "Digitaal" OR "Innovatie" OR "Programma"'
+    notes: "NL nature conservation org. Added 2026-06-05."
+    enabled: true
