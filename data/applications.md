@@ -2,6 +2,11 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 113 | 2026-06-06 | The Experience Office | Project Manager L&D & Serious Games | 4.2/5 | Evaluated | ✅ | — | 4.2/5 — Serious game design directe match; Beer Game live; lab founder patroon; Utrecht bereikbaar; €3.000/32u laag maar fractional OK |
+| 114 | 2026-06-06 | Public Cinema | Social Designer | 3.7/5 | Evaluated | ✅ | — | 3.7/5 — Community building + participatief ontwerp sterk; WO + 5jr vereist = formele gap; Amsterdam bereikbaar |
+| 115 | 2026-06-06 | Berenschot | Senior Consultant Financiering en Innovatie | 3.5/5 | Evaluated | ✅ | — | 3.5/5 — Grant writing VCH/Viridis bewezen; innovatiestrategie sterk; WO technisch gap; comp top band €8.4k aantrekkelijk |
+| 116 | 2026-06-06 | Berenschot | Medior Transformatie Partner | 3.8/5 | Evaluated | ✅ | — | 3.8/5 — Transformatie bewezen Aeres+COTIT+Windesheim; PMO Prince2+Scrum; Master diploma gap; Utrecht bereikbaar |
+| 117 | 2026-06-06 | Berenschot | Senior Consultant Digitale Transformatie Openbaar Bestuur | 3.6/5 | Evaluated | ✅ | — | 3.6/5 — W3C digitale identiteit; beleid naar tooling patroon; WO + 4jr consultancy dubbele gap; comp top €8.4k |
 | 112 | 2026-06-05 | Royal HaskoningDHV | Senior Consultant Supply Chain Sustainability | 3.6/5 | Evaluated | ✅ | — | 3.6/5 — CSRD/EUDR/CSDDD sterk; geen klassieke consultancy achtergrond; 18.3% pensioen; CV + brief + rapport klaar |
 | 110 | 2026-06-05 | Natuurmonumenten | Business Controller | 3.5/5 | Applied | ✅ | — | Inside track; niet op website; schaal 8 (€4.125-€6.013); CV + motivatiebrief klaar |
 | 111 | 2026-06-05 | Adapta | Technical Coordinator Backend DevOps Architecture | 3.7/5 | Applied | ✅ | [111](reports/090-adapta-technical-coordinator-backend-devops-2026-06-05.md) | Applied 2026-06-05; €5.500-€7.000/mo; GCP + Django gap eerlijk benoemd |

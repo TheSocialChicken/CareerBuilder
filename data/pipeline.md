@@ -7,11 +7,11 @@
 
 ## Better-Fit NL Roles — 2026-06-05 Autonomous Scan
 
-- [ ] #113 | https://theexperienceoffice.nl/nl/project-manager-lend-seriousgames | The Experience Office | Project Manager L&D & Serious Games — Utrecht, 32h, €3.000/mo. Serious games + L&D + project management + facilitation. Directe archetype-1 match.
-- [ ] #114 | https://public-cinema.homerun.co/social-designer/nl | Public Cinema | Social Designer — Amsterdam, 32-40h, €3.700-€5.300/mo. Social design, facilitation, design thinking, maatschappelijke transities. WO + 5jr vereist.
-- [ ] #115 | https://berenschot.recruitee.com/o/senior-consultant-financiering-en-innovatie | Berenschot | Senior Consultant Financiering en Innovatie — Utrecht, 0.8-1.0 FTE, €5.086-€8.376/mo. Subsidieaanvragen + innovatiestrategie + stakeholdermanagement. WO technisch vereist.
-- [ ] #116 | https://berenschot.recruitee.com/o/medior-transformatie-partner | Berenschot | Medior Transformatie Partner — Utrecht, 0.8-1.0 FTE, €3.776-€6.390/mo. PMO + transformatie + Miro/Power BI. Master's vereist.
-- [ ] #117 | https://berenschot.recruitee.com/o/senior-consultant-digitale-transformatie-in-het-openbaar-bestuur | Berenschot | Senior Consultant Digitale Transformatie Openbaar Bestuur — Utrecht, 0.8-1.0 FTE, €5.086-€8.376/mo. WO + 4jr consultancy vereist.
+- [x] #113 | https://theexperienceoffice.nl/nl/project-manager-lend-seriousgames | The Experience Office | Project Manager L&D & Serious Games — Utrecht, 32h, €3.000/mo. Dossier klaar: CV + brief + rapport + PDFs 2026-06-06.
+- [x] #114 | https://public-cinema.homerun.co/social-designer/nl | Public Cinema | Social Designer — Amsterdam, 32-40h, €3.700-€5.300/mo. Dossier klaar: CV + brief + rapport + PDFs 2026-06-06.
+- [x] #115 | https://berenschot.recruitee.com/o/senior-consultant-financiering-en-innovatie | Berenschot | Senior Consultant Financiering en Innovatie — Utrecht, 0.8-1.0 FTE, €5.086-€8.376/mo. Dossier klaar: CV + brief + rapport + PDFs 2026-06-06.
+- [x] #116 | https://berenschot.recruitee.com/o/medior-transformatie-partner | Berenschot | Medior Transformatie Partner — Utrecht, 0.8-1.0 FTE, €3.776-€6.390/mo. Dossier klaar: CV + brief + rapport + PDFs 2026-06-06.
+- [x] #117 | https://berenschot.recruitee.com/o/senior-consultant-digitale-transformatie-in-het-openbaar-bestuur | Berenschot | Senior Consultant Digitale Transformatie Openbaar Bestuur — Utrecht, 0.8-1.0 FTE, €5.086-€8.376/mo. Dossier klaar: CV + brief + rapport + PDFs 2026-06-06.
 
 ## Pending
 

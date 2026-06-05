@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kandidaatsevaluatie -- The Experience Office -- Project Manager L&D &amp; Serious Games</title>
+<style>
+  @font-face { font-family: 'Space Grotesk'; src: url('../../fonts/space-grotesk-latin.woff2') format('woff2'); font-weight: 300 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'DM Sans'; src: url('../../fonts/dm-sans-latin.woff2') format('woff2'); font-weight: 100 1000; font-style: normal; font-display: swap; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  :root {
+    --col:      #7a3e0e;
+    --col-mid:  #b55a1a;
+    --col-light:#cf8b50;
+    --col-pale: #eed8c0;
+    --col-bg:   #fdf6f0;
+    --amber:    #c07820;
+    --red:      #8b2020;
+    --ink:      #1a1e2e;
+  }
+
+  body { font-family: 'DM Sans', sans-serif; font-size: 10.5px; line-height: 1.6; color: var(--ink); background: #fff; }
+  .page { width: 210mm; margin: 0 auto; padding: 14mm 18mm 14mm 18mm; }
+
+  .doc-classification { display: flex; justify-content: space-between; align-items: center; font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--col-mid); border-top: 2px solid var(--col); border-bottom: 1px solid var(--col-light); padding: 4px 0; margin-bottom: 10px; }
+  .doc-classification .stamp { background: var(--col); color: #fff; padding: 2px 8px; font-size: 8px; letter-spacing: 0.2em; }
+
+  .report-header-grid { display: grid; grid-template-columns: 1fr auto; gap: 0 16px; align-items: start; margin-bottom: 10px; }
+  .report-type { font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--col-mid); margin-bottom: 3px; }
+  .report-title { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: var(--col); letter-spacing: -0.01em; line-height: 1.15; }
+  .report-org { font-size: 11px; color: var(--col-mid); margin-top: 3px; font-weight: 500; }
+  .score-badge { border: 3px solid var(--col); padding: 8px 14px; text-align: center; min-width: 72px; }
+  .score-badge .score-num { font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; color: var(--col); line-height: 1; }
+  .score-badge .score-denom { font-size: 12px; color: var(--col-mid); font-weight: 400; }
+  .score-badge .score-label { font-size: 7.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--col-mid); margin-top: 2px; }
+
+  .rule-heavy { border: none; border-top: 3px solid var(--col); margin: 8px 0; }
+
+  .meta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--col); margin-bottom: 12px; font-size: 9.5px; }
+  .meta-cell { padding: 5px 8px; border-right: 1px solid var(--col-light); border-bottom: 1px solid var(--col-light); }
+  .meta-cell:nth-child(4n) { border-right: none; }
+  .meta-cell:nth-last-child(-n+4) { border-bottom: none; }
+  .meta-cell .mk { font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--col-mid); display: block; margin-bottom: 1px; }
+  .meta-cell .mv { font-weight: 600; color: var(--ink); }
+
+  .section { margin-bottom: 14px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: #fff; background: var(--col); padding: 3px 8px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+  .section-title .sec-num { opacity: 0.6; font-weight: 400; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin-bottom: 6px; border: 1px solid var(--col-light); }
+  th { background: var(--col-bg); font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--col); padding: 4px 8px; text-align: left; border-bottom: 1px solid var(--col-light); }
+  td { padding: 4px 8px; border-bottom: 1px solid var(--col-pale); vertical-align: top; line-height: 1.5; }
+  tr:last-child td { border-bottom: none; }
+  td.field { font-weight: 600; color: var(--col); width: 26%; }
+
+  .match-strong { color: #1a6e1a; font-weight: 700; }
+  .match-solid  { color: #3a6e0a; font-weight: 600; }
+  .match-gap    { color: var(--amber); font-weight: 600; }
+
+  .score-rows { display: flex; flex-direction: column; gap: 5px; }
+  .srow { display: flex; align-items: center; gap: 8px; font-size: 10px; }
+  .srow .dim { width: 170px; color: var(--ink); }
+  .srow .bar-bg { flex: 1; height: 7px; background: var(--col-pale); border: 1px solid var(--col-light); }
+  .srow .bar-fill { height: 100%; background: var(--col); }
+  .srow .bar-fill.warn { background: var(--amber); }
+  .srow .val { width: 28px; text-align: right; font-weight: 700; color: var(--col); font-family: 'Space Grotesk', monospace; }
+  .srow .val.warn { color: var(--amber); }
+
+  .intel-box { border: 1px solid var(--col); border-left: 4px solid var(--col); background: var(--col-bg); padding: 8px 10px; margin: 6px 0; font-size: 10.5px; line-height: 1.65; }
+  .intel-box .intel-label { font-family: 'Space Grotesk', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--col-mid); margin-bottom: 4px; }
+  .warn-box { border: 1px solid var(--amber); border-left: 4px solid var(--amber); background: #fdf6e8; padding: 8px 10px; margin: 6px 0; font-size: 10.5px; line-height: 1.65; }
+  .warn-box .warn-label { font-family: 'Space Grotesk', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--amber); margin-bottom: 4px; }
+
+  .phrase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 4px; }
+  .phrase-item { border: 1px solid var(--col-pale); border-left: 3px solid var(--col-mid); background: var(--col-bg); padding: 5px 8px; font-size: 10px; line-height: 1.55; color: var(--ink); }
+  .phrase-item .phrase-context { font-family: 'Space Grotesk', sans-serif; font-size: 7px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--col-mid); display: block; margin-bottom: 2px; }
+
+  .star-table { width: 100%; border-collapse: collapse; font-size: 9.5px; border: 1px solid var(--col-light); }
+  .star-table th { font-size: 7.5px; padding: 3px 6px; }
+  .star-table td { padding: 5px 6px; font-size: 9.5px; border-bottom: 1px solid var(--col-pale); vertical-align: top; line-height: 1.5; }
+  .star-table tr:last-child td { border-bottom: none; }
+  .star-table .story-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--col); font-size: 9.5px; white-space: nowrap; }
+  .star-table .result-chip { display: inline-block; background: var(--col); color: #fff; font-size: 7.5px; font-weight: 700; padding: 1px 5px; letter-spacing: 0.05em; margin-top: 3px; }
+
+  ul.field-list { list-style: none; padding: 0; margin: 4px 0; }
+  ul.field-list li { font-size: 10.5px; line-height: 1.65; padding-left: 12px; position: relative; margin-bottom: 2px; color: var(--ink); }
+  ul.field-list li::before { content: '>'; position: absolute; left: 0; color: var(--col-mid); font-weight: 700; font-size: 9px; top: 1px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .col-label { font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 2px 6px; margin-bottom: 5px; display: inline-block; }
+  .col-label.go   { background: var(--col); color: #fff; }
+  .col-label.warn { background: var(--amber); color: #fff; }
+
+  .verdict-box { border: 2px solid var(--col); padding: 10px 14px; margin-top: 8px; display: flex; gap: 14px; align-items: flex-start; }
+  .verdict-icon { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: var(--col); line-height: 1; min-width: 50px; text-align: center; padding-top: 2px; }
+  .verdict-text { font-size: 10.5px; line-height: 1.65; color: var(--ink); }
+  .verdict-text strong { font-family: 'Space Grotesk', sans-serif; font-size: 12px; display: block; color: var(--col); margin-bottom: 3px; letter-spacing: 0.02em; }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .tag { font-size: 8.5px; padding: 2px 6px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .tag.go   { background: var(--col); color: #fff; }
+  .tag.warn { background: var(--amber); color: #fff; }
+  .tag.risk { background: var(--red); color: #fff; }
+
+  .doc-footer { display: flex; justify-content: space-between; font-size: 7.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--col-mid); border-top: 2px solid var(--col); border-bottom: 1px solid var(--col-light); padding: 4px 0; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-classification">
+    <span>Kandidaatsevaluatie | career-ops systeem</span>
+    <span class="stamp">Vertrouwelijk</span>
+    <span>Ref: TEO-2026-113 | 2026-06-06</span>
+  </div>
+
+  <div class="report-header-grid">
+    <div>
+      <div class="report-type">Kandidaatsevaluatie | Sollicitatiedossier</div>
+      <div class="report-title">Project Manager L&amp;D &amp; Serious Games</div>
+      <div class="report-org">The Experience Office &mdash; Utrecht | 32 uur/week</div>
+    </div>
+    <div class="score-badge">
+      <div class="score-num">4.2<span class="score-denom">/5</span></div>
+      <div class="score-label">Totaalscore</div>
+    </div>
+  </div>
+  <hr class="rule-heavy">
+
+  <div class="meta-grid">
+    <div class="meta-cell"><span class="mk">Locatie</span><span class="mv">Utrecht (20 min van Baarn)</span></div>
+    <div class="meta-cell"><span class="mk">Salaris</span><span class="mv">&euro;3.000/mnd (32u)</span></div>
+    <div class="meta-cell"><span class="mk">FTE</span><span class="mv">0.8 FTE &mdash; fractional-vriendelijk</span></div>
+    <div class="meta-cell"><span class="mk">Contract</span><span class="mv">Vaste aanstelling</span></div>
+    <div class="meta-cell"><span class="mk">Jaarequivalent</span><span class="mv">Ca. &euro;36.000 (0.8 FTE)</span></div>
+    <div class="meta-cell"><span class="mk">Deadline</span><span class="mv">Open</span></div>
+    <div class="meta-cell"><span class="mk">Kandidaat</span><span class="mv">Christiaan Verhoef</span></div>
+    <div class="meta-cell"><span class="mk">Aanbeveling</span><span class="mv">SOLLICITEER</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">A. Scoreverdeling per dimensie <span class="sec-num">01</span></div>
+    <div class="score-rows">
+      <div class="srow">
+        <span class="dim">Serious game design &amp; simulatieontwerp</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:96%"></div></div>
+        <span class="val">4.8</span>
+      </div>
+      <div class="srow">
+        <span class="dim">L&amp;D projectmanagement</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div>
+        <span class="val">4.5</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Facilitatie &amp; didactisch ontwerp</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div>
+        <span class="val">4.5</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Stakeholdermanagement</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        <span class="val">4.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Comp fit (32u als fractional)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:72%"></div></div>
+        <span class="val">3.6</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Specifieke game-platforms/engines</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:24%"></div></div>
+        <span class="val warn">-0.2</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">B. CV-match per JD-eis <span class="sec-num">02</span></div>
+    <table>
+      <tr><th style="width:28%">JD-eis</th><th style="width:47%">Bewijs in portfolio</th><th style="width:25%">Oordeel</th></tr>
+      <tr>
+        <td class="field">Serious game design &amp; ontwikkeling</td>
+        <td>Beer Game redesign (blockchainvariant + CO2-meting, actief in HBO/wo); KnopenKoning besluitvormingssimulatie; ROC gamified classroom met rollenspel-scenario&rsquo;s. Thesis KONGSBERG (8,7): academisch onderzoek naar simulation-based learning als trainingsmethode.</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">L&amp;D projectmanagement</td>
+        <td>Windesheim: Beer Game, Spark! Lab, Value Chain Hackers (6 jaar). Aeres: lab manager, 8 vakken samengevoegd. The Fork: Head Trainer &amp; Innovator. ROC: freelance educator. Alle trajecten van concept tot live.</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Facilitatie &amp; workshop design</td>
+        <td>Workshops voor blockchain, supply chain, AI en innovatie bij HBO, corporate en overheid. Ervaringsleren als kernaanpak in alle programma&rsquo;s.</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Didactisch ontwerp</td>
+        <td>KONGSBERG-thesis: simulatie-gebaseerd leren vs. klassiek instructiemodel (8,7). SafeScrum onderwijsontwerp bij Aeres. Gamified classroom ROC. Train-the-Trainer (Blockchain).</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Klantcontact &amp; stakeholders</td>
+        <td>Cross-Europese consortia (VCH), corporate trainingsklanten (Social Chicken), overheidsinstellingen. 15+ jaar gevarieerd klantcontact.</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Utrecht / 32u / aanstelling</td>
+        <td>Baarn naar Utrecht &lt;25 min. 32u past perfect in fractional model. Beschikbaar per direct.</td>
+        <td class="match-solid">GOED</td>
+      </tr>
+      <tr>
+        <td class="field">Specifieke game-platforms</td>
+        <td>Eigen bouw (web-based tools, n8n, GitHub); geen ervaring met Raptivity, Articulate, of domein-specifieke game-engines. Zelfredzaam in nieuwe tooling.</td>
+        <td class="match-gap">MATIG &mdash; leer op het werk</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">C. Kernonderscheidend argument <span class="sec-num">03</span></div>
+    <div class="intel-box">
+      <div class="intel-label">Positionering: de game designer die weet waarom het werkt</div>
+      De meeste serious game ontwerpers komen vanuit spelontwerp of communicatie. Christiaan Verhoef heeft een academisch onderbouwde methodologie (KONGSBERG-thesis, 8,7), uitgetest in het veld bij KONGSBERG zelf, en daarna vijftien jaar verfijnd in onderwijs en innovatielabs. Hij bouwt games die werken omdat hij begrijpt wat er cognitief gebeurt als iemand handelt in plaats van luistert. De Beer Game is niet een remake die er wat moderner uitziet: het is een herontwikkeld leermiddel met CO2-meting, blockchainvariant en meerdere cohorten actief gebruik.
+    </div>
+    <ul class="field-list">
+      <li><strong>Beer Game (Windesheim, 2020-heden):</strong> Klassieke supply chain simulatie herbouwd met moderne didactische structuur, blockchainvariant en CO2-impactmeting. Actief ingezet in HBO en wo, meerdere cohorten. Demonstrator live op demonstrator.valuechainhackers.xyz.</li>
+      <li><strong>KnopenKoning:</strong> Eigen besluitvormingssimulatie ontworpen en geprototyped voor complexe afwegingen in ketens. Van concept tot speelbaar prototype.</li>
+      <li><strong>Aeres Hogeschool (2021-2022):</strong> Acht losse vakken samengebracht in &eacute;&eacute;n sprint-cyclus via SafeScrum. Eindresultaat: twee operationele startups. Projectgebaseerd leren als ontwerpdiscipline, niet als pedagogische filosofie.</li>
+      <li><strong>ROC Midden Nederland (2018-2020):</strong> Gamified classroom gebouwd waarbij studenten wisselden tussen rollen als developer, CEO en klant. Agile format ontworpen rondom gezamenlijke projectuitkomsten.</li>
+      <li><strong>KONGSBERG-thesis (2013, 8,7):</strong> Simulatie-gebaseerd leren onderzocht als alternatief voor klassieke instructiemodellen in technische omgevingen. Conclusie: engineers die mochten experimenteren in simulatiescenario&rsquo;s losten echte problemen beter op. Dit is de methodologische basis van alles wat daarna volgde.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">G. Patroonanalyse: bewijs van fit over de loopbaan <span class="sec-num">04</span></div>
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 1: bouwt leertools die buiten de klas blijven werken</div>
+      Drie gedocumenteerde cases waarbij het leerobject na de eerste inzet zelfstandig bleef leven:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>Beer Game Demonstrator:</strong> Live als open tool op demonstrator.valuechainhackers.xyz. Actief gebruikt door meerdere HBO- en wo-instellingen. Niet eenmalig ingezet en vergeten.</li>
+        <li><strong>Aeres Hogeschool:</strong> Sprint-cyclus die hij ontwierp is na zijn vertrek blijven draaien; de twee startups (Veles Farming, Magic Frames) zijn zelfstandig doorgegaan.</li>
+        <li><strong>Inholland Blockchain Minor:</strong> Cursusontwikkeling voor Build Your Own Crypto en dashboarding-module; beide zijn nog actief in het programma na zijn vertrek.</li>
+      </ul>
+    </div>
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 2: combineert inhoudelijke diepte met spelontwerp</div>
+      Zijn games zijn niet oppervlakkig: ze zitten op de inhoud. Beer Game heeft een CO2-variant omdat hij de EUDR-impact in supply chains begrijpt. De KONGSBERG-thesis onderzocht failure modes van technische experts in het veld, niet in theorie. KnopenKoning modeleert echte besluitvormingsdynamieken in supply chains, niet abstracte puzzels.
+    </div>
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 3: lab founder en projectstarter</div>
+      Spark! Living Lab opgericht bij Windesheim. Aeres Lab opgezet van nul. ROC classroom zelf ontworpen. Value Chain Hackers innovatielab gestart. Iedere keer hetzelfde patroon: er was geen bestaande structuur, hij bouwde die. Dat is precies de energie die bij een serieuze game studio past waar nieuwe trajecten worden gedefinieerd.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">D. Risico's &amp; mitigatie <span class="sec-num">05</span></div>
+    <div class="warn-box">
+      <div class="warn-label">Comp: &euro;3.000/mo is relatief laag</div>
+      &euro;3.000/mnd voor 32u is aan de lage kant in vergelijking met andere rollen in de pipeline. Mitigatie: als onderdeel van een fractional model (0.8 FTE totaal) is dit &eacute;&eacute;n van twee of drie parallelle engagements. De waarde zit in de match en de werkkwaliteit, niet alleen in het salaris van deze ene rol. Bespreek eventueel een groei-pad of variabele component bij goede projecten.
+    </div>
+    <div class="warn-box">
+      <div class="warn-label">Specifieke game-platforms onbekend</div>
+      De Experience Office gebruikt mogelijk eigen platformen of licentie-tools (Raptivity, Articulate, Unity-based, etc.) waar Christiaan geen directe ervaring mee heeft gedocumenteerd. Mitigatie: hij bouwt web-based tools zelf (Beer Game is een web-applicatie), is snel in nieuwe software, en heeft de methodologische basis die elk platform vereist.
+    </div>
+    <div class="two-col" style="margin-top:8px">
+      <div>
+        <span class="col-label go">Sterktes</span>
+        <ul class="field-list">
+          <li>Academisch onderbouwde game design methodologie</li>
+          <li>Beer Game: live gedemonstreerd, herhaald gebruik</li>
+          <li>Lab founder &mdash; bouwt nieuwe structuren van nul</li>
+          <li>Utrecht bereikbaar, 32u past fractional model</li>
+          <li>15+ jaar L&amp;D en facilitatie</li>
+          <li>Beschikbaar per direct</li>
+        </ul>
+      </div>
+      <div>
+        <span class="col-label warn">Risico's</span>
+        <ul class="field-list">
+          <li>Comp relatief laag (&euro;3k/32u)</li>
+          <li>Specifieke game-platforms: onbekend</li>
+          <li>Geen commercieel game-studio track record</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">E. Compensatieanalyse <span class="sec-num">06</span></div>
+    <table>
+      <tr><th>Component</th><th>Waarde</th><th>Toelichting</th></tr>
+      <tr><td class="field">Basissalaris</td><td>&euro;3.000/mnd (32u)</td><td>Brutosalaris voor 0.8 FTE</td></tr>
+      <tr><td class="field">FTE-equivalent (40u)</td><td>Ca. &euro;3.750/mnd</td><td>Omgerekend naar voltijds basis</td></tr>
+      <tr><td class="field">Jaarequivalent</td><td>Ca. &euro;36.000 + 8% vkgeld</td><td>&euro;38.880 bruto per jaar bij 32u</td></tr>
+      <tr><td class="field">Oordeel</td><td><strong>Acceptabel als fractional-component. Niet voldoende als enige inkomensbron.</strong></td><td>Combineer met 1-2 andere engagements voor gewenst niveau.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">H. Sleutelfrasen voor brief en gesprek <span class="sec-num">07</span></div>
+    <div class="phrase-grid">
+      <div class="phrase-item">
+        <span class="phrase-context">Openingspositie</span>
+        &ldquo;Ik ontwerp serious games omdat ik het verschil ken tussen theorie die verdampt en een ervaring die twee weken later nog doorwerkt. De Beer Game die ik herbouwde is daar een voorbeeld van: actief in gebruik bij meerdere HBO- en wo-programma&rsquo;s.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over de methodologie</span>
+        &ldquo;Mijn scriptie bij KONGSBERG onderzocht waarom ingenieurs die mochten experimenteren in simulaties het later beter deden in het veld. Die conclusie stuur ik sindsdien. Games werken niet omdat ze leuk zijn, maar omdat ze handelen afdwingen.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over projectmanagement</span>
+        &ldquo;Projectmanagement is voor mij de structuur die ervoor zorgt dat het spel klaar is als de klant het nodig heeft, en dat de klant snapt wat hij ermee moet. Ik houd ervan om samen te bouwen: met de opdrachtgever over de doelstelling, met het team over de mechanica.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over aansluiting bij TEO</span>
+        &ldquo;Wat mij trekt is de combinatie van serieuse inhoud en speelse vorm, en het idee dat je mensen pas echt iets bijbrengt als je ze laat handelen. Ik ben benieuwd waar jullie op dit moment mee bezig zijn.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over Lab Founder energie</span>
+        &ldquo;Ik heb vijf labs en leertrajecten van nul opgebouwd. Dat is niet toevallig: ik werk het liefst aan iets wat er nog niet is, maar wat er wel moet zijn.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Vraag voor het gesprek</span>
+        &ldquo;Welke game of traject heeft jullie het meest geleerd over hoe je een bepaald type deelnemer bereikt? En wat was het moment waarop je wist dat het werkte?&rdquo;
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">F. Operationeel advies (aanbeveling) <span class="sec-num">08</span></div>
+    <div class="verdict-box">
+      <div class="verdict-icon">GO</div>
+      <div class="verdict-text">
+        <strong>SOLLICITEER. Score 4.2/5.</strong>
+        The Experience Office zoekt iemand die serious games ontwerpt, projecten managet en weet hoe je leren in beweging zet. Christiaan heeft precies dit gedaan, academisch onderbouwd (KONGSBERG-thesis 8,7), en herhaald in de praktijk (Beer Game, Aeres, ROC, Spark! Lab). De comp is laag maar past in een fractional model als onderdeel van meerdere parallelle engagements. De geografische en fte-match zijn goed. Dit is een van de sterkste inhoudelijke matches in de pipeline voor zijn specifieke archetype: lab leader, facilitator, game designer.
+      </div>
+    </div>
+    <div class="tag-row">
+      <span class="tag go">Serious game design</span>
+      <span class="tag go">Beer Game live in gebruik</span>
+      <span class="tag go">Lab founder patroon</span>
+      <span class="tag go">Utrecht bereikbaar</span>
+      <span class="tag go">32u fractional-vriendelijk</span>
+      <span class="tag warn">Comp laag (&euro;3k/32u)</span>
+      <span class="tag warn">Game-platforms: onbekend</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">I. Interviewvoorbereiding &mdash; STAR+R stories <span class="sec-num">09</span></div>
+    <table class="star-table">
+      <tr>
+        <th style="width:18%">Story</th>
+        <th style="width:24%">Situatie &amp; Taak</th>
+        <th style="width:28%">Actie</th>
+        <th style="width:18%">Resultaat</th>
+        <th style="width:12%">Relevantie</th>
+      </tr>
+      <tr>
+        <td class="story-name">Beer Game<br>Redesign</td>
+        <td>Supply chain simulatie was verouderd, werkte met papier en scoreborden. Geen CO2-variant, geen moderne didactische structuur, geen digitale versie.</td>
+        <td>Beer Game volledig herbouwd: web-based, blockchainvariant toegevoegd, CO2-impact per ronde geintegreerd. Meerdere rondes getest met studenten en professionals.</td>
+        <td>Actief in gebruik bij meerdere HBO en wo-programma&rsquo;s. Demonstrator live.<br><span class="result-chip">Live, herhaald gebruik</span></td>
+        <td>Laat zien dat hij niet faciliteert maar bouwt. Game die verder leeft dan het traject.</td>
+      </tr>
+      <tr>
+        <td class="story-name">KONGSBERG<br>Thesis</td>
+        <td>Observeerde dat KONGSBERG-engineers getraind via PPT faalden bij non-procedurele problemen in het veld. Thesis-vraag: is simulatie-gebaseerd leren een beter alternatief?</td>
+        <td>Veldonderzoek: observaties, VP Sales en senior engineers ge&iuml;nterviewd, FSE Deployment Flow Diagram gebouwd, prototype simulatielab ontworpen. Graded 8,7.</td>
+        <td>Academisch bewijs dat scenario-simulaties leiden tot Conscious Competence. Methodologische basis voor alles daarna.<br><span class="result-chip">8,7 HvA</span></td>
+        <td>Toont dat zijn game design methodologisch gefundeerd is, niet intuitioneel.</td>
+      </tr>
+      <tr>
+        <td class="story-name">Aeres<br>Hogeschool</td>
+        <td>Acht losse vakken met aparte docenten, geen coherentie, studenten zagen het verband niet. Opdracht: breng het samen.</td>
+        <td>SafeScrum onderwijsontwerp ingezet: acht vakken samengebracht in &eacute;&eacute;n sprint-cyclus. Studenten werkten aan echte startups als projectuitkomst. Docenten als scrumteam gecoacht.</td>
+        <td>Twee operationele startups als eindresultaat. Sprint-cyclus bleef actief na zijn vertrek.<br><span class="result-chip">Twee startups live</span></td>
+        <td>Toont projectmanagement van complexe L&amp;D-trajecten met meerdere stakeholders en een onconventionele aanpak.</td>
+      </tr>
+      <tr>
+        <td class="story-name">ROC Gamified<br>Classroom</td>
+        <td>Informatica-onderwijs was frontaal en weinig motiverend. Studenten zagen geen verband met werkelijkheid.</td>
+        <td>Gamified classroom gebouwd: studenten opereerden als developers, CEO of klant in live sprint-scenario&rsquo;s. Vakdisciplines ge&iuml;ntegreerd rondom projectuitkomsten.</td>
+        <td>Verhoogde betrokkenheid en zelfstandigheid van studenten. Format overgenomen voor andere vakken.<br><span class="result-chip">Overgenomen door school</span></td>
+        <td>Concrete game design in een onderwijscontext met real-world roles en live scenario&rsquo;s.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="doc-footer">
+    <span>Christiaan Verhoef | Baarn</span>
+    <span>career-ops evaluatie &mdash; TEO-2026-113</span>
+    <span>2026-06-06</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kandidaatsevaluatie -- Berenschot -- Senior Consultant Digitale Transformatie Openbaar Bestuur</title>
+<style>
+  @font-face { font-family: 'Space Grotesk'; src: url('../../fonts/space-grotesk-latin.woff2') format('woff2'); font-weight: 300 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'DM Sans'; src: url('../../fonts/dm-sans-latin.woff2') format('woff2'); font-weight: 100 1000; font-style: normal; font-display: swap; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  :root {
+    --col:      #6b0e14;
+    --col-mid:  #921223;
+    --col-light:#c44055;
+    --col-pale: #e8b5bc;
+    --col-bg:   #fef0f2;
+    --amber:    #c07820;
+    --red:      #8b2020;
+    --ink:      #1a1e2e;
+  }
+  body { font-family: 'DM Sans', sans-serif; font-size: 10.5px; line-height: 1.6; color: var(--ink); background: #fff; }
+  .page { width: 210mm; margin: 0 auto; padding: 14mm 18mm 14mm 18mm; }
+  .doc-classification { display: flex; justify-content: space-between; align-items: center; font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--col-mid); border-top: 2px solid var(--col); border-bottom: 1px solid var(--col-light); padding: 4px 0; margin-bottom: 10px; }
+  .doc-classification .stamp { background: var(--col); color: #fff; padding: 2px 8px; font-size: 8px; letter-spacing: 0.2em; }
+  .report-header-grid { display: grid; grid-template-columns: 1fr auto; gap: 0 16px; align-items: start; margin-bottom: 10px; }
+  .report-type { font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--col-mid); margin-bottom: 3px; }
+  .report-title { font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: var(--col); letter-spacing: -0.01em; line-height: 1.15; }
+  .report-org { font-size: 11px; color: var(--col-mid); margin-top: 3px; font-weight: 500; }
+  .score-badge { border: 3px solid var(--col); padding: 8px 14px; text-align: center; min-width: 72px; }
+  .score-badge .score-num { font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; color: var(--col); line-height: 1; }
+  .score-badge .score-denom { font-size: 12px; color: var(--col-mid); font-weight: 400; }
+  .score-badge .score-label { font-size: 7.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--col-mid); margin-top: 2px; }
+  .rule-heavy { border: none; border-top: 3px solid var(--col); margin: 8px 0; }
+  .meta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--col); margin-bottom: 12px; font-size: 9.5px; }
+  .meta-cell { padding: 5px 8px; border-right: 1px solid var(--col-light); border-bottom: 1px solid var(--col-light); }
+  .meta-cell:nth-child(4n) { border-right: none; }
+  .meta-cell:nth-last-child(-n+4) { border-bottom: none; }
+  .meta-cell .mk { font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--col-mid); display: block; margin-bottom: 1px; }
+  .meta-cell .mv { font-weight: 600; color: var(--ink); }
+  .section { margin-bottom: 14px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: #fff; background: var(--col); padding: 3px 8px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+  .section-title .sec-num { opacity: 0.6; font-weight: 400; }
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin-bottom: 6px; border: 1px solid var(--col-light); }
+  th { background: var(--col-bg); font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--col); padding: 4px 8px; text-align: left; border-bottom: 1px solid var(--col-light); }
+  td { padding: 4px 8px; border-bottom: 1px solid var(--col-pale); vertical-align: top; line-height: 1.5; }
+  tr:last-child td { border-bottom: none; }
+  td.field { font-weight: 600; color: var(--col); width: 26%; }
+  .match-strong { color: #1a6e1a; font-weight: 700; }
+  .match-solid  { color: #3a6e0a; font-weight: 600; }
+  .match-gap    { color: var(--amber); font-weight: 600; }
+  .score-rows { display: flex; flex-direction: column; gap: 5px; }
+  .srow { display: flex; align-items: center; gap: 8px; font-size: 10px; }
+  .srow .dim { width: 170px; color: var(--ink); }
+  .srow .bar-bg { flex: 1; height: 7px; background: var(--col-pale); border: 1px solid var(--col-light); }
+  .srow .bar-fill { height: 100%; background: var(--col); }
+  .srow .bar-fill.warn { background: var(--amber); }
+  .srow .val { width: 28px; text-align: right; font-weight: 700; color: var(--col); font-family: 'Space Grotesk', monospace; }
+  .srow .val.warn { color: var(--amber); }
+  .intel-box { border: 1px solid var(--col); border-left: 4px solid var(--col); background: var(--col-bg); padding: 8px 10px; margin: 6px 0; font-size: 10.5px; line-height: 1.65; }
+  .intel-box .intel-label { font-family: 'Space Grotesk', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--col-mid); margin-bottom: 4px; }
+  .warn-box { border: 1px solid var(--amber); border-left: 4px solid var(--amber); background: #fdf6e8; padding: 8px 10px; margin: 6px 0; font-size: 10.5px; line-height: 1.65; }
+  .warn-box .warn-label { font-family: 'Space Grotesk', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--amber); margin-bottom: 4px; }
+  ul.field-list { list-style: none; padding: 0; margin: 4px 0; }
+  ul.field-list li { font-size: 10.5px; line-height: 1.65; padding-left: 12px; position: relative; margin-bottom: 2px; color: var(--ink); }
+  ul.field-list li::before { content: '>'; position: absolute; left: 0; color: var(--col-mid); font-weight: 700; font-size: 9px; top: 1px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .col-label { font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 2px 6px; margin-bottom: 5px; display: inline-block; }
+  .col-label.go   { background: var(--col); color: #fff; }
+  .col-label.warn { background: var(--amber); color: #fff; }
+  .verdict-box { border: 2px solid var(--col); padding: 10px 14px; margin-top: 8px; display: flex; gap: 14px; align-items: flex-start; }
+  .verdict-icon { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: var(--col); line-height: 1; min-width: 50px; text-align: center; padding-top: 2px; }
+  .verdict-text { font-size: 10.5px; line-height: 1.65; color: var(--ink); }
+  .verdict-text strong { font-family: 'Space Grotesk', sans-serif; font-size: 12px; display: block; color: var(--col); margin-bottom: 3px; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .tag { font-size: 8.5px; padding: 2px 6px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .tag.go   { background: var(--col); color: #fff; }
+  .tag.warn { background: var(--amber); color: #fff; }
+  .tag.risk { background: var(--red); color: #fff; }
+  .doc-footer { display: flex; justify-content: space-between; font-size: 7.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--col-mid); border-top: 2px solid var(--col); border-bottom: 1px solid var(--col-light); padding: 4px 0; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-classification">
+    <span>Kandidaatsevaluatie | career-ops systeem</span>
+    <span class="stamp">Vertrouwelijk</span>
+    <span>Ref: BER-DIG-2026-117 | 2026-06-06</span>
+  </div>
+
+  <div class="report-header-grid">
+    <div>
+      <div class="report-type">Kandidaatsevaluatie | Sollicitatiedossier</div>
+      <div class="report-title">Senior Consultant Digitale Transformatie Openbaar Bestuur</div>
+      <div class="report-org">Berenschot &mdash; Utrecht | 0.8&ndash;1.0 FTE</div>
+    </div>
+    <div class="score-badge">
+      <div class="score-num">3.6<span class="score-denom">/5</span></div>
+      <div class="score-label">Totaalscore</div>
+    </div>
+  </div>
+  <hr class="rule-heavy">
+
+  <div class="meta-grid">
+    <div class="meta-cell"><span class="mk">Locatie</span><span class="mv">Utrecht (20 min van Baarn)</span></div>
+    <div class="meta-cell"><span class="mk">Salaris</span><span class="mv">&euro;5.086&ndash;&euro;8.376/mnd</span></div>
+    <div class="meta-cell"><span class="mk">FTE</span><span class="mv">0.8&ndash;1.0 FTE</span></div>
+    <div class="meta-cell"><span class="mk">Contract</span><span class="mv">Vaste aanstelling</span></div>
+    <div class="meta-cell"><span class="mk">Jaarequivalent</span><span class="mv">Ca. &euro;61k&ndash;&euro;100k</span></div>
+    <div class="meta-cell"><span class="mk">Vereiste</span><span class="mv">WO + 4jr consultancy</span></div>
+    <div class="meta-cell"><span class="mk">Kandidaat</span><span class="mv">Christiaan Verhoef</span></div>
+    <div class="meta-cell"><span class="mk">Aanbeveling</span><span class="mv">SOLLICITEER (met gap-eerlijkheid)</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">A. Scoreverdeling per dimensie <span class="sec-num">01</span></div>
+    <div class="score-rows">
+      <div class="srow">
+        <span class="dim">Digitale transformatie praktijk</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div>
+        <span class="val">4.4</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Digitale identiteit &amp; W3C standaarden</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:86%"></div></div>
+        <span class="val">4.3</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Stakeholdermanagement overheid</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:76%"></div></div>
+        <span class="val">3.8</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Comp fit (&euro;5k&ndash;&euro;8k)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:78%"></div></div>
+        <span class="val">3.9</span>
+      </div>
+      <div class="srow">
+        <span class="dim">WO diploma (vereist)</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:26%"></div></div>
+        <span class="val warn">-0.3</span>
+      </div>
+      <div class="srow">
+        <span class="dim">4jr klassieke consultancy</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:30%"></div></div>
+        <span class="val warn">-0.5</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">B. CV-match per JD-eis <span class="sec-num">02</span></div>
+    <table>
+      <tr><th style="width:28%">JD-eis</th><th style="width:47%">Bewijs in portfolio</th><th style="width:25%">Oordeel</th></tr>
+      <tr>
+        <td class="field">Digitale transformatie expertise</td>
+        <td>Windesheim: digitale lab-infrastructuur (AI-stack Docker/n8n), agile onderwijs, supply chain digitalisering. Aeres: school-brede digitale transformatie. Social Chicken: cloud-migraties en digitale transformatieprojecten voor corporate en overheid (2016-2022).</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Openbaar bestuur / overheid</td>
+        <td>Overheidspartners in VCH-consortia. Social Chicken: overheidsklanten in Benelux. Tonomy: digitale identiteitsinfrastructuur ontworpen voor overheidstoepassingen (W3C, MiCA). Niet primair als ambtenaar maar als adviseur en bouwer.</td>
+        <td class="match-solid">GOED &mdash; indirect</td>
+      </tr>
+      <tr>
+        <td class="field">Beleid naar digitale oplossing</td>
+        <td>CSRD/EUDR vertaald naar compliance tooling (VCH). MiCA vertaald naar organisatieprocedures (Tonomy). EDRM-framework geimplementeerd in E-discovery minor. Structureel patroon van regelgeving naar werkende digitale oplossing.</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Stakeholdermanagement overheid</td>
+        <td>Overheidspartners in consortium-verband. Subsidieverstrekkers. Social Chicken: publieke sector. Geen directe ervaring als ambtenaar-adviseur maar als externe partner.</td>
+        <td class="match-solid">REDELIJK</td>
+      </tr>
+      <tr>
+        <td class="field">WO + 4 jaar consultancy</td>
+        <td>HBO BIM (8,7) + 15 jaar ervaring. Geen WO. Geen klassiek adviesbureau-track van 4 jaar (wel freelance consultancy via Social Chicken 2016-2022).</td>
+        <td class="match-gap">MATIG &mdash; dubbele gap</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">C. Kernonderscheidend argument <span class="sec-num">03</span></div>
+    <div class="intel-box">
+      <div class="intel-label">Positionering: de digitale transformatie-adviseur die W3C-standaarden implementeert en AI-stacks beheert</div>
+      Digitale transformatie bij de overheid vereist iemand die zowel de technologie begrijpt als de bestuurlijke dynamiek. Christiaan heeft digitale identiteitsstandaarden geimplementeerd die specifiek zijn ontworpen voor overheidstoepassingen (W3C CCG, DID-methoden, Verifiable Credentials). Tegelijkertijd heeft hij bij Windesheim een volledige AI-infrastructuur gebouwd die actief is gebruikt voor publiek-private samenwerkingsprogramma&rsquo;s. Hij is niet de adviseur die een rapport schrijft over digitale transformatie: hij is degene die het bouwt.
+    </div>
+    <ul class="field-list">
+      <li><strong>Tonomy Foundation:</strong> Digitale identiteitsinfrastructuur voor overheidstoepassingen: W3C Verifiable Credentials, DID-methoden, Conditional Proof standaard geimplementeerd in open-source DIF-bibliotheken. W3C CCG bijgedragen (2023, 2024).</li>
+      <li><strong>Windesheim AI-stack:</strong> Flowise, OpenWebUI, n8n, Supabase op eigen Linux-infrastructuur; Docker, CI/CD, database management. Volledig zelfstandig beheerd voor publiek-private programma&rsquo;s.</li>
+      <li><strong>CSRD/EUDR naar digitale tooling (VCH):</strong> Beleidsvereisten vertaald naar werkende digitale compliance-oplossingen voor cross-Europese partners. Van regulering naar software in productie.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">D. Risico's &amp; mitigatie <span class="sec-num">04</span></div>
+    <div class="warn-box">
+      <div class="warn-label">WO + 4 jaar klassieke consultancy: dubbele formele gap</div>
+      Dit is de zwaarste gap in het dossier. Berenschot vraagt WO en 4 jaar relevante consultancy-ervaring. Christiaan heeft HBO en freelance consultancy (Social Chicken 2016-2022, niet klassiek adviesbureau). Mitigatie: het portfolio is inhoudelijk sterk genoeg om het gesprek te voeren. Brief moet dit gap eerlijk benoemen en het vakinhoudelijke argument overtuigend neerzetten.
+    </div>
+    <div class="two-col" style="margin-top:8px">
+      <div>
+        <span class="col-label go">Sterktes</span>
+        <ul class="field-list">
+          <li>W3C digitale identiteitsstandaarden</li>
+          <li>Beleid naar digitale oplossing patroon</li>
+          <li>AI-stack eigenhandig gebouwd en beheerd</li>
+          <li>Comp top band zeer aantrekkelijk (&euro;8.4k)</li>
+          <li>Utrecht bereikbaar: 20 min</li>
+        </ul>
+      </div>
+      <div>
+        <span class="col-label warn">Risico's</span>
+        <ul class="field-list">
+          <li>WO-diploma: formele gap</li>
+          <li>4jr klassieke consultancy: niet aanwezig</li>
+          <li>Directe overheidsadvies: indirect</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">E. Compensatieanalyse <span class="sec-num">05</span></div>
+    <table>
+      <tr><th>Component</th><th>Waarde</th><th>Toelichting</th></tr>
+      <tr><td class="field">Basissalaris</td><td>&euro;5.086&ndash;&euro;8.376/mnd</td><td>Brede band; bovenkant voor senior profiel</td></tr>
+      <tr><td class="field">Jaarequivalent (top)</td><td>Ca. &euro;100.512 + vkgeld</td><td>&euro;8.376 x 12 x 1.08</td></tr>
+      <tr><td class="field">Oordeel</td><td><strong>Een van de hoogste banden in de pipeline. Aantrekkelijk als senior positionering wordt gehonoreerd.</strong></td><td>Instap acceptabel als deel van fractional portfolio.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">F. Operationeel advies <span class="sec-num">06</span></div>
+    <div class="verdict-box">
+      <div class="verdict-icon">GO</div>
+      <div class="verdict-text">
+        <strong>SOLLICITEER. Score 3.6/5.</strong>
+        Berenschot zoekt een consultant die digitale transformatie bij de overheid begrijpt van beleid tot implementatie. Christiaan heeft dit gedaan voor publiek-private consortia, digitale identiteitsplatforms en compliance tooling. De formele gaps (WO, klassieke consultancy) zijn reeel en moeten eerlijk worden benoemd. Het portfolio is inhoudelijk sterk genoeg om het gesprek te rechtvaardigen. De comp (bovenkant &euro;8.376) is bijzonder aantrekkelijk en maakt het de moeite waard het te proberen.
+      </div>
+    </div>
+    <div class="tag-row">
+      <span class="tag go">W3C digitale identiteit</span>
+      <span class="tag go">Beleid naar digitale oplossing</span>
+      <span class="tag go">AI-stack eigenhandig</span>
+      <span class="tag go">Comp top aantrekkelijk</span>
+      <span class="tag warn">WO-diploma gap</span>
+      <span class="tag warn">Klassieke consultancy: 4jr mist</span>
+    </div>
+  </div>
+
+  <div class="doc-footer">
+    <span>Christiaan Verhoef | Baarn</span>
+    <span>career-ops evaluatie &mdash; BER-DIG-2026-117</span>
+    <span>2026-06-06</span>
+  </div>
+</div>
+</body>
+</html>

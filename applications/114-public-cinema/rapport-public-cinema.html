@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kandidaatsevaluatie -- Public Cinema -- Social Designer</title>
+<style>
+  @font-face { font-family: 'Space Grotesk'; src: url('../../fonts/space-grotesk-latin.woff2') format('woff2'); font-weight: 300 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'DM Sans'; src: url('../../fonts/dm-sans-latin.woff2') format('woff2'); font-weight: 100 1000; font-style: normal; font-display: swap; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  :root {
+    --col:      #3b2872;
+    --col-mid:  #5b40a8;
+    --col-light:#8b74cc;
+    --col-pale: #cdc5e8;
+    --col-bg:   #f3f1fa;
+    --amber:    #c07820;
+    --red:      #8b2020;
+    --ink:      #1a1e2e;
+  }
+  body { font-family: 'DM Sans', sans-serif; font-size: 10.5px; line-height: 1.6; color: var(--ink); background: #fff; }
+  .page { width: 210mm; margin: 0 auto; padding: 14mm 18mm 14mm 18mm; }
+  .doc-classification { display: flex; justify-content: space-between; align-items: center; font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--col-mid); border-top: 2px solid var(--col); border-bottom: 1px solid var(--col-light); padding: 4px 0; margin-bottom: 10px; }
+  .doc-classification .stamp { background: var(--col); color: #fff; padding: 2px 8px; font-size: 8px; letter-spacing: 0.2em; }
+  .report-header-grid { display: grid; grid-template-columns: 1fr auto; gap: 0 16px; align-items: start; margin-bottom: 10px; }
+  .report-type { font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--col-mid); margin-bottom: 3px; }
+  .report-title { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: var(--col); letter-spacing: -0.01em; line-height: 1.15; }
+  .report-org { font-size: 11px; color: var(--col-mid); margin-top: 3px; font-weight: 500; }
+  .score-badge { border: 3px solid var(--col); padding: 8px 14px; text-align: center; min-width: 72px; }
+  .score-badge .score-num { font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; color: var(--col); line-height: 1; }
+  .score-badge .score-denom { font-size: 12px; color: var(--col-mid); font-weight: 400; }
+  .score-badge .score-label { font-size: 7.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--col-mid); margin-top: 2px; }
+  .rule-heavy { border: none; border-top: 3px solid var(--col); margin: 8px 0; }
+  .meta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--col); margin-bottom: 12px; font-size: 9.5px; }
+  .meta-cell { padding: 5px 8px; border-right: 1px solid var(--col-light); border-bottom: 1px solid var(--col-light); }
+  .meta-cell:nth-child(4n) { border-right: none; }
+  .meta-cell:nth-last-child(-n+4) { border-bottom: none; }
+  .meta-cell .mk { font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--col-mid); display: block; margin-bottom: 1px; }
+  .meta-cell .mv { font-weight: 600; color: var(--ink); }
+  .section { margin-bottom: 14px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: #fff; background: var(--col); padding: 3px 8px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+  .section-title .sec-num { opacity: 0.6; font-weight: 400; }
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin-bottom: 6px; border: 1px solid var(--col-light); }
+  th { background: var(--col-bg); font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--col); padding: 4px 8px; text-align: left; border-bottom: 1px solid var(--col-light); }
+  td { padding: 4px 8px; border-bottom: 1px solid var(--col-pale); vertical-align: top; line-height: 1.5; }
+  tr:last-child td { border-bottom: none; }
+  td.field { font-weight: 600; color: var(--col); width: 26%; }
+  .match-strong { color: #1a6e1a; font-weight: 700; }
+  .match-solid  { color: #3a6e0a; font-weight: 600; }
+  .match-gap    { color: var(--amber); font-weight: 600; }
+  .score-rows { display: flex; flex-direction: column; gap: 5px; }
+  .srow { display: flex; align-items: center; gap: 8px; font-size: 10px; }
+  .srow .dim { width: 170px; color: var(--ink); }
+  .srow .bar-bg { flex: 1; height: 7px; background: var(--col-pale); border: 1px solid var(--col-light); }
+  .srow .bar-fill { height: 100%; background: var(--col); }
+  .srow .bar-fill.warn { background: var(--amber); }
+  .srow .val { width: 28px; text-align: right; font-weight: 700; color: var(--col); font-family: 'Space Grotesk', monospace; }
+  .srow .val.warn { color: var(--amber); }
+  .intel-box { border: 1px solid var(--col); border-left: 4px solid var(--col); background: var(--col-bg); padding: 8px 10px; margin: 6px 0; font-size: 10.5px; line-height: 1.65; }
+  .intel-box .intel-label { font-family: 'Space Grotesk', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--col-mid); margin-bottom: 4px; }
+  .warn-box { border: 1px solid var(--amber); border-left: 4px solid var(--amber); background: #fdf6e8; padding: 8px 10px; margin: 6px 0; font-size: 10.5px; line-height: 1.65; }
+  .warn-box .warn-label { font-family: 'Space Grotesk', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--amber); margin-bottom: 4px; }
+  .phrase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 4px; }
+  .phrase-item { border: 1px solid var(--col-pale); border-left: 3px solid var(--col-mid); background: var(--col-bg); padding: 5px 8px; font-size: 10px; line-height: 1.55; color: var(--ink); }
+  .phrase-item .phrase-context { font-family: 'Space Grotesk', sans-serif; font-size: 7px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--col-mid); display: block; margin-bottom: 2px; }
+  .star-table { width: 100%; border-collapse: collapse; font-size: 9.5px; border: 1px solid var(--col-light); }
+  .star-table th { font-size: 7.5px; padding: 3px 6px; }
+  .star-table td { padding: 5px 6px; font-size: 9.5px; border-bottom: 1px solid var(--col-pale); vertical-align: top; line-height: 1.5; }
+  .star-table tr:last-child td { border-bottom: none; }
+  .star-table .story-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--col); font-size: 9.5px; white-space: nowrap; }
+  .star-table .result-chip { display: inline-block; background: var(--col); color: #fff; font-size: 7.5px; font-weight: 700; padding: 1px 5px; letter-spacing: 0.05em; margin-top: 3px; }
+  ul.field-list { list-style: none; padding: 0; margin: 4px 0; }
+  ul.field-list li { font-size: 10.5px; line-height: 1.65; padding-left: 12px; position: relative; margin-bottom: 2px; color: var(--ink); }
+  ul.field-list li::before { content: '>'; position: absolute; left: 0; color: var(--col-mid); font-weight: 700; font-size: 9px; top: 1px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .col-label { font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 2px 6px; margin-bottom: 5px; display: inline-block; }
+  .col-label.go   { background: var(--col); color: #fff; }
+  .col-label.warn { background: var(--amber); color: #fff; }
+  .verdict-box { border: 2px solid var(--col); padding: 10px 14px; margin-top: 8px; display: flex; gap: 14px; align-items: flex-start; }
+  .verdict-icon { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: var(--col); line-height: 1; min-width: 50px; text-align: center; padding-top: 2px; }
+  .verdict-text { font-size: 10.5px; line-height: 1.65; color: var(--ink); }
+  .verdict-text strong { font-family: 'Space Grotesk', sans-serif; font-size: 12px; display: block; color: var(--col); margin-bottom: 3px; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .tag { font-size: 8.5px; padding: 2px 6px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .tag.go   { background: var(--col); color: #fff; }
+  .tag.warn { background: var(--amber); color: #fff; }
+  .tag.risk { background: var(--red); color: #fff; }
+  .doc-footer { display: flex; justify-content: space-between; font-size: 7.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--col-mid); border-top: 2px solid var(--col); border-bottom: 1px solid var(--col-light); padding: 4px 0; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-classification">
+    <span>Kandidaatsevaluatie | career-ops systeem</span>
+    <span class="stamp">Vertrouwelijk</span>
+    <span>Ref: PC-2026-114 | 2026-06-06</span>
+  </div>
+
+  <div class="report-header-grid">
+    <div>
+      <div class="report-type">Kandidaatsevaluatie | Sollicitatiedossier</div>
+      <div class="report-title">Social Designer</div>
+      <div class="report-org">Public Cinema &mdash; Amsterdam | 32&ndash;40 uur/week</div>
+    </div>
+    <div class="score-badge">
+      <div class="score-num">3.7<span class="score-denom">/5</span></div>
+      <div class="score-label">Totaalscore</div>
+    </div>
+  </div>
+  <hr class="rule-heavy">
+
+  <div class="meta-grid">
+    <div class="meta-cell"><span class="mk">Locatie</span><span class="mv">Amsterdam (~45 min van Baarn)</span></div>
+    <div class="meta-cell"><span class="mk">Salaris</span><span class="mv">&euro;3.700&ndash;&euro;5.300/mnd</span></div>
+    <div class="meta-cell"><span class="mk">FTE</span><span class="mv">0.8&ndash;1.0 FTE</span></div>
+    <div class="meta-cell"><span class="mk">Contract</span><span class="mv">Vaste aanstelling</span></div>
+    <div class="meta-cell"><span class="mk">Jaarequivalent</span><span class="mv">Ca. &euro;44k&ndash;&euro;64k</span></div>
+    <div class="meta-cell"><span class="mk">Vereiste</span><span class="mv">WO + 5 jaar ervaring</span></div>
+    <div class="meta-cell"><span class="mk">Kandidaat</span><span class="mv">Christiaan Verhoef</span></div>
+    <div class="meta-cell"><span class="mk">Aanbeveling</span><span class="mv">SOLLICITEER (met gap-eerlijkheid)</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">A. Scoreverdeling per dimensie <span class="sec-num">01</span></div>
+    <div class="score-rows">
+      <div class="srow">
+        <span class="dim">Community building &amp; facilitation</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div>
+        <span class="val">4.5</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Participatief ontwerp &amp; co-creatie</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:86%"></div></div>
+        <span class="val">4.3</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Maatschappelijke innovatiethema&rsquo;s</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        <span class="val">4.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Comp fit (&euro;3.7k&ndash;&euro;5.3k)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:76%"></div></div>
+        <span class="val">3.8</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Civic engagement / publiek domein</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:64%"></div></div>
+        <span class="val">3.2</span>
+      </div>
+      <div class="srow">
+        <span class="dim">WO-diploma vereist (gap)</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:26%"></div></div>
+        <span class="val warn">-0.3</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Formele social design opleiding</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:18%"></div></div>
+        <span class="val warn">-0.2</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">B. CV-match per JD-eis <span class="sec-num">02</span></div>
+    <table>
+      <tr><th style="width:28%">JD-eis</th><th style="width:47%">Bewijs in portfolio</th><th style="width:25%">Oordeel</th></tr>
+      <tr>
+        <td class="field">Facilitation &amp; workshop design</td>
+        <td>Beer Game als sociale simulatie (meerdere cohorten); Spark! Living Lab; workshops blockchain en supply chain voor diverse doelgroepen; ROC gamified classroom. 15+ jaar gefaciliteerd.</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Community building</td>
+        <td>Value Chain Hackers: cross-Europese community van bedrijven, NGO&rsquo;s en overheden opgebouwd. Open Food Chain: technische en maatschappelijke community via Discord. Tonomy: ecosysteem-community voor open-source identiteitsinfrastructuur.</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Maatschappelijke transitie</td>
+        <td>Voedselsysteemtransparantie (Open Food Chain, The Fork), supply chain duurzaamheid (VCH, Windesheim), digitale soevereiniteit (Tonomy). Brede maatschappelijke innovatiepraktijk.</td>
+        <td class="match-solid">GOED</td>
+      </tr>
+      <tr>
+        <td class="field">Participatief ontwerp</td>
+        <td>Aeres: 8 vakken samengebracht via participatief sprint-model. ROC: studenten als ontwerpers van hun eigen leeromgeving. Spark! Lab: studenten als onderzoekers en ontwerpers.</td>
+        <td class="match-solid">GOED</td>
+      </tr>
+      <tr>
+        <td class="field">Design thinking</td>
+        <td>Serious game design als toegepast design thinking (Beer Game, KnopenKoning). Lab-ontwerp bij Aeres en Windesheim. Niet formeel opgeleid in design thinking, maar praktijk aantoonbaar.</td>
+        <td class="match-solid">REDELIJK</td>
+      </tr>
+      <tr>
+        <td class="field">WO + 5 jaar ervaring</td>
+        <td>HBO BIM (8,7), 15+ jaar ervaring. Ervaringsequivalent overweldigend aanwezig; formeel diploma is gap.</td>
+        <td class="match-gap">MATIG &mdash; formele gap</td>
+      </tr>
+      <tr>
+        <td class="field">Civic engagement / publiek domein</td>
+        <td>Indirect via overheidspartners in VCH-consortia en Windesheim; niet primair gepositioneerd in de civic sector. Voedsel- en duurzaamheidsthema&rsquo;s raken het wel.</td>
+        <td class="match-gap">MATIG &mdash; indirect</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">C. Kernonderscheidend argument <span class="sec-num">03</span></div>
+    <div class="intel-box">
+      <div class="intel-label">Positionering: de social designer die systems denkt en mensen meeneemt</div>
+      Social designers werken meestal vanuit human-centered design of sociologie. Christiaan werkt vanuit de systeemkant: hij begrijpt hoe een keten, een organisatie of een ecosysteem in elkaar zit, en hij ontwerpt participatieve processen die de mensen in dat systeem in beweging zetten. Dat is een zeldzame combinatie. Zijn Beer Game is niet een speelgoed maar een maatschappelijk leermiddel dat CO2-impact in supply chains bespreekbaar maakt. Zijn community-werk bij Value Chain Hackers en Open Food Chain ging over transitie: van individuele belangen naar gedeeld systeem.
+    </div>
+    <ul class="field-list">
+      <li><strong>Value Chain Hackers:</strong> Cross-Europese community opgebouwd voor een vraagstuk waar de betrokkenen aanvankelijk weinig urgentie voelden. Stakeholders die niet vanzelf samenwerken (bedrijven, NGO&rsquo;s, overheden) meebewogen via een gedeelde doelstelling.</li>
+      <li><strong>Beer Game als maatschappelijke simulatie:</strong> Abstracte thema&rsquo;s (CO2-impact, bullwhip-effect, supply chain kwetsbaarheid) tastbaar gemaakt via een sociale spelstructuur. Deelnemers begrijpen het na &eacute;&eacute;n sessie beter dan na een week rapport lezen.</li>
+      <li><strong>Aeres participatief leermodel:</strong> Studenten als actoren in hun eigen leerproces, niet als consumenten. Een van de sterkste toepassingen van participatief ontwerp in zijn portfolio.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">D. Risico's &amp; mitigatie <span class="sec-num">04</span></div>
+    <div class="warn-box">
+      <div class="warn-label">WO + 5 jaar formele social design ervaring vereist</div>
+      Public Cinema vraagt WO-opleiding en 5 jaar ervaring in social design. Christiaan heeft HBO (8,7) en 15+ jaar ervaring in aangrenzende disciplines, maar geen formeel label &ldquo;social designer&rdquo;. Mitigatie: in de brief en het gesprek eerlijk framen als &ldquo;ik kom vanuit een andere route maar het werk is hetzelfde&rdquo;. Portfolio is overtuigend genoeg om het gesprek te rechtvaardigen.
+    </div>
+    <div class="warn-box">
+      <div class="warn-label">Civic engagement: indirect track record</div>
+      Public Cinema werkt primair in het publieke domein (gemeenten, bewoners, burgerparticipatie). Christiaan heeft gewerkt met overheidspartners maar niet primair voor burgers of wijken. Mitigatie: aangrenzende thema&rsquo;s (voedseltransparantie, duurzaamheidstransitie) zijn maatschappelijk relevant genoeg om het gesprek te voeren.
+    </div>
+    <div class="two-col" style="margin-top:8px">
+      <div>
+        <span class="col-label go">Sterktes</span>
+        <ul class="field-list">
+          <li>Community building gedocumenteerd bewijs</li>
+          <li>Participatief ontwerp in meerdere contexten</li>
+          <li>Beer Game: maatschappelijk leermiddel live</li>
+          <li>Comp fit: bovenkant band aantrekkelijk</li>
+          <li>15+ jaar facilitatie-ervaring</li>
+        </ul>
+      </div>
+      <div>
+        <span class="col-label warn">Risico's</span>
+        <ul class="field-list">
+          <li>WO-diploma formele gap</li>
+          <li>Civic sector: indirect track record</li>
+          <li>Geen formele social design opleiding</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">E. Compensatieanalyse <span class="sec-num">05</span></div>
+    <table>
+      <tr><th>Component</th><th>Waarde</th><th>Toelichting</th></tr>
+      <tr><td class="field">Basissalaris</td><td>&euro;3.700&ndash;&euro;5.300/mnd</td><td>Brede band; bovenkant voor senior profiel</td></tr>
+      <tr><td class="field">Jaarequivalent (top)</td><td>Ca. &euro;63.600 + vkgeld</td><td>&euro;5.300 x 12 x 1.08 vakantiegeld</td></tr>
+      <tr><td class="field">Oordeel</td><td><strong>Acceptabel bij bovenkant band. Instap laag maar groeipotentieel aanwezig.</strong></td><td>Bespreek positionering als senior profiel bij sollicitatie.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">F. Operationeel advies <span class="sec-num">06</span></div>
+    <div class="verdict-box">
+      <div class="verdict-icon">GO</div>
+      <div class="verdict-text">
+        <strong>SOLLICITEER. Score 3.7/5.</strong>
+        Public Cinema vraagt een social designer met community-ervaring en participatieve proceskennis. Christiaan heeft precies dit opgebouwd: cross-Europese communities, participatieve leeromgevingen, sociale simulaties. De formele gaps (WO, civic sector) zijn reeel maar het portfolio is sterk genoeg om het gesprek te rechtvaardigen. Eerlijkheid over de route (niet de formele social design opleiding maar de praktijk) is hier de juiste strategie.
+      </div>
+    </div>
+    <div class="tag-row">
+      <span class="tag go">Community building</span>
+      <span class="tag go">Participatief ontwerp</span>
+      <span class="tag go">Beer Game maatschappelijk</span>
+      <span class="tag go">Comp bovenkant aantrekkelijk</span>
+      <span class="tag warn">WO-diploma gap</span>
+      <span class="tag warn">Civic sector: indirect</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">G. Interviewvoorbereiding &mdash; STAR+R stories <span class="sec-num">07</span></div>
+    <table class="star-table">
+      <tr>
+        <th style="width:18%">Story</th>
+        <th style="width:24%">Situatie &amp; Taak</th>
+        <th style="width:28%">Actie</th>
+        <th style="width:18%">Resultaat</th>
+        <th style="width:12%">Relevantie</th>
+      </tr>
+      <tr>
+        <td class="story-name">Value Chain<br>Hackers</td>
+        <td>Bedrijven, NGO&rsquo;s en overheden moesten samenwerken rond een gedeeld duurzaamheidsprobleem. Geen van de partijen had urgentie om te beginnen.</td>
+        <td>Community-ontwerp: gedeelde doelstelling geformuleerd die alle partijen kon binden. Werksessies ontworpen als participatieve processen, niet als presentaties. Stakeholders stap voor stap betrokken.</td>
+        <td>Functionele cross-Europese community, tooling live, gezamenlijke rapportage.<br><span class="result-chip">Community actief</span></td>
+        <td>Toont hoe hij een diverse groep bewegt naar gezamenlijk handelen.</td>
+      </tr>
+      <tr>
+        <td class="story-name">Aeres<br>Participatief</td>
+        <td>Studenten waren passieve consumenten van onderwijs. Acht vakken zonder coherentie, docenten in silo&rsquo;s.</td>
+        <td>Participatief sprint-model ontworpen: studenten als actieve ontwerpers van hun leerproces. Docenten als coachend team, niet als kennisautoriteit. Gezamenlijk doel: een werkend bedrijf bouwen.</td>
+        <td>Twee startups live; studenten namen eigenaarschap. Aanpak bleef actief na zijn vertrek.<br><span class="result-chip">Twee startups</span></td>
+        <td>Concrete participatieve procesontwerp met meetbaar resultaat.</td>
+      </tr>
+      <tr>
+        <td class="story-name">Open Food<br>Chain</td>
+        <td>Stakeholders in de voedselketen wantrouwden elkaar en wilden geen data delen. Transparantie-initiatief dreigde te stranden.</td>
+        <td>Community-aanpak ontworpen die vertrouwen opbouwde voordat systemen werden geintroduceerd. Workshops over gedeelde waarden. Discord-community als veilige ruimte voor dialoog.</td>
+        <td>Nieuwe investering aangetrokken; meerdere partners actief in systeem.<br><span class="result-chip">Investering gewonnen</span></td>
+        <td>Toont hoe sociale processen economisch resultaat genereren.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="doc-footer">
+    <span>Christiaan Verhoef | Baarn</span>
+    <span>career-ops evaluatie &mdash; PC-2026-114</span>
+    <span>2026-06-06</span>
+  </div>
+</div>
+</body>
+</html>
