@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christiaan Verhoef -- CV</title>
+<style>
+  @font-face { font-family: 'Space Grotesk'; src: url('./fonts/space-grotesk-latin.woff2') format('woff2'); font-weight: 300 700; font-style: normal; }
+  @font-face { font-family: 'DM Sans'; src: url('./fonts/dm-sans-latin.woff2') format('woff2'); font-weight: 100 1000; font-style: normal; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: 'DM Sans', sans-serif; font-size: 11px; line-height: 1.5; color: #1a1a2e; background: #ffffff; padding: 0; margin: 0; }
+  .page { width: 100%; max-width: 210mm; margin: 0 auto; padding: 2px 0; }
+  .header { margin-bottom: 20px; }
+  .header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.02em; margin-bottom: 6px; line-height: 1.1; }
+  .header-gradient { height: 2px; background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%)); border-radius: 1px; margin-bottom: 10px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 10.5px; line-height: 1.4; color: #555; }
+  .contact-row a { color: #555; text-decoration: none; }
+  .contact-row .separator { color: #ccc; }
+  .section { margin-bottom: 18px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: hsl(187, 74%, 32%); border-bottom: 1.5px solid #e2e2e2; padding-bottom: 4px; margin-bottom: 10px; line-height: 1.2; }
+  .summary-text { font-size: 11px; line-height: 1.7; color: #2f2f2f; }
+  a { white-space: nowrap; }
+  .competencies-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .competency-tag { font-size: 10px; font-weight: 500; color: hsl(187, 74%, 28%); background: hsl(187, 40%, 95%); padding: 4px 10px; border-radius: 3px; border: 1px solid hsl(187, 40%, 88%); }
+  .job { margin-bottom: 14px; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 4px; }
+  .job-company { font-family: 'Space Grotesk', sans-serif; font-size: 12.5px; font-weight: 600; color: hsl(270, 70%, 45%); }
+  .job-period { font-size: 10.5px; color: #777; white-space: nowrap; }
+  .job-role { font-size: 11px; font-weight: 600; color: #333; margin-bottom: 6px; }
+  .job-location { font-size: 10px; color: #888; font-weight: 400; }
+  .job ul { padding-left: 18px; margin-top: 6px; }
+  .job li { font-size: 10.5px; line-height: 1.6; color: #333; margin-bottom: 4px; }
+  .job li strong { font-weight: 600; }
+  .project { margin-bottom: 12px; }
+  .project-title { font-family: 'Space Grotesk', sans-serif; font-size: 11.5px; font-weight: 600; color: hsl(270, 70%, 45%); }
+  .project-badge { font-size: 9px; font-weight: 500; color: hsl(187, 74%, 32%); background: hsl(187, 40%, 95%); padding: 1px 6px; border-radius: 2px; margin-left: 6px; }
+  .project-desc { font-size: 10.5px; color: #444; margin-top: 3px; line-height: 1.55; }
+  .edu-item { margin-bottom: 8px; }
+  .edu-header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .edu-title { font-weight: 600; font-size: 11px; color: #333; }
+  .edu-org { color: hsl(270, 70%, 45%); font-weight: 500; }
+  .edu-year { font-size: 10px; color: #777; white-space: nowrap; }
+  .edu-desc { font-size: 10px; color: #666; margin-top: 2px; line-height: 1.5; }
+  .cert-item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(90px, max-content) 44px; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+  .cert-title { font-size: 10.5px; font-weight: 500; color: #333; min-width: 0; }
+  .cert-org { color: hsl(270, 70%, 45%); white-space: nowrap; font-size: 10px; }
+  .cert-year { font-size: 10px; color: #777; white-space: nowrap; text-align: right; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+  .skill-item { font-size: 10.5px; color: #444; }
+  .skill-category { font-weight: 600; color: #333; font-size: 10.5px; }
+  @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } .page { padding: 0; } }
+  .avoid-break, .job, .project, .edu-item, .cert-item { break-inside: avoid; page-break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header avoid-break">
+    <h1>Christiaan Verhoef</h1>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>+31 6 30 18 47 43</span>
+      <span class="separator">|</span>
+      <span>christiaan_gerardo@hotmail.com</span>
+      <span class="separator">|</span>
+      <a href="https://linkedin.com/in/christiaanverhoef">linkedin.com/in/christiaanverhoef</a>
+      <span class="separator">|</span>
+      <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a>
+      <span class="separator">|</span>
+      <span>Baarn, Netherlands &middot; Available for fractional engagements &middot; &euro;600&ndash;&euro;1,200/day</span>
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-text">
+      Fractional CTO and technical leader with 15+ years of owning all technical decisions across five concurrent organizations: architecture, stack selection, team building, regulatory compliance, engineering culture. Never held the formal CTO title because the engagements never required it. Was always the person who made the calls.
+      <br><br>
+      Available for 1&ndash;2 day/week fractional engagements with Amsterdam-area startups and scale-ups. Day rate: &euro;600&ndash;&euro;1,200. Fully remote-capable, async-first, CET-based.
+      <br><br>
+      Built: MICA-compliant digital identity infrastructure (W3C-recognized), AI-powered supply chain compliance tooling, blockchain ecosystems, self-hosted AI research stacks from scratch. Took four ventures from concept to operating business, including one student project that became a &euro;2M-funded agri-tech startup. Delivered technical due diligence that led to a 4x investor exit. Solo field deployments across Jordan, Oman, Azerbaijan, and Houston with no remote support and no margin for error.
+    </div>
+  </div>
+
+  <div class="section avoid-break">
+    <div class="section-title">Core Competencies</div>
+    <div class="competencies-grid">
+      <span class="competency-tag">Fractional CTO Leadership</span>
+      <span class="competency-tag">Engineering Roadmap Design</span>
+      <span class="competency-tag">Technical Architecture &amp; Stack Selection</span>
+      <span class="competency-tag">Startup Team Building &amp; Mentorship</span>
+      <span class="competency-tag">AI Infrastructure Deployment</span>
+      <span class="competency-tag">Open Source Governance</span>
+      <span class="competency-tag">Vendor &amp; Partner Management</span>
+      <span class="competency-tag">Regulatory Compliance (MICA, EUDR, CSRD)</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Tonomy Foundation</span>
+        <span class="job-period">2021 &ndash; Present</span>
+      </div>
+      <div class="job-role">Co-Founder &amp; Technical Lead (Acting CTO) <span class="job-location">&middot; Amsterdam &amp; Remote</span></div>
+      <ul>
+        <li><strong>Acting CTO from day one:</strong> Owned all technical architecture decisions. Chose the stack, defined the engineering roadmap, selected compliance standards (MICA), structured partner integrations, and drove all technical narrative in investor and community contexts.</li>
+        <li><strong>Product build:</strong> Designed and co-built Pangea Vault, Tonomy's identity vault product, focused on user-owned digital identity with strong privacy guarantees aligned to W3C DID standards. Organization reached W3C-recognized status.</li>
+        <li><strong>Ecosystem design:</strong> Co-wrote the technical whitepaper and mapped stakeholder ecosystems to position Tonomy within the emerging regulatory and decentralized identity landscape.</li>
+        <li><strong>Engineering culture:</strong> Ran 2-week agile sprint cycles across a distributed team. Structured the organization for independent scaling; transitioned to board role once the operating model was established.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Viridis Green-Tech AG</span>
+        <span class="job-period">2024 &ndash; Present</span>
+      </div>
+      <div class="job-role">Innovation Architect (Fractional Tech Lead) <span class="job-location">&middot; Munich, Germany (Remote from NL)</span></div>
+      <ul>
+        <li><strong>Technical ownership:</strong> Own all architecture decisions for the Viridis innovation lab. Define what gets built, how systems connect, and what the technical roadmap looks like across blockchain, traceability, and sustainability tooling.</li>
+        <li><strong>Ecosystem architecture:</strong> Designed a modular, blockchain-powered system supporting supply chain traceability, ethics, and verifiability for European market compliance.</li>
+        <li><strong>Resource strategy:</strong> Co-authored grant proposals for open infrastructure and compliance tooling tracks; aligned lab priorities with commercial sustainability goals.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Windesheim University of Applied Sciences</span>
+        <span class="job-period">Jan 2020 &ndash; Present</span>
+      </div>
+      <div class="job-role">Project Manager &amp; AI Infrastructure Lead <span class="job-location">&middot; Zwolle, Netherlands (1 day/week)</span></div>
+      <ul>
+        <li><strong>AI stack architecture:</strong> Designed and deployed a self-funded, self-hosted AI research environment from scratch. Stack: Flowise, OpenWebUI, n8n, Supabase on Docker and Linux, with full CI/CD, database management, and monitoring. Solo build, no external support.</li>
+        <li><strong>Lab founding:</strong> Built Spark! Living Lab (blockchain simulation) and Value Chain Hackers (AI-powered supply chain compliance tooling). Both in active use. <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a></li>
+        <li><strong>Team development:</strong> Recruited and mentored student interns who became co-developers on open-source lab tools. Several went on to found or join startups.</li>
+        <li><strong>DevOps ownership:</strong> Maintained full DevOps lifecycle (provisioning, containerization, CI/CD, monitoring, incident response) across all lab environments since 2020.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">COTIT</span>
+        <span class="job-period">Jan 2024 &ndash; Jul 2024</span>
+      </div>
+      <div class="job-role">Business Innovator <span class="job-location">&middot; Almere, Netherlands</span></div>
+      <ul>
+        <li>Brought technical and operational clarity to a modular logistics startup in early scale-up phase. Defined the SaaS product architecture, restructured internal processes using agile methods, and organized financial structure for the next funding round.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Social Chicken (freelance)</span>
+        <span class="job-period">2016 &ndash; 2022</span>
+      </div>
+      <div class="job-role">Senior Technical Consultant &amp; Project Lead <span class="job-location">&middot; Amsterdam, Netherlands</span></div>
+      <ul>
+        <li><strong>Technical due diligence:</strong> Full code and architecture review of a pre-seed startup for an investor. Positive recommendation. 4x exit.</li>
+        <li><strong>Blockchain consultancy (Inblock.io):</strong> Delivered blockchain training and proof-of-concept development for early enterprise clients in Berlin and Amsterdam.</li>
+        <li><strong>Infrastructure delivery:</strong> Managed private cloud setups, database migrations, BI dashboards, and automation systems for local SMEs. Full DevOps stack: Linux, Nagios monitoring, CI/CD pipelines.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Open Food Chain</span>
+        <span class="job-period">2022 &ndash; 2024</span>
+      </div>
+      <div class="job-role">Community Manager <span class="job-location">&middot; Amsterdam / Remote</span></div>
+      <ul>
+        <li>Wrote smart contracts, ran agile sprints for software development, built and moderated a growing technical and stakeholder community. Simplified technical documentation to onboard new investors. Supported outreach that led to new investment rounds.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Aeres Hogeschool</span>
+        <span class="job-period">2021 &ndash; 2022</span>
+      </div>
+      <div class="job-role">Lab Manager <span class="job-location">&middot; Dronten, Netherlands</span></div>
+      <ul>
+        <li>Recognized a student project (Veles Farming) as high-potential, moved it to the lab for prototyping, became advisor and seed investor, guided the founder through key technical and business decisions. Now an operating agri-tech startup in Slovakia with &euro;2M in funding. <a href="https://velesfarming.com">velesfarming.com</a></li>
+        <li>Supported Magic Frames from concept through to independent launch as a creative tech platform. <a href="https://mgframes.nl">mgframes.nl</a></li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">KONGSBERG</span>
+        <span class="job-period">2012 &ndash; 2013</span>
+      </div>
+      <div class="job-role">Field Service Engineer &amp; Thesis Researcher <span class="job-location">&middot; Kristiansand, Norway</span></div>
+      <ul>
+        <li>Solo deployment engineer across Jordan, Oman, Houston, and Azerbaijan. The only person on the team able to execute every part of a deployment end to end: software, hardware, data negotiation, and procedure compliance under pressure, with no internet access and no remote support.</li>
+        <li><strong>Azerbaijan:</strong> Subcontractor withheld BP-contracted data. Read the BP contract, cited specific clauses to the division manager, held the position. Data shared within one day.</li>
+        <li><strong>Jordan:</strong> Database failed despite correct procedure. Deployed a dead-switch to isolate a client-side networking fault. Resolved on day three, on schedule.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="section">
+    <div class="section-title">Selected Projects</div>
+
+    <div class="project">
+      <div class="project-title">Technical Due Diligence: 4x Investor Exit <span class="project-badge">Investment outcome</span></div>
+      <div class="project-desc">Conducted a full code and architecture review of a pre-seed startup codebase. Assessed technical debt, architecture quality, team capability, and scalability risks. Delivered a written investment recommendation. The investor proceeded. 4x exit.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Veles Farming: Student Concept to &euro;2M Agri-Tech Startup <span class="project-badge">Startup incubation</span></div>
+      <div class="project-desc">Identified a student project with commercial potential during coursework at Inholland. Moved it to Aeres for prototyping, became advisor and seed investor, guided the founder through key technical and business decisions. Now an operating agri-tech startup in Slovakia with &euro;2M in funding. <a href="https://velesfarming.com">velesfarming.com</a></div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Value Chain Hackers: AI Supply Chain Compliance Platform <span class="project-badge">2024&ndash;present</span></div>
+      <div class="project-desc">Cross-European initiative building AI-powered traceability and compliance tools for CSRD, CSDDD, and EUDR. Full open-source infrastructure, Docker-based, self-funded. Principal investigator for Windesheim's Supply Chain Finance lectorate. <a href="https://valuechainhackers.xyz">valuechainhackers.xyz</a></div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Tonomy Foundation: MICA-Compliant Digital Identity Infrastructure <span class="project-badge">W3C-recognized</span></div>
+      <div class="project-desc">Co-founded and served as acting CTO. Designed the technical architecture for Pangea Vault, a user-owned digital identity system aligned to W3C DID standards and MICA compliance. Built the engineering roadmap, selected the stack, co-wrote the technical whitepaper, and structured partner integrations across a distributed team. <a href="https://tonomy.foundation">tonomy.foundation</a></div>
+    </div>
+
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education &amp; Certifications</div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Bachelor of Business Administration, Business IT &amp; Management</span>
+        <span class="edu-year">2010&ndash;2014</span>
+      </div>
+      <div class="edu-org" style="font-size:11px; color: hsl(270,70%,45%); font-weight:500; margin-bottom:2px;">Hogeschool van Amsterdam</div>
+      <div class="edu-desc">Grade: 8.7 &middot; Thesis: simulation-based training methodology at KONGSBERG &middot; Minor: E-Discovery &amp; Digital Forensics (ESIEA Paris)</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-title">Teacher Training, Mathematics</span>
+        <span class="edu-year">2007&ndash;2008</span>
+      </div>
+      <div class="edu-org" style="font-size:11px; color: hsl(270,70%,45%); font-weight:500; margin-bottom:2px;">Hogeschool Inholland</div>
+    </div>
+
+    <div class="cert-item">
+      <span class="cert-title">Scrum Master &middot; Professional Scrum Product Owner I (PSPO I)</span>
+      <span class="cert-org">Scrum.org</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Prince2 &middot; ITIL</span>
+      <span class="cert-org">APMG / Axelos</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Oracle SOA 11g Essentials &middot; Service Oriented Architecture Concepts</span>
+      <span class="cert-org">Oracle</span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">ESG &amp; Sustainable Supply Chains &middot; Data Analysis &amp; Visualization (R, Python)</span>
+      <span class="cert-org"></span>
+      <span class="cert-year"></span>
+    </div>
+    <div class="cert-item">
+      <span class="cert-title">Offshore Survival Training / HUET</span>
+      <span class="cert-org">KONGSBERG</span>
+      <span class="cert-year">2012</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <span class="skill-item"><span class="skill-category">CTO / Architecture:</span> stack selection, engineering roadmap, technical due diligence, open-source governance, regulatory mapping (MICA, EUDR, CSRD)</span>
+      <span class="skill-item"><span class="skill-category">AI &amp; Infrastructure:</span> Flowise, OpenWebUI, n8n, Supabase, Docker, Kubernetes, Linux (CentOS / Ubuntu / Debian), GitHub CI/CD, Nagios, Grafana</span>
+      <span class="skill-item"><span class="skill-category">Blockchain &amp; Identity:</span> SSI, W3C DID, MICA, Ethereum, smart contracts, HyperLedger, EOSIO, Oracle SOA 11g/12c</span>
+      <span class="skill-item"><span class="skill-category">Databases:</span> MySQL, PostgreSQL, Microsoft SQL Server, Oracle</span>
+      <span class="skill-item"><span class="skill-category">Agile &amp; Delivery:</span> Scrum, SafeScrum, Kanban, async-first distributed teams, sprint planning</span>
+      <span class="skill-item"><span class="skill-category">Languages:</span> Dutch (native), English (near-native), German (conversational)</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
