@@ -263,7 +263,7 @@
 - [x] DEAD | https://www.tno.nl/nl/werken-bij/vacatures/projectmanager-digitalisering-in-de-bouw-en-infrastructuur/vacid-a0s6700001qx9w7ead/ | TNO | Projectmanager Digitalisering bouw — URL redirects to homepage
 - [x] #90 | https://stedin.net/werken-bij/vacatures/scrum-master-jr4147 | Stedin | Scrum Master | 3.3/5 | already evaluated
 - [x] #45 | https://youngprofessionalvacatures.nl/vacatures/postnl/agile-coach-postnl-pakketten | PostNL | Agile Coach Pakketten — Den Haag, €3,758–€5,323/mo, agile transition, essential role | already evaluated
-- [x] SKIP | https://www.duurzaam-ondernemen.nl/vacature/projectleider-esg/ | (via duurzaam-ondernemen) | Projectleider ESG supply chain — R-ladder/CSRD/CSDDD/EU Taxonomy, strong CSRD expertise angle — ESG supply chain — evaluate separately
+- [x] DEAD | https://www.duurzaam-ondernemen.nl/vacature/projectleider-esg/ | (via duurzaam-ondernemen) | Projectleider ESG supply chain — verlopen 2026-06-05
 - [x] DEAD | https://www.duurzaam-ondernemen.nl/vacature/projectmanager-duurzaamheid-csrd/ | Projectmanager CSRD — verlopen
 
 ## Web3 / Blockchain — 2026-06-03

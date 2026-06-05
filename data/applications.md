@@ -2,6 +2,8 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 109 | 2026-06-05 | Stichting Tamino | Directeur-Bestuurder | 3.0/5 | Evaluated | ✅ | — | 3.0/5 — stretch (kunstcultureducatie); deadline 16 juni; CV + praktijkvoorbeelden klaar |
+| 70 | 2026-06-04 | Techleap | Ecosystem Interventions Manager | 4.4/5 | Discarded | ✅ | [70](reports/068-techleap-ecosystem-interventions-manager-2026-06-04.md) | Vacature gesloten 2026-06-05 — 404.homerun.co bevestigd dood |
 | 106 | 2026-06-05 | Shiny | Fractional CTO for Startups | 4.3/5 | Applied | ✅ | [106](reports/089-shiny-fractional-cto-2026-06-05.md) | Applied 2026-06-05 |
 | 104 | 2026-06-05 | GitLab | Senior PM, AI Platform Management | 3.2/5 | Evaluated | ❌ | [104](reports/088-gitlab-sr-pm-ai-platform-2026-06-05.md) | 3.2/5 — IE/IL/UK geographic restriction excludes NL; primary blocker |
 | 103 | 2026-06-05 | Databricks | Sr. Manager, AI Forward Deployed Engineering - EMEA | — | Evaluated | ❌ | — | JS-rendered JD inaccessible; live confirmed; score pending manual review |
