@@ -1,3 +1,4 @@
+<style>
 @font-face {
   font-family: 'Space Grotesk';
   src: url('file:///home/chris/Nextcloud/Github/career-ops/fonts/space-grotesk-latin.woff2') format('woff2');
@@ -10,45 +11,23 @@
   font-weight: 100 1000;
   font-style: normal;
 }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   line-height: 1.7;
   color: #1a1a2e;
   background: #ffffff;
-  max-width: 174mm;
-  margin: 0 auto;
-  padding: 18mm 0 16mm 0;
 }
-
 h1 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: #1a1a2e;
   letter-spacing: -0.03em;
-  line-height: 1.2;
   margin-bottom: 6px;
 }
-
-h1 + p strong,
-h1 + blockquote {
-  font-size: 10px;
-  color: #666;
-}
-
-/* Meta block (the **Score:** **URL:** lines after h1) */
-p:has(strong:first-child) {
-  font-size: 10px;
-  color: #555;
-  margin-bottom: 2px;
-  line-height: 1.5;
-}
-
 h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 9px;
@@ -61,7 +40,6 @@ h2 {
   margin-top: 16px;
   margin-bottom: 8px;
 }
-
 h3 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 11px;
@@ -70,34 +48,10 @@ h3 {
   margin-top: 10px;
   margin-bottom: 4px;
 }
-
-p {
-  font-size: 10.5px;
-  color: #2a2a3e;
-  margin-bottom: 7px;
-  line-height: 1.65;
-}
-
-ul, ol {
-  padding-left: 14px;
-  margin-bottom: 7px;
-}
-
-li {
-  font-size: 10.5px;
-  color: #2a2a3e;
-  line-height: 1.65;
-  margin-bottom: 2px;
-}
-
-/* Tables */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 10px;
-  margin-bottom: 10px;
-}
-
+p { font-size: 10.5px; color: #2a2a3e; margin-bottom: 7px; line-height: 1.65; }
+ul, ol { padding-left: 14px; margin-bottom: 7px; }
+li { font-size: 10.5px; color: #2a2a3e; line-height: 1.65; margin-bottom: 2px; }
+table { width: 100%; border-collapse: collapse; font-size: 10px; margin-bottom: 10px; }
 th {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 9px;
@@ -109,24 +63,8 @@ th {
   padding: 3px 6px 3px 0;
   text-align: left;
 }
-
-td {
-  padding: 3px 6px 3px 0;
-  border-bottom: 1px solid #f0f0f5;
-  color: #2a2a3e;
-  vertical-align: top;
-}
-
-tr:last-child td {
-  border-bottom: none;
-}
-
-/* Score highlight in table */
-td:nth-child(2) {
-  color: #1a1a2e;
-}
-
-/* Blockquote / callout */
+td { padding: 3px 6px 3px 0; border-bottom: 1px solid #f0f0f5; color: #2a2a3e; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
 blockquote {
   border-left: 3px solid hsl(220, 70%, 55%);
   padding: 5px 10px;
@@ -134,46 +72,10 @@ blockquote {
   background: hsl(220, 70%, 97%);
   border-radius: 0 3px 3px 0;
 }
-
-blockquote p {
-  color: hsl(220, 70%, 25%);
-  font-style: italic;
-  margin: 0;
-}
-
-/* Code / yaml blocks */
-pre, code {
-  font-family: 'DM Mono', 'Courier New', monospace;
-  font-size: 9px;
-  background: #f5f5fa;
-  border: 1px solid #e0e0ea;
-  border-radius: 3px;
-}
-
-pre {
-  padding: 8px 10px;
-  margin-bottom: 8px;
-  overflow-x: auto;
-  line-height: 1.5;
-}
-
-code {
-  padding: 1px 3px;
-}
-
-/* Horizontal rule */
-hr {
-  border: none;
-  border-top: 1px solid hsl(220, 70%, 85%);
-  margin: 12px 0;
-}
-
-strong {
-  font-weight: 600;
-  color: #1a1a2e;
-}
-
-/* Header meta block after h1 */
-h1 ~ p > strong:first-child {
-  color: hsl(220, 70%, 40%);
-}
+blockquote p { color: hsl(220, 70%, 25%); font-style: italic; margin: 0; }
+pre, code { font-family: 'Courier New', monospace; font-size: 9px; background: #f5f5fa; border: 1px solid #e0e0ea; border-radius: 3px; }
+pre { padding: 8px 10px; margin-bottom: 8px; line-height: 1.5; }
+code { padding: 1px 3px; }
+hr { border: none; border-top: 1px solid hsl(220, 70%, 85%); margin: 12px 0; }
+strong { font-weight: 600; color: #1a1a2e; }
+</style>
