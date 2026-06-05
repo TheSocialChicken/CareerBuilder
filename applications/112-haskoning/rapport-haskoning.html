@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kandidaatsevaluatie -- Royal HaskoningDHV -- Senior Consultant Supply Chain Sustainability</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../../fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  :root {
+    --teal:      #1a5f6a;
+    --teal-mid:  #2a7f8e;
+    --teal-light:#5aa3b0;
+    --teal-pale: #b5d8de;
+    --teal-bg:   #eaf5f7;
+    --amber:     #c07820;
+    --red:       #8b2020;
+    --ink:       #1a1e2e;
+  }
+
+  body { font-family: 'DM Sans', sans-serif; font-size: 10.5px; line-height: 1.6; color: var(--ink); background: #fff; }
+  .page { width: 210mm; margin: 0 auto; padding: 14mm 18mm 14mm 18mm; }
+
+  .doc-classification {
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal-mid);
+    border-top: 2px solid var(--teal); border-bottom: 1px solid var(--teal-light);
+    padding: 4px 0; margin-bottom: 10px;
+  }
+  .doc-classification .stamp { background: var(--teal); color: #fff; padding: 2px 8px; font-size: 8px; letter-spacing: 0.2em; }
+
+  .report-header-grid { display: grid; grid-template-columns: 1fr auto; gap: 0 16px; align-items: start; margin-bottom: 10px; }
+  .report-type { font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--teal-mid); margin-bottom: 3px; }
+  .report-title { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: var(--teal); letter-spacing: -0.01em; line-height: 1.15; }
+  .report-org { font-size: 11px; color: var(--teal-mid); margin-top: 3px; font-weight: 500; }
+  .score-badge { border: 3px solid var(--teal); padding: 8px 14px; text-align: center; min-width: 72px; }
+  .score-badge .score-num { font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; color: var(--teal); line-height: 1; }
+  .score-badge .score-denom { font-size: 12px; color: var(--teal-mid); font-weight: 400; }
+  .score-badge .score-label { font-size: 7.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--teal-mid); margin-top: 2px; }
+
+  .rule-heavy { border: none; border-top: 3px solid var(--teal); margin: 8px 0; }
+
+  .meta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--teal); margin-bottom: 12px; font-size: 9.5px; }
+  .meta-cell { padding: 5px 8px; border-right: 1px solid var(--teal-light); border-bottom: 1px solid var(--teal-light); }
+  .meta-cell:nth-child(4n) { border-right: none; }
+  .meta-cell:nth-last-child(-n+4) { border-bottom: none; }
+  .meta-cell .mk { font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal-mid); display: block; margin-bottom: 1px; }
+  .meta-cell .mv { font-weight: 600; color: var(--ink); }
+
+  .section { margin-bottom: 14px; }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif; font-size: 8.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em; color: #fff; background: var(--teal);
+    padding: 3px 8px; margin-bottom: 8px; display: flex; justify-content: space-between;
+  }
+  .section-title .sec-num { opacity: 0.6; font-weight: 400; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin-bottom: 6px; border: 1px solid var(--teal-light); }
+  th { background: var(--teal-bg); font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal); padding: 4px 8px; text-align: left; border-bottom: 1px solid var(--teal-light); }
+  td { padding: 4px 8px; border-bottom: 1px solid var(--teal-pale); vertical-align: top; line-height: 1.5; }
+  tr:last-child td { border-bottom: none; }
+  td.field { font-weight: 600; color: var(--teal); width: 26%; }
+
+  .match-strong { color: #1a6e1a; font-weight: 700; }
+  .match-solid  { color: #3a6e0a; font-weight: 600; }
+  .match-gap    { color: var(--amber); font-weight: 600; }
+
+  .score-rows { display: flex; flex-direction: column; gap: 5px; }
+  .srow { display: flex; align-items: center; gap: 8px; font-size: 10px; }
+  .srow .dim { width: 170px; color: var(--ink); }
+  .srow .bar-bg { flex: 1; height: 7px; background: var(--teal-pale); border: 1px solid var(--teal-light); }
+  .srow .bar-fill { height: 100%; background: var(--teal); }
+  .srow .bar-fill.warn { background: var(--amber); }
+  .srow .val { width: 28px; text-align: right; font-weight: 700; color: var(--teal); font-family: 'Space Grotesk', monospace; }
+  .srow .val.warn { color: var(--amber); }
+
+  .intel-box { border: 1px solid var(--teal); border-left: 4px solid var(--teal); background: var(--teal-bg); padding: 8px 10px; margin: 6px 0; font-size: 10.5px; line-height: 1.65; }
+  .intel-box .intel-label { font-family: 'Space Grotesk', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--teal-mid); margin-bottom: 4px; }
+  .warn-box { border: 1px solid var(--amber); border-left: 4px solid var(--amber); background: #fdf6e8; padding: 8px 10px; margin: 6px 0; font-size: 10.5px; line-height: 1.65; }
+  .warn-box .warn-label { font-family: 'Space Grotesk', sans-serif; font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--amber); margin-bottom: 4px; }
+
+  .phrase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 4px; }
+  .phrase-item { border: 1px solid var(--teal-pale); border-left: 3px solid var(--teal-mid); background: var(--teal-bg); padding: 5px 8px; font-size: 10px; line-height: 1.55; color: var(--ink); }
+  .phrase-item .phrase-context { font-family: 'Space Grotesk', sans-serif; font-size: 7px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal-mid); display: block; margin-bottom: 2px; }
+
+  .star-table { width: 100%; border-collapse: collapse; font-size: 9.5px; border: 1px solid var(--teal-light); }
+  .star-table th { font-size: 7.5px; padding: 3px 6px; }
+  .star-table td { padding: 5px 6px; font-size: 9.5px; border-bottom: 1px solid var(--teal-pale); vertical-align: top; line-height: 1.5; }
+  .star-table tr:last-child td { border-bottom: none; }
+  .star-table .story-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--teal); font-size: 9.5px; white-space: nowrap; }
+  .star-table .result-chip { display: inline-block; background: var(--teal); color: #fff; font-size: 7.5px; font-weight: 700; padding: 1px 5px; letter-spacing: 0.05em; margin-top: 3px; }
+
+  ul.field-list { list-style: none; padding: 0; margin: 4px 0; }
+  ul.field-list li { font-size: 10.5px; line-height: 1.65; padding-left: 12px; position: relative; margin-bottom: 2px; color: var(--ink); }
+  ul.field-list li::before { content: '>'; position: absolute; left: 0; color: var(--teal-mid); font-weight: 700; font-size: 9px; top: 1px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .col-label { font-family: 'Space Grotesk', sans-serif; font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 2px 6px; margin-bottom: 5px; display: inline-block; }
+  .col-label.go   { background: var(--teal); color: #fff; }
+  .col-label.warn { background: var(--amber); color: #fff; }
+
+  .verdict-box { border: 2px solid var(--teal); padding: 10px 14px; margin-top: 8px; display: flex; gap: 14px; align-items: flex-start; }
+  .verdict-icon { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: var(--teal); line-height: 1; min-width: 50px; text-align: center; padding-top: 2px; }
+  .verdict-text { font-size: 10.5px; line-height: 1.65; color: var(--ink); }
+  .verdict-text strong { font-family: 'Space Grotesk', sans-serif; font-size: 12px; display: block; color: var(--teal); margin-bottom: 3px; letter-spacing: 0.02em; }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .tag { font-size: 8.5px; padding: 2px 6px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .tag.go   { background: var(--teal); color: #fff; }
+  .tag.warn { background: var(--amber); color: #fff; }
+  .tag.risk { background: var(--red); color: #fff; }
+
+  .doc-footer { display: flex; justify-content: space-between; font-size: 7.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-mid); border-top: 2px solid var(--teal); border-bottom: 1px solid var(--teal-light); padding: 4px 0; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-classification">
+    <span>Kandidaatsevaluatie | career-ops systeem</span>
+    <span class="stamp">Vertrouwelijk</span>
+    <span>Ref: RHD-2026-112 | 2026-06-05</span>
+  </div>
+
+  <div class="report-header-grid">
+    <div>
+      <div class="report-type">Kandidaatsevaluatie | Sollicitatiedossier</div>
+      <div class="report-title">Senior Consultant Supply Chain Sustainability</div>
+      <div class="report-org">Royal HaskoningDHV &mdash; Amersfoort | Advisory Group Supply Chain &amp; Logistics (30+ professionals)</div>
+    </div>
+    <div class="score-badge">
+      <div class="score-num">3.6<span class="score-denom">/5</span></div>
+      <div class="score-label">Totaalscore</div>
+    </div>
+  </div>
+  <hr class="rule-heavy">
+
+  <div class="meta-grid">
+    <div class="meta-cell"><span class="mk">Locatie</span><span class="mv">Amersfoort (+ Amsterdam, Rotterdam, Eindhoven)</span></div>
+    <div class="meta-cell"><span class="mk">Salaris</span><span class="mv">&euro;4.758&ndash;&euro;6.796/mnd</span></div>
+    <div class="meta-cell"><span class="mk">Pensioen</span><span class="mv">18,3% werkgeversbijdrage</span></div>
+    <div class="meta-cell"><span class="mk">Contract</span><span class="mv">Onbepaalde tijd, hybride</span></div>
+    <div class="meta-cell"><span class="mk">Jaarequivalent</span><span class="mv">Ca. &euro;68k&ndash;&euro;97k incl. pensioen</span></div>
+    <div class="meta-cell"><span class="mk">Vakantiedagen</span><span class="mv">28 dagen</span></div>
+    <div class="meta-cell"><span class="mk">Kandidaat</span><span class="mv">Christiaan Verhoef</span></div>
+    <div class="meta-cell"><span class="mk">Aanbeveling</span><span class="mv">SOLLICITEER</span></div>
+  </div>
+
+  <!-- A: SCORES -->
+  <div class="section">
+    <div class="section-title">A. Scoreverdeling per dimensie <span class="sec-num">01</span></div>
+    <div class="score-rows">
+      <div class="srow">
+        <span class="dim">CSRD/EUDR/CSDDD domeinkennis</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:92%"></div></div>
+        <span class="val">4.6</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Supply chain sustainability praktijk</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:76%"></div></div>
+        <span class="val">3.8</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Stakeholdermanagement &amp; advies</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        <span class="val">4.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Comp fit (incl. 18,3% pensioen)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:82%"></div></div>
+        <span class="val">4.1</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Cultuurfit (consultancy, duurzaamheid)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:76%"></div></div>
+        <span class="val">3.8</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Klassieke logistics consulting gap</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:20%"></div></div>
+        <span class="val warn">-0.4</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Universitair diploma (gevraagd: WO)</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:14%"></div></div>
+        <span class="val warn">-0.3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- B: CV-MATCH -->
+  <div class="section">
+    <div class="section-title">B. CV-match per JD-eis <span class="sec-num">02</span></div>
+    <table>
+      <tr><th style="width:28%">JD-eis</th><th style="width:47%">Bewijs in portfolio</th><th style="width:25%">Oordeel</th></tr>
+      <tr>
+        <td class="field">Ervaring duurzame logistiek / supply chain</td>
+        <td>Windesheim SCF Lectoraat (6 jaar); CSRD/EUDR/CSDDD kaders gebouwd voor cross-Europese consortia; Value Chain Hackers: AI-tooling voor supply chain compliance live</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Carbon footprint, circularity</td>
+        <td>CO2-transparantie in supply chains (VCH); blockchain traceability voor voedselketen (Open Food Chain, Viridis); EUDR = ontbossing/biodiversiteit in supply chains</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Publieke &eacute;n commerci&euml;le opdrachtgevers</td>
+        <td>Windesheim: overheden, ngo&rsquo;s en bedrijven in &eacute;&eacute;n consortium; Social Chicken: corporate + overheid trainingen; Tonomy: regulatory + private sector</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Stakeholdermanagement, complex</td>
+        <td>Cross-Europese consortia beheerd; subsidieverstrekkers, directies, Europese partners; KONGSBERG: contractgeschil opgelost met subcontractor-divisiemanager</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Affiniteit met data-tooling &amp; visualisatie</td>
+        <td>Power BI, data-dashboarding, AI-stack (n8n, Flowise, Supabase); KPI-frameworks gebouwd voor supply chain-programma&rsquo;s</td>
+        <td class="match-solid">GOED</td>
+      </tr>
+      <tr>
+        <td class="field">Nederlands &amp; Engels vloeiend</td>
+        <td>Moedertaal Nederlands; near-native Engels (jarenlang internationale samenwerking)</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Ervaring adviesbureau / consulting</td>
+        <td>Social Chicken (freelance consultancy 2016-2022); COTIT; Viridis; wel project-/onderzoeksomgeving, geen klassiek adviesbureau</td>
+        <td class="match-solid">REDELIJK &mdash; lichte leercurve</td>
+      </tr>
+      <tr>
+        <td class="field">Universitaire opleiding</td>
+        <td>HBO Business IT &amp; Management, eindcijfer 8,7. Niet WO, maar scriptie op academisch niveau (KONGSBERG); EVC-equivalent via portfolio</td>
+        <td class="match-gap">MATIG &mdash; formele gap</td>
+      </tr>
+      <tr>
+        <td class="field">Stedelijke logistiek / transport / electrificatie</td>
+        <td>Niet specifiek aanwezig; duurzaamheidsdenkwijze wel aanwezig via CSRD/EUDR</td>
+        <td class="match-gap">GAP &mdash; nieuw domein</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- C: KERNARGUMENT -->
+  <div class="section">
+    <div class="section-title">C. Kernonderscheidend argument <span class="sec-num">03</span></div>
+
+    <div class="intel-box">
+      <div class="intel-label">Positionering: de sustainability consultant die CSRD en EUDR al in productie heeft gebracht</div>
+      Veel consultants weten wat CSRD vereist. Christiaan Verhoef heeft CSRD-compliancekaders opgebouwd voor bedrijven die eraan moeten voldoen &mdash; van nul naar werkende rapportagestructuur, in cross-Europese consortia met bedrijven, ngo&rsquo;s en overheden. Hij weet waar het in de praktijk misgaat: welke data niet beschikbaar is, welke leveranciers niet meewerken, en hoe je toch tot een verdedigbare verantwoording komt. Dat is een ander soort kennis dan het kennen van de richtlijn.
+    </div>
+
+    <ul class="field-list">
+      <li><strong>Value Chain Hackers (Windesheim, 2024):</strong> Cross-Europees AI-complianceprogramma voor CSRD, EUDR en CSDDD &mdash; gebouwd van nul, Europese partnernetwerken geactiveerd, tooling live. Maakt supply chain-duurzaamheid meetbaar en rapporteerbaar voor bedrijven die er nog geen structuur voor hadden.</li>
+      <li><strong>EUDR en biodiversiteit:</strong> De EUDR-richtlijn raakt direct aan ontbossing en biodiversiteitsverlies in supply chains. Christiaan heeft traceability-systemen ge&euml;valueerd en gebouwd voor agrarische ketens die hieraan moeten voldoen. Directe inhoudelijke match met Royal HaskoningDHV&rsquo;s duurzaamheidsadvieswerk.</li>
+      <li><strong>Blockchain traceability (Open Food Chain, Viridis):</strong> Supply chain-transparantie gebouwd op technisch niveau: smart contracts, traceability-flows, stakeholdercommunity. Toont dat hij zowel het advies als de onderliggende data-architectuur begrijpt.</li>
+      <li><strong>Comp is goed:</strong> 18,3% pensioenbijdrage is exceptioneel &mdash; het effectieve salaris bij de top van de band (&euro;6.796 + 18,3% pensioen) komt neer op &euro;8.041/mnd equivalent, wat ruim binnen het target valt.</li>
+    </ul>
+  </div>
+
+  <!-- G: PATROONANALYSE -->
+  <div class="section">
+    <div class="section-title">G. Patroonanalyse: bewijs van fit over de loopbaan <span class="sec-num">04</span></div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 1: van regelgeving naar werkende structuur</div>
+      Drie gedocumenteerde gevallen waarbij Christiaan Europese regelgeving vertaald heeft naar concrete, werkende structuren voor organisaties die er nog niet klaar voor waren:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>CSRD (VCH, 2024):</strong> Rapportagestructuren opgezet voor cross-Europese supply chain-partners die geen idee hadden hoe ze moesten beginnen. Van richtlijn naar werkend kader.</li>
+        <li><strong>EUDR (VCH, 2024):</strong> Traceability-vereisten voor ontbossing vertaald naar data-infrastructuur voor agrarische ketens. Wat de wet vereist, hoe je het bewijst, welke data je daarvoor nodig hebt.</li>
+        <li><strong>MiCA (Tonomy, 2022):</strong> Europese crypto-regulering vertaald naar interne procedures voor een stichting in opbouw. Zelfde vaardigheid, ander domein: van wet naar werkbare organisatiestructuur.</li>
+      </ul>
+    </div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 2: multi-stakeholder consortia activeren en functioneel houden</div>
+      Supply chain sustainability-advies werkt alleen als je de keten meekrijgt. Twee cases van complexe multi-stakeholder omgevingen:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>Value Chain Hackers:</strong> Europees netwerk van bedrijven, ngo&rsquo;s en overheden opgebouwd en functioneel gehouden. Subsidieverstrekkers, technische partners, academische partijen &mdash; allemaal betrokken, allemaal aligned op een gedeeld compliance-doel.</li>
+        <li><strong>Open Food Chain:</strong> Blockchain-community opgebouwd voor voedseltransparantie. Leveranciers, investeerders, technische partners betrokken bij een systeem dat alleen werkt als iedereen meedoet. Leerde hoe je een keten beweegt die niet wil bewegen.</li>
+      </ul>
+    </div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 3: complexe informatie vertalen naar mensen die ermee moeten werken</div>
+      Advieswerk staat of valt met de vraag of de klant ermee aan de slag kan. Christiaan heeft dit herhaaldelijk gedaan:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>Beer Game-demonstrator (Windesheim):</strong> Abstracte ketenverstoringen en CO2-impact tastbaar gemaakt via een live simulatie. Professionals leren er meer van in een middag dan in een week rapport lezen.</li>
+        <li><strong>Blockchain-trainingen (Social Chicken, 2016-2022):</strong> Complexe technologie uitgelegd aan C-niveau bij corporate en overheidsklanten door heel Benelux. Geen jargon, wel begrip.</li>
+        <li><strong>COTIT (2024):</strong> Architectuurrisico&rsquo;s en marktpositionering vertaald naar een roadmap die de directie kon verdedigen bij investeerders.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- D: RISICO'S -->
+  <div class="section">
+    <div class="section-title">D. Risico's &amp; mitigatie <span class="sec-num">05</span></div>
+
+    <div class="warn-box">
+      <div class="warn-label">Klassieke logistics consulting ontbreekt</div>
+      Christiaan heeft geen trackrecord bij een adviesbureau. Zijn ervaring is vanuit een universiteits-lectoraat en freelance projecten, niet vanuit een klassieke consulting-omgeving met deliverables, factureerbare uren en vaste klantrelaties. Mitigatie: zijn werk bij VCH en Social Chicken heeft dezelfde structuur (opdrachtgever, vraagstelling, advies, implementatie). De overgang naar formeel adviesbureau vereist aanpassing aan structuur en rapportage-stijl, maar de inhoud is aanwezig.
+    </div>
+
+    <div class="warn-box">
+      <div class="warn-label">Stedelijke logistiek, transport, electrificatie: nieuw</div>
+      De JD noemt urban logistics, electrificatie en laadinfrastructuur als projectvoorbeelden. Dit zijn geen kerngebieden van Christiaan. Mitigatie: het advieswerk bij Royal HaskoningDHV is breed; hij hoeft niet alles te kennen. Zijn CSRD/EUDR-expertise en data-tooling vaardigheid zijn voldoende differentiërend om ook op andere projecten ingezet te worden terwijl hij bijleert.
+    </div>
+
+    <div class="two-col" style="margin-top:8px">
+      <div>
+        <span class="col-label go">Sterktes (teal)</span>
+        <ul class="field-list">
+          <li>CSRD/EUDR/CSDDD expertise &mdash; zeldzaam in consulting</li>
+          <li>Supply chain traceability in de praktijk gebouwd</li>
+          <li>Cross-Europese consortia beheerd</li>
+          <li>18,3% pensioen maakt comp aantrekkelijk</li>
+          <li>Amersfoort 20 min van Baarn</li>
+          <li>Nederlands moedertaal + Engels near-native</li>
+          <li>Data-tooling en visualisatie aanwezig</li>
+        </ul>
+      </div>
+      <div>
+        <span class="col-label warn">Risico's (oranje)</span>
+        <ul class="field-list">
+          <li>Geen klassieke consultancy-achtergrond</li>
+          <li>Geen WO-diploma (HBO 8,7)</li>
+          <li>Urban logistics / electrificatie: nieuw</li>
+          <li>Fulltime vs. fractional: bespreken</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- E: COMP -->
+  <div class="section">
+    <div class="section-title">E. Compensatieanalyse <span class="sec-num">06</span></div>
+    <table>
+      <tr><th>Component</th><th>Waarde</th><th>Toelichting</th></tr>
+      <tr><td class="field">Basissalaris</td><td>&euro;4.758&ndash;&euro;6.796/mnd</td><td>Brede band; bovenkant voor senior profiel met bewezen CSRD-expertise</td></tr>
+      <tr><td class="field">Pensioen</td><td>18,3% werkgeversbijdrage</td><td>Exceptioneel &mdash; effectief +&euro;1.245/mnd bij top band</td></tr>
+      <tr><td class="field">Vakantiedagen</td><td>28 dagen</td><td>Bovengemiddeld</td></tr>
+      <tr><td class="field">Duurzame mobiliteit</td><td>Incentive aanwezig</td><td>OV-vergoeding of fietsregeling</td></tr>
+      <tr><td class="field">Effectief jaarequivalent (top)</td><td>Ca. &euro;96.540 bruto</td><td>&euro;6.796 x 12 x 1.183 (pensioen) + 8% vakantiegeld</td></tr>
+      <tr><td class="field">Oordeel</td><td><strong>Ruim boven target bij bovenkant band. Zelfs instappunt (&euro;4.758 + 18,3%) is acceptabel als deel van fractional portfolio.</strong></td><td></td></tr>
+    </table>
+  </div>
+
+  <!-- H: SLEUTELFRASEN -->
+  <div class="section">
+    <div class="section-title">H. Sleutelfrasen voor brief en gesprek <span class="sec-num">07</span></div>
+    <div class="phrase-grid">
+      <div class="phrase-item">
+        <span class="phrase-context">Openingspositie</span>
+        &ldquo;Ik heb zes jaar gewerkt aan CSRD-, EUDR- en CSDDD-kaders voor supply chains. Niet als theoreticus, maar als iemand die samen met de consortium-partners bepaalt hoe je van richtlijn naar werkend systeem komt.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over EUDR specifiek</span>
+        &ldquo;De EUDR raakt aan ontbossing en biodiversiteitsverlies in supply chains. Ik heb traceability-systemen gebouwd voor agrarische ketens die hieraan moeten voldoen &mdash; van databronnen tot rapportage.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over consulting-gap</span>
+        &ldquo;Ik kom niet uit een klassiek adviesbureau, maar mijn werk bij Windesheim en VCH heeft dezelfde structuur: opdrachtgever, vraagstelling, advies, implementatie. De overgang naar jullie format is er &eacute;&eacute;n van context, niet van inhoud.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over data-tooling</span>
+        &ldquo;Ik bouw KPI-frameworks die mensen helpen besluiten nemen, en ik kan ze zelf implementeren. Van Power BI-dashboard tot de onderliggende data-infrastructuur.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over multi-stakeholder</span>
+        &ldquo;Bij Value Chain Hackers heb ik een Europees netwerk van bedrijven, ngo&rsquo;s en overheden functioneel gehouden. Ik weet hoe je een keten beweegt die niet wil bewegen.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Vraag voor het gesprek</span>
+        &ldquo;Welk type projecten heeft de meeste urgentie voor jullie CSRD-adviesteam nu? En is er ruimte om dit gesprek te voeren over werkmodel &mdash; ik werk het liefst in parallelle engagements.&rdquo;
+      </div>
+    </div>
+  </div>
+
+  <!-- F: VERDICT -->
+  <div class="section">
+    <div class="section-title">F. Operationeel advies (aanbeveling) <span class="sec-num">08</span></div>
+    <div class="verdict-box">
+      <div class="verdict-icon">GO</div>
+      <div class="verdict-text">
+        <strong>SOLLICITEER. Score 3.6/5.</strong>
+        Royal HaskoningDHV zoekt iemand die supply chain sustainability begrijpt en kan vertalen naar advies dat opdrachtgevers kunnen uitvoeren. Christiaan heeft precies dit gedaan voor cross-Europese consortia: CSRD/EUDR-kaders gebouwd, traceability-tools ge&iuml;mplementeerd, en stakeholders meegenomen die er niet om vroegen. De gaps (geen formele consulting-achtergrond, geen WO) zijn reeel maar overbrugbaar: de inhoud is aanwezig, het format is aanpasbaar. De comp is aantrekkelijk door de 18,3% pensioen &mdash; effectief een van de betere aanbiedingen in de pipeline.
+      </div>
+    </div>
+
+    <div class="tag-row">
+      <span class="tag go">CSRD/EUDR expertise</span>
+      <span class="tag go">Supply chain traceability</span>
+      <span class="tag go">Cross-Europees consortia</span>
+      <span class="tag go">18,3% pensioen</span>
+      <span class="tag go">Amersfoort 20 min</span>
+      <span class="tag warn">Geen consulting-track</span>
+      <span class="tag warn">HBO vs. WO</span>
+      <span class="tag warn">Urban logistics: nieuw</span>
+    </div>
+  </div>
+
+  <!-- I: INTERVIEW PREP -->
+  <div class="section">
+    <div class="section-title">I. Interviewvoorbereiding &mdash; STAR+R stories <span class="sec-num">09</span></div>
+    <table class="star-table">
+      <tr>
+        <th style="width:18%">Story</th>
+        <th style="width:24%">Situatie &amp; Taak</th>
+        <th style="width:28%">Actie</th>
+        <th style="width:18%">Resultaat</th>
+        <th style="width:12%">Relevantie</th>
+      </tr>
+      <tr>
+        <td class="story-name">Value Chain<br>Hackers</td>
+        <td>Bedrijven in cross-Europees consortium moesten CSRD- en EUDR-compliant worden. Geen structuur, geen data-pipeline, geen rapportageformat aanwezig.</td>
+        <td>Compliancekaders gebouwd van nul: databronnen ge&iuml;dentificeerd, rapportagestructuren ontworpen, AI-tooling ge&iuml;mplementeerd (n8n, Supabase), Europese partnernetwerken ge&iuml;ntegreerd.</td>
+        <td>Consortia rapporteren conform CSRD/EUDR. AI-tooling operationeel voor meerdere partners.<br><span class="result-chip">Live, Europees</span></td>
+        <td>Directe analogie met wat Royal HaskoningDHV doet voor haar klanten.</td>
+      </tr>
+      <tr>
+        <td class="story-name">Open Food<br>Chain</td>
+        <td>Voedsel supply chain-partners wilden transparantie over herkomst en duurzaamheid maar werkten niet mee aan datadeling &mdash; te complex, te gevoelig.</td>
+        <td>Blockchain traceability opgezet op een manier die de drempel voor leveranciers verlaagde. Community opgebouwd via Discord, workshops gefaciliteerd, smart contracts vereenvoudigd.</td>
+        <td>Nieuwe investering aangetrokken via strategische outreach. Meerdere supply chain-partners actief in systeem.<br><span class="result-chip">Investering gewonnen</span></td>
+        <td>Toont hoe je een keten meekrijgt die niet wil bewegen &mdash; kernvaardigheid in sustainability advies.</td>
+      </tr>
+      <tr>
+        <td class="story-name">Beer Game<br>Demonstrator</td>
+        <td>Supply chain-verstoringen en bullwhip-effect zijn moeilijk uit te leggen aan managers en studenten. Abstracte theorie werkt niet.</td>
+        <td>Beer Game herbouwd als live simulatie: rollen, rondes, echte beslissingen met gevolgen, CO2-impactmeting ge&iuml;ntegreerd. Meerdere cohorten professionals en studenten begeleid.</td>
+        <td>Deelnemers begrijpen ketenverstoringen en duurzaamheidsimpact na &eacute;&eacute;n sessie beter dan na een week rapport.<br><span class="result-chip">Herhaald gebruik</span></td>
+        <td>Toont vermogen om complexe supply chain-concepten begrijpelijk te maken &mdash; kernvaardigheid voor advieswerk bij publieke &eacute;n commerci&euml;le klanten.</td>
+      </tr>
+      <tr>
+        <td class="story-name">KONGSBERG<br>Contract</td>
+        <td>Subcontractor weigerde BP-gecontracteerde data te leveren bij velddeployment Azerbeidzjan. Geen senior backup beschikbaar.</td>
+        <td>BP-contract volledig gelezen, specifieke clausules geciteerd bij divisiehoofd. Confrontatie gebaseerd op feiten en contractrecht, niet op autoriteit of hiëarchie.</td>
+        <td>Data geleverd binnen 24 uur. Op schema.<br><span class="result-chip">Dag 1 opgelost</span></td>
+        <td>Toont zakelijke standvastigheid in leveranciersgesprekken &mdash; relevant als je supply chain-partijen aanspreekt op duurzaamheidsverplichtingen.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="doc-footer">
+    <span>career-ops | evaluatierapport</span>
+    <span>Kandidaat: Christiaan Verhoef</span>
+    <span>Ref: RHD-2026-112 | 2026-06-05</span>
+  </div>
+
+</div>
+</body>
+</html>

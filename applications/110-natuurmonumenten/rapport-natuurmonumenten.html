@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kandidaatsevaluatie -- Natuurmonumenten -- Business Controller</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../../fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  :root {
+    --green:      #1c6b32;
+    --green-mid:  #2a8a45;
+    --green-light:#62b07a;
+    --green-pale: #b8dfc3;
+    --green-bg:   #eef8f1;
+    --amber:      #c07820;
+    --red:        #8b2020;
+    --teal:       #1a6e5a;
+    --ink:        #1a2218;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: #fff;
+  }
+  .page {
+    width: 210mm;
+    margin: 0 auto;
+    padding: 14mm 18mm 14mm 18mm;
+  }
+
+  .doc-classification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green-mid);
+    border-top: 2px solid var(--green);
+    border-bottom: 1px solid var(--green-light);
+    padding: 4px 0;
+    margin-bottom: 10px;
+  }
+  .doc-classification .stamp {
+    background: var(--green);
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+  }
+
+  .report-header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0 16px;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+  .report-type {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green-mid);
+    margin-bottom: 3px;
+  }
+  .report-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--green);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .report-org {
+    font-size: 11px;
+    color: var(--green-mid);
+    margin-top: 3px;
+    font-weight: 500;
+  }
+  .score-badge {
+    border: 3px solid var(--green);
+    padding: 8px 14px;
+    text-align: center;
+    min-width: 72px;
+  }
+  .score-badge .score-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1;
+  }
+  .score-badge .score-denom { font-size: 12px; color: var(--green-mid); font-weight: 400; }
+  .score-badge .score-label { font-size: 7.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green-mid); margin-top: 2px; }
+
+  .rule-heavy { border: none; border-top: 3px solid var(--green); margin: 8px 0; }
+  .rule-light  { border: none; border-top: 1px solid var(--green-light); margin: 10px 0 8px; }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid var(--green);
+    margin-bottom: 12px;
+    font-size: 9.5px;
+  }
+  .meta-cell { padding: 5px 8px; border-right: 1px solid var(--green-light); border-bottom: 1px solid var(--green-light); }
+  .meta-cell:nth-child(4n) { border-right: none; }
+  .meta-cell:nth-last-child(-n+4) { border-bottom: none; }
+  .meta-cell .mk { font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green-mid); display: block; margin-bottom: 1px; }
+  .meta-cell .mv { font-weight: 600; color: var(--ink); }
+
+  .section { margin-bottom: 14px; }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #fff;
+    background: var(--green);
+    padding: 3px 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-title .sec-num { opacity: 0.6; font-weight: 400; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 10px; margin-bottom: 6px; border: 1px solid var(--green-light); }
+  th {
+    background: var(--green-bg);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--green);
+    padding: 4px 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--green-light);
+  }
+  td { padding: 4px 8px; border-bottom: 1px solid var(--green-pale); vertical-align: top; line-height: 1.5; }
+  tr:last-child td { border-bottom: none; }
+  td.field { font-weight: 600; color: var(--green); width: 26%; }
+
+  .match-strong { color: #1a6e1a; font-weight: 700; }
+  .match-solid  { color: #3a6e0a; font-weight: 600; }
+  .match-gap    { color: var(--amber); font-weight: 600; }
+  .match-risk   { color: var(--red); font-weight: 700; }
+
+  .score-rows { display: flex; flex-direction: column; gap: 5px; }
+  .srow { display: flex; align-items: center; gap: 8px; font-size: 10px; }
+  .srow .dim { width: 170px; color: var(--ink); }
+  .srow .bar-bg { flex: 1; height: 7px; background: var(--green-pale); border: 1px solid var(--green-light); }
+  .srow .bar-fill { height: 100%; background: var(--green); }
+  .srow .bar-fill.warn { background: var(--amber); }
+  .srow .val { width: 28px; text-align: right; font-weight: 700; color: var(--green); font-family: 'Space Grotesk', monospace; }
+  .srow .val.warn { color: var(--amber); }
+
+  .intel-box {
+    border: 1px solid var(--green);
+    border-left: 4px solid var(--green);
+    background: var(--green-bg);
+    padding: 8px 10px;
+    margin: 6px 0;
+    font-size: 10.5px;
+    line-height: 1.65;
+  }
+  .intel-box .intel-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 7.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--green-mid);
+    margin-bottom: 4px;
+  }
+  .warn-box {
+    border: 1px solid var(--amber);
+    border-left: 4px solid var(--amber);
+    background: #fdf6e8;
+    padding: 8px 10px;
+    margin: 6px 0;
+    font-size: 10.5px;
+    line-height: 1.65;
+  }
+  .warn-box .warn-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 7.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--amber);
+    margin-bottom: 4px;
+  }
+
+  .phrase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 4px; }
+  .phrase-item {
+    border: 1px solid var(--green-pale);
+    border-left: 3px solid var(--green-mid);
+    background: var(--green-bg);
+    padding: 5px 8px;
+    font-size: 10px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .phrase-item .phrase-context {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--green-mid);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .star-table { width: 100%; border-collapse: collapse; font-size: 9.5px; border: 1px solid var(--green-light); }
+  .star-table th { font-size: 7.5px; padding: 3px 6px; }
+  .star-table td { padding: 5px 6px; font-size: 9.5px; border-bottom: 1px solid var(--green-pale); vertical-align: top; line-height: 1.5; }
+  .star-table tr:last-child td { border-bottom: none; }
+  .star-table .story-name { font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: var(--green); font-size: 9.5px; white-space: nowrap; }
+  .star-table .result-chip { display: inline-block; background: var(--green); color: #fff; font-size: 7.5px; font-weight: 700; padding: 1px 5px; letter-spacing: 0.05em; margin-top: 3px; }
+
+  ul.field-list { list-style: none; padding: 0; margin: 4px 0; }
+  ul.field-list li {
+    font-size: 10.5px;
+    line-height: 1.65;
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 2px;
+    color: var(--ink);
+  }
+  ul.field-list li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--green-mid);
+    font-weight: 700;
+    font-size: 9px;
+    top: 1px;
+  }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .col-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 2px 6px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .col-label.go   { background: var(--green); color: #fff; }
+  .col-label.warn { background: var(--amber); color: #fff; }
+
+  .verdict-box { border: 2px solid var(--green); padding: 10px 14px; margin-top: 8px; display: flex; gap: 14px; align-items: flex-start; }
+  .verdict-icon { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: var(--green); line-height: 1; min-width: 50px; text-align: center; padding-top: 2px; }
+  .verdict-text { font-size: 10.5px; line-height: 1.65; color: var(--ink); }
+  .verdict-text strong { font-family: 'Space Grotesk', sans-serif; font-size: 12px; display: block; color: var(--green); margin-bottom: 3px; letter-spacing: 0.02em; }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .tag { font-size: 8.5px; padding: 2px 6px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .tag.go   { background: var(--green); color: #fff; }
+  .tag.warn { background: var(--amber); color: #fff; }
+  .tag.risk { background: var(--red); color: #fff; }
+
+  .doc-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green-mid);
+    border-top: 2px solid var(--green);
+    border-bottom: 1px solid var(--green-light);
+    padding: 4px 0;
+    margin-top: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="doc-classification">
+    <span>Kandidaatsevaluatie | career-ops systeem</span>
+    <span class="stamp">Vertrouwelijk</span>
+    <span>Ref: NM-2026-110 | 2026-06-05</span>
+  </div>
+
+  <div class="report-header-grid">
+    <div>
+      <div class="report-type">Kandidaatsevaluatie | Sollicitatiedossier</div>
+      <div class="report-title">Business Controller</div>
+      <div class="report-org">Natuurmonumenten &mdash; Amersfoort | Afdeling Finance &amp; Control (20 professionals)</div>
+    </div>
+    <div class="score-badge">
+      <div class="score-num">3.5<span class="score-denom">/5</span></div>
+      <div class="score-label">Totaalscore</div>
+    </div>
+  </div>
+  <hr class="rule-heavy">
+
+  <div class="meta-grid">
+    <div class="meta-cell"><span class="mk">Locatie</span><span class="mv">Amersfoort</span></div>
+    <div class="meta-cell"><span class="mk">Salaris</span><span class="mv">Schaal 8: &euro;4.125&ndash;&euro;6.013/mnd</span></div>
+    <div class="meta-cell"><span class="mk">Jaarequivalent</span><span class="mv">Ca. &euro;58k&ndash;&euro;85k incl. vakantiegeld</span></div>
+    <div class="meta-cell"><span class="mk">Toegang</span><span class="mv">Inside track &mdash; intern contact</span></div>
+    <div class="meta-cell"><span class="mk">Reistijd</span><span class="mv">Baarn &rarr; Amersfoort: 20 min</span></div>
+    <div class="meta-cell"><span class="mk">Afdeling</span><span class="mv">Finance &amp; Control, 20 professionals</span></div>
+    <div class="meta-cell"><span class="mk">Kandidaat</span><span class="mv">Christiaan Verhoef</span></div>
+    <div class="meta-cell"><span class="mk">Aanbeveling</span><span class="mv">SOLLICITEER</span></div>
+  </div>
+
+  <!-- SECTION A: SCORES -->
+  <div class="section">
+    <div class="section-title">A. Scoreverdeling per dimensie <span class="sec-num">01</span></div>
+    <div class="score-rows">
+      <div class="srow">
+        <span class="dim">Missie-alignment (natuur, ESG)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div>
+        <span class="val">5.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Financieel programmamanagement</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        <span class="val">4.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Stakeholdercommunicatie &amp; rapportage</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        <span class="val">4.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Cultuurfit (missiegedreven organisatie)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:86%"></div></div>
+        <span class="val">4.3</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Comp fit (schaal 8 vs. target)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:66%"></div></div>
+        <span class="val">3.3</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Formele controller-achtergrond gap</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:22%"></div></div>
+        <span class="val warn">-0.6</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION B: CV-MATCH -->
+  <div class="section">
+    <div class="section-title">B. CV-match per JD-eis <span class="sec-num">02</span></div>
+    <table>
+      <tr><th style="width:28%">JD-eis</th><th style="width:47%">Bewijs in portfolio</th><th style="width:25%">Oordeel</th></tr>
+      <tr>
+        <td class="field">Financieel beheer en verantwoording</td>
+        <td>Ca. &euro;2M aan innovatiefinanciering beheerd bij Windesheim: consortiumopbouw, subsidieaanvragen, financieel beheer en verantwoording aan subsidieverstrekkers</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">KPI-monitoring en rapportage</td>
+        <td>KPI-kaders ontwikkeld voor supply chain-programma's; periodieke rapportage aan bedrijven, overheden en lectoraat; dashboardontwerp en data-analyse</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">ESG / compliance (CSRD, EUDR)</td>
+        <td>CSRD-, CSDDD- en EUDR-compliancekaders opgezet voor cross-Europese consortia van bedrijven, ngo's en overheden &mdash; precies het domein van Natuurmonumenten</td>
+        <td class="match-strong">STERK (uniek)</td>
+      </tr>
+      <tr>
+        <td class="field">Stakeholdermanagement, complexe boodschappen</td>
+        <td>Rapportage aan subsidieverstrekkers, lectoraat, Europese partners; COTIT: architectuurkeuzes vertaald voor investeerders; Tonomy: technische richting uitgelegd aan niet-technische stakeholders</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Proactief, analytisch, procesverbeteraar</td>
+        <td>Aeres: 8 cursussen samengevoegd tot 1 coherent track; COTIT: financieel overzicht gecre&euml;erd waar het ontbrak; Windesheim: compliance-structuren opgebouwd van nul</td>
+        <td class="match-solid">GOED</td>
+      </tr>
+      <tr>
+        <td class="field">Bedrijfseconomische opleiding</td>
+        <td>Bachelor Business IT &amp; Management HvA, eindcijfer 8,7. Niet puur bedrijfseconomie maar sterke analytische basis; scriptie over KPI-systemen</td>
+        <td class="match-gap">MATIG &mdash; niet RA/RC</td>
+      </tr>
+      <tr>
+        <td class="field">Ervaring in non-profit / overheid</td>
+        <td>Windesheim (hogeschool), Aeres (hogeschool), samenwerking met overheidsprogramma's via CSRD-trajecten &mdash; bekendheid met subsidielogica</td>
+        <td class="match-solid">GOED</td>
+      </tr>
+      <tr>
+        <td class="field">Inside track (intern contact)</td>
+        <td>Directe bekendheid met de organisatie via intern contact &mdash; context al aanwezig, geen koude sollicitatie</td>
+        <td class="match-strong">VOORDEEL</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- SECTION C: KERNARGUMENT -->
+  <div class="section">
+    <div class="section-title">C. Kernonderscheidend argument <span class="sec-num">03</span></div>
+
+    <div class="intel-box">
+      <div class="intel-label">Positionering: de analyticus die ESG niet van buiten kent maar van binnenuit heeft gebouwd</div>
+      Veel Business Controller-kandidaten weten wat CSRD is. Christiaan Verhoef heeft CSRD-compliancekaders opgebouwd voor bedrijven die er aan moeten voldoen. Hij heeft gewerkt aan EUDR- en CSDDD-trajecten voor agrarische supply chains. Bij Windesheim heeft hij financieel gerapporteerd over innovatieprogramma's aan subsidieverstrekkers, lectoraat en Europese partners &mdash; onder druk van echte deadlines, met echte gevolgen als de verantwoording niet klopte. Dat is het type financieel-analytische ruggengraat dat Natuurmonumenten zoekt: iemand die complexe informatie vertaalt naar concrete inzichten, en die de urgentie van de missie v&aacute;nuit de organisatie begrijpt, niet slechts als externe expert.
+    </div>
+
+    <ul class="field-list">
+      <li><strong>Windesheim &mdash; &euro;2M subsidiemanagement:</strong> Consortiumopbouw, subsidieaanvragen, financieel beheer en verantwoording aan subsidieverstrekkers en Europese partners. Geen externe controller &mdash; hij was de financieel verantwoordelijke, met directe gevolgen als de verantwoording niet klopte. De lat lag hoog omdat het de volgende financieringsronde bepaalde.</li>
+      <li><strong>CSRD/EUDR/CSDDD-expertise:</strong> Compliancekaders opgezet voor cross-Europese consortia van bedrijven, ngo's en overheden in de agrarische sector. Dit raakt direct aan het kernmandaat van Natuurmonumenten rond biodiversiteit en duurzaamheid. De meeste Business Controller-kandidaten kennen dit domein niet van binnenuit.</li>
+      <li><strong>COTIT &mdash; financieel inzicht cre&euml;ren waar het ontbrak:</strong> Een logistiek SaaS-platform financieel gestructureerd dat geen overzicht had. Budgetplanning, SaaS-verkoopmodel ingericht, rapportage aan directie. Toont proactief vermogen om orde te scheppen in financieel-operationele chaos.</li>
+      <li><strong>Inside track:</strong> Geen koude sollicitatie. Bekendheid met de organisatie geeft context die anderen missen en verlaagt het risico voor de hiring manager aanzienlijk.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION G: PATROONANALYSE -->
+  <div class="section">
+    <div class="section-title">G. Patroonanalyse: bewijs van fit over de loopbaan <span class="sec-num">04</span></div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 1: financieel inzicht in dienst van een groter doel</div>
+      Christiaan heeft nooit de titel &ldquo;controller&rdquo; gedragen, maar het werk was dat wel. Drie gedocumenteerde voorbeelden waarbij financieel beheer direct verbonden was aan een missiegedreven uitkomst:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>Windesheim Value Chain Hackers (2024):</strong> &euro;2M co-financiering gefaciliteerd voor cross-Europees AI-complianceprogramma. Subsidieaanvragen geschreven, consortia opgebouwd, financieel gerapporteerd aan Europese en nationale partners. De financiering was het fundament waarop het programma draaide.</li>
+        <li><strong>Tonomy Foundation (2021):</strong> Financieel beleid opgesteld voor een stichting in opbouw. Seed-financiering aangetrokken, fondsenwerving geleid, MiCA-compliance gemonitord en vertaald naar interne procedures. Financieel bestuur van een organisatie die maatschappelijke waarde probeerde te cre&euml;ren.</li>
+        <li><strong>Veles Farming (via Aeres):</strong> Seed-investeerder en begeleider van een studentproject dat uitgroeide tot een agri-tech startup in Slowakije (&euro;2M gefinancierd). Vroeg-stadium financieel co-denken dat leidde tot een operationele organisatie.</li>
+      </ul>
+    </div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 2: compliance-kaders bouwen die werken in de praktijk</div>
+      Niet compliance als paperwork, maar compliance als structuur die de organisatie beschermt. Drie relevante voorbeelden:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>CSRD-kaders (Windesheim/VCH):</strong> Bedrijven begeleid bij het opzetten van rapportagestructuren voor Europese duurzaamheidsrichtlijnen. Weet hoe de lat echt ligt, niet hoe hij theoretisch beschreven staat.</li>
+        <li><strong>EUDR-trajecten:</strong> Supply chain-traceability-systemen ge&euml;valueerd op compliance-risico voor agrarische partners. Directe link met het biodiversiteits- en ontbossingsmandaat van Natuurmonumenten.</li>
+        <li><strong>Tonomy/MICA:</strong> Europese crypto-regulering vertaald naar interne procedures voor een stichting. Toont vermogen om wetgeving om te zetten in werkbare kaders &mdash; hetzelfde wat een controller doet met jaarrekening-richtlijnen.</li>
+      </ul>
+    </div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 3: complexe informatie vertalen naar besluitvorming</div>
+      Business Controller bij Natuurmonumenten = het management ondersteunen met betrouwbare analyses en heldere rapportage. Christiaan doet dit al jaren, in andere contexten:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>COTIT (2024):</strong> Architectuurrisico's en financiële positionering vertaald naar een roadmap die directie kon verdedigen bij investeerders. Ingewikkelde informatie simpel gemaakt voor de beslissers.</li>
+        <li><strong>Windesheim-rapportages:</strong> Periodieke voortgangsrapportages aan lectoraat, bedrijven en Europese subsidieverstrekkers. Elk rapport moest kloppen en overtuigen &mdash; het was de basis voor verdere financiering.</li>
+        <li><strong>Tonomy (W3C CCG):</strong> Technische standaardisatievoortgang vertaald voor niet-technische investeerders en bestuurders. Zelfde vaardigheid, andere context.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION D: RISICO'S -->
+  <div class="section">
+    <div class="section-title">D. Risico's &amp; mitigatie <span class="sec-num">05</span></div>
+
+    <div class="warn-box">
+      <div class="warn-label">Formele controller-achtergrond ontbreekt</div>
+      Christiaan heeft geen RA- of RC-opleiding. Zijn financiële achtergrond is praktisch en programmagericht, niet vanuit een formele accountancy- of controlling-opleiding. Bij Natuurmonumenten (schaal 8) is dit minder een harde eis dan bij een corporate controller-functie. De afdeling heeft 20 professionals en een controller die analytisch sterk is, communicatief vaardig en ESG-domeinkennis heeft, voegt waarde toe &mdash; ook zonder RA-titel. Strategie: proactief adresseren, de praktijkervaring laten spreken, inside track benutten om dit gesprek al gevoerd te hebben.
+    </div>
+
+    <div class="warn-box">
+      <div class="warn-label">Comp: schaal 8 is onder het target bij volledig fulltime</div>
+      Schaal 8 top (&euro;6.013/mnd) is &euro;72k/jr bruto, plus vakantiegeld/IKB ongeveer &euro;85k. Dat zit aan de ondergrens van het target van Christiaan. Mitigatie: Natuurmonumenten als een van meerdere parallelle engagements positioneren. Of: bespreekbaar of er schaal 9 (ca. &euro;7.500 top) mogelijk is bij een sterk profiel.
+    </div>
+
+    <div class="two-col" style="margin-top:8px">
+      <div>
+        <span class="col-label go">Sterktes (groen)</span>
+        <ul class="field-list">
+          <li>Inside track &mdash; geen koude sollicitatie</li>
+          <li>CSRD/EUDR expertise is uniek voor een controller-profiel</li>
+          <li>&euro;2M subsidiemanagement aangetoond</li>
+          <li>Missie-alignment: ESG, biodiversiteit, natuur in supply chains</li>
+          <li>Analytisch sterk, helder communicator</li>
+          <li>Amersfoort 20 min van Baarn</li>
+          <li>Business IT &amp; Management: data + bedrijfseconomie gecombineerd</li>
+        </ul>
+      </div>
+      <div>
+        <span class="col-label warn">Risico's (oranje)</span>
+        <ul class="field-list">
+          <li>Geen RA/RC-opleiding</li>
+          <li>Geen formele controller-titel in vorige rollen</li>
+          <li>Schaal 8 is onder comp-target bij fulltime</li>
+          <li>Non-profit finance specifiek: anders dan commercieel</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION E: COMP -->
+  <div class="section">
+    <div class="section-title">E. Compensatieanalyse <span class="sec-num">06</span></div>
+    <table>
+      <tr><th>Component</th><th>Waarde</th><th>Toelichting</th></tr>
+      <tr><td class="field">Basissalaris</td><td>Schaal 8: &euro;4.125&ndash;&euro;6.013/mnd</td><td>Overheid-cao equivalent; bovenkant realistisch voor seniorprofiel</td></tr>
+      <tr><td class="field">Vakantiegeld</td><td>8%</td><td>Standaard</td></tr>
+      <tr><td class="field">IKB / pensioen</td><td>Aanwezig</td><td>Pensioenfonds natuur en milieu doorgaans goed</td></tr>
+      <tr><td class="field">Jaarequivalent (top)</td><td>Ca. &euro;78k&ndash;&euro;85k bruto</td><td>Inclusief vakantiegeld en standaard toeslagen</td></tr>
+      <tr><td class="field">Kandidaat target</td><td>&euro;65k&ndash;&euro;90k</td><td>Harde ondergrens &euro;55k</td></tr>
+      <tr><td class="field">Oordeel</td><td><strong>Acceptabel bij schaal 8 top of als deel van fractional portfolio. Verken of schaal 9 bespreekbaar is bij sterk profiel.</strong></td><td></td></tr>
+    </table>
+  </div>
+
+  <!-- SECTION H: SLEUTELFRASEN -->
+  <div class="section">
+    <div class="section-title">H. Sleutelfrasen voor brief en gesprek <span class="sec-num">07</span></div>
+    <div class="phrase-grid">
+      <div class="phrase-item">
+        <span class="phrase-context">Openingspositie</span>
+        &ldquo;Ik heb de afgelopen vijf jaar innovatielabs geleid die draaiden op subsidies en partnerinvesteringen. Dat vertrouwen houd je alleen als de financiële verantwoording klopt.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over ESG-domeinkennis</span>
+        &ldquo;Ik heb CSRD- en EUDR-compliancekaders opgebouwd voor bedrijven die eraan moeten voldoen. Ik ken het domein niet van buiten &mdash; ik heb het van binnenuit meegebouwd.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over formele controller-gap</span>
+        &ldquo;Ik draag geen RA-titel, maar het werk is hetzelfde: financieel inzicht cre&euml;ren waar het ontbrak, rapporteren aan mensen die op die informatie besluiten nemen, en verantwoording afleggen als het telt.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over Natuurmonumenten specifiek</span>
+        &ldquo;Wat me trekt bij Natuurmonumenten is dat er hier iets te beschermen valt wat de moeite waard is. De verbinding tussen natuur en organisatie is voor mij niet abstract &mdash; ik heb gewerkt aan EUDR-trajecten voor biodiversiteit in supply chains.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over analysevaardigheden</span>
+        &ldquo;Mijn achtergrond is Business IT &amp; Management: dataanalyse en bedrijfseconomisch denken gecombineerd. Ik bouw dashboards die mensen helpen besluiten nemen, niet dashboards die indruk maken.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Vraag voor het gesprek</span>
+        &ldquo;Wat is de verhouding tussen financieel beheer van programma's en intern management-reporting? En is er ruimte om dit gesprek te voeren over werkmodel &mdash; ik werk het liefst in parallelle engagements.&rdquo;
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION F: VERDICT -->
+  <div class="section">
+    <div class="section-title">F. Operationeel advies (aanbeveling) <span class="sec-num">08</span></div>
+    <div class="verdict-box">
+      <div class="verdict-icon">GO</div>
+      <div class="verdict-text">
+        <strong>SOLLICITEER. Score 3.5/5. Inside track.</strong>
+        De conceptuele fit is sterk: Christiaan heeft &euro;2M subsidiemanagement aangetoond, CSRD/EUDR-expertise die de meeste Business Controller-kandidaten niet hebben, en een inside track die het risico voor de hiring manager significant verlaagt. Het enige echte risico is het ontbreken van een formele controller-opleiding &mdash; maar bij een schaal 8-rol in een 20-persoons F&C-team is analytische kracht, domeinkennis en missie-alignment relevanter dan een RA-titel. Adresseer de gap proactief, laat de praktijkervaring spreken, en gebruik de inside track om dit gesprek al voor de formele sollicitatie te voeren.
+      </div>
+    </div>
+
+    <div class="tag-row">
+      <span class="tag go">Inside track</span>
+      <span class="tag go">CSRD/EUDR expertise</span>
+      <span class="tag go">2M subsidiemanagement</span>
+      <span class="tag go">Missie-alignment</span>
+      <span class="tag go">Amersfoort 20 min</span>
+      <span class="tag warn">Geen RA/RC</span>
+      <span class="tag warn">Schaal 8: comp-grens</span>
+    </div>
+  </div>
+
+  <!-- SECTION I: INTERVIEW PREP -->
+  <div class="section">
+    <div class="section-title">I. Interviewvoorbereiding &mdash; STAR+R stories <span class="sec-num">09</span></div>
+    <table class="star-table">
+      <tr>
+        <th style="width:18%">Story</th>
+        <th style="width:24%">Situatie &amp; Taak</th>
+        <th style="width:28%">Actie</th>
+        <th style="width:18%">Resultaat</th>
+        <th style="width:12%">Relevantie</th>
+      </tr>
+      <tr>
+        <td class="story-name">Windesheim<br>&euro;2M subsidie</td>
+        <td>Windesheim-lectoraat had meerdere innovatieprogramma's die elk afzonderlijk financiering nodig hadden. Geen centrale financieel verantwoordelijke aangewezen.</td>
+        <td>Consortia opgebouwd, subsidieaanvragen geschreven, financieel beheer opgezet en periodieke verantwoording ge&euml;xecuteerd richting subsidieverstrekkers, bedrijven en Europese partners.</td>
+        <td>Ca. &euro;2M aan financiering gefaciliteerd en verantwoord. Programma&rsquo;s operationeel gehouden.<br><span class="result-chip">&euro;2M, lopend</span></td>
+        <td>Directe analogie met subsidie- en financieringsbeheer bij Natuurmonumenten.</td>
+      </tr>
+      <tr>
+        <td class="story-name">COTIT<br>F&C van nul</td>
+        <td>Logistiek SaaS-platform had geen financieel overzicht. Directie kon geen gefundeerde besluiten nemen over budget, schaalbaarheid of investeerdersgesprekken.</td>
+        <td>Financieel overzicht gecre&euml;erd, SaaS-verkoopmodel ingericht met bijbehorende rapportage, interne processen herstructureerd voor kostentransparantie. Directe rapportage aan directie.</td>
+        <td>Directie kon investeerdersgesprekken voeren met concrete financiële onderbouwing.<br><span class="result-chip">Besluitvorming verbeterd</span></td>
+        <td>Toont proactief financieel inzicht cre&euml;ren &mdash; wat een controller bij Natuurmonumenten dagelijks doet.</td>
+      </tr>
+      <tr>
+        <td class="story-name">CSRD<br>Compliance-kader</td>
+        <td>Bedrijven in cross-Europees supply chain-consortia moesten voldoen aan CSRD- en EUDR-richtlijnen maar wisten niet hoe de rapportagestructuur eruit moest zien.</td>
+        <td>Compliancekaders opgezet: rapportagestructuren, databronnen ge&iuml;dentificeerd, ngo&rsquo;s en overheden betrokken, risico&rsquo;s in kaart gebracht en vertaald naar werkbare interne processen.</td>
+        <td>Consortia rapporteerden conform CSRD/EUDR. Biodiversiteitscomponent in de supply chain zichtbaar gemaakt.<br><span class="result-chip">CSRD compliant</span></td>
+        <td>Unieke expertise die rechtstreeks aansluit op het duurzaamheidsmandaat van Natuurmonumenten.</td>
+      </tr>
+      <tr>
+        <td class="story-name">KONGSBERG<br>Contract BP</td>
+        <td>Subcontractor weigerde BP-gecontracteerde data te leveren bij een velddeployment in Azerbeidzjan. Geen senior backup beschikbaar, deadline ongewijzigd.</td>
+        <td>BP-contract volledig gelezen, specifieke clausules geciteerd bij divisiehoofd van de subcontractor. Confrontatie gebaseerd op feiten, niet op autoriteit.</td>
+        <td>Data geleverd binnen 24 uur. Op schema.<br><span class="result-chip">Opgelost dag 1</span></td>
+        <td>Toont zakelijke standvastigheid en contractbegrip &mdash; relevant voor een controller die leveranciers en subsidiegevers bijhoudt.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="doc-footer">
+    <span>career-ops | evaluatierapport</span>
+    <span>Kandidaat: Christiaan Verhoef</span>
+    <span>Ref: NM-2026-110 | 2026-06-05</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -2,7 +2,8 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
-| 110 | 2026-06-05 | Natuurmonumenten | Business Controller | -/5 | Applied | ✅ | — | Inside track; niet op website; schaal 8 (€4.125-€6.013); CV + motivatiebrief klaar |
+| 112 | 2026-06-05 | Royal HaskoningDHV | Senior Consultant Supply Chain Sustainability | 3.6/5 | Evaluated | ✅ | — | 3.6/5 — CSRD/EUDR/CSDDD sterk; geen klassieke consultancy achtergrond; 18.3% pensioen; CV + brief + rapport klaar |
+| 110 | 2026-06-05 | Natuurmonumenten | Business Controller | 3.5/5 | Applied | ✅ | — | Inside track; niet op website; schaal 8 (€4.125-€6.013); CV + motivatiebrief klaar |
 | 111 | 2026-06-05 | Adapta | Technical Coordinator Backend DevOps Architecture | 3.7/5 | Applied | ✅ | [111](reports/090-adapta-technical-coordinator-backend-devops-2026-06-05.md) | Applied 2026-06-05; €5.500-€7.000/mo; GCP + Django gap eerlijk benoemd |
 | 109 | 2026-06-05 | Stichting Tamino | Directeur-Bestuurder | 3.0/5 | Evaluated | ✅ | — | 3.0/5 — stretch (kunstcultureducatie); deadline 16 juni; CV + praktijkvoorbeelden klaar |
 | 70 | 2026-06-04 | Techleap | Ecosystem Interventions Manager | 4.4/5 | Discarded | ✅ | [70](reports/068-techleap-ecosystem-interventions-manager-2026-06-04.md) | Vacature gesloten 2026-06-05 — 404.homerun.co bevestigd dood |
