@@ -2,6 +2,8 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 110 | 2026-06-05 | Natuurmonumenten | Business Controller | -/5 | Applied | ✅ | — | Inside track; niet op website; schaal 8 (€4.125-€6.013); CV + motivatiebrief klaar |
+| 111 | 2026-06-05 | Adapta | Technical Coordinator Backend DevOps Architecture | -/5 | Applied | ✅ | — | €5.500-€7.000/mo; Amersfoort; CV + motivatiebrief klaar |
 | 109 | 2026-06-05 | Stichting Tamino | Directeur-Bestuurder | 3.0/5 | Evaluated | ✅ | — | 3.0/5 — stretch (kunstcultureducatie); deadline 16 juni; CV + praktijkvoorbeelden klaar |
 | 70 | 2026-06-04 | Techleap | Ecosystem Interventions Manager | 4.4/5 | Discarded | ✅ | [70](reports/068-techleap-ecosystem-interventions-manager-2026-06-04.md) | Vacature gesloten 2026-06-05 — 404.homerun.co bevestigd dood |
 | 106 | 2026-06-05 | Shiny | Fractional CTO for Startups | 4.3/5 | Applied | ✅ | [106](reports/089-shiny-fractional-cto-2026-06-05.md) | Applied 2026-06-05 |
