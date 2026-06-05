@@ -124,6 +124,24 @@ Dit is een sterke conceptuele match met twee overbrugbare tooling-gaps. De rol v
 
 ---
 
+## E2) CV-aanpassingen (top 3)
+
+1. **Windesheim profieldescriptie aanscherpen** — benadruk expliciet: "zelfbeheerde productiestack zonder intern IT-team als vangnet." Dat is het type eigenaarschap dat Adapta zoekt en het onderscheidt Christiaan van kandidaten die altijd een helpdesk hadden.
+2. **Tonomy Foundation: founder-sparringpartner framing** — voeg toe dat hij "directe technische tegenhanger van de CTO" was, niet slechts lid van het team. Adapta zoekt precies die dynamiek met founder Matthias.
+3. **E-discovery minor zichtbaar maken** — "Ethical hacking, digital forensics, server farm opgezet als pentest-omgeving" toont security-denkwijze van dag 1. Relevant voor een healthcare-app met privacygevoelige zorgdata.
+
+---
+
+## F2) Interviewvoorbereiding (STAR+R stories)
+
+1. **Windesheim: stack van nul in productie** — *Situatie:* Windesheim vroeg om een AI-onderzoeksinfrastructuur voor studenten en externe onderzoekers. Geen budget voor externe diensten, geen intern IT-team. *Taak:* Alles zelf bouwen, draaien en beveiligen. *Actie:* Flowise, OpenWebUI, n8n, Supabase opgezet op Docker/Linux; CI/CD ingericht; monitoring en alerting geconfigureerd. *Resultaat:* In productie, meerdere jaar stabiel, gebruikt door studenten en externe onderzoekers. *Reflectie:* Toont exact wat Adapta vraagt: technisch eigenaarschap van begin tot einde, geen vangnet.
+
+2. **KONGSBERG: database failure zonder remote support** — *Situatie:* Database deployment bij BP Jordan faalde op dag 3, ondanks correcte procedure. Geen internet, geen remote support. *Taak:* Oorzaak vinden en oplossen zonder te escaleren. *Actie:* Dead-switch ingezet om te bewijzen dat het fout aan clientzijde lag (netwerk); oorzaak geïsoleerd en gedocumenteerd. *Resultaat:* Op schema, op dag 3, zonder escalatie. *Reflectie:* Toont incident response onder echte druk — precies wat een healthcare SaaS-platform nodig heeft als het om 3 uur 's nachts stopt.
+
+3. **Tonomy: technische roadmap naast CTO** — *Situatie:* Tonomy Foundation had een CTO (Jack Tanner) en een technisch team, maar geen brug tussen technische richting en de rest van de organisatie. *Taak:* Technische roadmap bewaken, sprint-discipline invoeren, externe stakeholders technisch bijpraten. *Actie:* 2-weeks sprint cycles ingevoerd; W3C CCG-standaardisatie vertaald naar concrete taken; architectuurkeuzes uitgelegd aan niet-technische partners en investeerders. *Resultaat:* Team productiever, externe partijen beter aligned. *Reflectie:* Toont de founder-sparringpartner dynamiek die Adapta zoekt met Matthias.
+
+---
+
 ## G) Posting Legitimacy
 
 **Tier 1 — Live, geverifieerd**
@@ -134,3 +152,38 @@ Dit is een sterke conceptuele match met twee overbrugbare tooling-gaps. De rol v
 - Salarisbereik specifiek en realistisch voor deze rol in Amersfoort
 - JD is gedetailleerd, intern consistent, beschrijft echte organisatiecontext
 - Geen signalen van ghost job, recruiter farm of frauduleuze posting
+
+---
+
+## Samenvatting
+
+Sterke conceptuele match: Adapta zoekt iemand die de technische infrastructuur van een healthcare SaaS-product overeind houdt en de founder ontlast van architectuurvragen — en dat is precies wat Christiaan de afgelopen 6 jaar heeft gedaan, zonder IT-afdeling als vangnet. De GCP- en Django-gaps zijn reëel maar overbrugbaar: het zijn tools, geen denkwijzen, en zijn denkwijze is aanwezig. De AI-stack in productie is een concrete differentiator die de meeste DevOps-kandidaten niet hebben. Enige open vraag is fulltime vs. fractional — bespreekpunt voor het eerste gesprek, niet een reden om niet te solliciteren. Score 3.7/5.
+
+---
+
+## Machine Summary
+
+```yaml
+company: Adapta
+role: Technical Coordinator Backend DevOps Architecture
+score: 3.7
+status: Applied
+date: 2026-06-05
+url: https://adapta.homerun.co/technical-coordinator-backend-devops-architecture/nl
+location: Amersfoort
+salary_min: 5500
+salary_max: 7000
+currency: EUR
+employment_type: fulltime
+key_gaps:
+  - GCP (leerbaar)
+  - Django (beperkt risico)
+  - fulltime vs fractional voorkeur
+strengths:
+  - Technical coordinator framing exact match
+  - Docker/Linux/CI-CD/monitoring in productie
+  - Founder-samenwerking (Tonomy)
+  - AI-stack in productie (Windesheim)
+  - Incident response (KONGSBERG + Windesheim)
+recommendation: apply
+```
