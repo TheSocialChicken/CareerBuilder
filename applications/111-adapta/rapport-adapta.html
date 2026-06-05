@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kandidaatsevaluatie -- Adapta -- Technical Coordinator Backend DevOps Architecture</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../../fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  :root {
+    --blue:      #1a4b8f;
+    --blue-mid:  #2660c0;
+    --blue-light:#6b8ed6;
+    --blue-pale: #c4d4f0;
+    --blue-bg:   #eef2fb;
+    --amber:     #c07820;
+    --red:       #8b2020;
+    --green:     #1a6e1a;
+    --ink:       #1a1e2e;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: #fff;
+  }
+  .page {
+    width: 210mm;
+    margin: 0 auto;
+    padding: 14mm 18mm 14mm 18mm;
+  }
+
+  /* ======== CLASSIFICATION BAR ======== */
+  .doc-classification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--blue-mid);
+    border-top: 2px solid var(--blue);
+    border-bottom: 1px solid var(--blue-light);
+    padding: 4px 0;
+    margin-bottom: 10px;
+  }
+  .doc-classification .stamp {
+    background: var(--blue);
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+  }
+
+  /* ======== HEADER ======== */
+  .report-header-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0 16px;
+    align-items: start;
+    margin-bottom: 10px;
+  }
+  .report-type {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue-mid);
+    margin-bottom: 3px;
+  }
+  .report-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .report-org {
+    font-size: 11px;
+    color: var(--blue-mid);
+    margin-top: 3px;
+    font-weight: 500;
+  }
+  .score-badge {
+    border: 3px solid var(--blue);
+    padding: 8px 14px;
+    text-align: center;
+    min-width: 72px;
+  }
+  .score-badge .score-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1;
+  }
+  .score-badge .score-denom {
+    font-size: 12px;
+    color: var(--blue-mid);
+    font-weight: 400;
+  }
+  .score-badge .score-label {
+    font-size: 7.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--blue-mid);
+    margin-top: 2px;
+  }
+
+  /* ======== DIVIDERS ======== */
+  .rule-heavy { border: none; border-top: 3px solid var(--blue); margin: 8px 0; }
+  .rule-light { border: none; border-top: 1px solid var(--blue-light); margin: 10px 0 8px; }
+
+  /* ======== META GRID ======== */
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid var(--blue);
+    margin-bottom: 12px;
+    font-size: 9.5px;
+  }
+  .meta-cell {
+    padding: 5px 8px;
+    border-right: 1px solid var(--blue-light);
+    border-bottom: 1px solid var(--blue-light);
+  }
+  .meta-cell:nth-child(4n) { border-right: none; }
+  .meta-cell:nth-last-child(-n+4) { border-bottom: none; }
+  .meta-cell .mk { font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--blue-mid); display: block; margin-bottom: 1px; }
+  .meta-cell .mv { font-weight: 600; color: var(--ink); }
+  .meta-cell.warn-cell .mv { color: var(--amber); font-weight: 700; }
+
+  /* ======== SECTIONS ======== */
+  .section { margin-bottom: 14px; }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #fff;
+    background: var(--blue);
+    padding: 3px 8px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section-title .sec-num { opacity: 0.6; font-weight: 400; }
+
+  /* ======== TABLES ======== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10px;
+    margin-bottom: 6px;
+    border: 1px solid var(--blue-light);
+  }
+  th {
+    background: var(--blue-bg);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue);
+    padding: 4px 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--blue-light);
+  }
+  td {
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--blue-pale);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  tr:last-child td { border-bottom: none; }
+  td.field { font-weight: 600; color: var(--blue); width: 26%; }
+
+  .match-strong { color: var(--green); font-weight: 700; }
+  .match-solid  { color: #3a6e0a; font-weight: 600; }
+  .match-gap    { color: var(--amber); font-weight: 600; }
+  .match-risk   { color: var(--red); font-weight: 700; }
+
+  /* ======== SCORE BARS ======== */
+  .score-rows { display: flex; flex-direction: column; gap: 5px; }
+  .srow { display: flex; align-items: center; gap: 8px; font-size: 10px; }
+  .srow .dim { width: 170px; color: var(--ink); }
+  .srow .bar-bg { flex: 1; height: 7px; background: var(--blue-pale); border: 1px solid var(--blue-light); }
+  .srow .bar-fill { height: 100%; background: var(--blue); }
+  .srow .bar-fill.warn { background: var(--amber); }
+  .srow .val { width: 28px; text-align: right; font-weight: 700; color: var(--blue); font-family: 'Space Grotesk', monospace; }
+  .srow .val.warn { color: var(--amber); }
+
+  /* ======== INTEL BOX ======== */
+  .intel-box {
+    border: 1px solid var(--blue);
+    border-left: 4px solid var(--blue);
+    background: var(--blue-bg);
+    padding: 8px 10px;
+    margin: 6px 0;
+    font-size: 10.5px;
+    line-height: 1.65;
+  }
+  .intel-box .intel-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 7.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--blue-mid);
+    margin-bottom: 4px;
+  }
+  .warn-box {
+    border: 1px solid var(--amber);
+    border-left: 4px solid var(--amber);
+    background: #fdf6e8;
+    padding: 8px 10px;
+    margin: 6px 0;
+    font-size: 10.5px;
+    line-height: 1.65;
+  }
+  .warn-box .warn-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 7.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--amber);
+    margin-bottom: 4px;
+  }
+
+  /* ======== PHRASE BOX ======== */
+  .phrase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .phrase-item {
+    border: 1px solid var(--blue-pale);
+    border-left: 3px solid var(--blue-mid);
+    background: var(--blue-bg);
+    padding: 5px 8px;
+    font-size: 10px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .phrase-item .phrase-context {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue-mid);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  /* ======== STAR TABLE ======== */
+  .star-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5px;
+    border: 1px solid var(--blue-light);
+  }
+  .star-table th {
+    font-size: 7.5px;
+    padding: 3px 6px;
+  }
+  .star-table td {
+    padding: 5px 6px;
+    font-size: 9.5px;
+    border-bottom: 1px solid var(--blue-pale);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .star-table tr:last-child td { border-bottom: none; }
+  .star-table .story-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: var(--blue);
+    font-size: 9.5px;
+    white-space: nowrap;
+  }
+  .star-table .result-chip {
+    display: inline-block;
+    background: var(--blue);
+    color: #fff;
+    font-size: 7.5px;
+    font-weight: 700;
+    padding: 1px 5px;
+    letter-spacing: 0.05em;
+    margin-top: 3px;
+  }
+
+  /* ======== BULLETS ======== */
+  ul.field-list { list-style: none; padding: 0; margin: 4px 0; }
+  ul.field-list li {
+    font-size: 10.5px;
+    line-height: 1.65;
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 2px;
+    color: var(--ink);
+  }
+  ul.field-list li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--blue-mid);
+    font-weight: 700;
+    font-size: 9px;
+    top: 1px;
+  }
+
+  /* ======== TWO COL ======== */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .col-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 2px 6px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .col-label.go   { background: var(--blue); color: #fff; }
+  .col-label.warn { background: var(--amber); color: #fff; }
+
+  /* ======== VERDICT ======== */
+  .verdict-box {
+    border: 2px solid var(--blue);
+    padding: 10px 14px;
+    margin-top: 8px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .verdict-icon {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1;
+    min-width: 50px;
+    text-align: center;
+    padding-top: 2px;
+  }
+  .verdict-text { font-size: 10.5px; line-height: 1.65; color: var(--ink); }
+  .verdict-text strong {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    display: block;
+    color: var(--blue);
+    margin-bottom: 3px;
+    letter-spacing: 0.02em;
+  }
+
+  /* ======== TAGS ======== */
+  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .tag { font-size: 8.5px; padding: 2px 6px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .tag.go   { background: var(--blue); color: #fff; }
+  .tag.warn { background: var(--amber); color: #fff; }
+  .tag.risk { background: var(--red); color: #fff; }
+
+  /* ======== FOOTER ======== */
+  .doc-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue-mid);
+    border-top: 2px solid var(--blue);
+    border-bottom: 1px solid var(--blue-light);
+    padding: 4px 0;
+    margin-top: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- CLASSIFICATION BAR -->
+  <div class="doc-classification">
+    <span>Kandidaatsevaluatie | career-ops systeem</span>
+    <span class="stamp">Vertrouwelijk</span>
+    <span>Ref: ADP-2026-111 | 2026-06-05</span>
+  </div>
+
+  <!-- HEADER -->
+  <div class="report-header-grid">
+    <div>
+      <div class="report-type">Kandidaatsevaluatie | Sollicitatiedossier</div>
+      <div class="report-title">Technical Coordinator Backend DevOps</div>
+      <div class="report-org">Adapta B.V. &mdash; Amersfoort | Healthcare SaaS &ldquo;Hello&rdquo; superapp</div>
+    </div>
+    <div class="score-badge">
+      <div class="score-num">3.7<span class="score-denom">/5</span></div>
+      <div class="score-label">Totaalscore</div>
+    </div>
+  </div>
+  <hr class="rule-heavy">
+
+  <!-- META GRID -->
+  <div class="meta-grid">
+    <div class="meta-cell"><span class="mk">Locatie</span><span class="mv">Amersfoort (Spoetnik 48)</span></div>
+    <div class="meta-cell"><span class="mk">Salaris</span><span class="mv">&euro;5.500&ndash;&euro;7.000/mnd</span></div>
+    <div class="meta-cell"><span class="mk">Totaalcomp</span><span class="mv">+4% pensioen, +8% vakantiegeld, +&euro;275 mobiliteit, 33 vakantiedagen</span></div>
+    <div class="meta-cell"><span class="mk">Contract</span><span class="mv">Fulltime 40u (bespreekbaar)</span></div>
+    <div class="meta-cell"><span class="mk">Reistijd</span><span class="mv">Baarn &rarr; Amersfoort: 20 min</span></div>
+    <div class="meta-cell"><span class="mk">Contact</span><span class="mv">Gerard &mdash; gerard@adapta.nl</span></div>
+    <div class="meta-cell"><span class="mk">Kandidaat</span><span class="mv">Christiaan Verhoef</span></div>
+    <div class="meta-cell"><span class="mk">Aanbeveling</span><span class="mv">SOLLICITEER</span></div>
+  </div>
+
+  <!-- SECTION A: SCOREVERDELING -->
+  <div class="section">
+    <div class="section-title">A. Scoreverdeling per dimensie <span class="sec-num">01</span></div>
+    <div class="score-rows">
+      <div class="srow">
+        <span class="dim">Rol-CV fit (technical coordinator)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        <span class="val">4.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Archetype alignment (founder sparring)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:80%"></div></div>
+        <span class="val">4.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Cultuurfit (klein team, autonomie)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div>
+        <span class="val">4.5</span>
+      </div>
+      <div class="srow">
+        <span class="dim">AI-differentiator (stack in productie)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div>
+        <span class="val">5.0</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Comp fit (fulltime vs. fractional)</span>
+        <div class="bar-bg"><div class="bar-fill" style="width:70%"></div></div>
+        <span class="val">3.5</span>
+      </div>
+      <div class="srow">
+        <span class="dim">Tooling gap penalty (GCP + Django)</span>
+        <div class="bar-bg"><div class="bar-fill warn" style="width:12%"></div></div>
+        <span class="val warn">-0.6</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION B: CV-MATCH -->
+  <div class="section">
+    <div class="section-title">B. CV-match per JD-eis <span class="sec-num">02</span></div>
+    <table>
+      <tr><th style="width:28%">JD-eis</th><th style="width:47%">Bewijs in portfolio</th><th style="width:25%">Oordeel</th></tr>
+      <tr>
+        <td class="field">5-7 jr hands-on, kleine snelgroeiende teams</td>
+        <td>Windesheim (6 jaar, zelfbeheerde productie-AI-stack); Tonomy Foundation (open-source protocol, team aangestuurd)</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Architectuurkeuzes zelfstandig</td>
+        <td>Windesheim: schaalbaarheid, observability, security, stack-selectie &mdash; volledig zelfstandig, geen interne IT-afdeling als vangnet</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">CI/CD, deployment, monitoring eigenaarschap</td>
+        <td>Docker/Linux/CI-CD/monitoring &amp; alerting in productie voor studenten en externe onderzoekers</td>
+        <td class="match-strong">STERK &mdash; exact dit profiel</td>
+      </tr>
+      <tr>
+        <td class="field">Sparringpartner voor founder</td>
+        <td>Tonomy: directe technische tegenhanger van CTO; COTIT: directe rapportage aan directie op product-roadmap</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">AI/LLM in development workflow</td>
+        <td>Flowise, OpenWebUI, n8n in productie bij Windesheim &mdash; niet experimenteel, operationeel</td>
+        <td class="match-strong">STERK (differentiator)</td>
+      </tr>
+      <tr>
+        <td class="field">Incident response</td>
+        <td>KONGSBERG: database failure ge&iuml;soleerd via dead-switch dag 3, solo, geen remote support; Windesheim: monitoring + alerting live</td>
+        <td class="match-strong">STERK</td>
+      </tr>
+      <tr>
+        <td class="field">Python</td>
+        <td>Python scripting en REST APIs aanwezig in portfolio</td>
+        <td class="match-solid">GOED</td>
+      </tr>
+      <tr>
+        <td class="field">Cloud (GCP)</td>
+        <td>Docker/Linux productie; containerisatie-denkwijze matcht; GCP-specifieke tooling is leerpad</td>
+        <td class="match-gap">MATIG &mdash; leercurve</td>
+      </tr>
+      <tr>
+        <td class="field">Django (hands-on)</td>
+        <td>Niet expliciet vermeld; scope navragen: coördinatie of ook directe coding?</td>
+        <td class="match-gap">GAP &mdash; navragen</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- SECTION C: KERNARGUMENT -->
+  <div class="section">
+    <div class="section-title">C. Kernonderscheidend argument <span class="sec-num">03</span></div>
+
+    <div class="intel-box">
+      <div class="intel-label">Positionering: de technical coordinator die je al zocht maar niet als developer had geadverteerd</div>
+      De vacaturetitel zegt &ldquo;Technical Coordinator&rdquo; maar de tekst zoekt iemand die Adapta's CTO-laag invult zonder die titel te dragen. Dat is precies het profiel van Christiaan Verhoef: niet de beste Django-engineer in de kamer, maar de persoon die architectuurkeuzes bewaakt, het team begeleidt en founder Matthias ontlast van technische beslissingen. Bij Windesheim was hij 6 jaar lang de enige technische verantwoordelijke voor een live productiestack &mdash; geen helpdesk, geen intern IT-team, geen fallback. Bij Tonomy was hij de gelijkwaardig technisch gesprekspartner van de CTO.
+    </div>
+
+    <ul class="field-list">
+      <li><strong>Windesheim AI-stack in productie:</strong> Flowise, OpenWebUI, n8n, Supabase op Docker/Linux &mdash; volledig zelfgebouwd, zelfgefinancierd, in productie voor studenten en externe onderzoekers. Elke architectuurkeuze was zijn eigen verantwoordelijkheid. Precies het type eigenaarschap dat Adapta zoekt voor de &ldquo;Hello&rdquo;-app.</li>
+      <li><strong>Tonomy Foundation &mdash; de founder-dynamic van binnen:</strong> Technische roadmap bepaald samen met CTO, developers aangestuurd via 2-weeks sprint cycles, W3C CCG-standaardisatie vertaald naar concrete implementatie. Hij weet hoe de rol van technische co-piloot werkt zonder de lijn te vervagen.</li>
+      <li><strong>KONGSBERG &mdash; incident response zonder vangnet:</strong> Database failure ge&iuml;soleerd via dead-switch op dag 3, solo, zonder internet, zonder remote support. Contractgeschil opgelost door het BP-contract te lezen en de divisiemanager te confronteren met specifieke clausules. Iemand die kalm blijft als het om 3 uur &rsquo;s nachts fout gaat.</li>
+      <li><strong>AI-differentiator:</strong> Adapta wil actief AI/LLMs integreren in de development workflow. Christiaan heeft dit al gebouwd. De meeste DevOps-kandidaten voor deze rol hebben dat niet.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION G: PATROONANALYSE -->
+  <div class="section">
+    <div class="section-title">G. Patroonanalyse: bewijs van fit over de loopbaan <span class="sec-num">04</span></div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 1: technische leider zonder titel, in kleine teams</div>
+      Vier gedocumenteerde voorbeelden waarbij Christiaan de technische richting bepaalde zonder formele autoriteit of interne ondersteuning:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>WDS Global (2008):</strong> informeel groepsleider van de Nederlandse supportafdeling binnen 3 maanden, zonder functiewijziging. Van 1st naar 3rd line binnen enkele maanden.</li>
+        <li><strong>Tonomy Foundation (2021):</strong> technische tegenhanger van de CTO in een team van 5&ndash;8 developers. Roadmap bepaald, sprint-discipline ge&iuml;ntroduceerd, externe stakeholders technisch bijgepraat.</li>
+        <li><strong>Windesheim (2020):</strong> de facto technisch leidende rol zonder interne IT-afdeling, zonder senior backup, in productie voor echte gebruikers.</li>
+        <li><strong>COTIT (2024):</strong> directe rapportage aan directie op architectuurkeuzes en productroadmap. Technische risico&rsquo;s vertaald naar een roadmap die de directie kon verdedigen bij investeerders.</li>
+      </ul>
+    </div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 2: productiestack van nul naar operationeel (niet naar PoC)</div>
+      Drie onafhankelijk aantoonbare cases van systemen die hij volledig heeft opgebouwd en in productie gehouden &mdash; niet als prototype, maar als werkende infrastructuur voor echte gebruikers:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>Spark! Living Lab (Windesheim, 2020):</strong> blockchain-simulatielab van concept tot live demonstrator, DevOps volledig zelfbeheerd, externe bedrijfspartners, meerdere cohorten professionals.</li>
+        <li><strong>Value Chain Hackers (Windesheim, 2024):</strong> cross-Europees AI-complianceprogramma op CSRD/EUDR, stack vanuit nul, Europese partnernetwerken, operationele demonstrator live.</li>
+        <li><strong>Tonomy Protocol (2021):</strong> open-source cryptografische identiteitsinfrastructuur, MICA-conform, W3C-erkend, ge&iuml;mplementeerd in DIF-bibliotheken (did-jwt, did-resolver).</li>
+      </ul>
+    </div>
+
+    <div class="intel-box">
+      <div class="intel-label">Terugkerend patroon 3: eigenaarschap ook als het fout gaat</div>
+      Adapta zoekt iemand die incidenten op een live healthcare-app afhandelt. Drie gedocumenteerde incidentcases onder echte druk, zonder escalatiemogelijkheid:
+      <ul class="field-list" style="margin-top:5px">
+        <li><strong>BP Jordan (dag 3):</strong> database deployment failure ondanks correcte procedure. Dead-switch ingezet, netwerkoorzaak aan clientzijde ge&iuml;soleerd en bewezen. On schedule.</li>
+        <li><strong>BP Azerbeidzjan:</strong> subcontractor weigerde gecontracteerde data te leveren. Contract gelezen, clausules geciteerd bij divisiehoofd. Opgelost op dag 1. Geen senior backup beschikbaar.</li>
+        <li><strong>Windesheim monitoring:</strong> meerdere jaar productie voor studenten en externe onderzoekers. Alerting, incident response en recovery volledig zelfbeheerd, geen helpdesk.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION D: RISICO'S -->
+  <div class="section">
+    <div class="section-title">D. Risico's &amp; mitigatie <span class="sec-num">05</span></div>
+
+    <div class="warn-box">
+      <div class="warn-label">Tooling gap: GCP + Django</div>
+      GCP is een toolchain bovenop cloud-native principes die Christiaan al beheerst: containers, CI/CD, monitoring, networking. De specifieke GCP-services (Cloud Run, GKE) zijn te leren; de denkwijze is aanwezig. Django is vergelijkbaar &mdash; de vraag is of de rol daadwerkelijk hands-on coding vraagt of technische co&ouml;rdinatie. Beide gaps eerlijk benoemen en leerbereidheid tonen is sterker dan verzwijgen. GCP-leerpad realistisch binnen 2&ndash;3 maanden onboarding.
+    </div>
+
+    <div class="warn-box">
+      <div class="warn-label">Fulltime vs. fractional</div>
+      Christiaan streeft naar 0.4&ndash;0.6 FTE concurrent. De rol is als fulltime gepubliceerd. Kleine organisaties (~30 mensen) zijn vaak flexibeler dan de vacaturetekst doet vermoeden. Bespreekpunt, geen harde blocker &mdash; maar moet expliciet worden verkend in het eerste gesprek.
+    </div>
+
+    <div class="two-col" style="margin-top:8px">
+      <div>
+        <span class="col-label go">Sterktes (blauw)</span>
+        <ul class="field-list">
+          <li>Technical coordinator framing is exacte conceptuele match</li>
+          <li>Docker/Linux/CI-CD/monitoring in productie aangetoond</li>
+          <li>Founder-samenwerking (Tonomy, COTIT) direct relevant</li>
+          <li>AI-stack in productie &mdash; differentiator vs. andere kandidaten</li>
+          <li>Incident response onder echte druk (KONGSBERG)</li>
+          <li>Amersfoort, 20 minuten van Baarn</li>
+          <li>Zorgklanten in productie (reele context, geen MVP)</li>
+        </ul>
+      </div>
+      <div>
+        <span class="col-label warn">Risico's (oranje)</span>
+        <ul class="field-list">
+          <li>GCP tooling: leerpad nodig, schat 2&ndash;3 maanden</li>
+          <li>Django: scope verifi&euml;ren in gesprek</li>
+          <li>Fulltime vs. fractional: open gesprek vereist</li>
+          <li>Healthcare-domein: nieuw voor Christiaan</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION E: COMP -->
+  <div class="section">
+    <div class="section-title">E. Compensatieanalyse <span class="sec-num">06</span></div>
+    <table>
+      <tr><th>Component</th><th>Waarde</th><th>Toelichting</th></tr>
+      <tr><td class="field">Basissalaris</td><td>&euro;5.500&ndash;&euro;7.000/mnd</td><td>Band van 27,3% spreiding; bovenkant voor bewezen GCP-ervaring</td></tr>
+      <tr><td class="field">Pensioen</td><td>4%</td><td>Solide maar niet bovengemiddeld voor tech</td></tr>
+      <tr><td class="field">Vakantiegeld</td><td>8%</td><td>Standaard NL</td></tr>
+      <tr><td class="field">Mobiliteitsbudget</td><td>&euro;275/mnd</td><td>Dekt OV Baarn&ndash;Amersfoort volledig</td></tr>
+      <tr><td class="field">Vakantiedagen</td><td>33 dagen</td><td>Bovengemiddeld voor NL (standaard 25)</td></tr>
+      <tr><td class="field">Development budget</td><td>Aanwezig</td><td>Relevant voor GCP-certificering in onboardingfase</td></tr>
+      <tr><td class="field">Realistisch instappunt</td><td>&euro;5.500&ndash;&euro;6.000</td><td><strong>Gezien GCP-gap; acceptabel in combinatie met andere fractional engagements.</strong></td></tr>
+    </table>
+  </div>
+
+  <!-- SECTION H: SLEUTELFRASEN -->
+  <div class="section">
+    <div class="section-title">H. Sleutelfrasen voor brief en gesprek <span class="sec-num">07</span></div>
+    <div class="phrase-grid">
+      <div class="phrase-item">
+        <span class="phrase-context">Openingszin motivatiebrief</span>
+        &ldquo;Ik ben geen pure developer. Dat schrijf ik bewust, want die eerlijkheid is precies waarom ik denk dat ik goed bij jullie pas.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over eigenaarschap</span>
+        &ldquo;Bij Windesheim was ik zes jaar lang de enige die de productiestack overeind hield &mdash; geen intern IT-team als vangnet, geen helpdesk als fallback.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over de founder-dynamic</span>
+        &ldquo;Ik ken die dynamiek van binnenuit: bij Tonomy was ik de technische co-piloot van de CTO. Niet zijn assistent, maar zijn gelijkwaardig gesprekspartner.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over GCP-gap (proactief adresseren)</span>
+        &ldquo;GCP ken ik niet van binnen zoals iemand die er jarenlang mee werkt &mdash; maar de denkwijze is aanwezig. Containers, CI/CD, networking: dat is het fundament. De specifieke services zijn te leren.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Over AI-differentiator</span>
+        &ldquo;Jullie willen AI/LLMs integreren in de development workflow. Ik heb dat al gedaan &mdash; niet als experiment, maar in productie voor externe onderzoekers.&rdquo;
+      </div>
+      <div class="phrase-item">
+        <span class="phrase-context">Vraag voor het eerste gesprek</span>
+        &ldquo;Wat is de verhouding tussen technische co&ouml;rdinatie en hands-on coding? En is er ruimte om dit gesprek te voeren over werkmodel &mdash; ik werk liever in parallelle engagements dan in &eacute;&eacute;n fulltime rol.&rdquo;
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION F: VERDICT -->
+  <div class="section">
+    <div class="section-title">F. Operationeel advies (aanbeveling) <span class="sec-num">08</span></div>
+    <div class="verdict-box">
+      <div class="verdict-icon">GO</div>
+      <div class="verdict-text">
+        <strong>SOLLICITEER. Score 3.7/5.</strong>
+        Adapta zoekt geen extra Django-engineer &mdash; ze zoeken iemand die architectuur bewaakt, het team begeleidt en de founder ontlast. Dat is precies wat Christiaan de afgelopen 6 jaar heeft gedaan, zonder IT-afdeling als vangnet, in productie, voor echte gebruikers. De GCP- en Django-gaps zijn reeel maar overbrugbaar: het zijn tools, geen denkwijzen. De AI-stack in productie is een concrete differentiator die de meeste DevOps-kandidaten niet hebben. Enige open vraag is fulltime vs. fractional. Solliciteer, win het eerste gesprek, bespreek daar het werkmodel.
+      </div>
+    </div>
+
+    <div class="tag-row">
+      <span class="tag go">Technical coordinator match</span>
+      <span class="tag go">AI-stack in productie</span>
+      <span class="tag go">Founder-dynamic aangetoond</span>
+      <span class="tag go">Incident response</span>
+      <span class="tag go">Amersfoort 20 min</span>
+      <span class="tag warn">GCP: leerpad</span>
+      <span class="tag warn">Django: scope verifi&euml;ren</span>
+      <span class="tag warn">Fulltime: bespreekpunt</span>
+    </div>
+  </div>
+
+  <!-- SECTION I: INTERVIEW PREP -->
+  <div class="section">
+    <div class="section-title">I. Interviewvoorbereiding &mdash; STAR+R stories <span class="sec-num">09</span></div>
+    <table class="star-table">
+      <tr>
+        <th style="width:18%">Story</th>
+        <th style="width:24%">Situatie &amp; Taak</th>
+        <th style="width:28%">Actie</th>
+        <th style="width:18%">Resultaat</th>
+        <th style="width:12%">Relevantie</th>
+      </tr>
+      <tr>
+        <td class="story-name">Windesheim<br>AI-stack</td>
+        <td>Windesheim vroeg om een AI-onderzoeksinfrastructuur voor studenten en externe onderzoekers. Geen budget voor externe diensten, geen intern IT-team.</td>
+        <td>Flowise, OpenWebUI, n8n, Supabase op Docker/Linux opgezet vanuit nul. CI/CD ingericht, monitoring geconfigureerd, database management. Volledig zelfgefinancierd en zelfbeheerd.</td>
+        <td>In productie, meerdere jaren stabiel, externe onderzoekers actief gebruik makend.<br><span class="result-chip">6 jaar, live</span></td>
+        <td>Toont exact het eigenaarschap dat Adapta zoekt voor de Hello-app.</td>
+      </tr>
+      <tr>
+        <td class="story-name">KONGSBERG<br>Dead-switch</td>
+        <td>Database deployment bij BP Jordan faalde op dag 3 ondanks correcte procedure. Geen internet, geen remote support. Deadline ongewijzigd.</td>
+        <td>Dead-switch ingezet om te bewijzen dat de fout aan clientzijde lag (netwerk, niet software). Oorzaak ge&iuml;soleerd, gedocumenteerd en gecommuniceerd aan de lokale beheerder.</td>
+        <td>Op schema, dag 3, zonder escalatie. Klant kon de oorzaak niet betwisten.<br><span class="result-chip">On schedule</span></td>
+        <td>Incident response onder echte druk &mdash; wat een healthcare SaaS nodig heeft om 3u &rsquo;s nachts.</td>
+      </tr>
+      <tr>
+        <td class="story-name">Tonomy<br>CTO-sparring</td>
+        <td>Tonomy Foundation had een CTO en een technisch team, maar geen brug tussen technische richting en de rest van de organisatie: investeerders, partners, community.</td>
+        <td>2-weeks sprint cycles ge&iuml;ntroduceerd, W3C CCG-standaardisatie vertaald naar concrete taken, architectuurkeuzes uitgelegd aan niet-technische stakeholders. Roadmap bewaakt naast CTO.</td>
+        <td>Team productiever, externe partijen beter aligned, W3C CCG Conditional Proof spec ge&iuml;mplementeerd in DIF-bibliotheken.<br><span class="result-chip">W3C erkend</span></td>
+        <td>Toont de founder-sparringpartner dynamiek die Adapta zoekt met Matthias.</td>
+      </tr>
+      <tr>
+        <td class="story-name">Aeres<br>8 cursussen</td>
+        <td>Aeres Hogeschool had 8 losse cursussen met eigen roosters, docenten en opdrachtgevers. Geen samenhang, geen gedeeld resultaat, studenten misten overzicht.</td>
+        <td>SafeScrum-aanpak ge&iuml;ntroduceerd: alle 8 cursussen samengebracht in &eacute;&eacute;n sprint-based innovatietrack. Roosters ge&iuml;ntegreerd, docenten briefed, studentprojecten gelinkt aan echte opdrachtgevers.</td>
+        <td>Twee studentprojecten uitgegroeid tot zelfstandige startups: Magic Frames en Veles Farming (&euro;2M gefinancierd, nu operationeel in Slowakije).<br><span class="result-chip">2 startups</span></td>
+        <td>Toont dat hij complexity ordent en mensen meeneemt &mdash; ook relevant voor een groeiend dev-team.</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <span>career-ops | evaluatierapport</span>
+    <span>Kandidaat: Christiaan Verhoef</span>
+    <span>Ref: ADP-2026-111 | 2026-06-05</span>
+  </div>
+
+</div>
+</body>
+</html>
