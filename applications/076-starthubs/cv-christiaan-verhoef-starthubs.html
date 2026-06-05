@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christiaan Verhoef -- CV -- Starthubs Programmamanager Innovation Challenges</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../../fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.65;
+    color: #1a1a2e;
+    background: #ffffff;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 18mm 18mm 16mm 18mm;
+    display: grid;
+    grid-template-columns: 1fr 68mm;
+    grid-template-rows: auto 1fr;
+    gap: 0 10mm;
+  }
+  .header {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+  }
+  .header-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .header-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(187, 74%, 32%);
+    margin-top: 3px;
+    letter-spacing: 0.01em;
+  }
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin: 8px 0 6px;
+  }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    font-size: 9.5px;
+    color: #555;
+  }
+  .contact-row a { color: #555; text-decoration: none; }
+  .main { grid-column: 1; }
+  .sidebar { grid-column: 2; }
+  .section { margin-bottom: 13px; }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1px solid hsl(187, 74%, 85%);
+    padding-bottom: 2px;
+    margin-bottom: 7px;
+  }
+  .exp-item { margin-bottom: 10px; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .exp-role {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  .exp-period {
+    font-size: 9.5px;
+    color: #888;
+    white-space: nowrap;
+  }
+  .exp-company {
+    font-size: 10px;
+    color: hsl(187, 74%, 32%);
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .exp-desc {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #2a2a3e;
+    margin-bottom: 3px;
+  }
+  ul.bullets {
+    list-style: none;
+    padding-left: 0;
+    margin: 3px 0;
+  }
+  ul.bullets li {
+    font-size: 10.5px;
+    color: #2a2a3e;
+    line-height: 1.6;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 1px;
+  }
+  ul.bullets li::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: hsl(187, 74%, 50%);
+  }
+  .sidebar-block { margin-bottom: 12px; }
+  .skill-group { margin-bottom: 7px; }
+  .skill-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #555;
+    margin-bottom: 2px;
+  }
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .tag {
+    background: #f0f4f8;
+    color: #334;
+    font-size: 9px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    line-height: 1.4;
+  }
+  .tag.highlight {
+    background: hsl(187, 74%, 92%);
+    color: hsl(187, 74%, 25%);
+    font-weight: 600;
+  }
+  .edu-item { margin-bottom: 7px; }
+  .edu-degree {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1a1a2e;
+    line-height: 1.4;
+  }
+  .edu-school {
+    font-size: 9.5px;
+    color: #666;
+  }
+  .cert-item {
+    font-size: 10px;
+    color: #2a2a3e;
+    padding: 2px 0;
+    border-bottom: 1px solid #f0f0f5;
+  }
+  .cert-item:last-child { border-bottom: none; }
+  .profile-text {
+    font-size: 10.5px;
+    line-height: 1.7;
+    color: #2a2a3e;
+  }
+  .kv-table { width: 100%; font-size: 10px; border-collapse: collapse; }
+  .kv-table td { padding: 2px 0; vertical-align: top; }
+  .kv-table td:first-child { color: #777; width: 36%; }
+  .kv-table td:last-child { color: #1a1a2e; font-weight: 500; }
+  .lang-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 2px 0;
+    border-bottom: 1px solid #f0f0f5;
+  }
+  .lang-item:last-child { border-bottom: none; }
+  .lang-name { color: #1a1a2e; font-weight: 600; }
+  .lang-level { color: #777; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-name">Christiaan Verhoef</div>
+    <div class="header-title">Programmamanager Innovatie | Challenge-facilitator | Ecosysteembouwer</div>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>Baarn, Nederland</span>
+      <span>+31 6 30 18 47 43</span>
+      <span><a href="mailto:christiaan_gerardo@hotmail.com">christiaan_gerardo@hotmail.com</a></span>
+      <span><a href="https://linkedin.com/in/christiaanverhoef">linkedin.com/in/christiaanverhoef</a></span>
+    </div>
+  </div>
+
+  <!-- MAIN COLUMN -->
+  <div class="main">
+
+    <!-- PROFIEL -->
+    <div class="section">
+      <div class="section-title">Profiel</div>
+      <p class="profile-text">
+        Ik ontwerp ervaringen waarin mensen iets voelen wat ze anders alleen lezen. Dat is de kern van challenge-based werken, en het is ook precies wat ik doe: Beer Game-facilitator in supply chain, simulatieprogramma's in het onderwijs, een innovation hub waar studenten en bedrijven samen aan echte problemen werken. Ik breng de rol van programmaontwerper, facilitator, ecosysteemsluiter en sparringpartner voor opdrachtgevers samen in hetzelfde pakket. 10+ jaar ervaring met het verbinden van corporates, overheden, kennisinstellingen en startups in challenge-formats, living labs en innovatietrajecten.
+      </p>
+    </div>
+
+    <!-- WERKERVARING -->
+    <div class="section">
+      <div class="section-title">Werkervaring</div>
+
+      <!-- Aeres -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Lab Manager &amp; Programmaontwerper</span>
+          <span class="exp-period">2021 &ndash; 2022</span>
+        </div>
+        <div class="exp-company">Aeres Hogeschool, Dronten</div>
+        <p class="exp-desc">Ontwierp en leidde een innovation hub van nul: acht losse vakken samengevoegd tot een coherent challenge-programma, bedrijven en studenten samengebracht in echte innovatieprojecten, tien teams begeleid door het programma.</p>
+        <ul class="bullets">
+          <li>Challenge-format: multidisciplinaire teams op echte probleemstellingen van externe partijen</li>
+          <li>Twee operationele bedrijven als eindresultaat; Veles Farming actief in Slowakije (&euro;2M funding)</li>
+          <li>Faciliteerde de spanning in het programma zodat teams leerden van hun keuzes, niet van een presentatie</li>
+        </ul>
+      </div>
+
+      <!-- Windesheim -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Projectmanager &amp; Living Lab Lead</span>
+          <span class="exp-period">jan 2020 &ndash; heden</span>
+        </div>
+        <div class="exp-company">Windesheim Hogeschool, Zwolle</div>
+        <p class="exp-desc">Bouwt en beheert parallelle innovatielabs met cross-sectorale consortia van bedrijven, overheden, ngo's en kennisinstellingen. Verbindt inhoudelijk programma met externe partnerships en financieringsstromen.</p>
+        <ul class="bullets">
+          <li>Spark! Living Lab: Beer Game blockchain simulatie voor supply chain practitioners; externe partners ingestapt</li>
+          <li>Value Chain Hackers: corporates en overheid in challenge-format rond CSRD/EUDR compliancevraagstukken</li>
+          <li>Ca. &euro;2M aan innovatiefinanciering gefaciliteerd via consortiumopbouw en subsidietrajecten</li>
+        </ul>
+      </div>
+
+      <!-- 2bSMART / Social Chicken -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Freelance Trainer &amp; Ecosysteem Consultant</span>
+          <span class="exp-period">2016 &ndash; 2022</span>
+        </div>
+        <div class="exp-company">2bSMART / Social Chicken, Amsterdam</div>
+        <ul class="bullets">
+          <li>Blockchain- en AI-trainingen voor corporate en overheidsclienteel door heel Benelux</li>
+          <li>Complexe technologische concepten vertaald naar niet-technische besluitvormers</li>
+          <li>Ecosysteembouw rond blockchain-adoptie in supply chain en financiele sector</li>
+        </ul>
+      </div>
+
+      <!-- ROC -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Freelance Docent &amp; Simulatieontwerper</span>
+          <span class="exp-period">2018 &ndash; 2020</span>
+        </div>
+        <div class="exp-company">ROC Midden Nederland, Utrecht</div>
+        <ul class="bullets">
+          <li>Rollenspellen en simulaties ontworpen voor beroepsonderwijs; deelnemers leren door keuzes te maken, niet door te luisteren</li>
+          <li>Combineerde technische vakken tot geintegreerde eindprojecten met externe partijen</li>
+        </ul>
+      </div>
+
+      <!-- KONGSBERG -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Field Service Engineer</span>
+          <span class="exp-period">2012 &ndash; 2013</span>
+        </div>
+        <div class="exp-company">KONGSBERG, Kristiansand (Noorwegen)</span>
+        <p class="exp-desc">Solo deployments bij BP en Statoil in vier landen, geen internettoegang, geen ondersteuning. Scriptie over simulatiegebaseerd leren bij KONGSBERG: directe inhoudelijke grondslag voor alle latere challenge- en labontwerpen.</p>
+        <ul class="bullets">
+          <li>Azerbeidzjan: contractsgeschil opgelost door BP-contract te lezen en subcontractor direct te confronteren</li>
+          <li>Bachelorscriptie (8,7): simulatieleren maakt operators die problemen oplossen, niet procedures volgen</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-block">
+      <div class="section-title">Kerncompetenties</div>
+
+      <div class="skill-group">
+        <div class="skill-label">Facilitation &amp; Programma</div>
+        <div class="skill-tags">
+          <span class="tag highlight">Challenge-design</span>
+          <span class="tag highlight">Serious games</span>
+          <span class="tag">Beer Game</span>
+          <span class="tag">Simulatiefacilitatie</span>
+          <span class="tag">Groepsdynamica</span>
+          <span class="tag">Eventorganisatie</span>
+          <span class="tag">Stakeholder bridging</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-label">Ecosysteem &amp; Partnerships</div>
+        <div class="skill-tags">
+          <span class="tag highlight">Consortiumopbouw</span>
+          <span class="tag">Corporate + overheid</span>
+          <span class="tag">Subsidietrajecten</span>
+          <span class="tag">Partner onboarding</span>
+          <span class="tag">Advies C-suite</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-label">Projectmanagement</div>
+        <div class="skill-tags">
+          <span class="tag">Prince2</span>
+          <span class="tag">Scrum / Agile</span>
+          <span class="tag">ITIL</span>
+          <span class="tag">Portfolio management</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Certificeringen</div>
+      <div class="cert-item">Professional Scrum Master I (PSM I)</div>
+      <div class="cert-item">Professional Scrum Product Owner I (PSPO I)</div>
+      <div class="cert-item">Prince2</div>
+      <div class="cert-item">ITIL</div>
+      <div class="cert-item">ESG &amp; Sustainable Supply Chains</div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Opleiding</div>
+      <div class="edu-item">
+        <div class="edu-degree">Bachelor Business IT &amp; Management</div>
+        <div class="edu-school">Hogeschool van Amsterdam (2010&ndash;2014)</div>
+        <div class="edu-school">Eindcijfer: 8,7 | Scriptie: simulatieleren (KONGSBERG)</div>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Talen</div>
+      <div class="lang-item">
+        <span class="lang-name">Nederlands</span>
+        <span class="lang-level">Moedertaal</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">Engels</span>
+        <span class="lang-level">Near-native</span>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Beschikbaarheid</div>
+      <table class="kv-table">
+        <tr><td>Locatie</td><td>Baarn (Utrecht: 40 min)</td></tr>
+        <tr><td>Uren</td><td>32&ndash;40 uur/week</td></tr>
+        <tr><td>Start</td><td>Per direct</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
