@@ -13,7 +13,7 @@
 | 97 | 2026-06-05 | Supabase | Senior Manager, Technical Program Management | 3.4/5 | Evaluated | ❌ | [97](reports/083-supabase-senior-manager-tpm-2026-06-05.md) | 3.4/5 — 10+ yr TPM + code fluency dual blockers; not recommended |
 | 96 | 2026-06-05 | KBenP | Adviseur Digitale Overheid | 3.7/5 | Evaluated | ✅ | [96](reports/082-kbenp-adviseur-digitale-overheid-2026-06-05.md) | CV + brief klaar (applications/096-kbenp/); bel Sven Blom 06-43363421 re: uren + nevenactiviteiten eerst |
 | 95 | 2026-06-05 | Sopra Steria | Scrum Master (Agile Consultant) | 2.7/5 | Applied | ✅ | — | Applied 2026-06-05; Groningen locatie |
-| 94 | 2026-06-05 | Enexis | Scrum Master | 2.9/5 | SKIP | ✅ | — | CV + brief klaar (applications/094-enexis/); PSM II gap eerlijk benoemd in brief |
+| 94 | 2026-06-05 | Enexis | Scrum Master | 2.9/5 | Applied | ✅ | — | Applied 2026-06-05; PSM II gap eerlijk benoemd |
 | 77 | 2026-06-04 | ElevenLabs | Deployment Strategist Lead | 3.6/5 | Evaluated | ✅ | [77](reports/073-elevenlabs-deployment-strategist-lead-2026-06-04.md) | CV + brief klaar (applications/077-elevenlabs/); travel model addressed directly in letter; conditional apply |
 | 76 | 2026-06-04 | Starthubs | Programmamanager Innovation Challenges | 3.8/5 | Evaluated | ✅ | [76](reports/074-starthubs-programmamanager-innovation-challenges-2026-06-04.md) | CV + brief klaar (applications/076-starthubs/); comp uitvragen bij gesprek; Beer Game/DM opening |
 | 74 | 2026-06-04 | Airbus R&T | Innovation Manager / Head of Tech Hub NL | 4.3/5 | Applied | ✅ | [74](reports/072-airbus-innovation-manager-tech-hub-nl-2026-06-04.md) | Applied 2026-06-05; ZZP; open rate €850/dag |

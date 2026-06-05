@@ -2,6 +2,8 @@
 
 | # | URL | Source | Added | Notes |
 |---|-----|--------|-------|-------|
+| 107 | https://www.databricks.com/company/careers/professional-services-operations/sr-manager-ai-forward-deployed-engineering-fde--emea-8574912002?gh_jid=8574912002 | manual | 2026-06-05 | Sr Manager AI FDE EMEA; remote OK; score pending |
+| 108 | https://www.databricks.com/company/careers/professional-services-operations/sr-technical-program-manager-professional-services---financial-services-8208109002?gh_jid=8208109002 | manual | 2026-06-05 | Sr TPM PS Financial Services; remote OK; score pending |
 
 ## Pending
 
