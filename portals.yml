@@ -2,6 +2,18 @@
 # Target: AI Innovation Lab, Applied AI Program Manager, Learning Innovation,
 #         AI Transformation, AI Adoption, R&D Prototyping Lead
 # Market: Netherlands, EU remote, DACH
+#
+# SCANNING BLIND SPOT (confirmed 2026-06-06):
+# Dutch mid-market consultancies, serious games studios, and mission-driven labs
+# DO NOT appear in Greenhouse/Ashby/Lever API scans. They use Homerun, Recruitee,
+# or direct career pages. Supplement scan with manual websearch every 2-3 weeks:
+#   - consultancy.nl/vacatures/vakgebied/innovatie
+#   - nl.linkedin.com/jobs (query: serious games, innovatielab, game-based learning)
+#   - nl.indeed.com (query: serious games, living lab, venture builder)
+#   - Direct career pages: waag.org, berenschot.nl, twynstragudde.nl, metabolic.nl,
+#     ijsfontein.nl, ranj.com, gamificationers.nl, gametailors.com, kennisnet.nl
+# Keywords: "serious games vacature", "innovatielab vacature", "living lab leider",
+#           "game-based learning consultant", "innovatie adviseur onderwijs"
 
 location_filter:
   allow:

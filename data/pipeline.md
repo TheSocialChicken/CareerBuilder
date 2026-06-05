@@ -13,6 +13,18 @@
 - [x] #116 | https://berenschot.recruitee.com/o/medior-transformatie-partner | Berenschot | Medior Transformatie Partner — Utrecht, 0.8-1.0 FTE, €3.776-€6.390/mo. Dossier klaar: CV + brief + rapport + PDFs 2026-06-06.
 - [x] #117 | https://berenschot.recruitee.com/o/senior-consultant-digitale-transformatie-in-het-openbaar-bestuur | Berenschot | Senior Consultant Digitale Transformatie Openbaar Bestuur — Utrecht, 0.8-1.0 FTE, €5.086-€8.376/mo. Dossier klaar: CV + brief + rapport + PDFs 2026-06-06.
 
+## Innovation Lab, Serious Games & NL Mid-Market Scan — 2026-06-06
+
+> **Key insight**: Dutch mid-market consultancies, serious games studios, and mission-driven labs (Berenschot,
+> Twynstra Gudde, Metabolic, CE Delft, Waag, IJsfontein, &ranj, Gamificationers, etc.) do NOT appear in
+> Greenhouse/Ashby/Lever API scans. They use custom ATS (Homerun, Recruitee) or direct career pages.
+> **Always supplement API scanning with direct websearch on consultancy.nl, Indeed NL, and company career pages.**
+> Cadence: search every 2-3 weeks on terms: "serious games vacature", "innovatielab vacature", "living lab leider",
+> "game-based learning consultant", "innovatie adviseur onderwijs", "venture builder NL".
+
+- [ ] #118 | https://waag.homerun.co/project-manager-4/nl | Waag Futurelab | Project Manager — Amsterdam, 32-40h, €3.546-€4.901/mo, DEADLINE 30-06-2026
+- [ ] #119 | https://www.kennisnet.nl/vacatures/strategisch-adviseur-technologische-innovatie/ | Kennisnet | Strategisch adviseur technologische innovatie — Zoetermeer, 32-40h, max €8.054/mo
+
 ## Pending
 
 - [x] #31 | https://jobs.ashbyhq.com/n8n/42e72645-d99a-4545-97b7-53ba3a699893 | n8n | AI Product Builder | already evaluated
