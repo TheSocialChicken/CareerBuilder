@@ -2,6 +2,27 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 94 | 2026-06-05 | Enexis | Scrum Master | 2.9/5 | SKIP | ❌ | — | PSM II vereist; 40h vaste aanstelling; geen fractional model |
+| 95 | 2026-06-05 | Sopra Steria | Scrum Master (Agile Consultant) | 2.7/5 | SKIP | ❌ | — | Groningen locatie; 40h FTE; Sopra Steria overheid fit laag |
+| 96 | 2026-06-05 | KBenP | Adviseur Digitale Overheid | 3.7/5 | Evaluated | ❌ | [96](reports/082-kbenp-adviseur-digitale-overheid-2026-06-05.md) | 3.7/5 — call Sven Blom (06-43363421) re: uren flexibility; doorlopende vacature |
+| 97 | 2026-06-05 | Supabase | Senior Manager, Technical Program Management | 3.4/5 | Evaluated | ❌ | [97](reports/083-supabase-senior-manager-tpm-2026-06-05.md) | 3.4/5 — 10+ yr TPM + code fluency dual blockers; not recommended |
+| 98 | 2026-06-05 | Supabase | Product Manager, AI | 3.7/5 | Evaluated | ❌ | [98](reports/084-supabase-pm-ai-2026-06-05.md) | 3.7/5 — daily Supabase/MCP user; OR clause (founding exp); CL must lead with user angle |
+| 99 | 2026-06-05 | Mollie | Product Delivery Manager, Mollie Capital | 3.3/5 | Evaluated | ❌ | [99](reports/085-mollie-pdm-capital-2026-06-05.md) | 3.3/5 — credit/lending domain gap is primary blocker |
+| 100 | 2026-06-05 | Mollie | Senior PDM, Wallet & Bank Interactions | 3.1/5 | Evaluated | ❌ | [100](reports/086-mollie-sr-pdm-wallet-2026-06-05.md) | 3.1/5 — banking infrastructure + ECB connectivity gap; hard blockers |
+| 101 | 2026-06-05 | Celonis | Client Value Partner, Retail | 3.2/5 | Evaluated | ❌ | [101](reports/087-celonis-cvp-retail-2026-06-05.md) | 3.2/5 — Munich location + 15yr/MBA + Celonis platform gap |
+| 102 | 2026-06-05 | Databricks | Sr. TPM, Professional Services - Financial Services | — | Evaluated | ❌ | — | JS-rendered JD inaccessible; live confirmed; score pending manual review |
+| 103 | 2026-06-05 | Databricks | Sr. Manager, AI Forward Deployed Engineering - EMEA | — | Evaluated | ❌ | — | JS-rendered JD inaccessible; live confirmed; score pending manual review |
+| 104 | 2026-06-05 | GitLab | Senior PM, AI Platform Management | 3.2/5 | Evaluated | ❌ | [104](reports/088-gitlab-sr-pm-ai-platform-2026-06-05.md) | 3.2/5 — IE/IL/UK geographic restriction excludes NL; primary blocker |
+| 105 | 2026-06-05 | GitLab | Senior Solutions Architect, AI/Core DevOps - EMEA | 2.6/5 | SKIP | ❌ | — | 2.6/5 — sales quota + enterprise pre-sales SA focus; SKIP |
+| 106 | 2026-06-05 | Shiny | Fractional CTO for Startups | 4.3/5 | Evaluated | ✅ | [106](reports/089-shiny-fractional-cto-2026-06-05.md) | 4.3/5 — CV + cover letter ready; APPLY via Typeform; fractional model ideal |
+| 89 | 2026-06-04 | TenneT | Sr. Scrum Master / Agile Coach | 3.8/5 | Evaluated | ❌ | [077](reports/077-tennet-sr-scrum-master-agile-coach-2026-06-04.md) | Hoogste SM-salaris (€92k plafond); coaching+veranderingsmandate; KONGSBERG kritieke infra parallel; 40h voltijd sub-optimaal |
+| 90 | 2026-06-04 | Stedin | Scrum Master | 3.3/5 | Evaluated | ❌ | [078](reports/078-stedin-scrum-master-2026-06-04.md) | 40u vaste aanstelling blokkeert fractional model; coaching element aanwezig maar geen change mandate; DevOps differentiator |
+| 91 | 2026-06-04 | Vattenfall | Business Change Manager | 2.8/5 | Discarded | ❌ | [080](reports/080-vattenfall-business-change-manager-2026-06-04.md) | Domein-gap marketing/commercial ops; posting gesloten; geen bouwmandaat |
+| 92 | 2026-06-04 | Nationale Nederlanden | Programmamanager IT-verandertrajecten | 3.6/5 | Evaluated | ❌ | [081](reports/081-nn-programmamanager-it-verandertrajecten-2026-06-04.md) | Den Haag; cloud/legacy/digital banking; URL 404 verify before apply |
+| 93 | 2026-06-04 | Ministerie van IenW | Strategisch adviseur digitalisering en privacy | — | Discarded | ❌ | — | URL dead (404) — vacature IM-2026-8663 niet meer beschikbaar op WerkenVoorNederland |
+| 83 | 2026-06-04 | Vrije Universiteit Amsterdam | Agile Coach | — | Discarded | ❌ | — | URL dead (404) |
+| 87 | 2026-06-04 | KPMG | Senior Consultant/Manager Digital Transformation | — | Discarded | ❌ | — | URL dead (HTTP 410) |
+| 88 | 2026-06-04 | Rabobank | Scrum Master (JR_00109695) | 3.3/5 | Discarded | ❌ | [076](reports/076-rabobank-scrum-master-jr00109695-2026-06-04.md) | Re-eval 2026-06-04 (0→3.3). Utrecht, S@S, €70k-€101k — conditioneel: verificeer liveness + mandaat. Fulltime 40u conflict met fractional strategie. |
 | 68 | 2026-06-04 | KVK | Senior Scrum Master | 3.8/5 | Evaluated | ❌ | [066](reports/066-kvk-senior-scrum-master-2026-06-04.md) | Coaching + change mandate aanwezig; PSM II gap minor; Utrecht; deadline 9 juni URGENT |
 | 69 | 2026-06-04 | Rijkswaterstaat | Programmamanager Data en AI | 4.1/5 | Evaluated | ❌ | [067](reports/067-rws-programmamanager-data-ai-2026-06-04.md) | Schaal 13 (€74k-€110k incl IKB); AI lab build-from-scratch match; WO-eis matig risico; 32-36h vs fractional voorkeur; deadline 15 juni |
 | 70 | 2026-06-04 | Techleap.nl | Ecosystem Interventions Manager | 4.4/5 | Evaluated | ❌ | [068](reports/068-techleap-ecosystem-interventions-manager-2026-06-04.md) | Near-perfect ecosystem builder archetype match; €4.5k-5.8k/month (low end tight); verify URL live before applying |
