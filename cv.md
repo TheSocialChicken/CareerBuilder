@@ -41,7 +41,7 @@ Leads and supports applied innovation at the intersection of logistics, finance,
 - **Value Chain Hackers** -- Created a student-facing, AI-driven innovation lab for open infrastructure addressing sustainability challenges; self-funded early tooling and deployment stack
 - **Beer Game (Redesign)** -- Rebuilt the classic logistics simulation with modern teaching format and interface
 - **KnopenKoning** -- Designed and prototyped a decision-making simulation tool for complex trade-off analysis
-- **COVID-19 Mega Project** -- Merged eight university courses into one interdisciplinary simulation exploring pandemic-related supply chain disruptions
+- **COVID-19 Mega Project** -- Led interdisciplinary research program modelling hospital capacity pressure and supply chain disruptions during the pandemic; integrated multiple research threads into a single deliverable under severe time pressure
 - **AI Stack Deployment (Self-funded)** -- Set up and maintained AI sandbox using Flowise, OpenWebUI, Supabase, and n8n on self-managed Linux infrastructure; Docker-based deployment, CI/CD, database management; personally hosted to enable hands-on student and researcher experimentation
 - **DevOps across all lab projects** -- Maintained full DevOps lifecycle (provisioning, containerization, pipelines, monitoring, incident response) for all lab environments at Windesheim since 2020
 - Directed applied research on financial and operational dynamics of international supply chains; developed frameworks for CSRD, CSDDD, and EUDR compliance
@@ -59,6 +59,7 @@ Brought operational clarity and technical structure to a modular logistics start
 Co-founded Tonomy Foundation to develop open-source, MICA-compliant infrastructure for digital software and decentralized governance. Led strategy, technical positioning, partner development, and community operations using 2-week agile sprint cycles. Structured the organization to scale independently; transitioned to a long-term board role with oversight on mission alignment and product integrity.
 
 - **Pangea Vault** -- Designed and helped build the first version of Tonomy's identity vault product; focused on reusable, user-owned digital identity with strong privacy guarantees
+- **W3C CCG Conditional Proof Standard** -- Contributed to team that implemented Multi-Signature Verifiable Credentials and Conditional Proofs into the DIF did-jwt, did-jwt-vc, and did-resolver libraries; presented at W3C Credentials Community Group (2023, 2024)
 - **Whitepaper & Ecosystem Design** -- Co-wrote the whitepaper, led narrative design, and mapped stakeholder ecosystems to position Tonomy within the emerging regulatory and decentralized identity landscape
 
 ### Open Food Chain -- Amsterdam / Remote
@@ -183,7 +184,7 @@ Multi-brand outsourced technical support hub for the European market — handled
 
 ## Education
 
-- **Bachelor of Business Administration, Business IT & Management** -- Hogeschool van Amsterdam (2010–2014), grade 8.7. Thesis: simulation-based learning and training methodology at Kongsberg.
+- **Bachelor of Business Administration, Business IT & Management** -- Hogeschool van Amsterdam (2010–2014), grade 8.7. Thesis: simulation-based learning and training methodology at Kongsberg. Minor: E-discovery (digital forensics, ethical hacking, and cybersecurity investigation using EDRM framework; included hands-on penetration testing lab with self-hosted server infrastructure).
 - **Teacher Training, Mathematics** -- Hogeschool Inholland (2007–2008)
 - **Technical Informatics** -- Hogeschool van Amsterdam (2006–2007)
 - **Senior General Secondary Education (HAVO), Theoretical and Mathematical Physics** -- Hermann Wesselink College (2002–2006)
