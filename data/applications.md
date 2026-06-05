@@ -12,8 +12,8 @@
 | 98 | 2026-06-05 | Supabase | Product Manager, AI | 3.7/5 | Evaluated | ✅ | [98](reports/084-supabase-pm-ai-2026-06-05.md) | CV + brief klaar (applications/098-supabase-pm-ai/); brief leads with MCP edge function story |
 | 97 | 2026-06-05 | Supabase | Senior Manager, Technical Program Management | 3.4/5 | Evaluated | ❌ | [97](reports/083-supabase-senior-manager-tpm-2026-06-05.md) | 3.4/5 — 10+ yr TPM + code fluency dual blockers; not recommended |
 | 96 | 2026-06-05 | KBenP | Adviseur Digitale Overheid | 3.7/5 | Evaluated | ✅ | [96](reports/082-kbenp-adviseur-digitale-overheid-2026-06-05.md) | CV + brief klaar (applications/096-kbenp/); bel Sven Blom 06-43363421 re: uren + nevenactiviteiten eerst |
-| 95 | 2026-06-05 | Sopra Steria | Scrum Master (Agile Consultant) | 2.7/5 | SKIP | ❌ | — | Groningen locatie; 40h FTE; user override — applying anyway |
-| 94 | 2026-06-05 | Enexis | Scrum Master | 2.9/5 | SKIP | ❌ | — | PSM II vereist; 40h vaste aanstelling; user override — applying anyway |
+| 95 | 2026-06-05 | Sopra Steria | Scrum Master (Agile Consultant) | 2.7/5 | SKIP | ✅ | — | CV + brief klaar (applications/095-sopra-steria/); Groningen locatie besproken in brief |
+| 94 | 2026-06-05 | Enexis | Scrum Master | 2.9/5 | SKIP | ✅ | — | CV + brief klaar (applications/094-enexis/); PSM II gap eerlijk benoemd in brief |
 | 77 | 2026-06-04 | ElevenLabs | Deployment Strategist Lead | 3.6/5 | Evaluated | ✅ | [77](reports/073-elevenlabs-deployment-strategist-lead-2026-06-04.md) | CV + brief klaar (applications/077-elevenlabs/); travel model addressed directly in letter; conditional apply |
 | 76 | 2026-06-04 | Starthubs | Programmamanager Innovation Challenges | 3.8/5 | Discarded | ❌ | [76](reports/074-starthubs-programmamanager-innovation-challenges-2026-06-04.md) | Closing date nov 2024 gepasseerd (>6 mnd) — vacature vermoedelijk vervallen |
 | 74 | 2026-06-04 | Airbus R&T | Innovation Manager / Head of Tech Hub NL | 4.3/5 | Discarded | ❌ | [74](reports/072-airbus-innovation-manager-tech-hub-nl-2026-06-04.md) | End date May 31 2026 passed — assignment ended; posting stale |

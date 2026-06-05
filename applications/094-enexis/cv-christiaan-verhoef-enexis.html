@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christiaan Verhoef -- CV -- Enexis Scrum Master</title>
+<style>
+  @font-face {
+    font-family: 'Space Grotesk';
+    src: url('../../fonts/space-grotesk-latin.woff2') format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'DM Sans';
+    src: url('../../fonts/dm-sans-latin.woff2') format('woff2');
+    font-weight: 100 1000;
+    font-style: normal;
+    font-display: swap;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    line-height: 1.65;
+    color: #1a1a2e;
+    background: #ffffff;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 18mm 18mm 16mm 18mm;
+    display: grid;
+    grid-template-columns: 1fr 68mm;
+    grid-template-rows: auto 1fr;
+    gap: 0 10mm;
+  }
+  .header {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+  }
+  .header-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a2e;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .header-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(187, 74%, 32%);
+    margin-top: 3px;
+    letter-spacing: 0.01em;
+  }
+  .header-gradient {
+    height: 2px;
+    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
+    border-radius: 1px;
+    margin: 8px 0 6px;
+  }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    font-size: 9.5px;
+    color: #555;
+  }
+  .contact-row a { color: #555; text-decoration: none; }
+  .main { grid-column: 1; }
+  .sidebar { grid-column: 2; }
+  .section { margin-bottom: 13px; }
+  .section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: hsl(187, 74%, 32%);
+    border-bottom: 1px solid hsl(187, 74%, 85%);
+    padding-bottom: 2px;
+    margin-bottom: 7px;
+  }
+  .exp-item { margin-bottom: 10px; }
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .exp-role {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  .exp-period {
+    font-size: 9.5px;
+    color: #888;
+    white-space: nowrap;
+  }
+  .exp-company {
+    font-size: 10px;
+    color: hsl(187, 74%, 32%);
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .exp-desc {
+    font-size: 10.5px;
+    line-height: 1.6;
+    color: #2a2a3e;
+    margin-bottom: 3px;
+  }
+  ul.bullets {
+    list-style: none;
+    padding-left: 0;
+    margin: 3px 0;
+  }
+  ul.bullets li {
+    font-size: 10.5px;
+    color: #2a2a3e;
+    line-height: 1.6;
+    padding-left: 10px;
+    position: relative;
+    margin-bottom: 1px;
+  }
+  ul.bullets li::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: hsl(187, 74%, 50%);
+  }
+  .sidebar-block { margin-bottom: 12px; }
+  .skill-group { margin-bottom: 7px; }
+  .skill-label {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #555;
+    margin-bottom: 2px;
+  }
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .tag {
+    background: #f0f4f8;
+    color: #334;
+    font-size: 9px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    line-height: 1.4;
+  }
+  .tag.highlight {
+    background: hsl(187, 74%, 92%);
+    color: hsl(187, 74%, 25%);
+    font-weight: 600;
+  }
+  .edu-item { margin-bottom: 7px; }
+  .edu-degree {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1a1a2e;
+    line-height: 1.4;
+  }
+  .edu-school {
+    font-size: 9.5px;
+    color: #666;
+  }
+  .cert-item {
+    font-size: 10px;
+    color: #2a2a3e;
+    padding: 2px 0;
+    border-bottom: 1px solid #f0f0f5;
+  }
+  .cert-item:last-child { border-bottom: none; }
+  .profile-text {
+    font-size: 10.5px;
+    line-height: 1.7;
+    color: #2a2a3e;
+  }
+  .kv-table { width: 100%; font-size: 10px; border-collapse: collapse; }
+  .kv-table td { padding: 2px 0; vertical-align: top; }
+  .kv-table td:first-child { color: #777; width: 36%; }
+  .kv-table td:last-child { color: #1a1a2e; font-weight: 500; }
+  .lang-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 2px 0;
+    border-bottom: 1px solid #f0f0f5;
+  }
+  .lang-item:last-child { border-bottom: none; }
+  .lang-name { color: #1a1a2e; font-weight: 600; }
+  .lang-level { color: #777; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-name">Christiaan Verhoef</div>
+    <div class="header-title">Scrum Master | Complexe Digitale Programma's | Netbeheer &amp; Publieke Sector</div>
+    <div class="header-gradient"></div>
+    <div class="contact-row">
+      <span>Baarn, Nederland</span>
+      <span>+31 6 30 18 47 43</span>
+      <span><a href="mailto:christiaan_gerardo@hotmail.com">christiaan_gerardo@hotmail.com</a></span>
+      <span><a href="https://linkedin.com/in/christiaanverhoef">linkedin.com/in/christiaanverhoef</a></span>
+    </div>
+  </div>
+
+  <!-- MAIN COLUMN -->
+  <div class="main">
+
+    <!-- PROFIEL -->
+    <div class="section">
+      <div class="section-title">Profiel</div>
+      <p class="profile-text">
+        Scrum Master met 15 jaar agile praktijkervaring in complexe omgevingen met veel stakeholders, legacy-infrastructuur en hoge druk op betrouwbaarheid. Gewend aan organisaties waar IT zowel bedrijfskritisch als maatschappelijk relevant is, en waar teams werken aan systemen die niet mogen uitvallen. Technische achtergrond (DevOps, CI/CD, Docker, Linux) maakt het mogelijk om developers te begrijpen zonder ze te managen. Sterk in het signaleren van blokkades die verder gaan dan het Scrumboard, het aanspreken van stakeholders op alle niveaus, en het bouwen van teams die daadwerkelijk zelfstandig presteren.
+      </p>
+    </div>
+
+    <!-- WERKERVARING -->
+    <div class="section">
+      <div class="section-title">Werkervaring</div>
+
+      <!-- Windesheim -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Projectmanager &amp; Agile Lab Lead</span>
+          <span class="exp-period">jan 2020 &ndash; heden</span>
+        </div>
+        <div class="exp-company">Windesheim Hogeschool, Zwolle</div>
+        <p class="exp-desc">Leidt parallelle innovatielabs met meerdere teams, externe partners en een eigen DevOps-infrastructuur. Verantwoordelijk voor afstemming tussen onderzoekers, ICT-omgeving en externe opdrachtgevers in een publiek bekostigde organisatie.</p>
+        <ul class="bullets">
+          <li>Value Chain Hackers: van nul naar operationele AI-compliancetooling (CSRD/EUDR) voor enterprise-clienteel</li>
+          <li>Spark! Living Lab: simulatieplatform operationeel; externe partners succesvol ingestapt in meerjarig programma</li>
+          <li>Eigen AI-stack gebouwd en beheerd: Flowise, n8n, Supabase, OpenWebUI, Docker op Linux</li>
+          <li>Stakeholderafstemming van student tot lector tot extern bestuursniveau</li>
+        </ul>
+      </div>
+
+      <!-- Aeres -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Lab Manager &amp; Agile Transformation Lead</span>
+          <span class="exp-period">2021 &ndash; 2022</span>
+        </div>
+        <div class="exp-company">Aeres Hogeschool, Dronten</div>
+        <p class="exp-desc">Gevraagd om agile transformatie te leiden in een organisatie zonder agile achtergrond. Implementeerde SafeScrum school-breed in minder dan 2 maanden; acht afzonderlijke vakken samengevoegd tot coherente sprint-gebaseerde innovatietrack.</p>
+        <ul class="bullets">
+          <li>Docenten, studenten en externe partners tegelijkertijd gecoacht</li>
+          <li>Structurele belemmeringen in roosters en beslisstructuren benoemd en opgelost</li>
+          <li>Twee operationele startups als eindresultaat van het programma</li>
+        </ul>
+      </div>
+
+      <!-- Tonomy -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Co-Founder</span>
+          <span class="exp-period">2021 &ndash; heden</span>
+        </div>
+        <div class="exp-company">Tonomy Foundation, Amsterdam / remote</div>
+        <ul class="bullets">
+          <li>Open-source identiteitsplatform opgezet: product roadmap, architectuur, partnerstrategie, 2-weeks sprints met gedistribueerd team</li>
+          <li>Bijgedragen aan implementatie W3C Verifiable Credentials standaard; gepresenteerd bij W3C CCG</li>
+        </ul>
+      </div>
+
+      <!-- Social Chicken / Freelance -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Freelance Consultant &amp; DevOps Engineer</span>
+          <span class="exp-period">2016 &ndash; 2022</span>
+        </div>
+        <div class="exp-company">Social Chicken, Amsterdam</div>
+        <ul class="bullets">
+          <li>DevOps-stacks ingericht voor MKB: Linux-serverbeheer, monitoring (Nagios), CI/CD, cloudmigraties</li>
+          <li>Technische due diligence startup; 4x exit gerealiseerd</li>
+        </ul>
+      </div>
+
+      <!-- KONGSBERG -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Field Service Engineer</span>
+          <span class="exp-period">2012 &ndash; 2013</span>
+        </div>
+        <div class="exp-company">KONGSBERG, Kristiansand (Noorwegen)</div>
+        <p class="exp-desc">Solo deployments bij BP en Statoil in vier landen. Veiligheidskritische omgevingen, geen internettoegang, geen backupondersteuning. End-to-end eigenaarschap van consultancy tot uitrol tot stakeholdermanagement.</p>
+        <ul class="bullets">
+          <li>Niet-standaard storingen opgelost via eigen diagnose en initiatief (databasefout Jordanie, contractsgeschil Azerbeidzjan)</li>
+          <li>Altijd on-schedule opgeleverd in kritische productiemomenten</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-block">
+      <div class="section-title">Kerncompetenties</div>
+
+      <div class="skill-group">
+        <div class="skill-label">Agile &amp; Scrum</div>
+        <div class="skill-tags">
+          <span class="tag highlight">Scrum (15+ jaar)</span>
+          <span class="tag highlight">Multi-team coaching</span>
+          <span class="tag">Kanban</span>
+          <span class="tag">SafeScrum</span>
+          <span class="tag">LeSS</span>
+          <span class="tag">Retrospectives</span>
+          <span class="tag">Sprint planning</span>
+          <span class="tag">PI Planning</span>
+          <span class="tag">Release planning</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-label">Technisch</div>
+        <div class="skill-tags">
+          <span class="tag highlight">Docker / Linux</span>
+          <span class="tag highlight">CI/CD</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Jenkins</span>
+          <span class="tag">Nagios</span>
+          <span class="tag">Grafana</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Jira</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-label">Organisatie</div>
+        <div class="skill-tags">
+          <span class="tag">Stakeholder management</span>
+          <span class="tag">Verandermanagement</span>
+          <span class="tag">Facilitatie</span>
+          <span class="tag">Prince2</span>
+          <span class="tag">ITIL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Certificeringen</div>
+      <div class="cert-item">Professional Scrum Master I (PSM I)</div>
+      <div class="cert-item">Professional Scrum Product Owner I (PSPO I)</div>
+      <div class="cert-item">Prince2</div>
+      <div class="cert-item">ITIL</div>
+      <div class="cert-item">Oracle 11g Essentials</div>
+      <div class="cert-item">ESG &amp; Sustainable Supply Chains</div>
+      <div class="cert-item">Offshore Survival / HUET (2012)</div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Opleiding</div>
+      <div class="edu-item">
+        <div class="edu-degree">Bachelor Business IT &amp; Management</div>
+        <div class="edu-school">Hogeschool van Amsterdam (2010&ndash;2014)</div>
+        <div class="edu-school">Eindcijfer: 8,7 | Scriptie: simulatiegebaseerd leren (KONGSBERG)</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Lerarenopleiding Wiskunde</div>
+        <div class="edu-school">Hogeschool Inholland (2007&ndash;2008)</div>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Talen</div>
+      <div class="lang-item">
+        <span class="lang-name">Nederlands</span>
+        <span class="lang-level">Moedertaal</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">Engels</span>
+        <span class="lang-level">Near-native (B2+)</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">Duits</span>
+        <span class="lang-level">Conversatieniveau</span>
+      </div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Beschikbaarheid</div>
+      <table class="kv-table">
+        <tr><td>Locatie</td><td>Baarn (regio Midden-NL)</td></tr>
+        <tr><td>Uren</td><td>40 uur/week</td></tr>
+        <tr><td>Start</td><td>Per direct</td></tr>
+        <tr><td>Contract</td><td>Vast dienstverband</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
