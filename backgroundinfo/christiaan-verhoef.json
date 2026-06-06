@@ -1,0 +1,1026 @@
+{
+  "picture": {
+    "hidden": false,
+    "url": "https://avatars.githubusercontent.com/u/20044541?v=4",
+    "size": 61,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Christiaan Verhoef",
+    "headline": "Builder of Labs and Learning Systems that Turn Ideas into Action",
+    "email": "christiaan_gerardo@hotmail.com",
+    "phone": "+31630184743",
+    "location": "Baarn, Netherlands",
+    "website": {
+      "url": "https://tonomy.foundation",
+      "label": ""
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Summary",
+    "icon": "",
+    "columns": 1,
+    "hidden": false,
+    "content": "<p>Systems thinker with a merchant mindset, skilled at connecting people, ideas, and processes to make change real. Works best in collaborative settings where learning happens through action. Builds labs, workshops, and AI tools that show how things connect and help teams grow through practice. Applies the Conscious Competence model to design education that is practical, adaptive, and human.</p><p><strong>Selected Impact</strong></p><ul><li><p>Built and led over five university innovation labs and learning programs</p></li><li><p>Guided students and professionals in applying agile and AI methods across research and education projects</p></li><li><p>Supported, co-founded, or advised ten startups in education, sustainability, and blockchain</p></li><li><p>Helped secure €2 million in funding for early-stage innovation initiatives</p></li><li><p>Set up and maintained self-hosted AI and data environments for research and student experimentation at Windesheim and Value Chain Hackers</p></li></ul><p><strong>Core Competencies</strong><br>Lab and program design • Agile facilitation and team coaching • Simulation and game-based learning • AI and open infrastructure integration • Systems thinking and process design • Collaborative prototyping • Stakeholder alignment and facilitation • Education and innovation strategy</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profiles",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "experience": {
+      "title": "Experience",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "p2rmvdrf1ve1wf9jg12hg601",
+          "hidden": false,
+          "company": "Tonomy Foundation",
+          "position": "Co-Founder & Board member",
+          "location": "Amsterdam & Remote",
+          "period": " 2021 – Present",
+          "website": {
+            "url": "https://tonomy.foundation",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Co-founded Tonomy Foundation to develop open-source, MICA-compliant infrastructure for digital software and decentralized governance.<br>Took the foundation from vision to reality by leading strategy, technical positioning, partner development, and community operations.<br>Structured the organization to scale independently and transitioned to a long-term board role with oversight on mission alignment and product integrity.</p><p><strong>Projects</strong></p><ul><li><p><strong>Pangea Vault</strong>: Designed and helped build the first version of Tonomy’s identity vault product (later rebranded to Tonomy Vault). Focused on reusable, user-owned digital identity with strong privacy guarantees.</p></li><li><p><strong>Whitepaper &amp; Ecosystem Design</strong>: Co-wrote the whitepaper, led narrative design, and mapped stakeholder ecosystems to position Tonomy within the emerging regulatory and decentralized identity landscape.</p></li></ul>",
+          "roles": []
+        },
+        {
+          "id": "qjpqtgd8gg8cgbol81th5gky",
+          "hidden": false,
+          "company": "Open Food Chain",
+          "position": "Community manager",
+          "location": "Amsterdam / Remote",
+          "period": "2022-2024",
+          "website": {
+            "url": "https://www.openfoodchain.com/",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Joined The New Fork part-time to support the growth of <strong>Open Food Chain</strong>, a blockchain initiative focused on improving transparency and trust in food systems. As Community Manager and Trainer, Chris helped create and nurture the project's digital community via Discord, supported strategic outreach that led to new investment, and translated complex ideas into accessible formats. His contributions also included writing smart contracts and facilitating workshops around blockchain literacy and food supply innovation.</p><p><strong>Projects</strong></p><ul><li><p><strong>Community Activation (Discord)</strong><br>Built and moderated a growing technical and stakeholder community to support early adoption and knowledge exchange.</p></li><li><p><strong>Investor Outreach &amp; Onboarding</strong><br>Supported fundraising efforts by simplifying technical documentation and helping onboard new backers.</p></li><li><p><strong>Smart Contract Development</strong><br>Wrote early contract templates and supported functional testing of blockchain traceability flows.</p></li></ul>",
+          "roles": []
+        },
+        {
+          "id": "sl4mqzk4y35j82nr71aqc6pc",
+          "hidden": false,
+          "company": "Aeres Hogeschool Dronten",
+          "position": "Lab Manager",
+          "location": "Dronten, Netherlands",
+          "period": "2021 – 2022",
+          "website": {
+            "url": "https://www.aereshogeschool.nl/over-aeres-hogeschool/locaties/dronten",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Brought in to manage and design an innovation lab at Aeres Hogeschool, Chris introduced agile educational design and project-based learning to help modernize the school’s approach to sustainability, entrepreneurship, and technology. He developed a lab model that combined multiple courses into one applied innovation track and supported student-led projects that later matured into independent startups.</p><p><strong>Projects</strong></p><ul><li><p><strong>Magic Frames </strong><br>Supported early development of a student-led creative tech startup that later evolved into its own venture.</p></li><li><p><strong>Vales Farming</strong><br>Advisor / seed investor; turned a “no-go” student concept into an operating agri-tech startup in Slovakia. Helped shape a startup concept focused on decentralized food systems and agri-tech innovation, successfully running now, 2 million funding. (this project originally came from INHOLLAND)</p></li><li><p><strong>Agile Course Integration</strong><br>Implemented an agile learning model that merged eight separate courses into one coherent project sprint cycle using SafeScrum.</p></li><li><p><strong>Farm Credibly (Jamaica)</strong><br>Supported a short-term engagement aligning Dutch agri-tech methods with blockchain-based farmer financing in the Caribbean, as part of a research partnership.</p></li></ul>",
+          "roles": []
+        },
+        {
+          "id": "t7uu528ve4u0cpieubitfnlv",
+          "hidden": false,
+          "company": "ROC Midden Nederland",
+          "position": " Freelance Educator – Agile Learning & Digital Projects",
+          "location": "Utrecht, Netherlands",
+          "period": "2018 - 2020",
+          "website": {
+            "url": "https://www.rocmn.nl",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Brought in as a freelance teacher to modernize vocational education through agile learning, game theory, and student-led project design. Instead of traditional lectures, Chris created immersive role-playing environments where students acted as developers, CEOs, or clients — building their own products, creating documentation, and learning through simulation. He helped students integrate multiple technical courses into cohesive, self-driven projects using a classroom economy and agile sprint formats.</p><p><strong>Projects</strong></p><ul><li><p><strong>Agile Learning System</strong><br>Designed a classroom format that mimicked real startup environments, where students collaborated, pitched ideas, and earned classroom currency to manage scope.</p></li><li><p><strong>Gamified Roleplaying Modules</strong><br>Acted as CEO or client in live scenarios where students practiced presentation, negotiation, and digital strategy under evolving constraints.</p></li><li><p><strong>Cross-Course Project Integration</strong><br>Helped students combine lessons from different technical subjects into unified outcomes, fostering autonomy and systems thinking.</p></li></ul>",
+          "roles": []
+        },
+        {
+          "id": "yat6hmlnn3vlyxq4nkqc7w1j",
+          "hidden": false,
+          "company": "Fluxus",
+          "position": "Freelance Teacher",
+          "location": "Zaandam",
+          "period": "2018",
+          "website": {
+            "url": "https://www.fluxus.nl/",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Taught programming to children through creative, game-based projects combining software and hardware. Designed and delivered interactive lessons that made technology intuitive and fun, laying the foundation for later work in simulation-based and experiential learning.</p>",
+          "roles": []
+        },
+        {
+          "id": "x1kh5u50okdu57ods5by9ndz",
+          "hidden": false,
+          "company": "V.O.F. Verhoef",
+          "position": "General Manager",
+          "location": "Amsterdam, Albert Cuyp",
+          "period": "2013-2017",
+          "website": {
+            "url": "https://chriskip.nl",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Managed day-to-day operations of the family business at the Albert Cuyp Market, continuing a long family tradition in trade. Oversaw sales, logistics, and supplier relationships while serving hundreds of customers daily. Modernized basic processes and stock management, blending hands-on merchant work with early lessons in leadership, service, and reliability.</p>",
+          "roles": []
+        },
+        {
+          "id": "yezjumsass3u7q826qv28wax",
+          "hidden": false,
+          "company": "KONGSBERG - Thesis",
+          "position": "Training & Simulation Design",
+          "location": "Kristiansand, Norway",
+          "period": "2013",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Returned to Kongsberg to conduct bachelor thesis research on training methodology and simulation-based learning. Developed a prototype simulation lab to explore how experiential methods could improve technical training for engineers and operators. Combined field observation with educational theory to analyze how people learn through direct interaction with complex systems, an early foundation for later work in game-based and project-based learning.</p>",
+          "roles": []
+        },
+        {
+          "id": "hm5adaltjmoyr7w9pp36xb87",
+          "hidden": false,
+          "company": "KONGSBERG",
+          "position": "Field Service Engineer",
+          "location": "Kristiansand, Norway",
+          "period": "2012",
+          "website": {
+            "url": "https://kongsbergdigital.com/industry/oil-and-gas",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p><strong>KONGSBERG</strong><br><em>Field Service Engineer &amp; Data Quality Consultant</em><br>Kristiansand, Norway — 2012</p><p>Delivered full business-intelligence implementations for BP and Statoil across multiple sites. Combined hands-on technical setup with user training and process standardization to ensure operational reliability and usable insights.</p><p><strong>Projects</strong></p><ul><li><p><strong>BP Jordan</strong> – Managed complete BI deployment: hardware installation, server and MOXA configuration, software rollout, data configuration, dashboard creation, and on-site staff training. Produced full documentation for client and internal teams.</p></li><li><p><strong>BP Oman</strong> – Led end-to-end implementation of monitoring and reporting systems. Installed cabling and hardware, configured databases and dashboards, and coordinated with local engineers to align workflows.</p></li><li><p><strong>BP Azerbaijan</strong> – Served as Data Quality Consultant overseeing data-transfer integrity between partner systems. Defined standards, monitored compliance, and trained client staff.</p></li><li><p><strong>Statoil</strong> – Supported system deployment and troubleshooting for production analytics; provided user training and documentation for local teams.</p></li></ul><p></p>",
+          "roles": []
+        },
+        {
+          "id": "sxrnn2gkofazjrdp9md63b2w",
+          "hidden": false,
+          "company": "Meerschap B.V",
+          "position": "System Manager & Researcher",
+          "location": "Amsterdam, Netherlands",
+          "period": "2010 – 2011",
+          "website": {
+            "url": "https://meerschap.nl",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Implemented and customized monitoring systems (Nagios) to improve service-desk visibility and uptime across client networks. Supported hospitals, pharmacies, and mortgage firms with hardware installation, system maintenance, and workflow automation. Collaborated with the sales and service teams to identify new IT service opportunities and optimize internal processes.</p>",
+          "roles": []
+        },
+        {
+          "id": "s7r36iizfd2dmx9a35fylt84",
+          "hidden": false,
+          "company": "WDS Global",
+          "position": "Technical Support Engineer (3rd line) & Trainer",
+          "location": "Poole, England",
+          "period": "2008-2010",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Took over the Dutch support department and cleared a backlog of over 10,000 customer emails by redesigning templates and workflows. Proposed and led the creation of tutorial videos for YouTube, later adopted globally by HTC as an innovation in customer education. Traveled to Tesco Scotland to train retail staff on smartphone use and sales. Early example of turning technical support into structured learning and scalable communication.</p>",
+          "roles": []
+        },
+        {
+          "id": "wg9ruxrcier2tm6v8fb7zp2z",
+          "hidden": false,
+          "company": "Social Chicken",
+          "position": " Freelance Senior Project Manager & Educator",
+          "location": " Amsterdam, Netherlands",
+          "period": "2016 – 2022",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Operated as a freelance project manager and educator, combining IT delivery with creative education. Built ad-hoc teams from hacker and maker communities to implement private cloud setups, database migrations, and analytics dashboards for small companies. Alongside this technical work, taught creative coding and digital literacy to diverse student groups, including classes at the Drarijataalclub Moroccan language school, where programming was used as a bridge to language and storytelling.</p><p><strong>Included Projects and Roles</strong></p><ul><li><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Inblock.io\"><strong>Inblock.io</strong></a><strong> (Berlin / Amsterdam)</strong> – Early blockchain consultancy providing training and proof-of-concept development.</p></li><li><p><strong>Interactive</strong> – Conducted technical due diligence for investors; project achieved a 4× exit.</p></li><li><p><strong>Freelance Education Projects</strong> – Delivered creative coding workshops and informal tech education programs for youth and community groups.</p></li><li><p><strong>Ad-hoc Cloud and BI Work</strong> – Managed small-scale IT deployments, business-intelligence dashboards, and automation systems for local SMEs.</p></li></ul>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "suavak28f0yb71lsswqtb4s0",
+          "hidden": false,
+          "school": "blockchainworkspace",
+          "degree": "Train the Trainer - Blockchain",
+          "area": "Blockchain Education",
+          "grade": "10",
+          "location": "",
+          "period": "",
+          "website": {
+            "url": "https://blockchainworkspace.com/",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "w5l5lcvc9g11zztlcyj6pcdg",
+          "hidden": false,
+          "school": "offshorecourses",
+          "degree": "Hands-on practical",
+          "area": "Survival-Training",
+          "grade": "",
+          "location": "",
+          "period": "2012",
+          "website": {
+            "url": "https://offshorecourses.no/HUET",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p></p>"
+        },
+        {
+          "id": "z1ootfrgrf9azkhoh2bd6qnv",
+          "hidden": false,
+          "school": "Hogeschool van Amsterdam",
+          "degree": "achelor of Business Administration",
+          "area": " Business IT & Management",
+          "grade": "8.7",
+          "location": "",
+          "period": "2010-2014",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Researched simulation-based learning and training methodology at Kongsberg as part of the final thesis.</p>"
+        },
+        {
+          "id": "fekvdtg95c8a6e0l0uvvr4n3",
+          "hidden": false,
+          "school": "Hogeschool van Amsterdam",
+          "degree": "Technical Informatics",
+          "area": "",
+          "grade": "",
+          "location": "",
+          "period": "2006-2007",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "slozc1b61shwuoc4ar27q04t",
+          "hidden": false,
+          "school": "Hermann Wesselink College",
+          "degree": "Senior General Secondary Education",
+          "area": "Theoretical and Mathematical Physics",
+          "grade": "",
+          "location": "",
+          "period": "2002-2006",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "g5ge0bxap95shkw7eaow7leo",
+          "hidden": false,
+          "name": "Magic Frames",
+          "period": "2022-2025",
+          "website": {
+            "url": "https://www.linkedin.com/company/magic-frames-nl",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Magic Frames started as a student-led startup inside INHOLLAND - but I moved to Aeres's agile incubation cycle, where Chris helped guide the team from early concept to independent launch. Initially a fashion-tech concept, the project evolved into a platform for upcoming music artists, blending storytelling, event culture, and lenticular photography. Chris supported the team in their pivot, helping shape their strategy, operations, and technical direction.</p>"
+        },
+        {
+          "id": "szuau21sr6b7u52a82nccedw",
+          "hidden": false,
+          "name": "2bSMART",
+          "period": "Sep 2020 – Jun 2022",
+          "website": {
+            "url": "https://www.2bsmart.cz/",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ":Delivered engaging blockchain technology training programs utilizing interactive logistics simulations to supply chain professionals across the Benelux region. Leveraged IoT-enabled devices and scenario-based learning to enhance understanding and application of blockchain concepts. Collaborated in the design and refinement of the Smartys simulation platform, improving accessibility and engagement with blockchain technology. Partnered with educational institutions and SMEs to showcase blockchain’s potential for traceability and automation. Contributed to all phases of program development, including curriculum design, training delivery, and live system demonstrations."
+        },
+        {
+          "id": "qfsxm8n7mbj1mvy9bgso5b6q",
+          "hidden": false,
+          "name": "Interactive",
+          "period": "Aug 2021 - Aug 2022",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Conducted technical due diligence of a pre-seed startup’s codebase for potential investors, delivering a positive recommendation based on code quality and team capabilities. Influenced seed investment decisions within my network based on technical assessment. Remained a passive advisor to the team, maintaining occasional contact.</p><p>Made a x4 Exit on this project</p>"
+        },
+        {
+          "id": "h7aa43udsjch6tf02hs0va7a",
+          "hidden": false,
+          "name": "Value Chain Hackers",
+          "period": "Jan 2024 – Present",
+          "website": {
+            "url": "https://valuechainhackers.xyz",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Founded and led a cross-European initiative leveraging AI-powered traceability and compliance tools to transform supply chains. Designed and developed AI-based supply chain mapping tools to facilitate compliance with CSRD, CSDDD, and EUDR regulations. Established the lab as a trusted, neutral partner for sustainable logistics, ESG reporting, and SME digital transformation. Collaborated with academic researchers, logistics experts, startups, and public institutions to gather and harmonize sustainability metrics. Delivered workshops and seminars focused on transparency, digitalization, and supply chain ethics. Fostered collaboration between students, researchers, and industry partners to validate real-world applications. Served as principal investigator and public representative for the Windesheim Supply Chain Finance lectorate’s innovation agenda.</p>"
+        },
+        {
+          "id": "ajosj0sg06txexgwano9jrjl",
+          "hidden": false,
+          "name": "Farm Credibly",
+          "period": "",
+          "website": {
+            "url": "https://www.jamaicaobserver.com/2019/08/25/farm-credibly-jamaican-tech-company-assists-farmers-through-crowdfunding/",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "o3jiekat4wa6jlq1ianouhlb",
+          "hidden": false,
+          "name": "ESIEA ",
+          "period": "2012",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Led a small international team in an advanced digital forensics research program using the Enterprise Data Reference Model (EDRM). Worked on large, sensitive datasets to identify signals, patterns, and data lineage relevant to geopolitical risk analysis. Delivered structured analysis, clear methodology documentation, and stakeholder briefings. Findings received formal recognition from program mentors and led to an invitation to present at an international research forum. All work was conducted under institutional oversight and followed strict ethical and data governance guidelines.</p><p><strong>Key activities</strong></p><ul><li><p>Designed and applied EDRM workflows for large-scale dataset ingestion and cleaning</p></li><li><p>Performed pattern and signal analysis to surface actionable hypotheses from noisy data</p></li><li><p>Documented methodology, assumptions, and data lineage for reproducibility</p></li><li><p>Led team coordination, quality control, and mentor reporting</p></li></ul>"
+        },
+        {
+          "id": "whosis3xem5zl7mdigkqfa2o",
+          "hidden": false,
+          "name": "The beergame",
+          "period": "2020",
+          "website": {
+            "url": "https://demonstrator.valuechainhackers.xyz",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>The beergame is a logistical simulation to show the \"bullwhip effect\". This is an (successfull) attempt to make the dynamics of supplychain visible and promotes learning by doing. This specific version of the beergame shows the potential differences between blockchain and non blockchain solutions. </p>"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "nbvop4nq7hl17f01nz5265d2",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Agile Coaching & Facilitation",
+          "proficiency": "helps teams organize chaotic projects into clear, doable steps using short feedback loops and simple structure.",
+          "level": 5,
+          "keywords": [
+            "agile",
+            "scrum",
+            "facilitation",
+            "iterative learning",
+            "agile coach",
+            "SafeScrum",
+            "sprint planning"
+          ]
+        },
+        {
+          "id": "oxeqsnpdi7i1xnnk0ao9fnro",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Simulation and Game Design",
+          "proficiency": "Designs and runs serious games that teach systems thinking and collaboration through hands-on learning.",
+          "level": 5,
+          "keywords": [
+            "simulation",
+            "game-based learning",
+            "systems thinking",
+            "experiential learning",
+            "facilitation",
+            "education innovation"
+          ]
+        },
+        {
+          "id": "ohoznux62cdf0u81kafeo371",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Lab and Program Development",
+          "proficiency": "Builds and manages innovation labs and applied research programs connecting education, industry, and technology.",
+          "level": 5,
+          "keywords": [
+            "lab design",
+            "program management",
+            "innovation",
+            "research collaboration",
+            "education",
+            "stakeholder engagement"
+          ]
+        },
+        {
+          "id": "hf045dhluo28qqk6ihsajhmo",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Project-Based Learning (PBL)",
+          "proficiency": "Creates real-world classroom environments focused on autonomy, creativity, and applied outcomes",
+          "level": 5,
+          "keywords": [
+            "coaching",
+            "curriculum",
+            "PBL",
+            "reflective practice",
+            "student-centered learning",
+            "education innovation",
+            "classroom facilitation"
+          ]
+        },
+        {
+          "id": "mkf7e8ks0f1p1y7chdy9l71d",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Systems Thinking",
+          "proficiency": "Maps how people, tools, and processes interact to design clear, functional systems for learning and collaboration.",
+          "level": 5,
+          "keywords": [
+            "systems thinking",
+            "process design",
+            "workflow optimization",
+            "complexity",
+            "organizational design",
+            "interdisciplinary collaboration"
+          ]
+        },
+        {
+          "id": "co1o7wwbq8qdaipm9njbsxzq",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "AI and Open Infrastructure",
+          "proficiency": "Deploys and integrates self-hosted AI tools to support research, learning, and automation without vendor lock-in.",
+          "level": 4,
+          "keywords": [
+            "AI infrastructure",
+            "open source",
+            "automation",
+            "Docker",
+            "Supabase",
+            "n8n",
+            "OpenWebUI",
+            "Flowise",
+            "self-hosted systems"
+          ]
+        },
+        {
+          "id": "ims2yoo4qj2hqboh90r5qx1w",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Community & Ecosystem Development",
+          "proficiency": "Builds communities of practice around tech, education, and innovation systems",
+          "level": 4,
+          "keywords": [
+            "community building",
+            "Discord moderation",
+            "developer engagement",
+            "ecosystem strategy"
+          ]
+        },
+        {
+          "id": "n8h38q6rz7nyjjnkdbsea0ct",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Startup Incubation & Mentorship",
+          "proficiency": "Guides early-stage teams through ideation, prototyping, and pitch refinement",
+          "level": 5,
+          "keywords": [
+            "startup coach",
+            "lean startup",
+            "MVP",
+            "early-stage innovation",
+            "incubation"
+          ]
+        },
+        {
+          "id": "fytfm2m4k8crv6azv5vgnpq7",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Blockchain & Digital Identity",
+          "proficiency": "Applies decentralized ID and traceability tools in compliance, education, and logistics use cases",
+          "level": 3,
+          "keywords": [
+            "SSI",
+            "self-sovereign identity",
+            "MICA",
+            "Ethereum",
+            "smart contracts",
+            "traceability"
+          ]
+        },
+        {
+          "id": "oh6ysqzvbgo0aooklya4lie4",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Technical Documentation & Onboarding",
+          "proficiency": "Translates technical systems for non-technical users, creates onboarding and training materials",
+          "level": 4,
+          "keywords": [
+            "documentation",
+            "onboarding",
+            "product thinking",
+            "technical writing",
+            "user onboarding",
+            "product documentation",
+            "process modeling"
+          ]
+        },
+        {
+          "id": "s7stlus1tvj3tyo3qhlt1ifj",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Creative Rapid Prototyping",
+          "proficiency": "Quickly builds working mockups, simulations, and tools to test ideas and engage users",
+          "level": 4,
+          "keywords": [
+            "prototype",
+            "MVP",
+            "design thinking",
+            "creative tech",
+            "rapid iteration"
+          ]
+        },
+        {
+          "id": "mketw7rorv3iyo0jv1m9wwgs",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": " Interdisciplinary Collaboration",
+          "proficiency": "Works across education, AI, sustainability, and governance to connect fields and drive innovation",
+          "level": 5,
+          "keywords": [
+            "cross-functional",
+            "systems integration",
+            "transdisciplinary",
+            "tech–education interface"
+          ]
+        },
+        {
+          "id": "tdw1ecf523i8tlrbpj0pp0gj",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Stakeholder Alignment & Facilitation",
+          "proficiency": "Aligns researchers, students, funders, and partners around emerging projects and systems change",
+          "level": 3,
+          "keywords": [
+            "stakeholder mapping",
+            "consensus building",
+            "change facilitation"
+          ]
+        },
+        {
+          "id": "skwp8prusx3z5t3kojqn2rty",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Workshop Design & Facilitation",
+          "proficiency": "Designs and leads hands-on workshops for agile learning, prototyping, and systems thinking",
+          "level": 5,
+          "keywords": [
+            "workshop facilitation",
+            "co-creation",
+            "agile education",
+            "participatory design"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "akob7g40090cxq1bifnmnmyb",
+          "hidden": false,
+          "language": "Dutch",
+          "fluency": "Native Speaker",
+          "level": 5
+        },
+        {
+          "id": "z8blsfztg3s8wyrbati9z5ht",
+          "hidden": false,
+          "language": "English",
+          "fluency": "B2 - Near Native Speaker",
+          "level": 5
+        },
+        {
+          "id": "rx0mqbwsj1ctfawft1owhe4m",
+          "hidden": false,
+          "language": "German",
+          "fluency": "Conversational Only",
+          "level": 3
+        }
+      ]
+    },
+    "interests": {
+      "title": "Interests",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "pj4yvpkgugm2zzxatvjq070e",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Dungeons and Dragons",
+          "keywords": []
+        },
+        {
+          "id": "oja469f7c7pbqfd3p05zqcaa",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Airsoft",
+          "keywords": []
+        },
+        {
+          "id": "eyjmf030lgj2b4bp3lj0n4gu",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Male Choir Singing",
+          "keywords": [
+            "Singing"
+          ]
+        }
+      ]
+    },
+    "awards": {
+      "title": "Awards",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certifications",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "n3g8kcx7yqnnamzlsisre3j6",
+          "hidden": false,
+          "title": "Scrum Master",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "rzdyr8mykz87pewcjpglr9iw",
+          "hidden": false,
+          "title": "Train the trainer (blockchain)",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "yhho574tu4gghjlf2yqle7yf",
+          "hidden": false,
+          "title": "Prince 2",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "tt952sba5p7sx3mmz91nmm27",
+          "hidden": false,
+          "title": "Oracle 11g Essentials",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "n3vuxd5w6de0yevq8occjt6o",
+          "hidden": false,
+          "title": "Service Oriented Architecture Concepts",
+          "issuer": "oracle",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "019cfbbc-9286-75af-a5db-677601fd1bfe",
+          "hidden": false,
+          "title": "Professional Scrum Product Owner I",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "019cfbbd-5b9e-735d-bd26-723a6875bb7f",
+          "hidden": false,
+          "title": "ITIL",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "019cfbbd-f152-7718-ae83-de094360e91d",
+          "hidden": false,
+          "title": "Data Analysis & Visualization (R, Python)",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "019cfbbe-50ff-763d-8d9f-c1e61b10e2e8",
+          "hidden": false,
+          "title": "ESG & Sustainable Supply Chains",
+          "issuer": "",
+          "date": "",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        }
+      ]
+    },
+    "publications": {
+      "title": "Publications",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Volunteering",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "references": {
+      "title": "References",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    }
+  },
+  "customSections": [
+    {
+      "title": "Experience",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "id": "019e4a32-7c96-72cf-9a70-df2fcc9b542a",
+      "type": "experience",
+      "items": [
+        {
+          "id": "vnzx45j0xcopkdncx0k4w764",
+          "hidden": false,
+          "company": "Viridis Green-Tech AG",
+          "position": "Innovation Architect",
+          "location": "Munich, Germany (Remote)",
+          "period": "2024 - present",
+          "website": {
+            "url": "https://viridis.info/",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Chris supports the growth and strategic direction of the Viridis innovation lab, working at the intersection of sustainability, blockchain ecosystems, and applied system design. As Remote Innovation Architect, he contributes to the lab's core architecture, develops project strategies aligned with business goals, and helps secure the resources needed to scale the work. His role involves translating complex ideas into implementable, open, and modular systems.</p><p><strong>Projects</strong></p><ul><li><p><strong>Blockchain Ecosystem Architecture</strong><br>Helped define and prototype the structure for a blockchain-powered system supporting traceability, supply chain ethics, and verifiability.<br><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://etherscan.io/token/0xf25304e75026e6a35fedca3b0889ae5c4d3c55d8\">https://etherscan.io/token/0xf25304e75026e6a35fedca3b0889ae5c4d3c55d8</a></p></li><li><p><strong>Business Alignment &amp; Ecosystem Planning</strong><br>Worked closely with leadership to align lab projects with commercial development and sustainability goals.</p></li><li><p><strong>Grant Writing &amp; Funding Strategy</strong><br>Co-authored early-stage grant proposals to secure external support for innovation tracks focused on open infrastructure and compliance tooling.</p></li></ul>",
+          "roles": []
+        },
+        {
+          "id": "kacu7f5zia1e8fcy8kzmdd9x",
+          "hidden": false,
+          "company": "Windesheim University of Applied Sciences",
+          "position": "Project Manager – Supply Chain Finance Lectoraat",
+          "location": "Zwolle, Netherlands",
+          "period": "2022 - present",
+          "website": {
+            "url": "https://www.windesheim.nl/onderzoek/lectoraten/supply-chain-finance",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Chris leads and supports applied innovation in the intersection of logistics, finance, and education. Officially positioned as a project manager within the Supply Chain Finance research group, he operates as a systems builder, facilitator, and prototyper — often taking on roles that don’t yet exist to move ideas forward. His work spans agile teaching, open-source AI stacks, simulation design, and cross-department collaboration. Much of it has involved aligning diverse stakeholders across technical, educational, and organizational silos.</p><p><strong>Projects (see below for more details)</strong></p><ul><li><p><strong>Spark! Living Lab</strong><br>Founded and ran a lab focused on blockchain-based simulations and agile supply chain education. Delivered the BlockBeer game and hosted student-led experiments.</p></li><li><p><strong>Value Chain Hackers</strong><br>Created a student-facing, AI-driven innovation lab focused on building open infrastructure for sustainability challenges. Self-funded early tooling and deployment stack.</p></li><li><p><strong>Beer Game (Redesign)</strong><br>Rebuilt the classic logistics simulation with a modern teaching format and interface, making it more engaging and aligned with current supply chain dynamics.</p></li><li><p><strong>KnopenKoning</strong><br>Designed and prototyped a decision-making simulation tool to help students and teams think through trade-offs in complex systems.</p></li><li><p><strong>COVID-19 Mega Project</strong><br>Merged eight university courses into one interdisciplinary simulation to explore the full chain reaction of pandemic-related disruptions.</p></li><li><p><strong>Student Coaching &amp; Ideation</strong><br>Coached students across departments informally, often helping them shape early ideas into working concepts or connect to relevant projects.</p></li><li><p><strong>Cross-Lectoraat Collaboration</strong><br>Acted as an informal bridge between departments, connecting tools, insights, and shared infrastructure across isolated research groups.</p></li><li><p><strong>AI Stack Deployment (Self-funded)</strong><br>Set up and maintained an AI sandbox using tools like Flowise, OpenWebUI, Supabase, and n8n. Paid and hosted the infrastructure personally to allow students and researchers to experiment hands-on.</p></li></ul><p><strong>Research &amp; Innovation – Supply Chain Finance</strong></p><ul><li><p>Directed applied research on <strong>financial and operational dynamics of international supply chains. </strong>Bridged <strong>academic research and real-world implementation</strong>, working with industry partners such as logistics and manufacturing firms</p></li><li><p>Developed <strong>frameworks for sustainable and compliant supply chains</strong>, aligned with EU regulations (CSRD, CSDDD, EUDR)</p></li><li><p>Designed <strong>AI-enhanced research infrastructure</strong> to improve reproducibility, insight generation, and knowledge sharing</p></li><li><p>Led multidisciplinary collaboration between students, researchers, and external stakeholders</p></li></ul><p></p>",
+          "roles": []
+        }
+      ]
+    },
+    {
+      "title": "Experience",
+      "icon": "",
+      "columns": 1,
+      "hidden": false,
+      "id": "019e4a32-af26-72d0-88c5-f11d94efe994",
+      "type": "experience",
+      "items": [
+        {
+          "id": "po70mw62qfylwxpnl7ogl7zs",
+          "hidden": false,
+          "company": "COTIT",
+          "position": "Business innovator",
+          "location": "Almere, Netherlands",
+          "period": "jan 2024 - jul 2024",
+          "website": {
+            "url": "https://cotit.eu/",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>Brought operational clarity and technical structure to a modular logistics startup in its early scale-up phase. Helped define a functional SaaS sales cycle, restructured internal roles and workflows, and provided guidance on financial organization to prepare for future growth. Combined business model thinking with practical systems insight.</p>",
+          "roles": []
+        },
+        {
+          "id": "cb4asv37kdk1t4622thw0pb9",
+          "hidden": false,
+          "company": "The Fork",
+          "position": "Head Trainer & Innovator",
+          "location": "Amsterdam, Netherlands",
+          "period": "2018 – 2020",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p>(now known as the Open Food Chain) Led professional training programs in digital food technology and innovation. Hired and mentored students to co-develop production software and prototypes, bridging education and industry practice. Designed a physical learning object for blockchain training that made abstract concepts tangible and teachable. Connected strategy, coding, and facilitation to help teams turn emerging technologies into real applications.</p>",
+          "roles": []
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "template": "ditgar",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": false,
+          "main": [
+            "summary",
+            "profiles",
+            "experience",
+            "references",
+            "awards",
+            "publications"
+          ],
+          "sidebar": [
+            "skills",
+            "interests",
+            "education",
+            "certifications",
+            "volunteer",
+            "projects"
+          ]
+        },
+        {
+          "fullWidth": true,
+          "main": [
+            "019e4a32-7c96-72cf-9a70-df2fcc9b542a"
+          ],
+          "sidebar": []
+        },
+        {
+          "fullWidth": false,
+          "main": [
+            "019e4a32-af26-72d0-88c5-f11d94efe994"
+          ],
+          "sidebar": []
+        },
+        {
+          "fullWidth": false,
+          "main": [],
+          "sidebar": [
+            "languages"
+          ]
+        }
+      ]
+    },
+    "page": {
+      "gapX": 4,
+      "gapY": 6,
+      "marginX": 18,
+      "marginY": 18,
+      "format": "free-form",
+      "locale": "en-US",
+      "hideLinkUnderline": false,
+      "hideIcons": false,
+      "hideSectionIcons": true
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(237, 146, 40, 1)",
+        "text": "rgba(7, 78, 143, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "400",
+          "400",
+          "600"
+        ],
+        "fontSize": 10.5,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 13.5,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": "",
+    "styleRules": []
+  }
+}

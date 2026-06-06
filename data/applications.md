@@ -3,7 +3,7 @@
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
 | 132 | 2026-06-06 | Impact Hub Amsterdam | Senior Venture Support Manager | 3.5/5 | Evaluated | ✅ | [121](reports/121-impact-hub-senior-venture-support-manager-2026-06-06.md) | GO if full-time; ecosystem builder archetype match; €5k-5.5k low end; 40h/week vs fractional model |
-| 133 | 2026-06-06 | Agile Scrum Group | PO & Innovatie Trainer/Consultant | 3.2/5 | Evaluated | ❌ | [122](reports/122-agile-scrum-group-po-innovatie-trainer-2026-06-06.md) | Verify liveness (standing vacancy Oct 2022); trainer-first model vs builder identity; conditional GO |
+| 133 | 2026-06-06 | Agile Scrum Group | PO & Innovatie Trainer/Consultant | 3.2/5 | Evaluated | ✅ | [122](reports/122-agile-scrum-group-po-innovatie-trainer-2026-06-06.md) | Verify liveness (standing vacancy Oct 2022); trainer-first model vs builder identity; conditional GO |
 | 134 | 2026-06-06 | PBLQ | Adviseur digitale samenleving | 3.7/5 | Evaluated | ✅ | [123](reports/123-pblq-adviseur-digitale-samenleving-2026-06-06.md) | GO; public sector digital advisor; Den Haag hybrid ~50min; ongoing vacancy; €4500-7000/mo est. |
 | 135 | 2026-06-06 | PBLQ | Ontwerpgerichte Adviseur | 3.6/5 | Evaluated | ✅ | [124](reports/124-pblq-ontwerpgerichte-adviseur-2026-06-06.md) | GO; design-oriented public sector advisory; ~5yr exp; team of 5; Den Haag; ongoing vacancy |
 | 136 | 2026-06-06 | ThiemeMeulenhoff | Product Owner digitale leer- en werkomgeving | 2.8/5 | Discarded | ❌ | [125](reports/125-thiememeulenhoff-product-owner-digitale-leer-2026-06-06.md) | Deadline expired May 12; monitor for next round; software PO gap |
@@ -24,7 +24,7 @@
 | 112 | 2026-06-05 | Royal HaskoningDHV | Senior Consultant Supply Chain Sustainability | 3.6/5 | Evaluated | ✅ | — | 3.6/5 — CSRD/EUDR/CSDDD sterk; geen klassieke consultancy achtergrond; 18.3% pensioen; CV + brief + rapport klaar |
 | 110 | 2026-06-05 | Natuurmonumenten | Business Controller | 3.5/5 | Applied | ✅ | — | Inside track; niet op website; schaal 8 (€4.125-€6.013); CV + motivatiebrief klaar |
 | 111 | 2026-06-05 | Adapta | Technical Coordinator Backend DevOps Architecture | 3.7/5 | Applied | ✅ | [111](reports/090-adapta-technical-coordinator-backend-devops-2026-06-05.md) | Applied 2026-06-05; €5.500-€7.000/mo; GCP + Django gap eerlijk benoemd |
-| 109 | 2026-06-05 | Stichting Tamino | Directeur-Bestuurder | 3.0/5 | Evaluated | ✅ | — | 3.0/5 — stretch (kunstcultureducatie); deadline 16 juni; CV + praktijkvoorbeelden klaar |
+| 109 | 2026-06-05 | Stichting Tamino | Directeur-Bestuurder | 3.0/5 | Evaluated | ✅ | [109](reports/109-tamino-directeur-bestuurder-2026-06-05.md) | 3.0/5 — stretch (kunstcultureducatie); deadline 16 juni; volledig dossier klaar |
 | 70 | 2026-06-04 | Techleap | Ecosystem Interventions Manager | 4.4/5 | Discarded | ✅ | [70](reports/068-techleap-ecosystem-interventions-manager-2026-06-04.md) | Vacature gesloten 2026-06-05 — 404.homerun.co bevestigd dood |
 | 106 | 2026-06-05 | Shiny | Fractional CTO for Startups | 4.3/5 | Applied | ✅ | [106](reports/089-shiny-fractional-cto-2026-06-05.md) | Applied 2026-06-05 |
 | 104 | 2026-06-05 | GitLab | Senior PM, AI Platform Management | 3.2/5 | Evaluated | ❌ | [104](reports/088-gitlab-sr-pm-ai-platform-2026-06-05.md) | 3.2/5 — IE/IL/UK geographic restriction excludes NL; primary blocker |

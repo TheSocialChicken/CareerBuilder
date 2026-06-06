@@ -5,203 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Christiaan Verhoef -- CV -- Stichting Tamino Directeur-Bestuurder</title>
 <style>
-  @font-face {
-    font-family: 'Space Grotesk';
-    src: url('../../fonts/space-grotesk-latin.woff2') format('woff2');
-    font-weight: 300 700;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'DM Sans';
-    src: url('../../fonts/dm-sans-latin.woff2') format('woff2');
-    font-weight: 100 1000;
-    font-style: normal;
-    font-display: swap;
-  }
+  @font-face { font-family: 'Space Grotesk'; src: url('../../fonts/space-grotesk-latin.woff2') format('woff2'); font-weight: 300 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'DM Sans'; src: url('../../fonts/dm-sans-latin.woff2') format('woff2'); font-weight: 100 1000; font-style: normal; font-display: swap; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  body {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    line-height: 1.65;
-    color: #1a1a2e;
-    background: #ffffff;
-  }
-  .page {
-    width: 210mm;
-    min-height: 297mm;
-    margin: 0 auto;
-    padding: 18mm 18mm 16mm 18mm;
-    display: grid;
-    grid-template-columns: 1fr 68mm;
-    grid-template-rows: auto 1fr;
-    gap: 0 10mm;
-  }
-  .header {
-    grid-column: 1 / -1;
-    margin-bottom: 10px;
-  }
-  .header-name {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #1a1a2e;
-    letter-spacing: -0.03em;
-    line-height: 1;
-  }
-  .header-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    color: hsl(187, 74%, 32%);
-    margin-top: 3px;
-    letter-spacing: 0.01em;
-  }
-  .header-gradient {
-    height: 2px;
-    background: linear-gradient(to right, hsl(187, 74%, 32%), hsl(270, 70%, 45%));
-    border-radius: 1px;
-    margin: 8px 0 6px;
-  }
-  .contact-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px 14px;
-    font-size: 9.5px;
-    color: #555;
-  }
+  body { font-family: 'DM Sans', sans-serif; font-size: 10.5px; line-height: 1.6; color: #1a1a2e; background: #ffffff; }
+  .page { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 17mm 17mm 15mm 17mm; display: grid; grid-template-columns: 1fr 65mm; grid-template-rows: auto 1fr; gap: 0 9mm; }
+  .header { grid-column: 1 / -1; margin-bottom: 9px; }
+  .header-name { font-family: 'Space Grotesk', sans-serif; font-size: 25px; font-weight: 700; color: #1a1a2e; letter-spacing: -0.03em; line-height: 1; }
+  .header-title { font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 400; color: hsl(340, 45%, 35%); margin-top: 3px; letter-spacing: 0.01em; }
+  .header-gradient { height: 2px; background: linear-gradient(to right, hsl(340, 45%, 35%), hsl(25, 55%, 42%)); border-radius: 1px; margin: 7px 0 5px; }
+  .contact-row { display: flex; flex-wrap: wrap; gap: 3px 13px; font-size: 9.5px; color: #555; }
   .contact-row a { color: #555; text-decoration: none; }
   .main { grid-column: 1; }
   .sidebar { grid-column: 2; }
-  .section { margin-bottom: 13px; }
-  .section-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 9px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: hsl(187, 74%, 32%);
-    border-bottom: 1px solid hsl(187, 74%, 85%);
-    padding-bottom: 2px;
-    margin-bottom: 7px;
-  }
-  .exp-item { margin-bottom: 10px; }
-  .exp-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 2px;
-  }
-  .exp-role {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 11.5px;
-    font-weight: 600;
-    color: #1a1a2e;
-  }
-  .exp-period {
-    font-size: 9.5px;
-    color: #888;
-    white-space: nowrap;
-  }
-  .exp-company {
-    font-size: 10px;
-    color: hsl(187, 74%, 32%);
-    font-weight: 500;
-    margin-bottom: 3px;
-  }
-  .exp-desc {
-    font-size: 10.5px;
-    line-height: 1.6;
-    color: #2a2a3e;
-    margin-bottom: 3px;
-  }
-  ul.bullets {
-    list-style: none;
-    padding-left: 0;
-    margin: 3px 0;
-  }
-  ul.bullets li {
-    font-size: 10.5px;
-    color: #2a2a3e;
-    line-height: 1.6;
-    padding-left: 10px;
-    position: relative;
-    margin-bottom: 1px;
-  }
-  ul.bullets li::before {
-    content: '';
-    position: absolute;
-    left: 2px;
-    top: 7px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: hsl(187, 74%, 50%);
-  }
-  .sidebar-block { margin-bottom: 12px; }
-  .skill-group { margin-bottom: 7px; }
-  .skill-label {
-    font-size: 9px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #555;
-    margin-bottom: 2px;
-  }
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
-  }
-  .tag {
-    background: #f0f4f8;
-    color: #334;
-    font-size: 9px;
-    padding: 2px 5px;
-    border-radius: 3px;
-    line-height: 1.4;
-  }
-  .tag.highlight {
-    background: hsl(187, 74%, 92%);
-    color: hsl(187, 74%, 25%);
-    font-weight: 600;
-  }
-  .edu-item { margin-bottom: 7px; }
-  .edu-degree {
-    font-size: 10px;
-    font-weight: 600;
-    color: #1a1a2e;
-    line-height: 1.4;
-  }
-  .edu-school {
-    font-size: 9.5px;
-    color: #666;
-  }
-  .cert-item {
-    font-size: 10px;
-    color: #2a2a3e;
-    padding: 2px 0;
-    border-bottom: 1px solid #f0f0f5;
-  }
+  .section { margin-bottom: 11px; }
+  .section-title { font-family: 'Space Grotesk', sans-serif; font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: hsl(340, 45%, 35%); border-bottom: 1px solid hsl(340, 45%, 88%); padding-bottom: 2px; margin-bottom: 6px; }
+  .impact-box { background: hsl(340, 45%, 97%); border-left: 3px solid hsl(340, 45%, 35%); padding: 6px 9px; margin-bottom: 11px; border-radius: 0 3px 3px 0; }
+  .impact-box .impact-title { font-family: 'Space Grotesk', sans-serif; font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: hsl(340, 45%, 35%); margin-bottom: 4px; }
+  .impact-box ul { list-style: none; padding: 0; }
+  .impact-box ul li { font-size: 10px; color: #1a1a2e; padding-left: 10px; position: relative; line-height: 1.55; margin-bottom: 2px; }
+  .impact-box ul li::before { content: ''; position: absolute; left: 2px; top: 6px; width: 4px; height: 4px; border-radius: 50%; background: hsl(340, 45%, 45%); }
+  .exp-item { margin-bottom: 9px; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 2px; }
+  .exp-role { font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; color: #1a1a2e; }
+  .exp-period { font-size: 9px; color: #888; white-space: nowrap; }
+  .exp-company { font-size: 9.5px; color: hsl(340, 45%, 35%); font-weight: 500; margin-bottom: 2px; }
+  .exp-desc { font-size: 10px; line-height: 1.55; color: #2a2a3e; margin-bottom: 2px; }
+  ul.bullets { list-style: none; padding-left: 0; margin: 2px 0; }
+  ul.bullets li { font-size: 10px; color: #2a2a3e; line-height: 1.55; padding-left: 10px; position: relative; margin-bottom: 1px; }
+  ul.bullets li::before { content: ''; position: absolute; left: 2px; top: 6px; width: 4px; height: 4px; border-radius: 50%; background: hsl(340, 45%, 55%); }
+  .earlier-career { background: #f8f8fc; border-radius: 4px; padding: 7px 9px; margin-bottom: 9px; }
+  .earlier-career .ec-title { font-family: 'Space Grotesk', sans-serif; font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #777; margin-bottom: 5px; }
+  .ec-item { display: flex; justify-content: space-between; font-size: 9.5px; color: #333; padding: 1.5px 0; border-bottom: 1px solid #eeeeee; }
+  .ec-item:last-child { border-bottom: none; }
+  .ec-role { color: #1a1a2e; }
+  .ec-period { color: #888; font-size: 9px; white-space: nowrap; margin-left: 8px; }
+  .sidebar-block { margin-bottom: 11px; }
+  .skill-group { margin-bottom: 6px; }
+  .skill-label { font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #555; margin-bottom: 2px; }
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 3px; }
+  .tag { background: #f0f4f8; color: #334; font-size: 8.5px; padding: 2px 5px; border-radius: 3px; line-height: 1.4; }
+  .tag.highlight { background: hsl(340, 45%, 92%); color: hsl(340, 45%, 25%); font-weight: 600; }
+  .edu-item { margin-bottom: 6px; }
+  .edu-degree { font-size: 9.5px; font-weight: 600; color: #1a1a2e; line-height: 1.4; }
+  .edu-school { font-size: 9px; color: #666; }
+  .cert-item { font-size: 9.5px; color: #2a2a3e; padding: 2px 0; border-bottom: 1px solid #f0f0f5; line-height: 1.4; }
   .cert-item:last-child { border-bottom: none; }
-  .profile-text {
-    font-size: 10.5px;
-    line-height: 1.7;
-    color: #2a2a3e;
-  }
-  .kv-table { width: 100%; font-size: 10px; border-collapse: collapse; }
+  .profile-text { font-size: 10px; line-height: 1.65; color: #2a2a3e; }
+  .kv-table { width: 100%; font-size: 9.5px; border-collapse: collapse; }
   .kv-table td { padding: 2px 0; vertical-align: top; }
   .kv-table td:first-child { color: #777; width: 36%; }
   .kv-table td:last-child { color: #1a1a2e; font-weight: 500; }
-  .lang-item {
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-    padding: 2px 0;
-    border-bottom: 1px solid #f0f0f5;
-  }
+  .lang-item { display: flex; justify-content: space-between; font-size: 9.5px; padding: 2px 0; border-bottom: 1px solid #f0f0f5; }
   .lang-item:last-child { border-bottom: none; }
   .lang-name { color: #1a1a2e; font-weight: 600; }
   .lang-level { color: #777; }
@@ -210,10 +66,9 @@
 <body>
 <div class="page">
 
-  <!-- HEADER -->
   <div class="header">
     <div class="header-name">Christiaan Verhoef</div>
-    <div class="header-title">Organisatieleider | Programmamanager | Sociale Impact</div>
+    <div class="header-title">Organisatieleider &amp; Directeur | Cultuureducatie | Sociale Impact</div>
     <div class="header-gradient"></div>
     <div class="contact-row">
       <span>Baarn, Nederland</span>
@@ -223,52 +78,28 @@
     </div>
   </div>
 
-  <!-- MAIN COLUMN -->
   <div class="main">
 
-    <!-- PROFIEL -->
     <div class="section">
       <div class="section-title">Profiel</div>
       <p class="profile-text">
-        Ik leid kleine organisaties door ambiguiteit heen: samen richting vinden, teams motiveren zonder bureaucratie, en zorgen dat de financiele basis klopt terwijl de missie centraal blijft. Dat doe ik al tien jaar in wisselende contexten, van een agri-tech innovatiehub tot een open-source identiteitsstichting. Privé speel ik piano en kerkorgel. De verbinding tussen kunst, vorming en menselijkheid is voor mij niet abstract. Ik begrijp wat er gebeurt als je jongeren een context geeft waarin ze iets mogen maken dat echt ergens over gaat.
+        Ik leid kleine organisaties met een missie: richting vinden in ambiguiteit, teams motiveren zonder bureaucratie, fondsen aantrekken zonder de kern te verliezen. Ik speel piano en kerkorgel. De verbinding tussen kunst, vorming en menselijkheid is voor mij niet abstract, maar iets wat ik al ken van het jongerenwerk in Amstelveen. Mijn loopbaan begon letterlijk in een jongerencentrum in een aandachtswijk. Sindsdien heb ik zowel techbedrijven als onderwijsinstellingen geleid als stichtingen helpen oprichten. Die breedte gebruik ik: begrijpen wat kwetsbare jongeren nodig hebben, en de organisatorische en financiele structuur bouwen om dat te realiseren.
       </p>
     </div>
 
-    <!-- WERKERVARING -->
+    <div class="impact-box">
+      <div class="impact-title">Bewezen resultaten</div>
+      <ul>
+        <li>Jongerencentrum Downtown (Amstelveen): ICT-beheer en begeleiding in multiculturele aandachtswijk, leeftijd 15-18</li>
+        <li>Aeres Hogeschool: 10 studentteams begeleid, 2 operationele bedrijven als uitkomst; 8 vakken samengevoegd tot 1 coherent innovatietraject</li>
+        <li>Tonomy Foundation: open-source stichting mede-opgericht, governance ingericht, team aangestuurd, bestuursrol tot heden</li>
+        <li>Windesheim: ca. &euro;2M innovatiefinanciering gefaciliteerd via consortiumopbouw en subsidietrajecten</li>
+      </ul>
+    </div>
+
     <div class="section">
       <div class="section-title">Werkervaring</div>
 
-      <!-- Tonomy -->
-      <div class="exp-item">
-        <div class="exp-header">
-          <span class="exp-role">Co-Founder &amp; Bestuurslid</span>
-          <span class="exp-period">2021 &ndash; heden</span>
-        </div>
-        <div class="exp-company">Tonomy Foundation, Amsterdam</div>
-        <p class="exp-desc">Mede-opgericht: governance-structuur bepaald, team aangestuurd, financiering aangetrokken, missie bewaakt terwijl het team groeide. Transitioneel uitgestapt naar bestuursrol na het leggen van de organisatorische basis.</p>
-        <ul class="bullets">
-          <li>Strategische koers bepaald in snel veranderend regulatoir landschap (MiCA, W3C-standaardisatie)</li>
-          <li>Seed-financiering aangetrokken via investor-outreach en whitepaper; subsidietrajecten begeleid</li>
-          <li>Kleine multidisciplinaire teams aangestuurd op basis van vertrouwen en duidelijkheid over prioriteiten</li>
-        </ul>
-      </div>
-
-      <!-- Aeres -->
-      <div class="exp-item">
-        <div class="exp-header">
-          <span class="exp-role">Lab Manager &amp; Programmaontwerper</span>
-          <span class="exp-period">2021 &ndash; 2022</span>
-        </div>
-        <div class="exp-company">Aeres Hogeschool, Dronten</div>
-        <p class="exp-desc">Leidde een innovatiehub in een onderwijsomgeving met kwetsbare jongeren als indirect doelgroep: studenten die leerden door te doen, met begeleiding gericht op groei en zelfstandigheid.</p>
-        <ul class="bullets">
-          <li>Tien studentteams begeleid door een gestructureerd innovatieprogramma; twee teams zijn operationele bedrijven geworden</li>
-          <li>Acht losse vakken samengevoegd tot &eacute;&eacute;n coherent sprint-based traject; structurele onderwijsvernieuwing ge&iuml;mplementeerd</li>
-          <li>Externe partijen aangetrokken en relaties onderhouden met bedrijfsleven, overheid en kennispartners</li>
-        </ul>
-      </div>
-
-      <!-- Windesheim -->
       <div class="exp-item">
         <div class="exp-header">
           <span class="exp-role">Projectmanager &amp; Living Lab Lead</span>
@@ -276,26 +107,66 @@
         </div>
         <div class="exp-company">Windesheim Hogeschool, Zwolle</div>
         <ul class="bullets">
-          <li>Ca. &euro;2M aan innovatiefinanciering gefaciliteerd via consortiumopbouw en subsidietrajecten</li>
-          <li>Parallelle programma's ge&iuml;nitieerd en geborgd in de organisatiestructuur; zelfstandig doorlopend na overdracht</li>
-          <li>Cross-sectorale stakeholders verbonden: corporates, ngo's, overheden, kennisinstellingen en studenten</li>
+          <li>Ca. &euro;2M aan innovatiefinanciering gefaciliteerd via consortia van corporates, ngo&apos;s, overheden en kennisinstellingen</li>
+          <li>Spark! Living Lab opgericht en gerund: simulaties, AI-infrastructuur, studentgeleid onderzoek</li>
+          <li>COVID-19 Megaproject: interdisciplinair onderzoeksprogramma geleid over 8 afdelingen en 5 faculteiten onder extreme tijdsdruk</li>
+          <li>Parallelle programma&apos;s geborgd in de organisatiestructuur, zelfstandig doorlopend na overdracht</li>
         </ul>
       </div>
 
-      <!-- Downtown youth centre -->
       <div class="exp-item">
         <div class="exp-header">
-          <span class="exp-role">ICT-beheerder &amp; Vrijwilliger</span>
+          <span class="exp-role">Lab Manager &amp; Programmaontwerper</span>
+          <span class="exp-period">2021 &ndash; 2022</span>
+        </div>
+        <div class="exp-company">Aeres Hogeschool, Dronten</div>
+        <ul class="bullets">
+          <li>Innovatiehub geleid met kwetsbare en uitdagende studenten als doelgroep: leren door doen, begeleiding op groei en zelfstandigheid</li>
+          <li>Acht losse vakken samengevoegd tot &eacute;&eacute;n sprint-based innovatietraject; twee studentteams zijn operationele bedrijven geworden</li>
+          <li>Externe partijen aangetrokken en relaties onderhouden met bedrijfsleven, overheid en kennispartners</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Co-Founder &amp; Bestuurslid</span>
+          <span class="exp-period">2021 &ndash; 2026</span>
+        </div>
+        <div class="exp-company">Tonomy Foundation, Amsterdam</div>
+        <p class="exp-desc">Open-source stichting mede-opgericht voor digitale identiteitsinfrastructuur. Governance-structuur bepaald, team aangestuurd, missie bewaakt. Seed-financiering aangetrokken. Transitioneel uitgestapt naar bestuursrol na het leggen van de organisatorische basis.</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">Freelance Docent &amp; Projectmanager</span>
+          <span class="exp-period">2014 &ndash; 2022</span>
+        </div>
+        <div class="exp-company">Social Chicken / diverse opdrachtgevers</div>
+        <p class="exp-desc">Onderwijs en projectmanagement gecombineerd in meerdere contexten. ROC Midden Nederland (2018-2020): gamified leeromgeving ontworpen waarbij MBO-studenten als CEO, developer of klant opereerden. The Fork (2018-2020): professionele trainingen in digitale voedseltechnologie geleid, studenten aangestuurd bij productontwikkeling. Fluxus (2018): programmeren aan kinderen onderwezen via creatieve game-based projecten. Inholland (2021-2022): gastdocent blockchain minor en data-analyse.</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-role">ICT-beheerder &amp; Jeugdwerker</span>
           <span class="exp-period">ca. 2004 &ndash; 2007</span>
         </div>
-        <div class="exp-company">Jongerencentrum Downtown, Amstelveen</div>
-        <p class="exp-desc">Beheerde ICT-infrastructuur voor een jongerencentrum in een diverse buurt. Eerste directe ervaring met het werken in een omgeving waar het om jongeren gaat, niet om output.</p>
+        <div class="exp-company">Jongerencentrum Downtown, Amstelveen (westwijk)</div>
+        <p class="exp-desc">Beheerde ICT-infrastructuur voor een jongerencentrum in een multiculturele aandachtswijk in Amstelveen. Eerste directe ervaring met het werken in een omgeving waar jongeren centraal staan, inclusief begeleiding en de sociale dynamiek van een kwetsbare omgeving. Fundament voor alles wat volgde in onderwijs en begeleiding.</p>
+      </div>
+
+      <div class="earlier-career">
+        <div class="ec-title">Eerdere loopbaan</div>
+        <div class="ec-item"><span class="ec-role">COTIT &mdash; Business Innovator (logistiek SaaS startup)</span><span class="ec-period">jan&ndash;jul 2024</span></div>
+        <div class="ec-item"><span class="ec-role">Viridis Green-Tech AG &mdash; Innovation Architect (duurzaamheid &amp; blockchain)</span><span class="ec-period">2024&ndash;2025</span></div>
+        <div class="ec-item"><span class="ec-role">KONGSBERG (Noorwegen) &mdash; Field Service Engineer &amp; Thesis Researcher (olie &amp; gas)</span><span class="ec-period">2012&ndash;2013</span></div>
+        <div class="ec-item"><span class="ec-role">Meerschap B.V. &mdash; System Manager &amp; Onderzoeker</span><span class="ec-period">2010&ndash;2011</span></div>
+        <div class="ec-item"><span class="ec-role">WDS Global (Engeland) &mdash; Technical Support Engineer (3rd line)</span><span class="ec-period">2008&ndash;2009</span></div>
+        <div class="ec-item"><span class="ec-role">V.O.F. Verhoef (familiebedrijf, Albert Cuypmarkt) &mdash; parttime naast andere rollen</span><span class="ec-period">2004&ndash;2018</span></div>
       </div>
 
     </div>
   </div>
 
-  <!-- SIDEBAR -->
   <div class="sidebar">
 
     <div class="sidebar-block">
@@ -306,39 +177,71 @@
         <div class="skill-tags">
           <span class="tag highlight">Organisatieleiding</span>
           <span class="tag highlight">Kleine teams</span>
+          <span class="tag">Governance</span>
           <span class="tag">Strategische koers</span>
-          <span class="tag">Besluitvorming</span>
           <span class="tag">Vertrouwensleiderschap</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <div class="skill-label">Financi&euml;n &amp; Subsidies</div>
+        <div class="skill-label">Educatie &amp; Jongeren</div>
+        <div class="skill-tags">
+          <span class="tag highlight">MBO/HBO onderwijs</span>
+          <span class="tag highlight">Jeugdwerk</span>
+          <span class="tag">Curriculum ontwerp</span>
+          <span class="tag">Ervaringsleren</span>
+          <span class="tag">Gamebasedlearning</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-label">Financi&euml;n &amp; Fondsen</div>
         <div class="skill-tags">
           <span class="tag highlight">Subsidietrajecten</span>
           <span class="tag highlight">Consortiumopbouw</span>
-          <span class="tag">Budgetbeheer</span>
           <span class="tag">Grant writing</span>
+          <span class="tag">Budgetbeheer</span>
           <span class="tag">Investor outreach</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <div class="skill-label">Stakeholders &amp; Netwerk</div>
+        <div class="skill-label">Netwerk &amp; Stakeholders</div>
         <div class="skill-tags">
-          <span class="tag">Scholen &amp; onderwijs</span>
           <span class="tag">Fondsen &amp; partners</span>
           <span class="tag">Overheid</span>
+          <span class="tag">Onderwijs</span>
           <span class="tag">Bedrijfsleven</span>
         </div>
       </div>
     </div>
 
     <div class="sidebar-block">
-      <div class="section-title">Persoonlijk</div>
-      <div class="cert-item">Piano &amp; kerkorgel (actief beoefenaar)</div>
-      <div class="cert-item">Dungeon Master (spelontwerp &amp; groepsdynamica)</div>
+      <div class="section-title">Persoonlijk &amp; Kunst</div>
+      <div class="cert-item">Piano &amp; kerkorgel (actief beoefenaar, jarenlang)</div>
+      <div class="cert-item">Dungeon Master (spelontwerp, groepsdynamica, narratief)</div>
       <div class="cert-item">Miniature painting, gaming, zwemmen</div>
+    </div>
+
+    <div class="sidebar-block">
+      <div class="section-title">Opleiding</div>
+      <div class="edu-item">
+        <div class="edu-degree">Bachelor Business IT &amp; Management</div>
+        <div class="edu-school">Hogeschool van Amsterdam (2010&ndash;2014)</div>
+        <div class="edu-school">Cijfer: 8,7 &mdash; scriptie: simulatieleren bij Kongsberg. Minor: E-discovery (digitale forensics, ethical hacking, EDRM)</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Lerarenopleiding Wiskunde</div>
+        <div class="edu-school">Hogeschool Inholland (2007&ndash;2008)</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">Technische Informatica (propedeuse)</div>
+        <div class="edu-school">Hogeschool van Amsterdam (2006&ndash;2007)</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-degree">HAVO, Natuur &amp; Techniek</div>
+        <div class="edu-school">Hermann Wesselink College (2002&ndash;2006)</div>
+      </div>
     </div>
 
     <div class="sidebar-block">
@@ -350,32 +253,18 @@
     </div>
 
     <div class="sidebar-block">
-      <div class="section-title">Opleiding</div>
-      <div class="edu-item">
-        <div class="edu-degree">Bachelor Business IT &amp; Management</div>
-        <div class="edu-school">Hogeschool van Amsterdam (2010&ndash;2014)</div>
-        <div class="edu-school">Eindcijfer: 8,7 | Scriptie: simulatieleren</div>
-      </div>
-    </div>
-
-    <div class="sidebar-block">
       <div class="section-title">Talen</div>
-      <div class="lang-item">
-        <span class="lang-name">Nederlands</span>
-        <span class="lang-level">Moedertaal</span>
-      </div>
-      <div class="lang-item">
-        <span class="lang-name">Engels</span>
-        <span class="lang-level">Near-native</span>
-      </div>
+      <div class="lang-item"><span class="lang-name">Nederlands</span><span class="lang-level">Moedertaal</span></div>
+      <div class="lang-item"><span class="lang-name">Engels</span><span class="lang-level">Near-native</span></div>
+      <div class="lang-item"><span class="lang-name">Duits</span><span class="lang-level">Conversationeel</span></div>
     </div>
 
     <div class="sidebar-block">
       <div class="section-title">Beschikbaarheid</div>
       <table class="kv-table">
-        <tr><td>Locatie</td><td>Baarn (Amsterdam: 45 min)</td></tr>
+        <tr><td>Locatie</td><td>Baarn (Amsterdam 45 min)</td></tr>
         <tr><td>Uren</td><td>28&ndash;36 uur/week</td></tr>
-        <tr><td>Start</td><td>Per direct</td></tr>
+        <tr><td>Start</td><td>Per direct / sept 2026</td></tr>
       </table>
     </div>
 
