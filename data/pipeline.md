@@ -22,8 +22,8 @@
 > Cadence: search every 2-3 weeks on terms: "serious games vacature", "innovatielab vacature", "living lab leider",
 > "game-based learning consultant", "innovatie adviseur onderwijs", "venture builder NL".
 
-- [ ] #118 | https://waag.homerun.co/project-manager-4/nl | Waag Futurelab | Project Manager — Amsterdam, 32-40h, €3.546-€4.901/mo, DEADLINE 30-06-2026
-- [ ] #119 | https://www.kennisnet.nl/vacatures/strategisch-adviseur-technologische-innovatie/ | Kennisnet | Strategisch adviseur technologische innovatie — Zoetermeer, 32-40h, max €8.054/mo
+- [x] #118 | https://waag.homerun.co/project-manager-4/nl | Waag Futurelab | Project Manager — Amsterdam, 32-40h, €3.546-€4.901/mo, DEADLINE 30-06-2026. Score 3.9/5 — GO, urgent.
+- [x] #119 | https://www.kennisnet.nl/vacatures/strategisch-adviseur-technologische-innovatie/ | Kennisnet | Strategisch adviseur technologische innovatie — Zoetermeer, 32-40h, max €8.054/mo. Score 3.7/5 — email Bureau Luider to confirm active.
 
 ## Pending
 
@@ -334,3 +334,31 @@
 
 - [x] UNCERTAIN | https://rabobank.jobs/en/job/scrum-master/JR_00101802/ | Rabobank | Scrum Master JR_00101802 — 403 blocked, verify manually
 - [x] #88 | https://rabobank.jobs/en/job/scrum-master/JR_00109695/ | Rabobank | Scrum Master JR_00109695 | 3.3/5 | already evaluated
+
+## Innovation Lab / Education / Serious Games / Small Enterprise Scan — 2026-06-06
+
+> **Scan focus**: Smaller enterprises, innovation labs, edtech, serious games, education consultancies, social impact orgs.
+> Covered: UvA IIS, Impact Hub, Agile Scrum Group, PBLQ, ThiemeMeulenhoff, INNOVATORS, Snappet, SURF, IJsfontein,
+> &ranj, Waag (pipeline), KplusV, AEF, Twynstra Gudde, CED-Groep, Kennisland, MBO Raad, CINOP, nlmtd (paused),
+> Leeruniek, GameLab Oost (internships only), DesignThinkers Academy, ROM Utrecht Region, InnovationQuarter,
+> Brightlands, Innoleaps (filled), NWO, CLICKNL (2020), Oranje Fonds (403), Stimuleringsfonds (no vacancies),
+> Springbok (no NL vacancies), DEN (March 22 expired), Provincie Utrecht (added #130), Strict B.V. (added #131),
+> ERAC (added #132), BearingPoint NL (energy/FS — domain mismatch), ANWB Venture Builder (closed), Aimforthemoon
+> (closed), Capgemini Invent (expired), TwynstraGudde (no innovation/educ roles), NLR (404), The Talent Institute
+> (€2.7k — too low), 2-cnnct (May 10 expired), Ecorys (advisor expired), Movisie (social sector), SLO (curriculum
+> dev), Nyenrode (postdoc + faculty only), CoachHub (Ashby remote), Wielinq (expired), PNO Innovation (expired),
+> nlmtd Innovation Lead (expired). Many serious game studios have no open non-engineering roles.
+
+- [ ] #120 | https://werkenbij.uva.nl/vacatures/onderwijsontwikkelaar-netherlands-15124 | UvA IIS | Onderwijsontwikkelaar (Inst. voor Interdisciplinaire Studies) — Amsterdam Science Park, 32h, €4,728-€6,433/mo, **DEADLINE JUNE 11 2026 — 5 DAYS, ACT NOW**
+- [ ] #121 | https://amsterdam.impacthub.net/about-us/careers/ | Impact Hub Amsterdam | Senior Venture Support Manager — Amsterdam, active listing no deadline specified
+- [ ] #122 | https://agilescrumgroup.nl/agile-scrum-vacatures/vacature-product-owner-en-innovatie-trainer-consultant/ | Agile Scrum Group | Product Owner & Innovation Trainer/Consultant — Amsterdam, market-rate + bonus, Design Thinking + Lean Startup + PO coaching. VERIFY LIVE (consultancy.nl posting Oct 2022 — may be standing vacancy)
+- [ ] #123 | https://pblq.nl/adviseur/ | PBLQ | Adviseur digitale samenleving — Den Haag, ongoing vacancy, public sector digital advisor
+- [ ] #124 | https://pblq.nl/ontwerpgerichte-adviseur/ | PBLQ | Ontwerpgerichte Adviseur (medior/senior) — Den Haag, ~5 yrs exp, design-oriented advisory for complex public sector challenges
+- [ ] #125 | https://www.werkenbijthiememeulenhoff.nl/vacaturebeschrijving/product-owner-digitale-leer-en-werkomgeving-32-36-uur | ThiemeMeulenhoff | Product Owner digitale leer- en werkomgeving — Amersfoort, 32-36h, €3,636-€6,061/mo. VERIFY LIVE (deadline listed as May 12 — may be expired)
+- [ ] #126 | https://onderwijsinnovators.nl/vacatures/ | INNOVATORS (Uitg. Instruct) | Adviseur digitale lesmethoden — Bodegraven, 32h, education advisory + relatiebeheer for schools
+- [ ] #127 | https://snappet.recruitee.com/ | Snappet | Schooladviseur — Utrecht, hybrid, sales dept, helping schools implement Snappet adaptive practice platform
+- [ ] #128 | https://snappet.recruitee.com/ | Snappet | Trainer / Leerkrachtcoach — Utrecht, hybrid, training teachers to use Snappet
+- [ ] #129 | https://werkenbij.surf.nl/vacatures/relatiemanager-research/ | SURF | Relatiemanager Research+ — Utrecht, 32-40h, €5,450-€7,786/mo, **DEADLINE JUNE 7 2026 — TOMORROW, ACT NOW**
+- [ ] #130 | https://werkenbij.provincie-utrecht.nl/vacature-bdo/implementatiemanager-trambedrijf | Provincie Utrecht | Implementatiemanager Trambedrijf — Nieuwegein, 6-month fixed term, €3,791-€5,340/mo, **DEADLINE JUNE 11 2026 — 5 DAYS**, organizational transition PM for new tram subsidiary
+- [ ] #131 | https://strictbv.recruitee.com/o/senior-consultant-digitale-transformatie-regie | Strict B.V. | (Senior) Consultant Digitale Transformatie & Regie — Vianen (Utrecht area), 32-40h, €5,000-€7,000/mo, digital transformation + IT governance for clients, CONFIRMED LIVE
+- [ ] #132 | https://www.erac.nl/vacature/programmamanager-europese-projecten/ | ERAC | Programmamanager Europese Projecten — Eindhoven/Utrecht, 32-40h, market-rate, EU-funded innovation + sustainability programs, 4+ yrs EU project exp req, CONFIRMED LIVE

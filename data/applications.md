@@ -2,6 +2,8 @@
 
 | # | Date | Company | Role | Score | Status | PDF | Report | Notes |
 |---|------|---------|------|-------|--------|-----|--------|-------|
+| 118 | 2026-06-06 | Waag Futurelab | Project Manager | 3.9/5 | Evaluated | ❌ | [118](reports/118-waag-futurelab-2026-06-06.md) | Creative tech lab PM, Amsterdam, DEADLINE 30-06-2026, €3.5-4.9k/mo (works as 0.8 FTE in stack) |
+| 119 | 2026-06-06 | Kennisnet | Strategisch adviseur technologische innovatie | 3.7/5 | Evaluated | ❌ | [119](reports/119-kennisnet-2026-06-06.md) | EdTech strategic advisor, Zoetermeer, max €8k/mo — email Bureau Luider first (posting 6mo old) |
 | 113 | 2026-06-06 | The Experience Office | Project Manager L&D & Serious Games | 4.2/5 | Evaluated | ✅ | — | 4.2/5 — Serious game design directe match; Beer Game live; lab founder patroon; Utrecht bereikbaar; €3.000/32u laag maar fractional OK |
 | 114 | 2026-06-06 | Public Cinema | Social Designer | 3.7/5 | Evaluated | ✅ | — | 3.7/5 — Community building + participatief ontwerp sterk; WO + 5jr vereist = formele gap; Amsterdam bereikbaar |
 | 115 | 2026-06-06 | Berenschot | Senior Consultant Financiering en Innovatie | 3.5/5 | Evaluated | ✅ | — | 3.5/5 — Grant writing VCH/Viridis bewezen; innovatiestrategie sterk; WO technisch gap; comp top band €8.4k aantrekkelijk |
