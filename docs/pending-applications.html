@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pending Applications — Christiaan Verhoef</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; padding: 32px; }
+  h1 { font-size: 1.6rem; font-weight: 700; color: #f8fafc; margin-bottom: 4px; }
+  .sub { color: #64748b; font-size: .85rem; margin-bottom: 28px; }
+  .filters { display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap; }
+  .filter-btn { background: #1e293b; border: 1px solid #334155; color: #94a3b8; padding: 5px 14px; border-radius: 99px; font-size: .8rem; cursor: pointer; transition: all .15s; }
+  .filter-btn:hover, .filter-btn.active { background: #3b82f6; border-color: #3b82f6; color: #fff; }
+  table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  th { background: #1e293b; color: #64748b; text-transform: uppercase; font-size: .7rem; letter-spacing: .05em; padding: 10px 14px; text-align: left; border-bottom: 1px solid #334155; white-space: nowrap; }
+  td { padding: 12px 14px; border-bottom: 1px solid #1e293b; vertical-align: top; }
+  tr:hover td { background: #1a2234; }
+  .score { font-weight: 700; border-radius: 6px; padding: 2px 8px; font-size: .8rem; display: inline-block; }
+  .s-high  { background: #14532d; color: #4ade80; }
+  .s-mid   { background: #1c3352; color: #60a5fa; }
+  .s-low   { background: #3b2a14; color: #fb923c; }
+  .deadline { color: #f87171; font-weight: 600; }
+  .deadline-ok { color: #94a3b8; }
+  .tag { display: inline-block; background: #1e293b; border: 1px solid #334155; color: #94a3b8; border-radius: 4px; padding: 2px 7px; font-size: .75rem; margin: 2px 2px 0 0; }
+  .tag-urgent { background: #450a0a; border-color: #b91c1c; color: #fca5a5; }
+  .tag-go { background: #052e16; border-color: #15803d; color: #86efac; }
+  .folder { font-family: monospace; font-size: .75rem; color: #475569; }
+  a { color: #60a5fa; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .company { font-weight: 600; color: #f1f5f9; }
+  .role { color: #cbd5e1; }
+  .note { color: #64748b; font-size: .78rem; margin-top: 4px; }
+  .count { background: #3b82f6; color: #fff; border-radius: 99px; padding: 2px 10px; font-size: .8rem; margin-left: 10px; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<h1>Pending Applications <span class="count" id="count">0</span></h1>
+<p class="sub">Laatste update: 2026-06-08 &mdash; Alleen status Evaluated (nog niet verzonden)</p>
+
+<div class="filters">
+  <button class="filter-btn active" onclick="filter('all')">Alle</button>
+  <button class="filter-btn" onclick="filter('urgent')">Deadline aankomend</button>
+  <button class="filter-btn" onclick="filter('high')">Score &ge; 3.8</button>
+  <button class="filter-btn" onclick="filter('ready')">Dossier klaar</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Bedrijf / Rol</th>
+      <th>Score</th>
+      <th>Deadline</th>
+      <th>Comp</th>
+      <th>Tags</th>
+      <th>Folder</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+
+    <tr data-tags="high ready">
+      <td>113</td>
+      <td>
+        <div class="company">The Experience Office</div>
+        <div class="role">Project Manager L&D &amp; Serious Games</div>
+        <div class="note">Serious game design directe match. Beer Game live. Lab founder patroon. Utrecht.</div>
+      </td>
+      <td><span class="score s-high">4.2/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>€3.000/32u</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">Serious Games</span>
+        <span class="tag">Utrecht</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/113-experience-office</td>
+      <td>
+        <a href="https://theexperienceoffice.nl/nl/project-manager-lend-seriousgames" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="high ready">
+      <td>116</td>
+      <td>
+        <div class="company">Berenschot</div>
+        <div class="role">Medior Transformatie Partner</div>
+        <div class="note">Transformatie bewezen Aeres+COTIT+Windesheim. PMO Prince2+Scrum. Master diploma gap. Utrecht.</div>
+      </td>
+      <td><span class="score s-high">3.8/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>€3.776–€6.390/mo</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">Consulting</span>
+        <span class="tag">Utrecht</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/116-berenschot-transformatie</td>
+      <td>
+        <a href="https://berenschot.recruitee.com/o/medior-transformatie-partner" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="high ready">
+      <td>118</td>
+      <td>
+        <div class="company">Waag Futurelab</div>
+        <div class="role">Project Manager</div>
+        <div class="note">Creative tech lab PM. Amsterdam. Works as 0.8 FTE in stack.</div>
+      </td>
+      <td><span class="score s-high">3.9/5</span></td>
+      <td class="deadline urgent">30 juni 2026</td>
+      <td>€3.546–€4.901/mo</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag tag-urgent">Deadline 30-06</span>
+        <span class="tag">Amsterdam</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/118-waag</td>
+      <td>
+        <a href="https://waag.homerun.co/project-manager-4/nl" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>119</td>
+      <td>
+        <div class="company">Kennisnet</div>
+        <div class="role">Strategisch Adviseur Technologische Innovatie</div>
+        <div class="note">EdTech strategic advisor. Max €8k/mo. Email Bureau Luider eerst (posting 6 mnd oud).</div>
+      </td>
+      <td><span class="score s-mid">3.7/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>max €8.054/mo</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">EdTech</span>
+        <span class="tag">Zoetermeer</span>
+        <span class="tag tag-urgent">Email Bureau Luider eerst</span>
+      </td>
+      <td class="folder">applications/&mdash;</td>
+      <td>
+        <a href="https://www.kennisnet.nl/vacatures/strategisch-adviseur-technologische-innovatie/" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="urgent ready">
+      <td>120</td>
+      <td>
+        <div class="company">UvA IIS</div>
+        <div class="role">Onderwijsontwikkelaar</div>
+        <div class="note">Interdisciplinair onderwijs, challenge-based. HBO-bachelor gap (WO req). €3982–5416/mo 32h.</div>
+      </td>
+      <td><span class="score s-mid">3.5/5</span></td>
+      <td class="deadline">11 juni 2026</td>
+      <td>€3.982–€5.416/mo</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag tag-urgent">Deadline 11-06</span>
+        <span class="tag">Onderwijs</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/120-uva-iis</td>
+      <td>
+        <a href="https://werkenbij.uva.nl/vacatures/onderwijsontwikkelaar-netherlands-15124" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>121</td>
+      <td>
+        <div class="company">Impact Hub Amsterdam</div>
+        <div class="role">Senior Venture Support Manager</div>
+        <div class="note">GO if full-time. Ecosystem builder archetype match. €5k–5.5k laag end. 40h vs fractional model.</div>
+      </td>
+      <td><span class="score s-mid">3.5/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>€5.000–€5.500/mo</td>
+      <td>
+        <span class="tag tag-go">GO (full-time)</span>
+        <span class="tag">Ecosystem</span>
+        <span class="tag">Amsterdam</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/121-impact-hub</td>
+      <td>
+        <a href="https://amsterdam.impacthub.net/job/senior-venture-support-manager/" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>122</td>
+      <td>
+        <div class="company">Agile Scrum Group</div>
+        <div class="role">PO &amp; Innovatie Trainer/Consultant</div>
+        <div class="note">Verify liveness (standing vacancy Oct 2022). Trainer-first model vs builder identity. Conditional GO.</div>
+      </td>
+      <td><span class="score s-low">3.2/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>N/A</td>
+      <td>
+        <span class="tag">Conditional GO</span>
+        <span class="tag tag-urgent">Verify liveness eerst</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/122-agile-scrum-group</td>
+      <td>
+        <a href="https://agilescrumgroup.nl/agile-scrum-vacatures/vacature-product-owner-en-innovatie-trainer-consultant/" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="high ready">
+      <td>123</td>
+      <td>
+        <div class="company">PBLQ</div>
+        <div class="role">Adviseur Digitale Samenleving</div>
+        <div class="note">Public sector digital advisor. Den Haag hybrid ~50 min. Ongoing vacancy. €4.500–7.000/mo est.</div>
+      </td>
+      <td><span class="score s-mid">3.7/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>€4.500–€7.000/mo</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">Overheid</span>
+        <span class="tag">Den Haag</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/123-pblq-adviseur</td>
+      <td>
+        <a href="https://pblq.nl/adviseur/" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>124</td>
+      <td>
+        <div class="company">PBLQ</div>
+        <div class="role">Ontwerpgerichte Adviseur</div>
+        <div class="note">Design-oriented public sector advisory. ~5jr exp. Team van 5. Den Haag. Ongoing vacancy.</div>
+      </td>
+      <td><span class="score s-mid">3.6/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>N/A</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">Overheid</span>
+        <span class="tag">Den Haag</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/124-pblq-ontwerpgericht</td>
+      <td>
+        <a href="https://pblq.nl/ontwerpgerichte-adviseur/" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>126</td>
+      <td>
+        <div class="company">INNOVATORS (INSTRUCT)</div>
+        <div class="role">Ontwikkelaar Digitale Vaardigheden &amp; AI</div>
+        <div class="note">GO as freelance. AI educational content for DIGIT-mbo. Content authorship gap. Bodegraven ~50km.</div>
+      </td>
+      <td><span class="score s-low">3.2/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>N/A</td>
+      <td>
+        <span class="tag">GO (freelance)</span>
+        <span class="tag">EdTech</span>
+        <span class="tag">Bodegraven</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/126-innovators</td>
+      <td>
+        <a href="https://onderwijsinnovators.nl/vacatures/ontwikkelaar-lesmateriaal-digitale-vaardigheden-en-ai/" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="urgent ready">
+      <td>130</td>
+      <td>
+        <div class="company">Provincie Utrecht</div>
+        <div class="role">Implementatiemanager Trambedrijf</div>
+        <div class="note">6-maand fixed term. Organisatietransitie tramBV. €3.792–5.341/mo.</div>
+      </td>
+      <td><span class="score s-low">3.3/5</span></td>
+      <td class="deadline">11 juni 2026</td>
+      <td>€3.792–€5.341/mo</td>
+      <td>
+        <span class="tag tag-urgent">Deadline 11-06 &#9888;</span>
+        <span class="tag">Overheid</span>
+        <span class="tag">6 mnd</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/130-provincie-utrecht</td>
+      <td>
+        <a href="https://werkenbij.provincie-utrecht.nl/vacature-bdo/implementatiemanager-trambedrijf" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="high ready">
+      <td>131</td>
+      <td>
+        <div class="company">Strict B.V.</div>
+        <div class="role">(Senior) Consultant Digitale Transformatie &amp; Regie</div>
+        <div class="note">€5.000–7.000/mo permanent. Vianen 25 min. Digital transformation + IT governance.</div>
+      </td>
+      <td><span class="score s-mid">3.7/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>€5.000–€7.000/mo</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">Consulting</span>
+        <span class="tag">Vianen</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/131-strict-bv</td>
+      <td>
+        <a href="https://strictbv.recruitee.com/o/senior-consultant-digitale-transformatie-regie" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>132</td>
+      <td>
+        <div class="company">ERAC</div>
+        <div class="role">Programmamanager Europese Projecten</div>
+        <div class="note">EU-adjacent, not named coordinator. Prefer Utrecht office ~40 min. Sustainability/innovation domain.</div>
+      </td>
+      <td><span class="score s-mid">3.6/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>N/A</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">EU</span>
+        <span class="tag">Innovatie</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/132-erac</td>
+      <td>
+        <a href="https://www.erac.nl/vacature/programmamanager-europese-projecten/" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>112</td>
+      <td>
+        <div class="company">Royal HaskoningDHV</div>
+        <div class="role">Senior Consultant Supply Chain Sustainability</div>
+        <div class="note">CSRD/EUDR/CSDDD sterk. Geen klassieke consultancy achtergrond. 18.3% pensioen. Dossier klaar.</div>
+      </td>
+      <td><span class="score s-mid">3.6/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>N/A</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">Sustainability</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/112-haskoning</td>
+      <td>
+        <a href="https://www.royalhaskoningdhv.com/careers" target="_blank">Careers pagina</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>114</td>
+      <td>
+        <div class="company">Public Cinema</div>
+        <div class="role">Social Designer</div>
+        <div class="note">Community building + participatief ontwerp sterk. WO + 5jr vereist = formele gap. Amsterdam.</div>
+      </td>
+      <td><span class="score s-mid">3.7/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>€3.700–€5.300/mo</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">Community</span>
+        <span class="tag">Amsterdam</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/114-public-cinema</td>
+      <td>
+        <a href="https://public-cinema.homerun.co/social-designer/nl" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>115</td>
+      <td>
+        <div class="company">Berenschot</div>
+        <div class="role">Senior Consultant Financiering en Innovatie</div>
+        <div class="note">Grant writing VCH/Viridis bewezen. WO technisch gap. Comp top band €8.4k aantrekkelijk.</div>
+      </td>
+      <td><span class="score s-mid">3.5/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>€5.086–€8.376/mo</td>
+      <td>
+        <span class="tag">GO</span>
+        <span class="tag">Consulting</span>
+        <span class="tag">Utrecht</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/115-berenschot-financiering</td>
+      <td>
+        <a href="https://berenschot.recruitee.com/o/senior-consultant-financiering-en-innovatie" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>117</td>
+      <td>
+        <div class="company">Berenschot</div>
+        <div class="role">Senior Consultant Digitale Transformatie Openbaar Bestuur</div>
+        <div class="note">W3C digitale identiteit. Beleid naar tooling patroon. WO + 4jr consultancy dubbele gap.</div>
+      </td>
+      <td><span class="score s-mid">3.6/5</span></td>
+      <td class="deadline-ok">Lopend</td>
+      <td>€5.086–€8.376/mo</td>
+      <td>
+        <span class="tag tag-go">GO</span>
+        <span class="tag">Overheid</span>
+        <span class="tag">Utrecht</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/117-berenschot-digitaal</td>
+      <td>
+        <a href="https://berenschot.recruitee.com/o/senior-consultant-digitale-transformatie-in-het-openbaar-bestuur" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="ready">
+      <td>109</td>
+      <td>
+        <div class="company">Stichting Tamino</div>
+        <div class="role">Directeur-Bestuurder</div>
+        <div class="note">3.0/5 — stretch (kunstcultureducatie). Volledig dossier klaar.</div>
+      </td>
+      <td><span class="score s-low">3.0/5</span></td>
+      <td class="deadline">16 juni 2026</td>
+      <td>N/A</td>
+      <td>
+        <span class="tag tag-urgent">Deadline 16-06</span>
+        <span class="tag">Cultuur</span>
+        <span class="tag tag-go">Dossier klaar</span>
+      </td>
+      <td class="folder">applications/109-tamino</td>
+      <td>
+        <a href="https://www.culturele-vacatures.nl/2026/05/stichting-tamino-directeur-bestuurder/" target="_blank">Vacature</a>
+      </td>
+    </tr>
+
+    <tr data-tags="">
+      <td>54</td>
+      <td>
+        <div class="company">Hogeschool Rotterdam</div>
+        <div class="role">Master AI Translator — Docent/Onderzoeker (open sollicitatie)</div>
+        <div class="note">Open sollicitatie via inside contact. Brief klaar, [naam contactpersoon] nog in te vullen.</div>
+      </td>
+      <td><span class="score s-low">—/5</span></td>
+      <td class="deadline-ok">N/A</td>
+      <td>N/A</td>
+      <td>
+        <span class="tag">Open sollicitatie</span>
+        <span class="tag tag-urgent">Naam contactpersoon invullen</span>
+        <span class="tag tag-go">Brief klaar</span>
+      </td>
+      <td class="folder">applications/054-hogeschool-rotterdam-master-ai-translator</td>
+      <td>
+        <a href="https://www.hogeschoolrotterdam.nl/werken-bij/vacatures/" target="_blank">Careers</a>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<script>
+  function filter(type) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    const rows = document.querySelectorAll('#tbody tr');
+    let visible = 0;
+    rows.forEach(row => {
+      const tags = row.dataset.tags || '';
+      let show = false;
+      if (type === 'all') show = true;
+      else if (type === 'urgent') show = tags.includes('urgent');
+      else if (type === 'high') show = tags.includes('high');
+      else if (type === 'ready') show = tags.includes('ready');
+      row.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    document.getElementById('count').textContent = visible;
+  }
+  // Init count
+  document.getElementById('count').textContent = document.querySelectorAll('#tbody tr').length;
+</script>
+</body>
+</html>
