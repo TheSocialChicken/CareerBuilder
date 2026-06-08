@@ -406,7 +406,7 @@ Config: `n8n/openrouter-models.json`
 
 ### GitHub Pages Dashboard
 
-`docs/index.html` auto-committed by pipeline 03. Live at `https://thesocialchicken.github.io/career-ops/`
+`docs/index.html` auto-committed by pipeline 03. Live at `https://thesocialchicken.github.io/CareerBuilder/`
 
 ### Embeddings (RAG)
 

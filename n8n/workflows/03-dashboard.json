@@ -3,7 +3,7 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## Career Ops — Dashboard\n\n**What it does:** Reads tracker + pipeline data from the local API, generates an HTML dashboard, and commits it to `docs/index.html` so GitHub Pages serves it.\n\n**GitHub Pages URL:** https://thesocialchicken.github.io/career-ops/\n\n**N8N Variables required:**\n- `LOCAL_API_URL` = `http://100.95.236.57:3000`\n- `GITHUB_TOKEN` = GitHub PAT with repo scope\n- `GITHUB_REPO` = `TheSocialChicken/career-ops`\n\n**Runs:** Every 6 hours + on-demand via webhook",
+        "content": "## Career Ops — Dashboard\n\n**What it does:** Reads tracker + pipeline data from the local API, generates an HTML dashboard, and commits it to `docs/index.html` so GitHub Pages serves it.\n\n**GitHub Pages URL:** https://thesocialchicken.github.io/career-ops/\n\n**N8N Variables required:**\n- `LOCAL_API_URL` = `http://100.95.236.57:3000`\n- `GITHUB_TOKEN` = GitHub PAT with repo scope\n- `GITHUB_REPO` = `TheSocialChicken/CareerBuilder`\n\n**Runs:** Every 6 hours + on-demand via webhook",
         "height": 200,
         "width": 500,
         "color": 6

@@ -33,7 +33,7 @@
     },
     {
       "parameters": {
-        "url": "https://raw.githubusercontent.com/TheSocialChicken/career-ops/main/portals.yml",
+        "url": "https://raw.githubusercontent.com/TheSocialChicken/CareerBuilder/main/portals.yml",
         "options": {
           "response": {
             "response": {
@@ -50,7 +50,7 @@
     },
     {
       "parameters": {
-        "url": "https://raw.githubusercontent.com/TheSocialChicken/career-ops/main/data/scan-history.tsv",
+        "url": "https://raw.githubusercontent.com/TheSocialChicken/CareerBuilder/main/data/scan-history.tsv",
         "options": {
           "response": {
             "response": {
