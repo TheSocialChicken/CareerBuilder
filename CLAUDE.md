@@ -366,5 +366,51 @@ Write one TSV file per evaluation to `batch/tracker-additions/{num}-{company-slu
 - No markdown bold (`**`) in status field
 - No dates in status field (use the date column)
 - No extra text (use the notes column)
+
+## N8N Integration (added 2026-06-08)
+
+Five separate pipelines hosted at `n8n.valuechainhackers.xyz`. Workflow JSONs in `n8n/workflows/`. All 5 created and live.
+
+| # | File | N8N ID | Purpose |
+|---|------|--------|---------|
+| 01 | `01-scan.json` | `Sb4t7KKaxEdtj1Fz` | Daily scan Greenhouse/Ashby/Lever (200+ companies) |
+| 02 | `02-evaluate.json` | `vIPxLZpCuriVB2f3` | Webhook: evaluate one job URL, A-G scoring |
+| 03 | `03-dashboard.json` | `A7DZPOTjeMn5Z3KS` | Every 6h: build dashboard → commit `docs/index.html` |
+| 04 | `04-cv.json` | `JUNi4esUc8H5yEo2` | Webhook: tailor CV + generate PDF |
+| 05 | `05-report.json` | `tEb1DqOrH6a9QlpC` | Webhook: write full report, trigger CV if score ≥ 3.8 |
+
+### Local API Bridge
+
+`api.mjs` runs on `100.95.236.57:3000` (Tailscale). N8N calls it for all file I/O.
+
+```bash
+npm run api        # start bridge on port 3000
+```
+
+Endpoints: `GET /pipeline`, `POST /pipeline`, `POST /pipeline/complete`, `POST /scan/history`, `POST /reports`, `GET /reports`, `POST /tracker`, `GET /tracker`, `POST /cv/generate`, `GET /files/:path`, `POST /run/scan`, `POST /run/merge`
+
+### OpenRouter Models (all free tier)
+
+Config: `n8n/openrouter-models.json`
+
+| Pipeline | Model |
+|----------|-------|
+| Scan | `meta-llama/llama-3.2-3b-instruct:free` |
+| Evaluate | `nvidia/nemotron-3-ultra-550b-a55b:free` |
+| CV | `moonshotai/kimi-k2.6:free` |
+| Report | `nvidia/nemotron-3-ultra-550b-a55b:free` |
+
+### N8N Variables to set (Settings → Variables)
+
+`LOCAL_API_URL`, `OPENROUTER_API_KEY`, `GITHUB_TOKEN`, `GITHUB_REPO`, `SCAN_MODEL`, `EVAL_MODEL`, `CV_MODEL`, `REPORT_MODEL`
+
+### GitHub Pages Dashboard
+
+`docs/index.html` auto-committed by pipeline 03. Live at `https://thesocialchicken.github.io/career-ops/`
+
+### Embeddings (RAG)
+
+Ollama on `100.95.236.57:11434`. Model: `nomic-embed-text`. Pull: `ollama pull nomic-embed-text`
+
 @AGENTS.md
 <!-- Add anything Claude Code specific that other agents don't need -->
