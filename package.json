@@ -16,7 +16,9 @@
     "liveness": "node check-liveness.mjs",
     "scan": "node scan.mjs",
     "patterns": "node analyze-patterns.mjs",
-    "gemini:eval": "node gemini-eval.mjs"
+    "gemini:eval": "node gemini-eval.mjs",
+    "api": "node api.mjs",
+    "api:dev": "CAREER_OPS_API_PORT=3000 node api.mjs"
   },
   "keywords": [
     "ai",

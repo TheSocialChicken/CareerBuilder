@@ -1,0 +1,60 @@
+{
+  "_comment": "OpenRouter free model assignments per pipeline. Change model IDs here to switch models. All :free models have no cost but may have rate limits.",
+  "_openrouter_free_models_list": "https://openrouter.ai/models?q=:free",
+  "pipelines": {
+    "scan": {
+      "model": "meta-llama/llama-3.2-3b-instruct:free",
+      "context_length": 131072,
+      "description": "Fast title relevance scoring. Small model = fast + cheap.",
+      "n8n_variable": "SCAN_MODEL",
+      "prompt_style": "json_output"
+    },
+    "evaluate": {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "context_length": 1000000,
+      "description": "Full A-G evaluation. Largest free model = best reasoning quality.",
+      "n8n_variable": "EVAL_MODEL",
+      "prompt_style": "structured_blocks",
+      "fallback": "meta-llama/llama-3.3-70b-instruct:free"
+    },
+    "cv": {
+      "model": "moonshotai/kimi-k2.6:free",
+      "context_length": 262144,
+      "description": "CV tailoring. Large context fits full cv.md + JD + profile.",
+      "n8n_variable": "CV_MODEL",
+      "prompt_style": "html_output",
+      "fallback": "google/gemma-4-31b-it:free"
+    },
+    "report": {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "context_length": 1000000,
+      "description": "Full report writing. Needs deep reasoning + large context.",
+      "n8n_variable": "REPORT_MODEL",
+      "prompt_style": "markdown_output",
+      "fallback": "meta-llama/llama-3.3-70b-instruct:free"
+    },
+    "dashboard": {
+      "model": null,
+      "description": "No LLM — pure data aggregation from applications.md + pipeline.md.",
+      "n8n_variable": null
+    }
+  },
+  "embeddings": {
+    "provider": "ollama",
+    "model": "nomic-embed-text",
+    "endpoint": "http://100.95.236.57:11434/api/embeddings",
+    "dimensions": 768,
+    "description": "Local embeddings via Tailscale. Pull model: ollama pull nomic-embed-text"
+  },
+  "n8n_variables_to_set": {
+    "_instructions": "Set these in N8N: Settings > Variables",
+    "LOCAL_API_URL": "http://100.95.236.57:3000",
+    "GITHUB_REPO": "TheSocialChicken/career-ops",
+    "GITHUB_TOKEN": "ghp_... (Personal Access Token with repo scope)",
+    "OPENROUTER_API_KEY": "sk-or-v1-... (from openrouter.ai)",
+    "SCAN_MODEL": "meta-llama/llama-3.2-3b-instruct:free",
+    "EVAL_MODEL": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "CV_MODEL": "moonshotai/kimi-k2.6:free",
+    "REPORT_MODEL": "nvidia/nemotron-3-ultra-550b-a55b:free"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "name": "Career Ops — 05 Write Report",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Career Ops — Write Report\n\n**Trigger:** Called by pipeline 02 (Evaluate) with full eval JSON in body.\n\n**What it does:**\n1. Takes structured eval data from pipeline 02\n2. Uses OpenRouter to write a full A-G markdown report (career-ops format)\n3. Writes report to local API (`reports/` folder)\n4. If score >= 3.8: triggers pipeline 04 (CV generation)\n\n**N8N Variables required:**\n- `LOCAL_API_URL` = `http://100.95.236.57:3000`\n- `OPENROUTER_API_KEY` = your OpenRouter key\n- `REPORT_MODEL` = `nvidia/nemotron-3-ultra-550b-a55b:free`\n\n**Report format:** Matches career-ops standard (A-F blocks + G legitimacy + Machine Summary YAML)",
+        "height": 240,
+        "width": 520,
+        "color": 2
+      },
+      "id": "a0000005-0000-4000-8000-000000000001",
+      "name": "Setup Notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 80]
+    },
+    {
+      "parameters": {
+        "path": "career-ops-report",
+        "httpMethod": "POST",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "a0000005-0000-4000-8000-000000000002",
+      "name": "Webhook: Write Report",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "webhookId": "career-ops-report",
+      "position": [240, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract eval data from webhook body\nconst body = $input.first().json.body || $input.first().json;\nconst eval_data = body;\nconst date = eval_data.eval_date || new Date().toISOString().split('T')[0];\nconst company = (eval_data.company || 'unknown').toLowerCase().replace(/[^a-z0-9]+/g, '-');\n\n// Generate sequential report number (use timestamp as fallback)\nconst num = eval_data.num || String(Date.now()).slice(-3).padStart(3, '0');\nconst filename = `${num}-${company}-${date}.md`;\n\nreturn [{ json: { ...eval_data, report_filename: filename, report_num: num, report_date: date } }];"
+      },
+      "id": "a0000005-0000-4000-8000-000000000003",
+      "name": "Prep report metadata",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 400]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.LOCAL_API_URL }}/files/modes/_profile.md",
+        "options": {}
+      },
+      "id": "a0000005-0000-4000-8000-000000000004",
+      "name": "Get _profile.md",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [680, 280]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://openrouter.ai/api/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "=Bearer {{ $vars.OPENROUTER_API_KEY }}" },
+            { "name": "HTTP-Referer", "value": "https://github.com/TheSocialChicken/career-ops" },
+            { "name": "X-Title", "value": "Career Ops Report Writer" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"model\": \"{{ $vars.REPORT_MODEL || 'nvidia/nemotron-3-ultra-550b-a55b:free' }}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You write career evaluation reports for Christiaan Verhoef in the career-ops format.\\n\\nReport format (STRICT — follow exactly):\\n\\n# {Company} — {Role}\\n\\n**Score:** {X.X}/5\\n**URL:** {url}\\n**PDF:** (pending)\\n**Legitimacy:** {tier} (Tier 1 = established org, Tier 2 = startup/scale-up, Tier 3 = unverified)\\n\\n---\\n\\n## A. Role & Responsibilities\\n{3-5 bullets with specific details from JD}\\n\\n## B. Mission & Values\\n{2-3 bullets on company mission/culture signals}\\n\\n## C. Growth & Learning\\n{2-3 bullets on learning opportunities, innovation culture}\\n\\n## D. Compensation\\n{Range, bonus, equity, benefits details from JD}\\n\\n## E. Location & Work-Life Balance\\n{Location, remote policy, FTE, hours}\\n\\n## F. Candidate Fit Analysis\\n{3-5 bullets on specific fit/gap for Christiaan}\\n\\n## G. Posting Legitimacy\\n**Tier:** {tier}\\n{1-2 sentences on legitimacy signals}\\n\\n---\\n\\n## Verdict: {GO|REVIEW|SKIP}\\n\\n{2-3 sentence narrative verdict in Christiaan's ENFP voice — honest, direct, enthusiastic if warranted}\\n\\n**Strengths for this role:**\\n{2-3 specific strengths}\\n\\n**Watch out for:**\\n{1-2 flags if any}\\n\\n---\\n\\n## Machine Summary\\n\\n```yaml\\nscore: {X.X}\\nverdict: {GO|REVIEW|SKIP}\\ncompany: {company}\\nrole: {role}\\narchetype: {archetype_match}\\nlocation: {location}\\nsalary: {range}\\ndate: {date}\\n```\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Write a full career-ops report based on this evaluation data:\\n\\n{{ JSON.stringify($json, null, 2) }}\\n\\nProfile context:\\n{{ $('Get _profile.md').first().json.content }}\"\n    }\n  ]\n}",
+        "options": { "timeout": 90000 }
+      },
+      "id": "a0000005-0000-4000-8000-000000000005",
+      "name": "OpenRouter: Write Report",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [900, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract report markdown from OpenRouter\nconst resp = $input.first().json;\nconst content = resp.choices?.[0]?.message?.content || '# Report generation failed';\nconst meta = $('Prep report metadata').first().json;\n\nreturn [{ json: {\n  ...meta,\n  report_content: content,\n  model_used: resp.model || 'unknown',\n} }];"
+      },
+      "id": "a0000005-0000-4000-8000-000000000006",
+      "name": "Extract report",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1120, 400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $vars.LOCAL_API_URL }}/reports",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"filename\": \"{{ $json.report_filename }}\",\n  \"content\": {{ JSON.stringify($json.report_content) }}\n}",
+        "options": {}
+      },
+      "id": "a0000005-0000-4000-8000-000000000007",
+      "name": "Save report",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1340, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            {
+              "id": "go-check",
+              "leftValue": "={{ $json.score }}",
+              "rightValue": 3.8,
+              "operator": { "type": "number", "operation": "gte" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "a0000005-0000-4000-8000-000000000008",
+      "name": "Score >= 3.8?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1560, 400]
+    },
+    {
+      "parameters": {
+        "url": "={{ $workflow.webhookBaseUrl }}/webhook/career-ops-cv",
+        "method": "POST",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"url\": \"{{ $json.url }}\",\n  \"eval\": {{ JSON.stringify($json) }}\n}",
+        "options": {}
+      },
+      "id": "a0000005-0000-4000-8000-000000000009",
+      "name": "Trigger: CV pipeline",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1780, 300]
+    },
+    {
+      "parameters": {},
+      "id": "a0000005-0000-4000-8000-000000000010",
+      "name": "Review/Skip — no CV",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1780, 520]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ saved: $('Save report').first().json.saved, score: $json.score, verdict: $json.verdict }) }}"
+      },
+      "id": "a0000005-0000-4000-8000-000000000011",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1340, 600]
+    }
+  ],
+  "connections": {
+    "Webhook: Write Report": {
+      "main": [[{ "node": "Prep report metadata", "type": "main", "index": 0 }]]
+    },
+    "Prep report metadata": {
+      "main": [[
+        { "node": "Get _profile.md", "type": "main", "index": 0 },
+        { "node": "OpenRouter: Write Report", "type": "main", "index": 0 }
+      ]]
+    },
+    "Get _profile.md": {
+      "main": [[{ "node": "OpenRouter: Write Report", "type": "main", "index": 0 }]]
+    },
+    "OpenRouter: Write Report": {
+      "main": [[{ "node": "Extract report", "type": "main", "index": 0 }]]
+    },
+    "Extract report": {
+      "main": [[
+        { "node": "Save report", "type": "main", "index": 0 },
+        { "node": "Respond", "type": "main", "index": 0 }
+      ]]
+    },
+    "Save report": {
+      "main": [[{ "node": "Score >= 3.8?", "type": "main", "index": 0 }]]
+    },
+    "Score >= 3.8?": {
+      "main": [
+        [{ "node": "Trigger: CV pipeline", "type": "main", "index": 0 }],
+        [{ "node": "Review/Skip — no CV", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "active": false
+}

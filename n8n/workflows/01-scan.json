@@ -1,0 +1,193 @@
+{
+  "name": "Career Ops — 01 Portal Scan",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Career Ops — Portal Scan\n\n**What it does:** Fetches Greenhouse / Ashby / Lever APIs for all 200+ companies in portals.yml, deduplicates against scan-history.tsv, and adds new matching jobs to pipeline.md via the local API.\n\n**N8N Variables required (Settings → Variables):**\n- `LOCAL_API_URL` = `http://100.95.236.57:3000`\n- `GITHUB_TOKEN` = GitHub PAT with repo scope (for raw file access if repo goes private)\n\n**Runs:** Weekdays at 09:00 Europe/Amsterdam\n\n**Local API must be running:** `node api.mjs` on the career-ops machine",
+        "height": 220,
+        "width": 520,
+        "color": 5
+      },
+      "id": "a0000001-0000-4000-8000-000000000001",
+      "name": "Setup Notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 100]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * 1-5"
+            }
+          ]
+        }
+      },
+      "id": "a0000001-0000-4000-8000-000000000002",
+      "name": "Weekdays 09:00 CET",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 380]
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/TheSocialChicken/career-ops/main/portals.yml",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "text"
+            }
+          }
+        }
+      },
+      "id": "a0000001-0000-4000-8000-000000000003",
+      "name": "Get portals.yml",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/TheSocialChicken/career-ops/main/data/scan-history.tsv",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "text"
+            }
+          }
+        }
+      },
+      "id": "a0000001-0000-4000-8000-000000000004",
+      "name": "Get scan-history",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 460]
+    },
+    {
+      "parameters": {
+        "jsCode": "// ── Career Ops Portal Scanner ─────────────────────────────────────────\n// Fetches Greenhouse / Ashby / Lever APIs, deduplicates, title-filters.\n// Returns { jobs: [...], count: N, date: 'YYYY-MM-DD' }\n\nconst portalsYaml = $('Get portals.yml').first().json.data;\nconst historyTsv  = $('Get scan-history').first().json.data;\n\n// ── Parse scan history (dedup set) ────────────────────────────────────\nconst seen = new Set(\n  (historyTsv || '').split('\\n').slice(1)\n    .map(l => l.split('\\t')[0].trim())\n    .filter(u => u.startsWith('http'))\n);\n\n// ── Parse tracked_companies from portals.yml ──────────────────────────\nfunction parseCompanies(yaml) {\n  const companies = [];\n  let inSection = false;\n  let cur = null;\n  for (const line of yaml.split('\\n')) {\n    if (line.startsWith('tracked_companies:')) { inSection = true; continue; }\n    if (inSection && /^\\S/.test(line) && !line.startsWith('tracked_companies:')) inSection = false;\n    if (!inSection) continue;\n    const nm = line.match(/^  - name:\\s*(.+)/);\n    if (nm) {\n      if (cur?.name && cur?.url) companies.push(cur);\n      cur = { name: nm[1].trim().replace(/^['\"]|['\"]$/g, ''), url: '', enabled: true };\n      continue;\n    }\n    if (!cur) continue;\n    const cu = line.match(/^\\s+careers_url:\\s*(.+)/);\n    if (cu) cur.url = cu[1].trim();\n    if (line.match(/^\\s+enabled:\\s*false/)) cur.enabled = false;\n  }\n  if (cur?.name && cur?.url) companies.push(cur);\n  return companies.filter(c => c.enabled !== false);\n}\n\n// ── ATS detection + slug extraction ───────────────────────────────────\nconst getAts  = url => url.includes('greenhouse.io') ? 'greenhouse' : url.includes('ashbyhq.com') ? 'ashby' : url.includes('lever.co') ? 'lever' : null;\nconst getSlug = (url, t) => ({\n  greenhouse: url.match(/greenhouse\\.io\\/([^/?]+)/),\n  ashby:      url.match(/ashbyhq\\.com\\/([^/?]+)/),\n  lever:      url.match(/lever\\.co\\/([^/?]+)/),\n}[t]?.[1] ?? null);\n\n// ── Fetch jobs from one company ────────────────────────────────────────\nasync function fetchJobs(c) {\n  const t = getAts(c.url);\n  const s = getSlug(c.url, t);\n  if (!t || !s) return [];\n  try {\n    if (t === 'greenhouse') {\n      const r = await fetch(`https://boards-api.greenhouse.io/v1/boards/${s}/jobs`);\n      if (!r.ok) return [];\n      return ((await r.json()).jobs || [])\n        .filter(j => j.absolute_url)\n        .map(j => ({ title: j.title || '', url: j.absolute_url, company: c.name, location: j.location?.name || '', ats: 'greenhouse', portal: s }));\n    }\n    if (t === 'ashby') {\n      const r = await fetch(`https://jobs.ashbyhq.com/api/non-user-facing/application/job-board/listing?jobBoardIdentifier=${s}`);\n      if (!r.ok) return [];\n      return ((await r.json()).jobs || [])\n        .filter(j => j.jobUrl)\n        .map(j => ({ title: j.title || '', url: j.jobUrl, company: c.name, location: j.location || '', ats: 'ashby', portal: s }));\n    }\n    if (t === 'lever') {\n      const r = await fetch(`https://api.lever.co/v0/postings/${s}?mode=json`);\n      if (!r.ok) return [];\n      const d = await r.json();\n      return (Array.isArray(d) ? d : [])\n        .filter(j => j.hostedUrl)\n        .map(j => ({ title: j.text || '', url: j.hostedUrl, company: c.name, location: j.categories?.location || '', ats: 'lever', portal: s }));\n    }\n  } catch { return []; }\n  return [];\n}\n\n// ── Title filter (matches portals.yml positive list) ───────────────────\nconst TITLE_KW = [\n  'innovation lab','innovation lead','innovation manager','lab manager','lab lead',\n  'r&d','open innovation','applied research','ai transformation','ai adoption',\n  'ai lead','ai program','ai innovation','applied ai','ai enablement','ai education',\n  'ai trainer','learning innovation','learning design','learning & development','l&d',\n  'education technology','edtech','training lead','curriculum',\n  'program manager','programme manager','technical program','product owner',\n  'innovation program','serious game','game-based','gamification','venture builder',\n  'intrapreneurship','scrum master','agile coach','digital transformation',\n  'lector','docent','ai coach','ai consultant','ai specialist',\n];\nconst matchTitle = t => TITLE_KW.some(kw => t.toLowerCase().includes(kw));\n\n// ── Fetch all companies (batched concurrency) ──────────────────────────\nconst companies = parseCompanies(portalsYaml).filter(c => getAts(c.url));\nconst BATCH = 10;\nconst allJobs = [];\nfor (let i = 0; i < companies.length; i += BATCH) {\n  const batch = companies.slice(i, i + BATCH);\n  const results = await Promise.allSettled(batch.map(fetchJobs));\n  for (const r of results) if (r.status === 'fulfilled') allJobs.push(...r.value);\n}\n\n// ── Dedup + title filter ───────────────────────────────────────────────\nconst today = new Date().toISOString().split('T')[0];\nconst newJobs = allJobs.filter(j => j.url && !seen.has(j.url) && matchTitle(j.title));\n\nreturn [{ json: { jobs: newJobs, count: newJobs.length, date: today, scanned: companies.length } }];"
+      },
+      "id": "a0000001-0000-4000-8000-000000000005",
+      "name": "Fetch & Filter Jobs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [700, 380]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            {
+              "id": "has-jobs",
+              "leftValue": "={{ $json.count }}",
+              "rightValue": 0,
+              "operator": { "type": "number", "operation": "gt" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "a0000001-0000-4000-8000-000000000006",
+      "name": "New jobs found?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [920, 380]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Expand jobs array into individual items for split-batches\nconst { jobs, date } = $input.first().json;\nreturn jobs.map(j => ({ json: { ...j, added: date } }));"
+      },
+      "id": "a0000001-0000-4000-8000-000000000007",
+      "name": "Expand to items",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 300]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "a0000001-0000-4000-8000-000000000008",
+      "name": "One job at a time",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1360, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $vars.LOCAL_API_URL }}/pipeline",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"url\": \"{{ $json.url }}\",\n  \"num\": \"?\",\n  \"source\": \"n8n-scan\",\n  \"notes\": \"{{ $json.title }} @ {{ $json.company }} | {{ $json.location }} | {{ $json.ats }}\"\n}",
+        "options": {}
+      },
+      "id": "a0000001-0000-4000-8000-000000000009",
+      "name": "Add to pipeline.md",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1580, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $vars.LOCAL_API_URL }}/scan/history",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"rows\": [{\n    \"url\": \"{{ $json.url }}\",\n    \"portal\": \"{{ $json.portal }}\",\n    \"title\": \"{{ $json.title }}\",\n    \"company\": \"{{ $json.company }}\",\n    \"status\": \"added\",\n    \"location\": \"{{ $json.location }}\"\n  }]\n}",
+        "options": {}
+      },
+      "id": "a0000001-0000-4000-8000-000000000010",
+      "name": "Update scan-history",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1580, 460]
+    },
+    {
+      "parameters": {},
+      "id": "a0000001-0000-4000-8000-000000000011",
+      "name": "Nothing new",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [1140, 500]
+    }
+  ],
+  "connections": {
+    "Weekdays 09:00 CET": {
+      "main": [[
+        { "node": "Get portals.yml", "type": "main", "index": 0 },
+        { "node": "Get scan-history", "type": "main", "index": 0 }
+      ]]
+    },
+    "Get portals.yml": {
+      "main": [[{ "node": "Fetch & Filter Jobs", "type": "main", "index": 0 }]]
+    },
+    "Get scan-history": {
+      "main": [[{ "node": "Fetch & Filter Jobs", "type": "main", "index": 0 }]]
+    },
+    "Fetch & Filter Jobs": {
+      "main": [[{ "node": "New jobs found?", "type": "main", "index": 0 }]]
+    },
+    "New jobs found?": {
+      "main": [
+        [{ "node": "Expand to items", "type": "main", "index": 0 }],
+        [{ "node": "Nothing new", "type": "main", "index": 0 }]
+      ]
+    },
+    "Expand to items": {
+      "main": [[{ "node": "One job at a time", "type": "main", "index": 0 }]]
+    },
+    "One job at a time": {
+      "main": [[{ "node": "Add to pipeline.md", "type": "main", "index": 0 }]]
+    },
+    "Add to pipeline.md": {
+      "main": [[{ "node": "Update scan-history", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "active": false
+}

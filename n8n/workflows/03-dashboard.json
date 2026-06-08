@@ -1,0 +1,184 @@
+{
+  "name": "Career Ops — 03 Dashboard",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Career Ops — Dashboard\n\n**What it does:** Reads tracker + pipeline data from the local API, generates an HTML dashboard, and commits it to `docs/index.html` so GitHub Pages serves it.\n\n**GitHub Pages URL:** https://thesocialchicken.github.io/career-ops/\n\n**N8N Variables required:**\n- `LOCAL_API_URL` = `http://100.95.236.57:3000`\n- `GITHUB_TOKEN` = GitHub PAT with repo scope\n- `GITHUB_REPO` = `TheSocialChicken/career-ops`\n\n**Runs:** Every 6 hours + on-demand via webhook",
+        "height": 200,
+        "width": 500,
+        "color": 6
+      },
+      "id": "a0000003-0000-4000-8000-000000000001",
+      "name": "Setup Notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 80]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            { "field": "hours", "hoursInterval": 6 }
+          ]
+        }
+      },
+      "id": "a0000003-0000-4000-8000-000000000002",
+      "name": "Every 6 hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 340]
+    },
+    {
+      "parameters": {
+        "path": "career-ops-dashboard",
+        "httpMethod": "POST",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "a0000003-0000-4000-8000-000000000003",
+      "name": "Webhook: Refresh",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "webhookId": "career-ops-dashboard",
+      "position": [240, 480]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.LOCAL_API_URL }}/tracker",
+        "options": {}
+      },
+      "id": "a0000003-0000-4000-8000-000000000004",
+      "name": "Get tracker data",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [500, 400]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.LOCAL_API_URL }}/pipeline",
+        "options": {}
+      },
+      "id": "a0000003-0000-4000-8000-000000000005",
+      "name": "Get pipeline data",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [500, 560]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.LOCAL_API_URL }}/reports",
+        "options": {}
+      },
+      "id": "a0000003-0000-4000-8000-000000000006",
+      "name": "Get reports list",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [500, 720]
+    },
+    {
+      "parameters": {
+        "jsCode": "// ── Build HTML dashboard ──────────────────────────────────────────────\nconst tracker  = $('Get tracker data').first().json;\nconst pipeline = $('Get pipeline data').first().json;\nconst reports  = $('Get reports list').first().json;\n\nconst rows    = tracker.rows || [];\nconst pending = pipeline.pending || [];\nconst reps    = reports.reports || [];\n\n// ── Status counts ──────────────────────────────────────────────────────\nconst statusCounts = {};\nfor (const r of rows) {\n  const s = r.status || 'Unknown';\n  statusCounts[s] = (statusCounts[s] || 0) + 1;\n}\n\n// Score distribution\nconst scores = rows.map(r => parseFloat(r.score)).filter(s => !isNaN(s));\nconst avgScore = scores.length ? (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(2) : 'N/A';\nconst highScore = rows.filter(r => parseFloat(r.score) >= 3.8).length;\n\n// Recent activity (last 10)\nconst recent = [...rows].reverse().slice(0, 10);\n\nconst now = new Date().toISOString().replace('T', ' ').slice(0, 19) + ' UTC';\n\n// ── Status badge color ─────────────────────────────────────────────────\nconst badgeColor = s => ({\n  Applied: '#3b82f6', Interview: '#8b5cf6', Offer: '#10b981',\n  Rejected: '#ef4444', Discarded: '#6b7280', SKIP: '#6b7280',\n  Evaluated: '#f59e0b', Responded: '#06b6d4',\n}[s] || '#94a3b8');\n\n// ── Build status bars ─────────────────────────────────────────────────\nconst statusBars = Object.entries(statusCounts)\n  .sort((a, b) => b[1] - a[1])\n  .map(([s, n]) => `\n    <div class=\"stat-row\">\n      <span class=\"badge\" style=\"background:${badgeColor(s)}\">${s}</span>\n      <div class=\"bar-wrap\"><div class=\"bar\" style=\"width:${Math.min(100, n * 8)}%;background:${badgeColor(s)}\"></div></div>\n      <span class=\"count\">${n}</span>\n    </div>`).join('');\n\n// ── Recent rows table ─────────────────────────────────────────────────\nconst recentRows = recent.map(r => `\n  <tr>\n    <td>${r.num}</td>\n    <td>${r.date || ''}</td>\n    <td><strong>${r.company}</strong></td>\n    <td>${r.role}</td>\n    <td>${r.score}</td>\n    <td><span class=\"badge\" style=\"background:${badgeColor(r.status)}\">${r.status}</span></td>\n  </tr>`).join('');\n\nconst html = `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Career Ops Dashboard</title>\n<style>\n  * { box-sizing: border-box; margin: 0; padding: 0; }\n  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; padding: 24px; }\n  h1 { font-size: 1.6rem; font-weight: 700; color: #f8fafc; margin-bottom: 4px; }\n  .sub { color: #94a3b8; font-size: .85rem; margin-bottom: 24px; }\n  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 24px; }\n  .card { background: #1e293b; border-radius: 12px; padding: 20px; }\n  .card .num { font-size: 2rem; font-weight: 800; color: #f8fafc; }\n  .card .label { font-size: .8rem; color: #94a3b8; margin-top: 4px; }\n  .section { background: #1e293b; border-radius: 12px; padding: 20px; margin-bottom: 20px; }\n  .section h2 { font-size: 1rem; font-weight: 600; color: #cbd5e1; margin-bottom: 16px; }\n  .stat-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }\n  .badge { font-size: .72rem; padding: 2px 8px; border-radius: 99px; color: #fff; white-space: nowrap; }\n  .bar-wrap { flex: 1; background: #334155; border-radius: 99px; height: 6px; }\n  .bar { height: 6px; border-radius: 99px; transition: width .3s; }\n  .count { font-size: .85rem; color: #94a3b8; width: 28px; text-align: right; }\n  table { width: 100%; border-collapse: collapse; font-size: .85rem; }\n  th { text-align: left; color: #64748b; font-weight: 500; padding: 6px 8px; border-bottom: 1px solid #334155; }\n  td { padding: 8px; border-bottom: 1px solid #1e293b; color: #cbd5e1; }\n  tr:hover td { background: #1e293b; }\n  .pending-list { list-style: none; }\n  .pending-list li { padding: 6px 0; border-bottom: 1px solid #334155; font-size: .83rem; color: #94a3b8; word-break: break-all; }\n  .updated { color: #475569; font-size: .75rem; margin-top: 16px; text-align: right; }\n</style>\n</head>\n<body>\n<h1>Career Ops Pipeline</h1>\n<p class=\"sub\">Christiaan Verhoef &mdash; Last updated: ${now}</p>\n\n<div class=\"grid\">\n  <div class=\"card\"><div class=\"num\">${rows.length}</div><div class=\"label\">Total evaluated</div></div>\n  <div class=\"card\"><div class=\"num\">${statusCounts['Applied'] || 0}</div><div class=\"label\">Applied</div></div>\n  <div class=\"card\"><div class=\"num\">${statusCounts['Interview'] || 0}</div><div class=\"label\">In interview</div></div>\n  <div class=\"card\"><div class=\"num\">${pending.length}</div><div class=\"label\">Pending in pipeline</div></div>\n  <div class=\"card\"><div class=\"num\">${highScore}</div><div class=\"label\">Score &ge; 3.8</div></div>\n  <div class=\"card\"><div class=\"num\">${avgScore}</div><div class=\"label\">Avg score</div></div>\n  <div class=\"card\"><div class=\"num\">${reps.length}</div><div class=\"label\">Reports</div></div>\n</div>\n\n<div class=\"section\">\n  <h2>By Status</h2>\n  ${statusBars || '<p style=\"color:#475569\">No data yet</p>'}\n</div>\n\n<div class=\"section\">\n  <h2>Recent Activity</h2>\n  <table>\n    <thead><tr><th>#</th><th>Date</th><th>Company</th><th>Role</th><th>Score</th><th>Status</th></tr></thead>\n    <tbody>${recentRows || '<tr><td colspan=\"6\" style=\"color:#475569\">No entries yet</td></tr>'}</tbody>\n  </table>\n</div>\n\n<div class=\"section\">\n  <h2>Pipeline Queue (${pending.length} pending)</h2>\n  <ul class=\"pending-list\">\n    ${pending.slice(0, 15).map(p => `<li>#${p.num} &mdash; <a href=\"${p.url}\" style=\"color:#60a5fa\" target=\"_blank\">${p.url.slice(0, 80)}${p.url.length > 80 ? '...' : ''}</a></li>`).join('') || '<li style=\"color:#475569\">Queue empty</li>'}\n  </ul>\n</div>\n\n<p class=\"updated\">Generated by Career Ops N8N pipeline &bull; ${now}</p>\n</body></html>`;\n\nreturn [{ json: { html, updated: now } }];"
+      },
+      "id": "a0000003-0000-4000-8000-000000000007",
+      "name": "Build HTML",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [780, 560]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.github.com/repos/{{ $vars.GITHUB_REPO }}/contents/docs/index.html",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "=token {{ $vars.GITHUB_TOKEN }}" },
+            { "name": "Accept", "value": "application/vnd.github+json" }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          }
+        }
+      },
+      "id": "a0000003-0000-4000-8000-000000000008",
+      "name": "Get current SHA",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1000, 560]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare GitHub PUT payload\nconst html = $('Build HTML').first().json.html;\nconst ghResponse = $input.first().json;\n\n// SHA needed only if file exists; null = create new\nconst sha = ghResponse.body?.sha || null;\nconst b64 = Buffer.from(html, 'utf8').toString('base64');\nconst now = new Date().toISOString().split('T')[0];\n\nreturn [{ json: {\n  message: `dashboard: update ${now} [n8n]`,\n  content: b64,\n  sha,\n} }];"
+      },
+      "id": "a0000003-0000-4000-8000-000000000009",
+      "name": "Prepare commit",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1220, 560]
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://api.github.com/repos/{{ $vars.GITHUB_REPO }}/contents/docs/index.html",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "=token {{ $vars.GITHUB_TOKEN }}" },
+            { "name": "Accept", "value": "application/vnd.github+json" },
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "a0000003-0000-4000-8000-000000000010",
+      "name": "Commit to GitHub Pages",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1440, 560]
+    }
+  ],
+  "connections": {
+    "Every 6 hours": {
+      "main": [[
+        { "node": "Get tracker data", "type": "main", "index": 0 },
+        { "node": "Get pipeline data", "type": "main", "index": 0 },
+        { "node": "Get reports list", "type": "main", "index": 0 }
+      ]]
+    },
+    "Webhook: Refresh": {
+      "main": [[
+        { "node": "Get tracker data", "type": "main", "index": 0 },
+        { "node": "Get pipeline data", "type": "main", "index": 0 },
+        { "node": "Get reports list", "type": "main", "index": 0 }
+      ]]
+    },
+    "Get tracker data": {
+      "main": [[{ "node": "Build HTML", "type": "main", "index": 0 }]]
+    },
+    "Get pipeline data": {
+      "main": [[{ "node": "Build HTML", "type": "main", "index": 0 }]]
+    },
+    "Get reports list": {
+      "main": [[{ "node": "Build HTML", "type": "main", "index": 0 }]]
+    },
+    "Build HTML": {
+      "main": [[{ "node": "Get current SHA", "type": "main", "index": 0 }]]
+    },
+    "Get current SHA": {
+      "main": [[{ "node": "Prepare commit", "type": "main", "index": 0 }]]
+    },
+    "Prepare commit": {
+      "main": [[{ "node": "Commit to GitHub Pages", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "active": false
+}

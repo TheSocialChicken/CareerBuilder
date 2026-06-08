@@ -1,0 +1,153 @@
+{
+  "name": "Career Ops — 04 Generate CV",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Career Ops — Generate CV\n\n**Trigger:** POST `{ \"url\": \"job-url\", \"eval\": {...eval_data} }` — usually called by pipeline 02 after a GO verdict.\n\n**What it does:**\n1. Reads cv.md + profile.yml from local API\n2. Sends to OpenRouter with JD context to generate tailored HTML CV\n3. Calls local API to run generate-pdf.mjs\n4. Returns PDF path\n\n**N8N Variables required:**\n- `LOCAL_API_URL` = `http://100.95.236.57:3000`\n- `OPENROUTER_API_KEY` = your OpenRouter key\n- `CV_MODEL` = `moonshotai/kimi-k2.6:free`\n\n**Note:** Local machine must be running api.mjs AND have Playwright installed.",
+        "height": 220,
+        "width": 500,
+        "color": 4
+      },
+      "id": "a0000004-0000-4000-8000-000000000001",
+      "name": "Setup Notes",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [240, 80]
+    },
+    {
+      "parameters": {
+        "path": "career-ops-cv",
+        "httpMethod": "POST",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "a0000004-0000-4000-8000-000000000002",
+      "name": "Webhook: Generate CV",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "webhookId": "career-ops-cv",
+      "position": [240, 400]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.LOCAL_API_URL }}/files/cv.md",
+        "options": {}
+      },
+      "id": "a0000004-0000-4000-8000-000000000003",
+      "name": "Get cv.md",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.LOCAL_API_URL }}/files/config/profile.yml",
+        "options": {}
+      },
+      "id": "a0000004-0000-4000-8000-000000000004",
+      "name": "Get profile.yml",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 500]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.LOCAL_API_URL }}/files/templates/cv-template.html",
+        "options": {}
+      },
+      "id": "a0000004-0000-4000-8000-000000000005",
+      "name": "Get CV template",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 700]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://openrouter.ai/api/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "=Bearer {{ $vars.OPENROUTER_API_KEY }}" },
+            { "name": "HTTP-Referer", "value": "https://github.com/TheSocialChicken/career-ops" },
+            { "name": "X-Title", "value": "Career Ops CV Generator" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"model\": \"{{ $vars.CV_MODEL || 'moonshotai/kimi-k2.6:free' }}\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a professional CV writer for Christiaan Verhoef. Your task is to take the canonical CV markdown and tailor it for a specific job posting.\\n\\nRules:\\n- NEVER remove experience entries — always show full timeline (compactly for less-relevant roles)\\n- NEVER add em-dashes (—) — use colons, commas, or restructure\\n- Write in Dutch if target company is Dutch/NL-registered, English otherwise\\n- Keep ENFP voice: enthusiastic, human, varied sentences — not corporate bullet-speak\\n- Emphasize: Innovation Lab, Serious Games, New Ventures, AI Education\\n- Output: Complete HTML using the provided template structure\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"JOB CONTEXT:\\nCompany: {{ $('Webhook: Generate CV').first().json.body.eval.company }}\\nRole: {{ $('Webhook: Generate CV').first().json.body.eval.role }}\\nScore: {{ $('Webhook: Generate CV').first().json.body.eval.score }}/5\\nArchetype: {{ $('Webhook: Generate CV').first().json.body.eval.archetype_match }}\\n\\nCANONICAL CV:\\n{{ $('Get cv.md').first().json.content }}\\n\\nPROFILE:\\n{{ $('Get profile.yml').first().json.content }}\\n\\nHTML TEMPLATE (use this structure):\\n{{ $('Get CV template').first().json.content }}\\n\\nGenerate a tailored HTML CV for this job. Return ONLY valid HTML, no explanation.\"\n    }\n  ]\n}",
+        "options": { "timeout": 90000 }
+      },
+      "id": "a0000004-0000-4000-8000-000000000006",
+      "name": "OpenRouter: Tailor CV",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [760, 500]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract HTML from OpenRouter response\nconst resp = $input.first().json;\nconst html = resp.choices?.[0]?.message?.content || '';\nconst eval_data = $('Webhook: Generate CV').first().json.body?.eval || {};\nconst company = (eval_data.company || 'company').toLowerCase().replace(/[^a-z0-9]+/g, '-');\nconst date = new Date().toISOString().split('T')[0];\nconst filename = `cv-christiaan-verhoef-${company}-${date}.pdf`;\n\nreturn [{ json: { html, filename, company, date, eval_data } }];"
+      },
+      "id": "a0000004-0000-4000-8000-000000000007",
+      "name": "Extract HTML + filename",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [980, 500]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $vars.LOCAL_API_URL }}/cv/generate",
+        "sendBody": true,
+        "contentType": "json",
+        "jsonBody": "={\n  \"html\": {{ JSON.stringify($json.html) }},\n  \"output\": \"{{ $json.filename }}\"\n}",
+        "options": { "timeout": 90000 }
+      },
+      "id": "a0000004-0000-4000-8000-000000000008",
+      "name": "Generate PDF",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1200, 500]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ generated: $json.generated, company: $('Extract HTML + filename').first().json.company, date: $('Extract HTML + filename').first().json.date }) }}"
+      },
+      "id": "a0000004-0000-4000-8000-000000000009",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1420, 500]
+    }
+  ],
+  "connections": {
+    "Webhook: Generate CV": {
+      "main": [[
+        { "node": "Get cv.md", "type": "main", "index": 0 },
+        { "node": "Get profile.yml", "type": "main", "index": 0 },
+        { "node": "Get CV template", "type": "main", "index": 0 }
+      ]]
+    },
+    "Get cv.md": {
+      "main": [[{ "node": "OpenRouter: Tailor CV", "type": "main", "index": 0 }]]
+    },
+    "Get profile.yml": {
+      "main": [[{ "node": "OpenRouter: Tailor CV", "type": "main", "index": 0 }]]
+    },
+    "Get CV template": {
+      "main": [[{ "node": "OpenRouter: Tailor CV", "type": "main", "index": 0 }]]
+    },
+    "OpenRouter: Tailor CV": {
+      "main": [[{ "node": "Extract HTML + filename", "type": "main", "index": 0 }]]
+    },
+    "Extract HTML + filename": {
+      "main": [[{ "node": "Generate PDF", "type": "main", "index": 0 }]]
+    },
+    "Generate PDF": {
+      "main": [[{ "node": "Respond", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "active": false
+}
